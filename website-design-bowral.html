@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Design Bowral | Built to Rank and Convert | Manifest</title>
+<meta name="description" content="Website design for Bowral businesses. Based in Moss Vale and building Bowral websites since 2015. SEO and AI search optimisation included.">
+<link rel="canonical" href="https://manifestwebsitedesign.com.au/website-design-bowral/">
+<meta property="og:title" content="Website Design Bowral | Built to Rank and Convert | Manifest">
+<meta property="og:description" content="Website design for Bowral businesses. Based in Moss Vale and building Bowral websites since 2015. SEO and AI search optimisation included.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://manifestwebsitedesign.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Website Design Bowral", "item": "https://manifestwebsitedesign.com.au/website-design-bowral/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are you based in Bowral?", "acceptedAnswer": {"@type": "Answer", "text": "We're based in Moss Vale, just down the road. We've worked with Bowral businesses since 2015 and know this market well. All project work is handled locally - no offshore development, no passing the work around."}}, {"@type": "Question", "name": "Can you write the content for my website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Copywriting is included in every project. We research your keywords, write every page, and optimise the copy for both search and conversion. You review and approve before anything is finalised."}}, {"@type": "Question", "name": "Will my website show up in Google for Bowral searches?", "acceptedAnswer": {"@type": "Answer", "text": "That's the goal from day one. We build every site around the specific search terms your local clients use. Bowral's market is less competitive than Sydney, which means well-executed SEO can achieve strong rankings faster."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Website design for Bowral businesses", "serviceType": "Website design", "description": "Website design for Bowral businesses. Based in Moss Vale and building Bowral websites since 2015. SEO and AI search optimisation included.", "provider": {"@type": "Organization", "name": "Manifest Website Design", "url": "https://manifestwebsitedesign.com.au/"}, "areaServed": {"@type": "City", "name": "Bowral"}, "url": "https://manifestwebsitedesign.com.au/website-design-bowral/"}</script>
+<style>
+:root{
+  --bg:#F3F8F8; --bg2:#E3EEEF; --card:#FFFFFF; --ink:#011A35; --muted:#43586B;
+  --line:#D3E1E2; --dark:#011A35; --dark2:#0B2B4B; --accent:#00787E; --accent-l:#12D8C6;
+  --serif:'Montserrat',system-ui,sans-serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+  --pad:clamp(20px,5.5vw,80px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+.wrap{padding-inline:var(--pad);max-width:1600px;margin-inline:auto}
+.serif{font-family:var(--serif);font-weight:700}
+h2.title{font-family:var(--serif);font-weight:700;font-size:clamp(32px,3.7vw,50px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:17px;transition:transform .15s,opacity .15s;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-outline{border:1.5px solid var(--ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* nav */
+header.nav{position:fixed;top:16px;left:clamp(12px,3vw,48px);right:clamp(12px,3vw,48px);z-index:50;background:#fff;border-radius:999px;box-shadow:0 10px 34px rgba(1,26,53,.18)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px;padding:0 12px 0 32px}
+.logo{display:flex;align-items:center}
+.logo img{height:46px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:4px;padding:6px;border:1px solid var(--line);background:#EEF5F6;border-radius:999px;font-weight:600;font-size:16px;color:#2B4257}
+.nav-links a{padding:10px 20px;border-radius:999px;transition:background .15s,color .15s}
+.nav-links a:hover{background:#fff;color:var(--accent);opacity:1}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-right>.btn{display:inline-flex}
+.nav-links a:hover{color:var(--accent)}
+.nav .btn{min-height:52px;padding:0 30px;font-size:16px;box-shadow:0 6px 16px rgba(0,120,126,.3)}
+
+
+/* mega menu */
+.nav-links .trig{appearance:none;background:none;border:0;font:inherit;color:inherit;font-weight:600;padding:10px 18px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.nav-links .trig svg{transition:transform .2s}
+.nav-links .trig:hover,.nav-links .trig[aria-expanded="true"]{background:#fff;color:var(--accent)}
+.nav-links .trig[aria-expanded="true"] svg{transform:rotate(180deg)}
+.mega{position:absolute;top:calc(100% + 14px);left:0;right:0;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(1,26,53,.22);padding:32px;display:grid;gap:32px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,transform .18s,visibility .18s;color:var(--ink)}
+.mega.open{opacity:1;visibility:visible;transform:none}
+.mega-services{grid-template-columns:1fr 1fr 1.15fr}
+.mega-loc{grid-template-columns:1fr 1fr 1.15fr}
+.mega h4{margin:0 0 14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.mega ul{display:flex;flex-direction:column;gap:4px}
+.mega li a{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;font-weight:600;font-size:16px}
+.mega li a:hover{background:#EEF5F6;opacity:1}
+.mega li a i{flex:none;width:34px;height:34px;border-radius:10px;background:#E3F6F5;display:grid;place-items:center;color:var(--accent)}
+.mega-card{border-radius:22px;padding:28px;background:var(--dark);color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.mega-card b{font-family:var(--serif);font-size:22px;line-height:1.2}
+.mega-card p{color:#C6DAE3;font-size:15px;line-height:1.55}
+.mega-card .btn{min-height:48px;font-size:15px;background:var(--accent-l);color:var(--dark);align-self:flex-start;box-shadow:none}
+.burger{display:none;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:#EEF5F6;cursor:pointer;place-items:center;padding:0}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .2s,background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.drawer{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(1,26,53,.22);padding:12px 16px 20px;max-height:calc(100vh - 120px);overflow:auto}
+.drawer.open{display:block}
+.drawer details{border-bottom:1px solid var(--line)}
+.drawer summary,.drawer > a{display:flex;align-items:center;justify-content:space-between;min-height:56px;font-weight:700;font-size:18px;padding:0 8px;cursor:pointer}
+.drawer > a{border-bottom:1px solid var(--line)}
+.drawer summary::after{content:"+";color:var(--accent);font-size:26px;font-weight:400}
+.drawer details[open] summary::after{content:"\2212"}
+.drawer details a{display:block;padding:12px 8px 12px 20px;font-weight:500;color:var(--muted)}
+.drawer .btn{width:100%;margin-top:16px}
+
+/* reveal on scroll (only when JS is running) */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .fc.rv.in:hover{transform:translateY(-8px)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+@media (max-width:1100px){.feat-grid{grid-template-columns:repeat(2,1fr)}.pb-card{grid-template-columns:1fr}.pb-item+.pb-item::before{left:26px;right:26px;top:0;bottom:auto;width:auto;height:1px}.proofbar{margin-top:-40px}}
+/* eyebrow + shared heads */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;padding:7px 14px;border-radius:999px;background:#DDF4F2;color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.eyebrow.dk{background:rgba(18,216,198,.14);color:var(--accent-l)}.eyebrow.dk::before{background:var(--accent-l)}
+.cl-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:52px}
+/* footer */
+footer{background:var(--dark);color:#C6DAE3;padding-block:80px 40px;margin-top:104px}
+.f-grid{display:grid;grid-template-columns:4fr 2fr 2fr 2fr 2fr;gap:32px}
+.f-grid h4{margin:0 0 16px;color:var(--bg);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.f-grid ul{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.f-grid a:hover{color:#fff}
+.plate{display:inline-block;background:#fff;border-radius:16px;padding:12px 20px;margin-bottom:20px}
+.plate img{height:48px;width:auto;display:block}
+.f-brand p{font-size:16px;text-wrap:pretty}
+.f-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.f-btns .btn{min-height:44px;padding:0 20px;font-size:15px}
+.f-btns .p{background:var(--accent-l);color:var(--dark)}
+.f-btns .o{border:1.5px solid #C6DAE3;color:var(--bg)}
+.f-bottom{margin-top:56px;padding-top:28px;border-top:1px solid #1F4568;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+.f-bottom div{display:flex;gap:24px;flex-wrap:wrap}
+
+/* responsive */
+@media (max-width:1100px){
+  .nav-links,.nav-right>.btn{display:none}
+  .burger{display:grid}
+  .mega{display:none}
+  .nav-in{padding:0 8px 0 20px;height:68px}
+  .hero,.aud,.res-sec,.faq,.cta{grid-template-columns:1fr}
+  .svc-grid,.why-grid,.blog-grid{grid-template-columns:1fr}
+  .hl{grid-template-columns:repeat(2,1fr)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-brand{grid-column:1/-1}
+  .hero-art{min-height:420px}
+}
+@media (max-width:640px){
+  .trust,.logos,.ind,.hl{grid-template-columns:1fr}
+  .logo img{height:36px}
+  .btn{width:100%}
+  .nav .btn{width:auto}
+  .cta-row{flex-direction:column}
+  .hl div{font-size:28px}
+  .why-grid h3,.sc h3{font-size:32px}
+}
+
+/* QA fixes: larger tap targets */
+.f-grid ul a,.f-bottom a{display:inline-block;padding:6px 0}
+@media (max-width:1100px){
+  .f-grid ul{gap:2px}
+  .f-grid ul a,.f-bottom a{padding:12px 0;min-height:44px;display:inline-flex;align-items:center}
+  .f-bottom div{gap:8px 24px}
+  .f-btns .btn{min-height:48px}
+}
+@media (max-width:640px){
+  .f-grid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .f-brand{grid-column:1/-1}
+}
+
+/* QA fixes round 2 */
+.fq-i[open] summary::after{content:none}
+.cal-meta{flex-wrap:wrap;gap:6px 16px}
+.cal-meta span{white-space:nowrap}
+.turn .amt{white-space:nowrap}
+
+.call-alt{min-height:44px;display:inline-flex;align-items:center}
+.logo{min-height:44px}
+
+.cal-grid button,.cal-times button,.cal-nav button{font-family:inherit}
+
+/* ===== HERO v2 + HEADER v2 (client feedback: calmer hero, cleaner header) ===== */
+html{scroll-padding-top:92px}
+/* header: solid full-width bar */
+header.nav{top:0;left:0;right:0;border-radius:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:none;transition:box-shadow .25s}
+header.nav.scrolled{box-shadow:0 6px 24px rgba(1,26,53,.1)}
+.nav-in{max-width:1600px;margin:0 auto;height:84px;padding:0 var(--pad);gap:32px}
+.logo img{height:48px}
+.nav-right{gap:8px}
+.nav-links{background:none;border:0;padding:0;gap:2px;font-size:15.5px;font-weight:600;color:var(--ink)}
+.nav-links a,.nav-links .trig{position:relative;padding:12px 15px;border-radius:6px;color:var(--ink);background:none}
+.nav-links a::after,.nav-links .trig::before{content:"";position:absolute;left:15px;right:15px;bottom:6px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover,.nav-links .trig:hover,.nav-links .trig[aria-expanded="true"]{background:none;color:var(--accent);transform:none}
+.nav-links a:hover::after,.nav-links .trig:hover::before,.nav-links .trig[aria-expanded="true"]::before{transform:scaleX(1)}
+.nav .btn{margin-left:20px;border-radius:8px;min-height:48px;padding:0 26px;box-shadow:none;font-size:15.5px}
+.nav .btn:hover{background:#006469}
+.mega{left:var(--pad);right:var(--pad);top:calc(100% + 10px);border-radius:16px}
+.burger{width:46px;height:46px;border-radius:8px;background:#fff;border:1.5px solid var(--line)}
+.drawer{left:0;right:0;top:100%;border-radius:0 0 20px 20px;box-shadow:0 20px 40px rgba(1,26,53,.15);max-height:calc(100vh - 84px)}
+@media (max-width:1100px){.nav-in{height:70px;padding:0 var(--pad)}.logo img{height:40px}html{scroll-padding-top:78px}}
+/* ===== HEADER v3: two-tier (utility bar + main bar) ===== */
+.topbar{background:#011A35;color:#C6DAE3;font-size:13.5px;font-weight:600;max-height:44px;overflow:hidden;transition:max-height .3s ease,opacity .25s}
+.tb-in{max-width:1600px;margin:0 auto;padding:0 var(--pad);height:42px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.tb-l,.tb-r{display:flex;align-items:center}
+.tb-item{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.tb-item+.tb-item{margin-left:22px;padding-left:22px;border-left:1px solid rgba(255,255,255,.22)}
+.tb-item svg{color:var(--accent-l)}
+.tb-stars{color:#F5B301;letter-spacing:2px;font-size:13px}
+header.nav.scrolled .topbar{max-height:0;opacity:0}
+header.nav{border-bottom:0}
+.nav-in{border-bottom:1px solid var(--line)}
+header.nav::before{content:"";display:block;height:0}
+.nav .btn.nav-cta{display:inline-flex;align-items:center;gap:10px;margin-left:22px;min-height:50px;padding:0 24px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700}
+.nav .btn.nav-cta svg{transition:transform .3s}
+.nav .btn.nav-cta:hover svg{transform:rotate(-12deg) scale(1.1)}
+.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--accent)}
+.vhero-in{padding-top:calc(126px + clamp(40px,6vw,84px))}
+html{scroll-padding-top:100px}
+@media (max-width:900px){.tb-hide{display:none}.tb-in{justify-content:center;height:36px;font-size:12.5px}.topbar{max-height:40px}.vhero-in{padding-top:calc(106px + 44px)}}
+@media (max-width:1100px){html{scroll-padding-top:84px}}
+
+/* new logo is squarer, so give it a little more height */
+.logo img{height:58px}.plate img{height:58px}
+@media (max-width:1100px){.logo img{height:48px}}
+@media (max-width:640px){.logo img{height:42px}.plate img{height:50px}}
+/* footer logo: light version on the navy footer, no white plate */
+.plate{background:none;border-radius:0;padding:0;margin-bottom:22px}
+.plate img{height:64px}
+@media (max-width:640px){.plate img{height:54px}}
+
+
+/* ===== shared page base ===== */
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:var(--ink);padding:10px 16px;border-radius:4px;font-weight:700}
+.skip:focus{left:12px}
+.nav-links .trig.on,.nav-links a.on{color:var(--accent)}
+.nav-links .trig.on::before,.nav-links a.on::after{transform:scaleX(1)}
+footer{margin-top:0}
+h1,h2,h3{text-wrap:balance}
+.btn{border-radius:6px}
+.btn-outline{background:transparent}
+.btn-outline:hover{background:var(--ink);color:#fff}
+/* plain label with a rule (not a pill) */
+.eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 20px;padding:0;border-radius:0;background:none;color:var(--accent);font-size:13px;letter-spacing:.16em}
+.eyebrow::before{width:36px;height:2px;border-radius:0;background:currentColor}
+.eyebrow.dk{background:none;color:var(--accent-l)}
+/* image placeholder */
+.ph{position:relative;margin:0;width:100%;overflow:hidden;background:repeating-linear-gradient(135deg,#E3EEEF 0 14px,#EAF3F3 14px 28px);border:1px dashed #8FB8BB;display:grid;place-items:center;color:#43586B}
+.ph-in{display:grid;gap:6px;justify-items:center;text-align:center;padding:16px;max-width:90%}
+.ph-in b{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.ph-in i{font-style:normal;font-weight:600;font-size:14px;line-height:1.35}
+.ph-in code{font-size:11.5px;color:#6B8394;word-break:break-all}
+.ph.dk{background:repeating-linear-gradient(135deg,#0B2B4B 0 14px,#0E3256 14px 28px);border-color:#2A5A80;color:#C6DAE3}
+.ph.dk .ph-in b{color:var(--accent-l)}.ph.dk .ph-in code{color:#8FB0C6}
+/* LeadConnector form frame (the embed script hides the iframe until it loads; force it into the flow) */
+.lc-frame{position:relative;width:100%}
+.lc-frame::before{content:"Loading the form\2026";position:absolute;left:0;right:0;top:0;height:160px;display:grid;place-items:start center;padding-top:70px;color:var(--muted);font-weight:600;z-index:0}
+.lc-frame iframe{position:relative!important;left:0!important;top:0!important;z-index:1;display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;min-height:560px!important;background:transparent}
+img{max-width:100%}
+.cl-link{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:17px;color:var(--accent);padding:0 0 6px;border-bottom:2px solid var(--accent);transition:gap .3s}
+.cl-link svg{transition:transform .3s}.cl-link:hover svg{transform:translateX(6px)}
+.nb{white-space:nowrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* ===== Bowral: the Local Pack, tabs, open Q&A ===== */
+.bw-hero{background:#fff;padding-top:calc(126px + clamp(36px,5vw,72px));overflow:hidden;border-bottom:1px solid var(--line)}
+.bw-hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,96px);align-items:center;padding-bottom:clamp(48px,6vw,88px)}
+.bw-hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(34px,4.5vw,66px);line-height:1.05;letter-spacing:-.03em}
+.bw-hero h1 span{color:var(--accent)}
+.bw-lead{margin-top:26px;max-width:600px;font-size:clamp(18px,1.45vw,20.5px);line-height:1.65;color:var(--muted)}
+.bw-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.bw-cta .btn{min-height:58px;padding:0 30px}
+.bw-tag{margin-top:30px;font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.02em;color:var(--muted)}
+
+/* diagram: what a Bowral search returns */
+.bw-page{border:2px solid var(--ink);background:var(--bg);position:relative}
+.bw-page-h{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:2px solid var(--ink);font-weight:700;font-size:14px;background:#fff}
+.bw-page-h svg{flex:none;color:var(--accent)}
+.bw-zone{padding:18px 18px 20px;position:relative}
+.bw-zone+.bw-zone{border-top:1px dashed #8FB8BB}
+.bw-zone-l{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.bw-zone-l em{font-style:normal;color:var(--muted);letter-spacing:.06em;text-transform:none;font-weight:600;font-size:12.5px}
+.bw-pack{display:grid;grid-template-columns:96px 1fr;gap:14px;background:#fff;border:1.5px solid var(--accent)}
+.bw-map{position:relative;background:#DDF1F0;min-height:132px;overflow:hidden}
+.bw-map::before,.bw-map::after{content:"";position:absolute;background:#fff}
+.bw-map::before{left:-10%;right:-10%;top:48%;height:10px;transform:rotate(-14deg)}
+.bw-map::after{top:-10%;bottom:-10%;left:58%;width:8px;transform:rotate(12deg)}
+.bw-pin{position:absolute;width:16px;height:16px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--accent);z-index:1}
+.bw-pin::after{content:"";position:absolute;inset:4px;border-radius:50%;background:#fff}
+.bw-pin:nth-child(1){left:26px;top:30px}.bw-pin:nth-child(2){left:54px;top:74px;background:var(--ink)}.bw-pin:nth-child(3){left:66px;top:34px;background:#6B8394}
+.bw-pack-l{padding:12px 14px 12px 0;display:grid;gap:11px;align-content:center}
+.bw-row{display:flex;align-items:center;gap:10px}
+.bw-row i{flex:none;width:14px;height:14px;background:#C9D8DA;border-radius:50%}
+.bw-row.on i{background:var(--accent)}
+.bw-row div{flex:1;display:grid;gap:6px}
+.bw-ln{height:9px;border-radius:5px;background:#DCE8EA}
+.bw-ln.dk{height:11px;background:#9FB4BA}
+.bw-row.on .bw-ln.dk{background:var(--accent)}
+.bw-w40{width:40%}.bw-w55{width:55%}.bw-w70{width:70%}.bw-w85{width:85%}.bw-w95{width:95%}
+.bw-org{display:grid;gap:16px;opacity:.85}
+.bw-org .bw-ln{margin-top:7px}
+.bw-note{margin-top:14px;font-size:14.5px;line-height:1.55;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+.bw-note svg{flex:none;margin-top:2px;color:var(--accent)}
+
+.bw-why{background:var(--dark);color:#fff;padding:clamp(72px,8vw,128px) 0;overflow:hidden}
+.bw-why-top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,112px);align-items:end}
+.bw-why h2.title{color:#fff;max-width:640px}
+.bw-hub{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.3vw,48px);line-height:1.1;letter-spacing:-.025em;color:var(--accent-l)}
+.bw-cols{margin-top:clamp(40px,5vw,72px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,112px);border-top:1px solid rgba(255,255,255,.2);padding-top:clamp(28px,3vw,44px)}
+.bw-cols p{font-size:clamp(17px,1.35vw,19.5px);line-height:1.75;color:#C6DAE3}
+.bw-cols p+p{margin-top:18px}
+.bw-callout{padding:clamp(20px,2.4vw,32px);border-left:3px solid var(--accent-l);background:rgba(255,255,255,.05)}
+.bw-callout p{color:#fff;font-size:clamp(18px,1.5vw,21px);font-weight:600}
+.bw-close-l{margin-top:clamp(36px,4vw,60px);font-family:var(--serif);font-weight:800;font-size:clamp(24px,3.2vw,46px);line-height:1.12;letter-spacing:-.025em;max-width:980px}
+.bw-close-l span{color:var(--accent-l)}
+.bw-more{display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:48px;font-weight:700;color:var(--accent-l);border-bottom:2px solid var(--accent-l);padding-bottom:3px}
+
+.bw-build{background:var(--bg);padding:clamp(72px,8vw,128px) 0}
+.bw-build-grid{display:grid;grid-template-columns:.38fr .62fr;gap:clamp(28px,5vw,96px);align-items:start}
+.bw-build-l{position:sticky;top:130px}
+.bw-man{font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.9vw,42px);line-height:1.38;letter-spacing:-.02em}
+.bw-man i{font-style:normal;color:var(--accent);box-shadow:inset 0 -.32em 0 rgba(18,216,198,.35)}
+.bw-man .s{color:#8AA0AE;font-weight:500}
+.bw-know{margin-top:clamp(28px,3vw,44px);padding-top:24px;border-top:2px solid var(--ink);display:grid;grid-template-columns:1fr auto;gap:20px 40px;align-items:end}
+.bw-know p{font-size:clamp(17px,1.35vw,19.5px);line-height:1.7;color:var(--muted);max-width:560px}
+.bw-inv{font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.6vw,38px);letter-spacing:-.015em;line-height:1.15}
+.bw-inv small.t{margin:0 0 6px;text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;color:var(--accent)}
+.bw-inv small{display:block;font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);margin-top:4px;letter-spacing:0}
+.bw-lnk{display:inline-flex;align-items:center;gap:10px;margin-top:20px;min-height:48px;font-weight:700;font-size:17px;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:3px}
+.bw-lnk svg{transition:transform .3s}.bw-lnk:hover svg{transform:translateX(6px)}
+
+.bw-ind{background:var(--bg2);padding:clamp(72px,8vw,128px) 0}
+.bw-ind-head{max-width:760px;margin-bottom:clamp(32px,4vw,56px)}
+.bw-tabs{display:grid;grid-template-columns:.8fr 1.2fr;border:2px solid var(--ink);background:#fff}
+.bw-tablist{display:flex;flex-direction:column;border-right:2px solid var(--ink)}
+.bw-tab{appearance:none;background:none;border:0;border-bottom:1px solid var(--line);text-align:left;font:inherit;cursor:pointer;display:grid;grid-template-columns:44px 1fr;gap:6px;align-items:center;padding:22px clamp(16px,2vw,28px);min-height:76px;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,22px);line-height:1.2;color:var(--ink);transition:background .25s,padding-left .25s}
+.bw-tab:last-child{border-bottom:0}
+.bw-tab b{font-weight:800;font-size:14px;color:var(--accent);letter-spacing:.06em}
+.bw-tab:hover{background:var(--bg)}
+.bw-tab[aria-selected="true"]{background:var(--dark);color:#fff;padding-left:clamp(22px,2.6vw,36px)}
+.bw-tab[aria-selected="true"] b{color:var(--accent-l)}
+.bw-panels{position:relative}
+.bw-panel{padding:clamp(28px,4vw,64px);display:none}
+.bw-panel.on{display:block}
+html:not(.js) .bw-panel{display:block;border-top:1px solid var(--line)}
+.bw-panel h3{font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.4vw,50px);line-height:1.05;letter-spacing:-.03em}
+.bw-panel .bw-who{margin-top:22px;font-size:clamp(18px,1.5vw,22px);line-height:1.6;font-weight:600;max-width:620px}
+.bw-panel .bw-why2{margin-top:18px;font-size:clamp(16px,1.25vw,18.5px);line-height:1.7;color:var(--muted);max-width:620px;padding-left:20px;border-left:3px solid var(--accent-l)}
+.bw-street{display:inline-block;color:var(--accent)}
+
+.bw-faq{background:#fff;padding:clamp(72px,8vw,128px) 0}
+.bw-faq-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px 48px;margin-bottom:clamp(28px,3vw,48px)}
+.bw-qa{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(20px,5vw,96px);padding:clamp(28px,3.4vw,48px) 0;border-top:1px solid var(--line)}
+.bw-faq-head+.bw-qa{border-top:2px solid var(--ink)}
+.bw-qa:last-child{border-bottom:1px solid var(--line)}
+.bw-qa h3{font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.4vw,36px);line-height:1.12;letter-spacing:-.02em}
+.bw-qa h3::before{content:"Q";display:block;font-size:13px;letter-spacing:.2em;color:var(--accent);margin-bottom:12px;font-weight:800}
+.bw-qa p{font-size:clamp(17px,1.3vw,19px);line-height:1.75;color:var(--muted)}
+.bw-qa p+p{margin-top:12px}
+.bw-qa a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+.bw-end{background:#DDF1F0;padding:clamp(64px,8vw,120px) 0}
+.bw-end-in{display:grid;grid-template-columns:1fr auto;gap:clamp(24px,5vw,96px);align-items:center}
+.bw-end h2{font-family:var(--serif);font-weight:800;font-size:clamp(32px,4.6vw,68px);line-height:1.05;letter-spacing:-.03em}
+.bw-end p{margin-top:18px;font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:#2B4257;max-width:640px}
+.bw-end .btn{min-height:62px;padding:0 36px}
+.bw-near{margin-top:22px;font-size:16px;color:#2B4257}
+.bw-near a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-block;padding:10px 6px 10px 0}
+
+@media (max-width:1100px){
+  .bw-build-grid,.bw-why-top,.bw-cols{grid-template-columns:1fr}
+  .bw-build-l{position:static}
+  .bw-tabs{grid-template-columns:1fr}
+  .bw-tablist{border-right:0;border-bottom:2px solid var(--ink);flex-direction:row;flex-wrap:wrap}
+  .bw-tab{flex:1 1 50%;border-bottom:1px solid var(--line)}
+  .bw-tab:nth-child(odd){border-right:1px solid var(--line)}
+}
+@media (max-width:900px){
+  .bw-hero{padding-top:calc(106px + 32px)}
+  .bw-hero-in{grid-template-columns:1fr}
+  .bw-qa{grid-template-columns:1fr;gap:16px}
+  .bw-end-in,.bw-know{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .bw-tab{flex:1 1 100%;border-right:0!important;min-height:64px}
+  .bw-pack{grid-template-columns:76px 1fr}
+  .bw-pin:nth-child(3){left:46px!important;top:18px!important}
+  .bw-cta .btn,.bw-end .btn{width:100%}
+}
+
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=" js"</script>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="nav">
+  <div class="topbar"><div class="tb-in">
+    <div class="tb-l"><span class="tb-item"><span class="tb-stars" aria-hidden="true">★★★★★</span>Rated 5 stars by clients across NSW</span><span class="tb-item tb-hide"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10+ years helping Australian service businesses</span></div>
+    <div class="tb-r tb-hide"><span class="tb-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Southern Highlands based, working nationally</span></div>
+  </div></div>
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="Manifest Website Design home"><img src="manifest-logo.png" alt="Manifest Website Design" width="176" height="48"></a>
+    <div class="nav-right"><nav class="nav-links" aria-label="Main">
+      <button class="trig on" type="button" aria-expanded="false" aria-controls="mega-services" data-mega="mega-services">Websites <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <a href="ai-agent-installs.html">AI Agent</a>
+      <button class="trig" type="button" aria-expanded="false" aria-controls="mega-loc" data-mega="mega-loc">SEO <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <a href="our-work.html">Our Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="book.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Book a Call</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button></div>
+  </div>
+
+  <div class="mega mega-services" id="mega-services" role="region" aria-label="Services">
+    <div><h4>Services</h4><ul><li><a href="website-design.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Websites</a></li><li><a href="local-seo.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO</a></li><li><a href="the-orbit-system.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>The Orbit System</a></li><li><a href="website-care.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Care</a></li><li><a href="ai-agent-installs.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>AI Agents</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="our-work.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Our Work</a></li><li><a href="blog.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Blog</a></li><li><a href="faq.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>FAQ</a></li><li><a href="our-process.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Our Process</a></li><li><a href="book.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Book a Call</a></li></ul></div>
+    <div class="mega-card"><b>Not sure where to start?</b><p>A 45-minute AI Direction Session looks at your current website, search visibility, and lead flow.</p><a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session</a></div>
+  </div>
+  <div class="mega mega-loc" id="mega-loc" role="region" aria-label="Locations">
+    <div><h4>Locations</h4><ul class="two"><li><a href="website-design-sydney.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Sydney</a></li><li><a href="website-design-bowral.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Bowral</a></li><li><a href="website-design-wollongong.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Wollongong</a></li><li><a href="website-design-mittagong.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Mittagong</a></li><li><a href="local-seo-bowral.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Local SEO Bowral</a></li><li><a href="seo-southern-highlands.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO Southern Highlands</a></li><li><a href="seo-sydney.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO Sydney</a></li><li><a href="local-seo-agency.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Local SEO Agency</a></li><li><a href="website-design-moss-vale.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Moss Vale</a></li></ul></div>
+    <div class="mega-card"><b>Not sure where to start?</b><p>A 45-minute AI Direction Session looks at your current website, search visibility, and lead flow.</p><a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session</a></div>
+  </div>
+  <div class="drawer" id="drawer">
+    <details><summary>Websites</summary><a href="website-design.html">Websites</a><a href="local-seo.html">SEO</a><a href="the-orbit-system.html">The Orbit System</a><a href="website-care.html">Website Care</a><a href="ai-agent-installs.html">AI Agents</a><a href="our-work.html">Our Work</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="our-process.html">Our Process</a></details>
+    <a href="ai-agent-installs.html">AI Agent</a>
+    <details><summary>SEO</summary><a href="website-design-sydney.html">Website Design Sydney</a><a href="website-design-bowral.html">Website Design Bowral</a><a href="website-design-wollongong.html">Website Design Wollongong</a><a href="website-design-mittagong.html">Website Design Mittagong</a><a href="local-seo-bowral.html">Local SEO Bowral</a><a href="seo-southern-highlands.html">SEO Southern Highlands</a><a href="seo-sydney.html">SEO Sydney</a><a href="local-seo-agency.html">Local SEO Agency</a><a href="website-design-moss-vale.html">Website Design Moss Vale</a></details>
+    <a href="our-work.html">Our Work</a><a href="blog.html">Blog</a><a href="contact-us.html">Contact us</a>
+    <a class="btn btn-primary" href="book.html" style="justify-content:center;margin-top:16px;border:0;color:#fff">Book a Call</a>
+  </div>
+</header>
+
+
+<main id="main">
+
+<section class="bw-hero">
+  <div class="wrap bw-hero-in">
+    <div>
+      <span class="eyebrow rv">Website Design - Bowral NSW</span>
+      <h1 class="rv" style="--d:.05s">Website design for Bowral businesses - <span>built to rank and built to convert</span></h1>
+      <p class="bw-lead rv" style="--d:.1s">Manifest is based in the Southern Highlands and has been building websites for Bowral businesses since 2015. Every site we deliver includes SEO, AI search optimisation, and conversion strategy - built in, not bolted on.</p>
+      <div class="bw-cta rv" style="--d:.15s">
+        <a class="btn btn-primary" href="book.html">Book a Discovery Call</a>
+        <a class="btn btn-outline" href="our-work.html">See recent work</a>
+      </div>
+      <p class="bw-tag rv" style="--d:.2s">Built once. Built right. Built to convert.</p>
+    </div>
+    <div class="rv" style="--d:.12s">
+      <div class="bw-page" role="img" aria-label="Diagram of a Google search for a Bowral service. The Local Pack with map listings appears first, above the organic website listings.">
+        <div class="bw-page-h"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>A Google search for a Bowral service</span></div>
+        <div class="bw-zone">
+          <div class="bw-zone-l"><span>01 Local Pack</span><em>Shown first</em></div>
+          <div class="bw-pack">
+            <div class="bw-map"><span class="bw-pin"></span><span class="bw-pin"></span><span class="bw-pin"></span></div>
+            <div class="bw-pack-l">
+              <div class="bw-row on"><i></i><div><div class="bw-ln dk bw-w70"></div><div class="bw-ln bw-w95"></div></div></div>
+              <div class="bw-row"><i></i><div><div class="bw-ln dk bw-w55"></div><div class="bw-ln bw-w85"></div></div></div>
+              <div class="bw-row"><i></i><div><div class="bw-ln dk bw-w40"></div><div class="bw-ln bw-w70"></div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="bw-zone">
+          <div class="bw-zone-l"><span>02 Organic listings</span><em>Below it</em></div>
+          <div class="bw-org">
+            <div><div class="bw-ln dk bw-w55"></div><div class="bw-ln bw-w95"></div></div>
+            <div><div class="bw-ln dk bw-w40"></div><div class="bw-ln bw-w85"></div></div>
+          </div>
+        </div>
+      </div>
+      <p class="bw-note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0114 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Your Google Business Profile, and the website behind it, are what show up first.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="bw-why" id="why-it-matters">
+  <div class="wrap">
+    <div class="bw-why-top">
+      <div>
+        <span class="eyebrow dk rv">Why it matters</span>
+        <h2 class="title rv" style="--d:.05s">Bowral is growing fast - and so is the competition for clients online</h2>
+      </div>
+      <p class="bw-hub rv" style="--d:.1s">Bowral is the commercial hub of the Southern Highlands.</p>
+    </div>
+    <div class="bw-cols">
+      <div class="rv">
+        <p>It's also a market that's changing quickly - new residents, growing businesses, and an increasing number of clients who research online before they pick up the phone.</p>
+      </div>
+      <div class="bw-callout rv" style="--d:.08s">
+        <p>In most Bowral service categories - professional services, healthcare, retail, trades - a Google search returns a Local Pack result before organic listings. That means your Google Business Profile and the website behind it need to be doing serious work.</p>
+        <p style="margin-top:14px;font-weight:500;color:#C6DAE3">If they're not, you're handing enquiries to competitors who've invested more in their online presence.</p>
+        <a class="bw-more" href="local-seo-bowral.html">See our Local SEO Bowral page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <p class="bw-close-l rv">We build Bowral websites that rank in search, hold their own against larger competitors, <span>and turn local visitors into clients.</span></p>
+  </div>
+</section>
+
+<section class="bw-build" id="what-we-build">
+  <div class="wrap bw-build-grid">
+    <div class="bw-build-l">
+      <span class="eyebrow rv">What we build</span>
+      <h2 class="title rv" style="--d:.05s">Professional websites with SEO and AI search baked in</h2>
+    </div>
+    <div>
+      <p class="bw-man rv">Every Manifest website includes <i>keyword research</i> <span class="s">/</span> <i>on-page SEO</i> <span class="s">/</span> <i>schema markup</i> <span class="s">/</span> <i>AI search optimisation</i> <span class="s">/</span> <i>copywriting</i> <span class="s">/</span> <i>mobile-first development</i> <span class="s">/</span> and <i>30 days of post-launch support.</i></p>
+      <div class="bw-know rv">
+        <div>
+          <p>We know the Bowral market, we know what local clients search for, and we build your site around that research.</p>
+          <a class="bw-lnk" href="website-design.html">Full details - see the website design page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <p class="bw-inv"><small class="t">Investment:</small>$8,000 - $18,000<small>depending on scope.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bw-ind" id="industries">
+  <div class="wrap">
+    <div class="bw-ind-head">
+      <span class="eyebrow rv">Industries we work with</span>
+      <h2 class="title rv" style="--d:.05s">Who we build for in and around Bowral</h2>
+    </div>
+    <div class="bw-tabs rv" id="bwTabs">
+      <div class="bw-tablist" role="tablist" aria-label="Industries in and around Bowral"><button class="bw-tab" role="tab" id="bw-t0" aria-controls="bw-p0" aria-selected="true" tabindex="0" type="button"><b>01</b><span>Professional Services</span></button><button class="bw-tab" role="tab" id="bw-t1" aria-controls="bw-p1" aria-selected="false" tabindex="-1" type="button"><b>02</b><span>Healthcare and Allied Health</span></button><button class="bw-tab" role="tab" id="bw-t2" aria-controls="bw-p2" aria-selected="false" tabindex="-1" type="button"><b>03</b><span>Hospitality and Tourism</span></button><button class="bw-tab" role="tab" id="bw-t3" aria-controls="bw-p3" aria-selected="false" tabindex="-1" type="button"><b>04</b><span>Trades and Construction</span></button></div>
+      <div class="bw-panels"><div class="bw-panel on" role="tabpanel" id="bw-p0" aria-labelledby="bw-t0"><h3>Professional Services</h3><p class="bw-who">Accounting firms, financial planners, law practices, and consultancies based on <span class="bw-street">Bong Bong Street</span> and surrounds.</p><p class="bw-why2">Bowral&#x27;s professional services market is growing - a strong website positions you ahead of the competition.</p></div><div class="bw-panel" role="tabpanel" id="bw-p1" aria-labelledby="bw-t1"><h3>Healthcare and Allied Health</h3><p class="bw-who">Medical practices, physio clinics, dental groups, and specialist health providers.</p><p class="bw-why2">Patients search locally, compare options online, and choose based on trust. Your website is a significant factor in that decision.</p></div><div class="bw-panel" role="tabpanel" id="bw-p2" aria-labelledby="bw-t2"><h3>Hospitality and Tourism</h3><p class="bw-who">Accommodation, dining, and experience businesses competing for Southern Highlands visitors who research before they arrive.</p><p class="bw-why2">Local search visibility and a credible website are essential.</p></div><div class="bw-panel" role="tabpanel" id="bw-p3" aria-labelledby="bw-t3"><h3>Trades and Construction</h3><p class="bw-who">Builders, electricians, plumbers, and landscaping businesses based in or servicing Bowral.</p><p class="bw-why2">A well-built website positions you for larger residential and commercial jobs.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="bw-faq" id="faq">
+  <div class="wrap">
+    <div class="bw-faq-head">
+      <div>
+        <span class="eyebrow rv">FAQ</span>
+        <h2 class="title rv" style="--d:.05s">Questions from Bowral businesses</h2>
+      </div>
+    </div>
+    <div class="bw-qa rv">
+      <h3>Are you based in Bowral?</h3>
+      <div>
+        <p>We're based in Moss Vale, just down the road. We've worked with Bowral businesses since 2015 and know this market well.</p>
+        <p>All project work is handled locally - no offshore development, no passing the work around. <a href="website-design-moss-vale.html">More about our Moss Vale base</a>.</p>
+      </div>
+    </div>
+    <div class="bw-qa rv">
+      <h3>Can you write the content for my website?</h3>
+      <div>
+        <p>Yes. Copywriting is included in every project.</p>
+        <p>We research your keywords, write every page, and optimise the copy for both search and conversion. You review and approve before anything is finalised.</p>
+      </div>
+    </div>
+    <div class="bw-qa rv">
+      <h3>Will my website show up in Google for Bowral searches?</h3>
+      <div>
+        <p>That's the goal from day one. We build every site around the specific search terms your local clients use.</p>
+        <p>Bowral's market is less competitive than Sydney, which means well-executed SEO can achieve strong rankings faster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bw-end">
+  <div class="wrap bw-end-in">
+    <div>
+      <h2 class="rv">Let's talk about your Bowral website</h2>
+      <p class="rv" style="--d:.06s">Book a discovery call and we'll look at your current site, understand your Bowral market, and give you an honest scope and quote.</p>
+      <p class="bw-near rv" style="--d:.1s">Nearby: <a href="website-design-mittagong.html">Website Design Mittagong</a> &nbsp; <a href="website-design-moss-vale.html">Website Design Moss Vale</a></p>
+    </div>
+    <a class="btn btn-primary rv" style="--d:.1s" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="plate" href="index.html"><img src="manifest-logo-light.png" alt="Manifest Website Design" width="176" height="48"></a>
+        <p>Helping established Australian service businesses get found in Google and AI search, and turn enquiries into paying clients.</p>
+        <div class="f-btns"><a class="btn p" href="book.html">Book a Call</a><a class="btn o" href="support.html">Support</a></div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="website-design.html">Websites</a></li><li><a href="local-seo.html">SEO</a></li><li><a href="the-orbit-system.html">The Orbit System</a></li><li><a href="website-care.html">Website Care</a></li><li><a href="ai-agent-installs.html">AI Agents</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="our-work.html">Our Work</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="our-process.html">Our Process</a></li><li><a href="book.html">Book a Call</a></li></ul></div>
+      <div><h4>Locations</h4><ul><li><a href="website-design-sydney.html">Website Design Sydney</a></li><li><a href="website-design-bowral.html">Website Design Bowral</a></li><li><a href="website-design-wollongong.html">Website Design Wollongong</a></li><li><a href="website-design-mittagong.html">Website Design Mittagong</a></li><li><a href="local-seo-bowral.html">Local SEO Bowral</a></li><li><a href="seo-southern-highlands.html">SEO Southern Highlands</a></li><li><a href="seo-sydney.html">SEO Sydney</a></li><li><a href="local-seo-agency.html">Local SEO Agency</a></li><li><a href="website-design-moss-vale.html">Website Design Moss Vale</a></li></ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; 2026 Manifest Website Design. All rights reserved.</span>
+      <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="https://www.facebook.com/ManifestWebsiteDesign/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+(function(){
+  var hdr=document.querySelector('header.nav'),trigs=[].slice.call(document.querySelectorAll('[data-mega]')),
+      megas=[].slice.call(document.querySelectorAll('.mega')),burger=document.querySelector('.burger'),drawer=document.getElementById('drawer'),t;
+  function closeAll(){trigs.forEach(function(b){b.setAttribute('aria-expanded','false');});megas.forEach(function(m){m.classList.remove('open');});}
+  function open(b){closeAll();b.setAttribute('aria-expanded','true');document.getElementById(b.dataset.mega).classList.add('open');}
+  trigs.forEach(function(b){
+    b.addEventListener('click',function(e){e.stopPropagation();b.getAttribute('aria-expanded')==='true'?closeAll():open(b);});
+    b.addEventListener('mouseenter',function(){clearTimeout(t);open(b);});
+  });
+  hdr.addEventListener('mouseleave',function(){t=setTimeout(closeAll,180);});
+  hdr.addEventListener('mouseenter',function(){clearTimeout(t);});
+  document.addEventListener('click',function(e){if(!hdr.contains(e.target)){closeAll();closeDrawer();}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();closeDrawer();}});
+  megas.forEach(function(m){m.addEventListener('click',function(e){if(e.target.closest('a'))closeAll();});});
+  function closeDrawer(){if(!burger)return;drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');}
+  if(burger)burger.addEventListener('click',function(e){e.stopPropagation();var o=!drawer.classList.contains('open');drawer.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  drawer.addEventListener('click',function(e){if(e.target.closest('a'))closeDrawer();});
+  function f(){hdr.classList.toggle('scrolled',window.scrollY>8);}f();window.addEventListener('scroll',f,{passive:true});
+})();
+(function(){var els=[].slice.call(document.querySelectorAll('.rv'));if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000);})();
+
+
+(function(){
+  var box=document.getElementById('bwTabs');if(!box)return;
+  var tabs=[].slice.call(box.querySelectorAll('[role=tab]')),panels=[].slice.call(box.querySelectorAll('[role=tabpanel]'));
+  function sel(i,focus){tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;panels[k].classList.toggle('on',on);});if(focus)tabs[i].focus();}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(i);});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=tabs.length;
+      if(k==='ArrowDown'||k==='ArrowRight'){e.preventDefault();sel((i+1)%n,true);}
+      else if(k==='ArrowUp'||k==='ArrowLeft'){e.preventDefault();sel((i+n-1)%n,true);}
+      else if(k==='Home'){e.preventDefault();sel(0,true);}
+      else if(k==='End'){e.preventDefault();sel(n-1,true);}
+    });
+  });
+})();
+
+</script>
+</body>
+</html>

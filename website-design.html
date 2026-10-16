@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High-Converting Website Design for Australian Businesses | Manifest</title>
+<meta name="description" content="High-converting websites for Australian-based businesses.">
+<link rel="canonical" href="https://manifestwebsitedesign.com.au/website-design/">
+<meta property="og:title" content="High-Converting Website Design for Australian Businesses | Manifest">
+<meta property="og:description" content="High-converting websites for Australian-based businesses.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a professional website design cost in Australia?", "acceptedAnswer": {"@type": "Answer", "text": "For an established service business, a professionally built website with SEO included typically starts at $8,000. At Manifest, our projects run from $8,000 to $18,000 depending on scope - number of pages, integration requirements, and whether you need copywriting. We price transparently and scope every project individually so there are no surprises."}}, {"@type": "Question", "name": "Does SEO come included with website design?", "acceptedAnswer": {"@type": "Answer", "text": "At Manifest, yes - always. We don't build websites and hand them to an SEO person to fix later. Keyword research, on-page SEO, schema markup, meta data, and internal linking are all part of the build process. Your site is optimised before it goes live, not after."}}, {"@type": "Question", "name": "Will my website show up in AI search tools like ChatGPT and Google's AI Overview?", "acceptedAnswer": {"@type": "Answer", "text": "That depends on how your site is built. AI tools like ChatGPT, Perplexity, and Google's AI Overview pull from sources they've determined to be credible and authoritative. We build websites with clear entity signals, structured data, and the kind of depth that signals expertise to AI engines - so your business has the best possible chance of being recommended when someone asks an AI for a referral in your category."}}, {"@type": "Question", "name": "How long does it take to build a website?", "acceptedAnswer": {"@type": "Answer", "text": "Most projects take 6 to 10 weeks from kickoff to launch, depending on how quickly content and feedback come back. We set clear milestones at the start and keep you updated throughout. The discovery call is where we nail down a realistic timeline for your project."}}, {"@type": "Question", "name": "Do I need to redo my website or can you improve what I have?", "acceptedAnswer": {"@type": "Answer", "text": "Honest answer: it depends. Sometimes a targeted refresh - better copy, stronger SEO, cleaner structure - is the right call. Other times the existing site is too far behind to be worth saving. We'll look at what you have and tell you which approach makes more sense before you spend anything."}}, {"@type": "Question", "name": "What happens after my website launches?", "acceptedAnswer": {"@type": "Answer", "text": "You get 30 days of post-launch support included in every project. After that, you have a few options: manage the site yourself (we'll show you how), sign up for our website care plan, or combine both with our SEO + Social package at $2,500/month - which keeps the site growing in search and keeps content publishing consistently."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://manifestwebsitedesign.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Website Design", "item": "https://manifestwebsitedesign.com.au/website-design/"}]}</script>
+<style>
+:root{
+  --bg:#F3F8F8; --bg2:#E3EEEF; --card:#FFFFFF; --ink:#011A35; --muted:#43586B;
+  --line:#D3E1E2; --dark:#011A35; --dark2:#0B2B4B; --accent:#00787E; --accent-l:#12D8C6;
+  --serif:'Montserrat',system-ui,sans-serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+  --pad:clamp(20px,5.5vw,80px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+.wrap{padding-inline:var(--pad);max-width:1600px;margin-inline:auto}
+.serif{font-family:var(--serif);font-weight:700}
+h2.title{font-family:var(--serif);font-weight:700;font-size:clamp(32px,3.7vw,50px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:17px;transition:transform .15s,opacity .15s;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-outline{border:1.5px solid var(--ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* nav */
+header.nav{position:fixed;top:16px;left:clamp(12px,3vw,48px);right:clamp(12px,3vw,48px);z-index:50;background:#fff;border-radius:999px;box-shadow:0 10px 34px rgba(1,26,53,.18)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px;padding:0 12px 0 32px}
+.logo{display:flex;align-items:center}
+.logo img{height:46px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:4px;padding:6px;border:1px solid var(--line);background:#EEF5F6;border-radius:999px;font-weight:600;font-size:16px;color:#2B4257}
+.nav-links a{padding:10px 20px;border-radius:999px;transition:background .15s,color .15s}
+.nav-links a:hover{background:#fff;color:var(--accent);opacity:1}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-right>.btn{display:inline-flex}
+.nav-links a:hover{color:var(--accent)}
+.nav .btn{min-height:52px;padding:0 30px;font-size:16px;box-shadow:0 6px 16px rgba(0,120,126,.3)}
+
+
+/* mega menu */
+.nav-links .trig{appearance:none;background:none;border:0;font:inherit;color:inherit;font-weight:600;padding:10px 18px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.nav-links .trig svg{transition:transform .2s}
+.nav-links .trig:hover,.nav-links .trig[aria-expanded="true"]{background:#fff;color:var(--accent)}
+.nav-links .trig[aria-expanded="true"] svg{transform:rotate(180deg)}
+.mega{position:absolute;top:calc(100% + 14px);left:0;right:0;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(1,26,53,.22);padding:32px;display:grid;gap:32px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .18s,transform .18s,visibility .18s;color:var(--ink)}
+.mega.open{opacity:1;visibility:visible;transform:none}
+.mega-services{grid-template-columns:1fr 1fr 1.15fr}
+.mega-loc{grid-template-columns:1fr 1fr 1.15fr}
+.mega h4{margin:0 0 14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.mega ul{display:flex;flex-direction:column;gap:4px}
+.mega li a{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;font-weight:600;font-size:16px}
+.mega li a:hover{background:#EEF5F6;opacity:1}
+.mega li a i{flex:none;width:34px;height:34px;border-radius:10px;background:#E3F6F5;display:grid;place-items:center;color:var(--accent)}
+.mega-card{border-radius:22px;padding:28px;background:var(--dark);color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.mega-card b{font-family:var(--serif);font-size:22px;line-height:1.2}
+.mega-card p{color:#C6DAE3;font-size:15px;line-height:1.55}
+.mega-card .btn{min-height:48px;font-size:15px;background:var(--accent-l);color:var(--dark);align-self:flex-start;box-shadow:none}
+.burger{display:none;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:#EEF5F6;cursor:pointer;place-items:center;padding:0}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .2s,background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.drawer{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;background:#fff;border-radius:28px;box-shadow:0 24px 60px rgba(1,26,53,.22);padding:12px 16px 20px;max-height:calc(100vh - 120px);overflow:auto}
+.drawer.open{display:block}
+.drawer details{border-bottom:1px solid var(--line)}
+.drawer summary,.drawer > a{display:flex;align-items:center;justify-content:space-between;min-height:56px;font-weight:700;font-size:18px;padding:0 8px;cursor:pointer}
+.drawer > a{border-bottom:1px solid var(--line)}
+.drawer summary::after{content:"+";color:var(--accent);font-size:26px;font-weight:400}
+.drawer details[open] summary::after{content:"\2212"}
+.drawer details a{display:block;padding:12px 8px 12px 20px;font-weight:500;color:var(--muted)}
+.drawer .btn{width:100%;margin-top:16px}
+
+/* reveal on scroll (only when JS is running) */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .fc.rv.in:hover{transform:translateY(-8px)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+@media (max-width:1100px){.feat-grid{grid-template-columns:repeat(2,1fr)}.pb-card{grid-template-columns:1fr}.pb-item+.pb-item::before{left:26px;right:26px;top:0;bottom:auto;width:auto;height:1px}.proofbar{margin-top:-40px}}
+/* eyebrow + shared heads */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;padding:7px 14px;border-radius:999px;background:#DDF4F2;color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.eyebrow.dk{background:rgba(18,216,198,.14);color:var(--accent-l)}.eyebrow.dk::before{background:var(--accent-l)}
+.cl-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:52px}
+/* footer */
+footer{background:var(--dark);color:#C6DAE3;padding-block:80px 40px;margin-top:104px}
+.f-grid{display:grid;grid-template-columns:4fr 2fr 2fr 2fr 2fr;gap:32px}
+.f-grid h4{margin:0 0 16px;color:var(--bg);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.f-grid ul{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.f-grid a:hover{color:#fff}
+.plate{display:inline-block;background:#fff;border-radius:16px;padding:12px 20px;margin-bottom:20px}
+.plate img{height:48px;width:auto;display:block}
+.f-brand p{font-size:16px;text-wrap:pretty}
+.f-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.f-btns .btn{min-height:44px;padding:0 20px;font-size:15px}
+.f-btns .p{background:var(--accent-l);color:var(--dark)}
+.f-btns .o{border:1.5px solid #C6DAE3;color:var(--bg)}
+.f-bottom{margin-top:56px;padding-top:28px;border-top:1px solid #1F4568;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+.f-bottom div{display:flex;gap:24px;flex-wrap:wrap}
+
+/* responsive */
+@media (max-width:1100px){
+  .nav-links,.nav-right>.btn{display:none}
+  .burger{display:grid}
+  .mega{display:none}
+  .nav-in{padding:0 8px 0 20px;height:68px}
+  .hero,.aud,.res-sec,.faq,.cta{grid-template-columns:1fr}
+  .svc-grid,.why-grid,.blog-grid{grid-template-columns:1fr}
+  .hl{grid-template-columns:repeat(2,1fr)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-brand{grid-column:1/-1}
+  .hero-art{min-height:420px}
+}
+@media (max-width:640px){
+  .trust,.logos,.ind,.hl{grid-template-columns:1fr}
+  .logo img{height:36px}
+  .btn{width:100%}
+  .nav .btn{width:auto}
+  .cta-row{flex-direction:column}
+  .hl div{font-size:28px}
+  .why-grid h3,.sc h3{font-size:32px}
+}
+
+/* QA fixes: larger tap targets */
+.f-grid ul a,.f-bottom a{display:inline-block;padding:6px 0}
+@media (max-width:1100px){
+  .f-grid ul{gap:2px}
+  .f-grid ul a,.f-bottom a{padding:12px 0;min-height:44px;display:inline-flex;align-items:center}
+  .f-bottom div{gap:8px 24px}
+  .f-btns .btn{min-height:48px}
+}
+@media (max-width:640px){
+  .f-grid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .f-brand{grid-column:1/-1}
+}
+
+/* QA fixes round 2 */
+.fq-i[open] summary::after{content:none}
+.cal-meta{flex-wrap:wrap;gap:6px 16px}
+.cal-meta span{white-space:nowrap}
+.turn .amt{white-space:nowrap}
+
+.call-alt{min-height:44px;display:inline-flex;align-items:center}
+.logo{min-height:44px}
+
+.cal-grid button,.cal-times button,.cal-nav button{font-family:inherit}
+
+/* ===== HERO v2 + HEADER v2 (client feedback: calmer hero, cleaner header) ===== */
+html{scroll-padding-top:92px}
+/* header: solid full-width bar */
+header.nav{top:0;left:0;right:0;border-radius:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:none;transition:box-shadow .25s}
+header.nav.scrolled{box-shadow:0 6px 24px rgba(1,26,53,.1)}
+.nav-in{max-width:1600px;margin:0 auto;height:84px;padding:0 var(--pad);gap:32px}
+.logo img{height:48px}
+.nav-right{gap:8px}
+.nav-links{background:none;border:0;padding:0;gap:2px;font-size:15.5px;font-weight:600;color:var(--ink)}
+.nav-links a,.nav-links .trig{position:relative;padding:12px 15px;border-radius:6px;color:var(--ink);background:none}
+.nav-links a::after,.nav-links .trig::before{content:"";position:absolute;left:15px;right:15px;bottom:6px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover,.nav-links .trig:hover,.nav-links .trig[aria-expanded="true"]{background:none;color:var(--accent);transform:none}
+.nav-links a:hover::after,.nav-links .trig:hover::before,.nav-links .trig[aria-expanded="true"]::before{transform:scaleX(1)}
+.nav .btn{margin-left:20px;border-radius:8px;min-height:48px;padding:0 26px;box-shadow:none;font-size:15.5px}
+.nav .btn:hover{background:#006469}
+.mega{left:var(--pad);right:var(--pad);top:calc(100% + 10px);border-radius:16px}
+.burger{width:46px;height:46px;border-radius:8px;background:#fff;border:1.5px solid var(--line)}
+.drawer{left:0;right:0;top:100%;border-radius:0 0 20px 20px;box-shadow:0 20px 40px rgba(1,26,53,.15);max-height:calc(100vh - 84px)}
+@media (max-width:1100px){.nav-in{height:70px;padding:0 var(--pad)}.logo img{height:40px}html{scroll-padding-top:78px}}
+/* ===== HEADER v3: two-tier (utility bar + main bar) ===== */
+.topbar{background:#011A35;color:#C6DAE3;font-size:13.5px;font-weight:600;max-height:44px;overflow:hidden;transition:max-height .3s ease,opacity .25s}
+.tb-in{max-width:1600px;margin:0 auto;padding:0 var(--pad);height:42px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.tb-l,.tb-r{display:flex;align-items:center}
+.tb-item{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.tb-item+.tb-item{margin-left:22px;padding-left:22px;border-left:1px solid rgba(255,255,255,.22)}
+.tb-item svg{color:var(--accent-l)}
+.tb-stars{color:#F5B301;letter-spacing:2px;font-size:13px}
+header.nav.scrolled .topbar{max-height:0;opacity:0}
+header.nav{border-bottom:0}
+.nav-in{border-bottom:1px solid var(--line)}
+header.nav::before{content:"";display:block;height:0}
+.nav .btn.nav-cta{display:inline-flex;align-items:center;gap:10px;margin-left:22px;min-height:50px;padding:0 24px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700}
+.nav .btn.nav-cta svg{transition:transform .3s}
+.nav .btn.nav-cta:hover svg{transform:rotate(-12deg) scale(1.1)}
+.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--accent)}
+.vhero-in{padding-top:calc(126px + clamp(40px,6vw,84px))}
+html{scroll-padding-top:100px}
+@media (max-width:900px){.tb-hide{display:none}.tb-in{justify-content:center;height:36px;font-size:12.5px}.topbar{max-height:40px}.vhero-in{padding-top:calc(106px + 44px)}}
+@media (max-width:1100px){html{scroll-padding-top:84px}}
+
+/* new logo is squarer, so give it a little more height */
+.logo img{height:58px}.plate img{height:58px}
+@media (max-width:1100px){.logo img{height:48px}}
+@media (max-width:640px){.logo img{height:42px}.plate img{height:50px}}
+/* footer logo: light version on the navy footer, no white plate */
+.plate{background:none;border-radius:0;padding:0;margin-bottom:22px}
+.plate img{height:64px}
+@media (max-width:640px){.plate img{height:54px}}
+
+
+/* ===== shared page base ===== */
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:var(--ink);padding:10px 16px;border-radius:4px;font-weight:700}
+.skip:focus{left:12px}
+.nav-links .trig.on,.nav-links a.on{color:var(--accent)}
+.nav-links .trig.on::before,.nav-links a.on::after{transform:scaleX(1)}
+footer{margin-top:0}
+h1,h2,h3{text-wrap:balance}
+.btn{border-radius:6px}
+.btn-outline{background:transparent}
+.btn-outline:hover{background:var(--ink);color:#fff}
+/* plain label with a rule (not a pill) */
+.eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 20px;padding:0;border-radius:0;background:none;color:var(--accent);font-size:13px;letter-spacing:.16em}
+.eyebrow::before{width:36px;height:2px;border-radius:0;background:currentColor}
+.eyebrow.dk{background:none;color:var(--accent-l)}
+/* image placeholder */
+.ph{position:relative;margin:0;width:100%;overflow:hidden;background:repeating-linear-gradient(135deg,#E3EEEF 0 14px,#EAF3F3 14px 28px);border:1px dashed #8FB8BB;display:grid;place-items:center;color:#43586B}
+.ph-in{display:grid;gap:6px;justify-items:center;text-align:center;padding:16px;max-width:90%}
+.ph-in b{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.ph-in i{font-style:normal;font-weight:600;font-size:14px;line-height:1.35}
+.ph-in code{font-size:11.5px;color:#6B8394;word-break:break-all}
+.ph.dk{background:repeating-linear-gradient(135deg,#0B2B4B 0 14px,#0E3256 14px 28px);border-color:#2A5A80;color:#C6DAE3}
+.ph.dk .ph-in b{color:var(--accent-l)}.ph.dk .ph-in code{color:#8FB0C6}
+/* LeadConnector form frame (the embed script hides the iframe until it loads; force it into the flow) */
+.lc-frame{position:relative;width:100%}
+.lc-frame::before{content:"Loading the form\2026";position:absolute;left:0;right:0;top:0;height:160px;display:grid;place-items:start center;padding-top:70px;color:var(--muted);font-weight:600;z-index:0}
+.lc-frame iframe{position:relative!important;left:0!important;top:0!important;z-index:1;display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;min-height:560px!important;background:transparent}
+img{max-width:100%}
+.cl-link{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:17px;color:var(--accent);padding:0 0 6px;border-bottom:2px solid var(--accent);transition:gap .3s}
+.cl-link svg{transition:transform .3s}.cl-link:hover svg{transform:translateX(6px)}
+.nb{white-space:nowrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ===================== WEBSITE DESIGN PAGE (editorial) ===================== */
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:var(--ink);padding:10px 16px;border-radius:4px;font-weight:700}
+.skip:focus{left:12px}
+.nav-links .trig.on{color:var(--accent)}
+.nav-links .trig.on::before{transform:scaleX(1)}
+footer{margin-top:0}
+main section{position:relative}
+h1,h2,h3{text-wrap:balance}
+.btn{border-radius:6px}
+.btn-outline{background:transparent}
+.btn-outline:hover{background:var(--ink);color:#fff}
+
+/* eyebrow: plain label with rule, not a pill */
+main .eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 20px;padding:0;border-radius:0;background:none;color:var(--accent);font-size:13px;letter-spacing:.16em}
+main .eyebrow::before{width:36px;height:2px;border-radius:0;background:currentColor}
+main .eyebrow.dk{background:none;color:var(--accent-l)}
+
+/* ---------- hero ---------- */
+.wd-hero{padding-top:calc(126px + clamp(36px,5vw,72px));overflow:hidden;background:var(--bg)}
+.wd-hero::before{content:"";position:absolute;right:0;top:0;bottom:0;width:44%;background:var(--bg2);z-index:0}
+.wd-hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(32px,5vw,96px);align-items:center;padding-bottom:clamp(48px,6vw,88px)}
+.wd-hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(38px,5vw,76px);line-height:1.02;letter-spacing:-.03em}
+.wd-hero h1 em{font-style:normal;color:var(--accent);background:linear-gradient(transparent 82%,rgba(18,216,198,.45) 82%);padding-right:.05em}
+.wd-hero h1 span{display:block;margin-top:.14em;color:#7C93A3;font-weight:700}
+.wd-lead{margin-top:28px;max-width:620px;font-size:clamp(18px,1.5vw,21px);line-height:1.65;color:var(--muted)}
+.wd-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.wd-cta .btn{min-height:58px;padding:0 32px}
+.wd-tag{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 26px;font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.02em;max-width:620px}
+.wd-tag b{font-weight:700}
+.wd-tag b+b::before{content:"/";margin-right:26px;color:var(--accent-l)}
+
+.wd-hero-art{position:relative;padding:12px 0}
+.serp{background:#fff;border-radius:8px;box-shadow:0 30px 60px rgba(1,26,53,.18);overflow:hidden;transform:rotate(1.4deg)}
+.serp-bar{display:flex;align-items:center;gap:7px;padding:13px 16px;background:#EEF5F6;border-bottom:1px solid var(--line)}
+.serp-bar b{width:10px;height:10px;border-radius:50%;background:#C9D8DA}
+.serp-bar span{margin-left:12px;flex:1;display:flex;align-items:center;gap:9px;padding:8px 13px;border-radius:4px;background:#fff;border:1px solid var(--line);font-size:13.5px;font-weight:600;color:#2B4257;min-width:0}
+.serp-bar span svg{flex:none;color:var(--accent)}
+.serp-body{padding:20px;display:grid;gap:14px}
+.serp-ai{padding:18px;border-left:3px solid var(--accent-l);background:#EEF8F8;display:grid;gap:9px}
+.serp-ai-h{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.serp-ai-h i{width:20px;height:20px;border-radius:4px;background:var(--accent)}
+.serp-ai-h span{height:10px;width:96px;border-radius:5px;background:rgba(1,26,53,.2)}
+.ln{height:9px;border-radius:5px;background:#DCE8EA}
+.ln.dk{height:12px;background:#9FB4BA}
+.w45{width:45%}.w50{width:50%}.w55{width:55%}.w60{width:60%}.w70{width:70%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w90{width:90%}
+.serp-r{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+.serp-r>div{flex:1;display:grid;gap:8px}
+.serp-r>i{flex:none;width:26px;height:26px;border-radius:50%;background:#E3EEEF;display:grid;place-items:center;color:#fff}
+.serp-r.on{padding:14px;margin:0 -6px;border:1.5px solid var(--accent);border-radius:6px;background:#F3FBFA;box-shadow:0 10px 26px rgba(0,120,126,.16)}
+.serp-r.on>i{background:var(--accent)}
+.serp-r.on .ln.dk{background:var(--accent)}
+
+/* strip: flat band */
+.wd-strip{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);background:var(--dark);color:#fff}
+.wd-strip li{padding:24px 28px;font-weight:700;font-size:16px;display:flex;align-items:center;gap:12px}
+.wd-strip li::before{content:"";flex:none;width:8px;height:8px;background:var(--accent-l);transform:rotate(45deg)}
+.wd-strip li+li{border-left:1px solid rgba(255,255,255,.14)}
+.wd-hero>.wrap:last-child{padding-bottom:0;padding-inline:0;max-width:none}
+.wd-hero>.wrap:last-child .wd-strip{padding-inline:var(--pad)}
+
+/* ---------- problem ---------- */
+.wd-prob{background:var(--dark);color:#fff;padding:clamp(72px,8vw,128px) 0;overflow:hidden;isolation:isolate}
+.wd-prob::after{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1.4px);background-size:24px 24px}
+.prob-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,112px);align-items:start}
+.prob-l .title{color:#fff;margin-bottom:30px}
+.prob-l p{font-size:clamp(17px,1.4vw,19.5px);line-height:1.75;color:#C6DAE3;max-width:640px}
+.prob-l p+p{margin-top:22px}
+.prob-r{padding-left:clamp(22px,3vw,44px);border-left:2px solid var(--accent-l)}
+.prob-r p{font-size:clamp(17px,1.35vw,19px);line-height:1.7;color:#DCE9EF}
+.prob-r p+p{margin-top:18px}
+.prob-r p b{color:var(--accent-l);font-family:var(--serif);font-weight:800;white-space:nowrap}
+.prob-r blockquote{margin:22px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.1vw,30px);line-height:1.25;letter-spacing:-.015em;color:#fff}
+.prob-pull{margin-top:clamp(56px,7vw,104px);font-family:var(--serif);font-weight:800;font-size:clamp(30px,4.6vw,68px);line-height:1.08;letter-spacing:-.03em;color:var(--accent-l);max-width:1200px;text-wrap:balance}
+
+/* ---------- pillars: full-bleed stacking chapters ---------- */
+.wd-pillars{padding:0}
+.pil-stack{max-width:none;padding-inline:0;display:block}
+.pil{position:sticky;top:calc(84px + var(--i)*0px);min-height:min(86vh,720px);display:flex;align-items:center;border-top:1px solid rgba(1,26,53,.1)}
+.pil-in{width:100%;max-width:1600px;margin:0 auto;padding:clamp(44px,5vw,80px) var(--pad);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,96px);align-items:center}
+.pil:nth-child(even) .pil-in{grid-template-columns:.95fr 1.05fr}
+.pil:nth-child(even) .pil-copy{order:2}
+.pil-top{display:flex;align-items:baseline;gap:18px;margin-bottom:18px}
+.pil-n{font-family:var(--serif);font-weight:800;font-size:clamp(56px,6vw,96px);line-height:.9;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px currentColor}
+.pil-e{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.pil h3{font-family:var(--serif);font-weight:700;font-size:clamp(26px,2.9vw,42px);line-height:1.1;letter-spacing:-.02em}
+.pil-copy p{margin-top:16px;font-size:clamp(16px,1.2vw,18px);line-height:1.7;max-width:620px}
+.p-list{margin-top:24px;display:grid;gap:0;max-width:620px}
+.p-list li{position:relative;padding:12px 0 12px 30px;border-top:1px solid currentColor;border-color:rgba(1,26,53,.14);font-weight:600;font-size:16px;line-height:1.45}
+.p-list li::before{content:"";position:absolute;left:0;top:21px;width:16px;height:2px;background:var(--accent)}
+.p-light{background:#fff}
+.p-light .pil-n,.p-light .pil-e{color:var(--accent)}
+.p-light .pil-copy p{color:var(--muted)}
+.p-dark{background:var(--dark2);color:#fff}
+.p-dark .pil-n,.p-dark .pil-e{color:var(--accent-l)}
+.p-dark .pil-copy p{color:#C6DAE3}
+.p-teal{background:#DDF1F0}
+.p-teal .pil-n,.p-teal .pil-e{color:var(--accent)}
+.p-teal .pil-copy p{color:#2B4257}
+.p-list li{border-color:rgba(1,26,53,.16)}
+.shot{margin:0;border-radius:8px;background:#fff;box-shadow:0 28px 56px rgba(1,26,53,.26);overflow:hidden;transform:rotate(-1.2deg);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.pil:nth-child(even) .shot{transform:rotate(1.2deg)}
+.pil:hover .shot{transform:rotate(0) translateY(-6px)}
+.shot-bar{display:flex;gap:6px;padding:11px 14px;background:#EEF5F6;border-bottom:1px solid var(--line)}
+.shot-bar b{width:9px;height:9px;border-radius:50%;background:#C9D8DA}
+.shot-img{background:#F3F8F8;aspect-ratio:3/2;overflow:hidden}
+.shot-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+
+/* ---------- included: ruled index ---------- */
+.wd-inc{padding:clamp(72px,8vw,128px) 0;background:var(--bg)}
+.inc-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(32px,6vw,112px);align-items:start}
+.inc-l{position:sticky;top:130px}
+.inc-note{margin:24px 0 32px;font-size:18px;line-height:1.7;color:var(--muted)}
+.inc-list{counter-reset:inc;display:grid;grid-template-columns:1fr 1fr;grid-auto-flow:dense;column-gap:clamp(24px,3vw,56px);border-top:2px solid var(--ink)}
+.inc-i{counter-increment:inc;position:relative;padding:20px 0 20px 54px;border-bottom:1px solid var(--line);transition:padding-left .3s}
+.inc-i::before{content:counter(inc,decimal-leading-zero);position:absolute;left:0;top:22px;font-family:var(--serif);font-weight:800;font-size:15px;letter-spacing:.04em;color:var(--accent)}
+.inc-i:hover{padding-left:62px}
+.inc-i b{font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.3}
+.inc-i .d{display:block;margin-top:5px;font-size:15px;line-height:1.55;color:var(--muted)}
+.inc-i.opt{grid-column:1/-1;padding:22px 0 22px 54px;background:linear-gradient(90deg,rgba(18,216,198,.12),transparent)}
+.inc-i.opt .d{display:inline;margin:0}
+.inc-i.opt a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- who: typographic rows ---------- */
+.wd-who{padding:clamp(72px,8vw,128px) 0;background:#fff}
+.who-head{max-width:880px;margin-bottom:clamp(40px,5vw,72px)}
+.who-head p{margin-top:22px;font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:var(--muted)}
+.who-grid{border-top:2px solid var(--ink)}
+.who-c{display:grid;grid-template-columns:90px minmax(220px,.8fr) 1.2fr;gap:clamp(16px,3vw,56px);align-items:baseline;padding:clamp(24px,3vw,40px) 0;border-bottom:1px solid var(--line);transition:padding-left .35s,background .35s}
+.who-c:hover{padding-left:18px;background:linear-gradient(90deg,rgba(18,216,198,.12),transparent)}
+.who-n{font-family:var(--serif);font-weight:800;font-size:clamp(28px,3vw,44px);line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--accent);letter-spacing:-.04em}
+.who-c h3{font-family:var(--serif);font-weight:700;font-size:clamp(24px,2.6vw,38px);line-height:1.1;letter-spacing:-.02em}
+.who-c p{font-size:clamp(16px,1.2vw,18px);line-height:1.65;color:var(--muted)}
+.who-fit{margin-top:clamp(36px,4vw,56px);padding-left:clamp(20px,2.4vw,34px);border-left:3px solid var(--accent-l)}
+.who-fit p{font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:var(--muted);max-width:1000px}
+.who-fit b{color:var(--ink);font-family:var(--serif);font-weight:700}
+
+/* ---------- investment: full-bleed band ---------- */
+.wd-price{background:var(--dark2);color:#fff;padding:clamp(72px,8vw,128px) 0;overflow:hidden;isolation:isolate}
+.wd-price::before{content:"";position:absolute;right:-160px;top:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(18,216,198,.26),transparent 68%);z-index:-1}
+.price-card{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(32px,6vw,112px);align-items:end}
+.price-l .title{color:#fff}
+.price-l p{margin-top:22px;font-size:clamp(16px,1.3vw,18.5px);line-height:1.75;color:#C6DAE3;max-width:680px}
+.price-chips{border-top:2px solid var(--accent-l)}
+.price-chips li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.18);font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.8vw,26px);letter-spacing:-.01em}
+.price-btn{margin-top:28px;width:100%;min-height:62px;background:var(--accent-l);color:#011A35;font-size:16.5px;text-align:center;line-height:1.3;padding:12px 22px}
+.price-btn svg{flex:none;transition:transform .3s}
+.price-btn:hover svg{transform:translateX(5px)}
+
+/* ---------- process ---------- */
+.wd-proc{padding:clamp(72px,8vw,128px) 0;background:var(--bg2)}
+.proc-head{max-width:820px;margin-bottom:clamp(40px,5vw,80px)}
+.proc-head p{margin-top:18px;font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:var(--muted)}
+.proc-rail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:22px;position:relative}
+.proc-rail::before{content:"";position:absolute;left:0;right:0;top:28px;height:2px;background:var(--ink)}
+.st{position:relative}
+.st-n{position:relative;z-index:1;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--bg2);border:2px solid var(--ink);color:var(--ink);font-family:var(--serif);font-weight:800;font-size:22px;transition:background .3s,color .3s,border-color .3s}
+.st:hover .st-n{background:var(--accent);border-color:var(--accent);color:#fff}
+.st h3{margin-top:24px;font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.2;letter-spacing:-.01em}
+.st p{margin-top:12px;font-size:15.5px;line-height:1.65;color:var(--muted)}
+
+/* ---------- results ---------- */
+.wd-res{padding:clamp(72px,8vw,128px) 0;background:#fff}
+.res-quotes{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,112px);align-items:start}
+.q{position:relative;margin:0}
+.q:nth-child(2){margin-top:clamp(32px,6vw,96px)}
+.q-mark{color:var(--accent-l)}
+.q blockquote{margin:14px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.3vw,34px);line-height:1.25;letter-spacing:-.02em}
+.q:nth-child(2) blockquote{font-size:clamp(19px,1.8vw,26px)}
+.q figcaption{margin-top:22px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;font-size:15px}
+.q figcaption b{font-family:var(--serif);font-weight:700;font-size:17px}
+.q figcaption span{color:var(--muted);font-weight:600}
+.q figcaption span::before{content:"/";margin-right:14px;color:var(--accent)}
+.res-cases{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,3vw,56px);align-items:start;margin-top:clamp(56px,7vw,112px)}
+.case{display:block}
+.case-b{margin-top:clamp(40px,8vw,128px)}
+.case-img{overflow:hidden;background:#E3EEEF;box-shadow:0 24px 50px rgba(1,26,53,.16)}
+.case-a .case-img{aspect-ratio:4/3}
+.case-b .case-img{aspect-ratio:4/5}
+.case-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.case:hover .case-img img{transform:scale(1.05)}
+.case-t{display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:2px solid var(--ink)}
+.case-t span{font-family:var(--serif);font-weight:800;font-size:14px;color:var(--accent);letter-spacing:.06em}
+.case-t h3{flex:1;font-family:var(--serif);font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.015em}
+.case-t i{flex:none;color:var(--accent);transition:transform .3s}
+.case:hover .case-t i{transform:translateX(6px)}
+.res-link{margin-top:clamp(40px,5vw,64px)}
+.cl-link{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:17px;color:var(--accent);padding:0 0 6px;border-bottom:2px solid var(--accent);transition:gap .3s}
+.cl-link svg{transition:transform .3s}
+.cl-link:hover svg{transform:translateX(6px)}
+
+/* ---------- faq: ruled accordion ---------- */
+.wd-faq{padding:clamp(72px,8vw,128px) 0;background:var(--bg)}
+.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(32px,6vw,112px);align-items:start}
+.faq-l{position:sticky;top:130px}
+.faq-list{border-top:2px solid var(--ink)}
+.fq{border-bottom:1px solid var(--line)}
+.fq summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 0;cursor:pointer;list-style:none;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,21px);line-height:1.3;letter-spacing:-.01em;transition:color .2s}
+.fq summary:hover{color:var(--accent)}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary i{flex:none;position:relative;width:22px;height:22px}
+.fq summary i span::before,.fq summary i span::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:2px;margin:-1px 0 0 -9px;background:var(--accent);transition:transform .3s}
+.fq summary i span::after{transform:rotate(90deg)}
+.fq[open] summary i span::after{transform:rotate(0)}
+.fq-a{padding:0 0 28px;max-width:720px}
+.fq-a p{font-size:17px;line-height:1.75;color:var(--muted)}
+.fq-a p+p{margin-top:12px}
+.fq-a a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- closing cta: full-bleed ---------- */
+.wd-cta2{padding:0}
+.wd-cta2>.wrap{max-width:none;padding:0}
+.cta2{position:relative;overflow:hidden;isolation:isolate;padding:clamp(72px,9vw,144px) var(--pad);background:var(--dark);color:#fff}
+.cta2::before{content:"";position:absolute;left:-200px;bottom:-320px;width:780px;height:780px;border-radius:50%;background:radial-gradient(circle,rgba(18,216,198,.3),transparent 66%);z-index:-1}
+.cta2::after{content:"";position:absolute;inset:0;z-index:-1;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1.4px);background-size:24px 24px}
+.cta2 .title{color:#fff;max-width:900px;font-size:clamp(36px,5vw,76px);line-height:1.03;letter-spacing:-.03em}
+.cta2>p{max-width:700px;margin-top:28px;font-size:clamp(17px,1.4vw,20px);line-height:1.75;color:#C6DAE3}
+.cta2-btns{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.cta2-main{min-height:60px;padding:0 38px;background:var(--accent-l);color:#011A35;font-size:18px}
+.cta2>.cta2-alt{margin-top:32px;font-size:16.5px;color:#C6DAE3}
+.cta2-alt a{color:var(--accent-l);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.nb{white-space:nowrap}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .wd-hero{padding-top:calc(106px + 36px)}
+  .wd-hero::before{display:none}
+  .wd-hero-in{grid-template-columns:1fr}
+  .wd-hero-art{max-width:560px;width:100%}
+  .wd-strip{grid-template-columns:1fr 1fr}
+  .wd-strip li:nth-child(3){border-left:0}
+  .wd-strip li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}
+  .prob-grid,.inc-grid,.faq-grid,.price-card{grid-template-columns:1fr}
+  .inc-l,.faq-l{position:static}
+  .pil{position:relative;top:auto;min-height:0}
+  .pil-in,.pil:nth-child(even) .pil-in{grid-template-columns:1fr}
+  .pil:nth-child(even) .pil-copy{order:0}
+  .who-c{grid-template-columns:64px 1fr}
+  .who-c p{grid-column:2}
+  .proc-rail{grid-template-columns:1fr;gap:0}
+  .proc-rail::before{left:28px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .st{padding:0 0 32px 84px;min-height:58px}
+  .st:last-child{padding-bottom:0}
+  .st-n{position:absolute;left:0;top:0}
+  .st h3{margin-top:0;padding-top:6px}
+  .res-quotes,.res-cases{grid-template-columns:1fr}
+  .q:nth-child(2),.case-b{margin-top:0}
+}
+@media (max-width:640px){
+  .wd-tag b+b::before{display:none}
+  .wd-tag{gap:4px 18px}
+  .wd-strip{grid-template-columns:1fr}
+  .wd-strip li+li{border-left:0;border-top:1px solid rgba(255,255,255,.14)}
+  .wd-strip li{padding:18px var(--pad)}
+  .serp{transform:none}
+  .inc-list{grid-template-columns:1fr}
+  .who-c{grid-template-columns:1fr;gap:8px}
+  .who-c p{grid-column:1}
+  .shot,.pil:nth-child(even) .shot{transform:none}
+  .wd-cta .btn,.cta2-main{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.serp,.shot{transition:none}}
+
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=" js"</script>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="nav">
+  <div class="topbar"><div class="tb-in">
+    <div class="tb-l"><span class="tb-item"><span class="tb-stars" aria-hidden="true">★★★★★</span>Rated 5 stars by clients across NSW</span><span class="tb-item tb-hide"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10+ years helping Australian service businesses</span></div>
+    <div class="tb-r tb-hide"><span class="tb-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Southern Highlands based, working nationally</span></div>
+  </div></div>
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="Manifest Website Design home"><img src="manifest-logo.png" alt="Manifest Website Design" width="176" height="48"></a>
+    <div class="nav-right"><nav class="nav-links" aria-label="Main">
+      <button class="trig on" type="button" aria-expanded="false" aria-controls="mega-services" data-mega="mega-services">Websites <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <a href="ai-agent-installs.html">AI Agent</a>
+      <button class="trig" type="button" aria-expanded="false" aria-controls="mega-loc" data-mega="mega-loc">SEO <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <a href="our-work.html">Our Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="book.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Book a Call</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button></div>
+  </div>
+
+  <div class="mega mega-services" id="mega-services" role="region" aria-label="Services">
+    <div><h4>Services</h4><ul><li><a href="website-design.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Websites</a></li><li><a href="local-seo.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO</a></li><li><a href="the-orbit-system.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>The Orbit System</a></li><li><a href="website-care.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Care</a></li><li><a href="ai-agent-installs.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>AI Agents</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="our-work.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Our Work</a></li><li><a href="blog.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Blog</a></li><li><a href="faq.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>FAQ</a></li><li><a href="our-process.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Our Process</a></li><li><a href="book.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Book a Call</a></li></ul></div>
+    <div class="mega-card"><b>Not sure where to start?</b><p>A 45-minute AI Direction Session looks at your current website, search visibility, and lead flow.</p><a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session</a></div>
+  </div>
+  <div class="mega mega-loc" id="mega-loc" role="region" aria-label="Locations">
+    <div><h4>Locations</h4><ul class="two"><li><a href="website-design-sydney.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Sydney</a></li><li><a href="website-design-bowral.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Bowral</a></li><li><a href="website-design-wollongong.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Wollongong</a></li><li><a href="website-design-mittagong.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Mittagong</a></li><li><a href="local-seo-bowral.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Local SEO Bowral</a></li><li><a href="seo-southern-highlands.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO Southern Highlands</a></li><li><a href="seo-sydney.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO Sydney</a></li><li><a href="local-seo-agency.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Local SEO Agency</a></li><li><a href="website-design-moss-vale.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Website Design Moss Vale</a></li></ul></div>
+    <div class="mega-card"><b>Not sure where to start?</b><p>A 45-minute AI Direction Session looks at your current website, search visibility, and lead flow.</p><a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session</a></div>
+  </div>
+  <div class="drawer" id="drawer">
+    <details><summary>Websites</summary><a href="website-design.html">Websites</a><a href="local-seo.html">SEO</a><a href="the-orbit-system.html">The Orbit System</a><a href="website-care.html">Website Care</a><a href="ai-agent-installs.html">AI Agents</a><a href="our-work.html">Our Work</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="our-process.html">Our Process</a></details>
+    <a href="ai-agent-installs.html">AI Agent</a>
+    <details><summary>SEO</summary><a href="website-design-sydney.html">Website Design Sydney</a><a href="website-design-bowral.html">Website Design Bowral</a><a href="website-design-wollongong.html">Website Design Wollongong</a><a href="website-design-mittagong.html">Website Design Mittagong</a><a href="local-seo-bowral.html">Local SEO Bowral</a><a href="seo-southern-highlands.html">SEO Southern Highlands</a><a href="seo-sydney.html">SEO Sydney</a><a href="local-seo-agency.html">Local SEO Agency</a><a href="website-design-moss-vale.html">Website Design Moss Vale</a></details>
+    <a href="our-work.html">Our Work</a><a href="blog.html">Blog</a><a href="contact-us.html">Contact us</a>
+    <a class="btn btn-primary" href="book.html" style="justify-content:center;margin-top:16px;border:0;color:#fff">Book a Call</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="wd-hero">
+  <div class="wd-hero-bg" aria-hidden="true"></div>
+  <div class="wrap wd-hero-in">
+    <div class="wd-hero-copy">
+      <span class="eyebrow rv">High-Converting Websites</span>
+      <h1 class="rv" style="--d:.05s">Your website should be your <em>best salesperson.</em> <span>Right now, it probably isn't.</span></h1>
+      <p class="wd-lead rv" style="--d:.12s">We build high-converting websites for established Australian service businesses - with SEO, AI search optimisation, and conversion strategy built in from the very first page, not bolted on at the end.</p>
+      <div class="wd-cta rv" style="--d:.18s">
+        <a class="btn btn-primary" href="book.html">Book a Discovery Call</a>
+        <a class="btn btn-outline" href="our-work.html">See recent projects</a>
+      </div>
+      <p class="wd-tag rv" style="--d:.24s"><b>Built once.</b> <b>Built right.</b> <b>Built to convert.</b></p>
+    </div>
+
+    <div class="wd-hero-art rv" style="--d:.15s" aria-hidden="true">
+      <div class="serp">
+        <div class="serp-bar"><b></b><b></b><b></b><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>who's the best commercial electrician in Sydney</span></div>
+        <div class="serp-body">
+          <div class="serp-ai"><div class="serp-ai-h"><i></i><span></span></div><div class="ln w90"></div><div class="ln w75"></div><div class="ln w60"></div></div>
+          <div class="serp-r on"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><div class="ln dk w55"></div><div class="ln w90"></div><div class="ln w70"></div></div></div>
+          <div class="serp-r"><i></i><div><div class="ln dk w45"></div><div class="ln w85"></div></div></div>
+          <div class="serp-r"><i></i><div><div class="ln dk w50"></div><div class="ln w80"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="wd-strip rv">
+      <li>SEO included in every build</li>
+      <li>AI search ready from launch</li>
+      <li>No templates. No offshore dev.</li>
+      <li>You own everything</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="wd-prob">
+  <div class="wrap">
+    <div class="prob-grid">
+      <div class="prob-l">
+        <h2 class="title rv">Most business websites have the same problem</h2>
+        <p class="rv" style="--d:.05s">You spent money on a website a few years ago. Maybe it looked decent at the time. But search has changed, buyer behaviour has changed, and the way AI tools like ChatGPT and Google's AI Overview serve up recommendations has changed completely.</p>
+        <p class="rv" style="--d:.1s">The result: your website sits there looking okay but doing very little. Competitors with better-optimised sites are showing up where you're not - in Google results, in AI-generated answers, and in the research phase before a prospect ever picks up the phone.</p>
+      </div>
+      <div class="prob-r rv" style="--d:.1s">
+        <p>The businesses we work with are usually turning over <b>$3M to $10M.</b> They're not short on capability. They've just got a website that hasn't kept pace with the business - and they've started to feel it.</p>
+        <p>Lost tenders. Slow enquiry periods. That uncomfortable moment when a prospect says</p>
+        <blockquote>"I looked at your website and wasn't sure if you were still operating."</blockquote>
+      </div>
+    </div>
+    <p class="prob-pull rv">Your current site may be costing you clients you'll never know you lost.</p>
+  </div>
+</section>
+
+<!-- PILLARS: stacking cards -->
+<section class="wd-pillars" id="approach">
+  <div class="wrap pil-stack">
+
+    <article class="pil p-light" style="--i:0">
+      <div class="pil-in">
+        <div class="pil-copy">
+          <div class="pil-top"><span class="pil-n">01</span><span class="pil-e">SEO</span></div>
+          <h3>SEO is not an add-on. It&#x27;s built into every page.</h3>
+          <p>Most web designers build a website and then hand it to an SEO person to &quot;fix.&quot; We don&#x27;t work that way.</p><p>Every page we build is structured for search from the first line of code - URL structure, heading hierarchy, internal linking, page speed, schema markup, meta data, and keyword targeting.</p><p>By the time your site launches, it&#x27;s already optimised. Not &quot;we&#x27;ll add SEO later.&quot; Done.</p>
+          <ul class="p-list"><li>Keyword research completed before we write a single word</li><li>Page titles and meta descriptions written for click-through, not just rankings</li><li>Schema markup included on every key page</li><li>Internal link structure planned as part of the site architecture</li><li>Core Web Vitals (speed + stability) hit from day one</li></ul>
+        </div>
+        <figure class="shot"><div class="shot-bar"><b></b><b></b><b></b></div><div class="shot-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/SEO-concepts-1024x683.png" alt="SEO Performance Preview" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </article>
+
+    <article class="pil p-dark" style="--i:1">
+      <div class="pil-in">
+        <div class="pil-copy">
+          <div class="pil-top"><span class="pil-n">02</span><span class="pil-e">AI search</span></div>
+          <h3>We build websites that AI engines recommend</h3>
+          <p>Search has changed. When someone asks ChatGPT, Perplexity, or Google&#x27;s AI Overview &quot;who&#x27;s the best commercial electrician in Sydney&quot; - those tools don&#x27;t just pull from a list of websites. They pull from sources they&#x27;ve determined to be credible, clear, and authoritative.</p><p>We understand how large language models assess and reference websites. We build yours to be one of the sources they trust - with clear entity signals, structured data, FAQ content, and the kind of depth that signals expertise to both Google and AI engines.</p><p>If AI tools aren&#x27;t recommending your business when prospects ask questions in your category, you&#x27;re already losing leads you can&#x27;t see. We fix that.</p>
+          
+        </div>
+        <figure class="shot"><div class="shot-bar"><b></b><b></b><b></b></div><div class="shot-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/aeo-cvoncept.png" alt="AI Citation Example" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </article>
+
+    <article class="pil p-light" style="--i:2">
+      <div class="pil-in">
+        <div class="pil-copy">
+          <div class="pil-top"><span class="pil-n">03</span><span class="pil-e">Conversion</span></div>
+          <h3>Traffic means nothing if visitors don&#x27;t take action</h3>
+          <p>Getting to page one of Google is only worth something if the people landing on your site actually enquire. We design every page with a clear conversion path - so a visitor who&#x27;s a good fit for your business knows exactly what to do next, and is given every reason to do it.</p>
+          <ul class="p-list"><li>Clear service pages written for decision-makers, not just Google bots</li><li>Trust signals (reviews, credentials, results) placed where buyers look</li><li>Click-to-call and enquiry forms that work on every device</li><li>Heatmap and analytics tracking set up at launch - so you can see what&#x27;s working</li></ul>
+        </div>
+        <figure class="shot"><div class="shot-bar"><b></b><b></b><b></b></div><div class="shot-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/ON-page-seo-check.png" alt="ON-Page SEO Check" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </article>
+
+    <article class="pil p-teal" style="--i:3">
+      <div class="pil-in">
+        <div class="pil-copy">
+          <div class="pil-top"><span class="pil-n">04</span><span class="pil-e">Ownership</span></div>
+          <h3>You own it. No <span class="nb">lock-in</span>. No dependency.</h3>
+          <p>Some agencies build your site in a way that keeps you dependent on them. We don&#x27;t. You own your domain, your hosting, your code, and your content.</p><p>If you ever want to take your site elsewhere, you can. We&#x27;d rather earn your ongoing work by being good at it.</p>
+          <ul class="p-list"><li>Full ownership of domain, hosting, and codebase</li><li>Training session included so you can manage content yourself</li><li>No proprietary platform lock-in</li><li>Transparent documentation of everything we&#x27;ve built</li></ul>
+        </div>
+        <figure class="shot"><div class="shot-bar"><b></b><b></b><b></b></div><div class="shot-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/stayin-control.png" alt="Your Site, Your Control" loading="lazy" decoding="async"></div></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="wd-inc" id="included">
+  <div class="wrap inc-grid">
+    <div class="inc-l">
+      <span class="eyebrow rv">What you get</span>
+      <h2 class="title rv" style="--d:.05s">What's included in every website project</h2>
+      <p class="inc-note rv" style="--d:.1s">Projects are scoped individually. The discovery call is where we work out what your site actually needs - not a one-size-fits-all package.</p>
+      <a class="btn btn-primary rv" style="--d:.15s" href="book.html">Book a Discovery Call</a>
+    </div>
+    <ul class="inc-list"><li class="inc-i"><div><b>Discovery and strategy session</b><span class="d">we learn your business before we write a word</span></div></li><li class="inc-i"><div><b>On-page SEO</b><span class="d">title tags, meta descriptions, headings, alt text, internal linking</span></div></li><li class="inc-i"><div><b>Sitemap and information architecture planning</b></div></li><li class="inc-i"><div><b>Schema markup</b><span class="d">structured data for rich results in Google and AI engines</span></div></li><li class="inc-i"><div><b>Keyword research</b><span class="d">primary and supporting terms for every page</span></div></li><li class="inc-i"><div><b>Google Search Console and Google Analytics setup</b></div></li><li class="inc-i"><div><b>Copywriting</b><span class="d">every page written by our team, optimised for people and search</span></div></li><li class="inc-i"><div><b>Click-to-call, contact forms, and enquiry tracking</b></div></li><li class="inc-i"><div><b>Custom design</b><span class="d">brand-aligned, not off-the-shelf</span></div></li><li class="inc-i"><div><b>Handover training</b><span class="d">so you can make simple updates yourself</span></div></li><li class="inc-i"><div><b>Mobile-first development</b><span class="d">tested across all devices and screen sizes</span></div></li><li class="inc-i"><div><b>30-day post-launch support included</b></div></li><li class="inc-i"><div><b>Page speed optimisation</b><span class="d">built for Core Web Vitals from day one</span></div></li><li class="inc-i opt"><div><b>Optional: ongoing SEO retainer from $2,500/month</b> <span class="d">- <a href="local-seo.html">see our SEO + Social package</a></span></div></li><li class="inc-i"><div><b>SSL, security, and basic hardening included</b></div></li></ul>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="wd-who">
+  <div class="wrap">
+    <div class="who-head">
+      <span class="eyebrow rv">Who this is for</span>
+      <h2 class="title rv" style="--d:.05s">Is this the right investment for your business?</h2>
+      <p class="rv" style="--d:.1s">This offer is for established businesses that are ready to treat their website as a revenue-generating asset - not a digital brochure. If that's you, it's worth a conversation.</p>
+    </div>
+    <div class="who-grid">
+      <article class="who-c rv" style="--d:0.00s"><span class="who-n">01</span><h3>Professional Services</h3><p>Accounting firms, law practices, financial advisers, and engineering consultancies that need a site that reflects the quality of their work and attracts the right calibre of client.</p></article>
+      <article class="who-c rv" style="--d:0.06s"><span class="who-n">02</span><h3>Healthcare &amp; Allied Health</h3><p>Specialist clinics, physio and dental groups, and multi-location practices where trust, clarity, and online booking are non-negotiable.</p></article>
+      <article class="who-c rv" style="--d:0.12s"><span class="who-n">03</span><h3>Trades &amp; Construction</h3><p>Commercial builders, electrical contractors, plumbing companies, and civil firms that have grown through referral and are now ready to compete online for larger jobs and tenders.</p></article>
+      <article class="who-c rv" style="--d:0.18s"><span class="who-n">04</span><h3>B2B Services</h3><p>Labour hire, logistics, commercial cleaning, and security businesses where the website is increasingly used as a first-impression filter by procurement teams and operations managers.</p></article>
+    </div>
+    <div class="who-fit rv">
+      <p><b>Not a fit? We'll tell you upfront.</b> If you're a startup, a solo operator, or looking for a $2,000 website - we're probably not the right fit, and we'll tell you that upfront. The businesses we build for are investing properly because they understand what a poor website is costing them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT -->
+<section class="wd-price">
+  <div class="wrap">
+    <div class="price-card rv">
+      <div class="price-l">
+        <span class="eyebrow dk">Investment</span>
+        <h2 class="title">How much does a professional website cost in Australia?</h2>
+        <p>Every project is scoped and priced to what your business actually needs — not a template package with add-ons bolted on. A ten-page site for a professional services firm is a different job to a multi-location healthcare group with booking integration, service area pages, and a case study library.</p>
+        <p>We're upfront about pricing because the businesses we work with appreciate that. Book a discovery call and we'll give you a scoped quote within 48 hours — no vague estimates, no surprises mid-project.</p>
+      </div>
+      <div class="price-r">
+        <ul class="price-chips">
+          <li>10-15 pages</li>
+          <li>SEO included</li>
+          <li>Copywriting included</li>
+          <li>Ongoing support optional</li>
+        </ul>
+        <a class="btn price-btn" href="book.html">Book a discovery call to get a scoped quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="wd-proc" id="process">
+  <div class="wrap">
+    <div class="proc-head">
+      <h2 class="title rv">How a Manifest website project works</h2>
+      <p class="rv" style="--d:.05s">We keep the process simple. You stay informed at every stage, and nothing moves forward without your sign-off.</p>
+    </div>
+    <ol class="proc-rail">
+        <li class="st rv" style="--d:0.00s"><span class="st-n">1</span><h3>Discovery Call</h3><p>A 45-minute conversation where we learn how your business works, who you&#x27;re trying to attract, and what you want your website to actually do. We don&#x27;t build a brief without this.</p></li>
+        <li class="st rv" style="--d:0.07s"><span class="st-n">2</span><h3>Strategy and Sitemap</h3><p>We map out your site structure - every page, its purpose, its target keyword, and how it connects to the rest of the site. You review and approve before we move to design.</p></li>
+        <li class="st rv" style="--d:0.14s"><span class="st-n">3</span><h3>Keyword Research and Copywriting</h3><p>We research the search terms your ideal clients use and write every page of your site around those terms. Copy that reads naturally and ranks well.</p></li>
+        <li class="st rv" style="--d:0.21s"><span class="st-n">4</span><h3>Design and Development</h3><p>We build your site to your brand - colours, fonts, imagery, and layout. You review each stage and give feedback. No surprises at the end.</p></li>
+        <li class="st rv" style="--d:0.28s"><span class="st-n">5</span><h3>SEO and Technical Setup</h3><p>Before we launch, we complete the full SEO setup: meta data, schema markup, Google Search Console, analytics, speed optimisation, and AI search entity signals.</p></li>
+        <li class="st rv" style="--d:0.35s"><span class="st-n">6</span><h3>Launch and Handover</h3><p>Your site goes live. We handle the technical side of the launch. You get a short training session so you&#x27;re confident managing your own content, plus 30 days of support.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="wd-res" id="projects">
+  <div class="wrap">
+    <div class="res-quotes">
+      <figure class="q rv">
+        <svg class="q-mark" width="44" height="44" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.2 6C4.9 7 3.5 9.2 3.5 12v6h6v-6H6.3c0-1.7.8-3 2.4-3.9zM17.7 6c-2.3 1-3.7 3.2-3.7 6v6h6v-6h-3.2c0-1.7.8-3 2.4-3.9z"/></svg>
+        <blockquote>Jillian created a website that matched our brand and was easy to navigate - all in a friendly, professional and cost-efficient manner. I would recommend her to anyone.</blockquote>
+        <figcaption><b>Peter Grosvenor</b><span>Sydney Rowing Club</span></figcaption>
+      </figure>
+      <figure class="q rv" style="--d:.08s">
+        <svg class="q-mark" width="44" height="44" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.2 6C4.9 7 3.5 9.2 3.5 12v6h6v-6H6.3c0-1.7.8-3 2.4-3.9zM17.7 6c-2.3 1-3.7 3.2-3.7 6v6h6v-6h-3.2c0-1.7.8-3 2.4-3.9z"/></svg>
+        <blockquote>A sharp, stylish website you love is the end product. We will definitely use Jillian's skills again and can wholeheartedly recommend her to others.</blockquote>
+        <figcaption><b>Andrew Mevissen</b><span>Peak PR</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="res-cases">
+      <a class="case case-a rv" href="our-work.html">
+        <div class="case-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/highlands-centre-for-healing_ss-1.png" alt="Highlands Centre for Healing website design by Manifest" loading="lazy" decoding="async"></div>
+        <div class="case-t"><span>01</span><h3>Highlands Centre for Healing</h3><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div>
+      </a>
+      <a class="case case-b rv" style="--d:.08s" href="our-work.html">
+        <div class="case-img"><img src="https://manifestwebsitedesign.com.au/wp-content/uploads/2026/06/admire-workplace-safety_ss-1.png" alt="Admire Workplace Safety website design by Manifest" loading="lazy" decoding="async"></div>
+        <div class="case-t"><span>02</span><h3>Admire Workplace Safety</h3><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div>
+      </a>
+    </div>
+    <p class="res-link rv"><a class="cl-link" href="our-work.html">See the full project gallery <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wd-faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-l">
+      <h2 class="title rv">Frequently asked questions about website design</h2>
+    </div>
+    <div class="faq-list">
+        <details class="fq rv" open><summary><span>How much does a professional website design cost in Australia?</span><i><span></span></i></summary><div class="fq-a"><p>For an established service business, a professionally built website with SEO included typically starts at $8,000. At Manifest, our projects run from $8,000 to $18,000 depending on scope - number of pages, integration requirements, and whether you need copywriting. We price transparently and scope every project individually so there are no surprises.</p></div></details>
+        <details class="fq rv"><summary><span>Does SEO come included with website design?</span><i><span></span></i></summary><div class="fq-a"><p>At Manifest, yes - always. We don&#x27;t build websites and hand them to an SEO person to fix later. Keyword research, on-page SEO, schema markup, meta data, and internal linking are all part of the build process. Your site is optimised before it goes live, not after.</p></div></details>
+        <details class="fq rv"><summary><span>Will my website show up in AI search tools like ChatGPT and Google&#x27;s AI Overview?</span><i><span></span></i></summary><div class="fq-a"><p>That depends on how your site is built. AI tools like ChatGPT, Perplexity, and Google&#x27;s AI Overview pull from sources they&#x27;ve determined to be credible and authoritative. We build websites with clear entity signals, structured data, and the kind of depth that signals expertise to AI engines - so your business has the best possible chance of being recommended when someone asks an AI for a referral in your category.</p></div></details>
+        <details class="fq rv"><summary><span>How long does it take to build a website?</span><i><span></span></i></summary><div class="fq-a"><p>Most projects take 6 to 10 weeks from kickoff to launch, depending on how quickly content and feedback come back. We set clear milestones at the start and keep you updated throughout. The discovery call is where we nail down a realistic timeline for your project.</p></div></details>
+        <details class="fq rv"><summary><span>Do I need to redo my website or can you improve what I have?</span><i><span></span></i></summary><div class="fq-a"><p>Honest answer: it depends. Sometimes a targeted refresh - better copy, stronger SEO, cleaner structure - is the right call. Other times the existing site is too far behind to be worth saving. We&#x27;ll look at what you have and tell you which approach makes more sense before you spend anything.</p></div></details>
+        <details class="fq rv"><summary><span>What happens after my website launches?</span><i><span></span></i></summary><div class="fq-a"><p>You get 30 days of post-launch support included in every project. After that, you have a few options: manage the site yourself (we&#x27;ll show you how), sign up for our website care plan, or combine both with our <a href="local-seo.html">SEO + Social package</a> at $2,500/month - which keeps the site growing in search and keeps content publishing consistently.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="wd-cta2">
+  <div class="wrap">
+    <div class="cta2 rv">
+      <h2 class="title">Ready to build a website that actually works?</h2>
+      <p>The first step is a discovery call. We'll look at your current site, understand what you're trying to achieve, and give you an honest view of what a new site could do for your business. No hard sell. Just a straight conversation.</p>
+      <div class="cta2-btns">
+        <a class="btn cta2-main" href="book.html">Book your discovery call</a>
+      </div>
+      <p class="cta2-alt">Or if you'd prefer to talk about AI search strategy specifically: <a href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="plate" href="index.html"><img src="manifest-logo-light.png" alt="Manifest Website Design" width="176" height="48"></a>
+        <p>Helping established Australian service businesses get found in Google and AI search, and turn enquiries into paying clients.</p>
+        <div class="f-btns"><a class="btn p" href="book.html">Book a Call</a><a class="btn o" href="support.html">Support</a></div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="website-design.html">Websites</a></li><li><a href="local-seo.html">SEO</a></li><li><a href="the-orbit-system.html">The Orbit System</a></li><li><a href="website-care.html">Website Care</a></li><li><a href="ai-agent-installs.html">AI Agents</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="our-work.html">Our Work</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="our-process.html">Our Process</a></li><li><a href="book.html">Book a Call</a></li></ul></div>
+      <div><h4>Locations</h4><ul><li><a href="website-design-sydney.html">Website Design Sydney</a></li><li><a href="website-design-bowral.html">Website Design Bowral</a></li><li><a href="website-design-wollongong.html">Website Design Wollongong</a></li><li><a href="website-design-mittagong.html">Website Design Mittagong</a></li><li><a href="local-seo-bowral.html">Local SEO Bowral</a></li><li><a href="seo-southern-highlands.html">SEO Southern Highlands</a></li><li><a href="seo-sydney.html">SEO Sydney</a></li><li><a href="local-seo-agency.html">Local SEO Agency</a></li><li><a href="website-design-moss-vale.html">Website Design Moss Vale</a></li></ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; 2026 Manifest Website Design. All rights reserved.</span>
+      <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="https://www.facebook.com/ManifestWebsiteDesign/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+(function(){
+  var hdr=document.querySelector('header.nav'),trigs=[].slice.call(document.querySelectorAll('[data-mega]')),
+      megas=[].slice.call(document.querySelectorAll('.mega')),burger=document.querySelector('.burger'),drawer=document.getElementById('drawer'),t;
+  function closeAll(){trigs.forEach(function(b){b.setAttribute('aria-expanded','false');});megas.forEach(function(m){m.classList.remove('open');});}
+  function open(b){closeAll();b.setAttribute('aria-expanded','true');document.getElementById(b.dataset.mega).classList.add('open');}
+  trigs.forEach(function(b){
+    b.addEventListener('click',function(e){e.stopPropagation();b.getAttribute('aria-expanded')==='true'?closeAll():open(b);});
+    b.addEventListener('mouseenter',function(){clearTimeout(t);open(b);});
+  });
+  hdr.addEventListener('mouseleave',function(){t=setTimeout(closeAll,180);});
+  hdr.addEventListener('mouseenter',function(){clearTimeout(t);});
+  document.addEventListener('click',function(e){if(!hdr.contains(e.target)){closeAll();closeDrawer();}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();closeDrawer();}});
+  megas.forEach(function(m){m.addEventListener('click',function(e){if(e.target.closest('a'))closeAll();});});
+  function closeDrawer(){if(!burger)return;drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');}
+  if(burger)burger.addEventListener('click',function(e){e.stopPropagation();var o=!drawer.classList.contains('open');drawer.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  drawer.addEventListener('click',function(e){if(e.target.closest('a'))closeDrawer();});
+  function f(){hdr.classList.toggle('scrolled',window.scrollY>8);}f();window.addEventListener('scroll',f,{passive:true});
+})();
+(function(){var els=[].slice.call(document.querySelectorAll('.rv'));if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000);})();
+
+(function(){var d=[].slice.call(document.querySelectorAll('.fq'));d.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)d.forEach(function(y){if(y!==x)y.open=false;});});});})();
+</script>
+</body>
+</html>
