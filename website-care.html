@@ -377,6 +377,22 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 .fx-pre.fx-in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
+</style><style id="mz-split">
+.mzv-wrap{display:grid;grid-template-columns:minmax(260px,340px) minmax(0,1fr);gap:48px;align-items:start}
+.mzv-panel{position:sticky;top:110px;border-radius:22px;padding:34px 28px;color:#fff;background:radial-gradient(circle at 20% 0,#12D8C6 0,transparent 55%),linear-gradient(160deg,#0B2B4B,#011A35);overflow:hidden;box-shadow:0 30px 60px -30px rgba(1,26,53,.6)}
+.mzv-panel:before{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;border:1px solid rgba(255,255,255,.18)}
+.mzv-ico{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);margin-bottom:22px}
+.mzv-ico svg{width:30px;height:30px;stroke:#12D8C6;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mzv-panel small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#12D8C6;margin-bottom:8px}
+.mzv-panel b{display:block;font-size:22px;line-height:1.25;margin-bottom:22px;font-family:var(--serif)}
+.mzv-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.mzv-panel li{display:flex;gap:10px;align-items:center;font-size:15px}
+.mzv-panel li:before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:#12D8C6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23011A35' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/11px no-repeat}
+.mzv-body{min-width:0}
+.mzv-body>.wc-why-in,.mzv-body>.ls-prob-in,.mzv-body>.ai-hands-in,.mzv-body>.lsa-split{grid-template-columns:1fr!important}
+.mzv-body .ls-prob-in,.mzv-body .ai-hands-in,.mzv-body .lsa-split,.mzv-body .wc-why-in,.mzv-body .ssy-cols{grid-template-columns:1fr!important}
+.mzv-body .lsa-sticky{position:static}
+@media(max-width:900px){.mzv-wrap{grid-template-columns:1fr;gap:28px}.mzv-panel{position:static}}
 </style></head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -439,7 +455,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 </section>
 
 <section class="wc-why" aria-labelledby="wc-why-h">
-  <div class="wrap">
+  <div style="display:block" class="wrap"><div class="mzv-wrap"><aside class="mzv-panel rv"><span class="mzv-ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4"/></svg></span><small>Peace of mind</small><b>Kept secure, updated and fast</b><ul><li>Updates & backups</li><li>Security monitoring</li><li>Fewer security gaps</li></ul></aside><div class="mzv-body">
     <div class="wc-why-in">
       <div>
         <p class="eyebrow rv">Peace of mind</p>
@@ -457,7 +473,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
       <li><b>Stolen data</b><span>They can steal your personal information and customer data.</span></li>
       <li><b>Real damage</b><span>They can do a lot of damage. Keeping your site up to date closes the gaps they rely on.</span></li>
     </ul>
-  </div>
+  </div></div>
 </section>
 
 <section class="wc-plans" id="plans" aria-labelledby="wc-plans-h">

@@ -482,6 +482,22 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 .fx-pre.fx-in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
+</style><style id="mz-split">
+.mzv-wrap{display:grid;grid-template-columns:minmax(260px,340px) minmax(0,1fr);gap:48px;align-items:start}
+.mzv-panel{position:sticky;top:110px;border-radius:22px;padding:34px 28px;color:#fff;background:radial-gradient(circle at 20% 0,#12D8C6 0,transparent 55%),linear-gradient(160deg,#0B2B4B,#011A35);overflow:hidden;box-shadow:0 30px 60px -30px rgba(1,26,53,.6)}
+.mzv-panel:before{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;border:1px solid rgba(255,255,255,.18)}
+.mzv-ico{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);margin-bottom:22px}
+.mzv-ico svg{width:30px;height:30px;stroke:#12D8C6;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mzv-panel small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#12D8C6;margin-bottom:8px}
+.mzv-panel b{display:block;font-size:22px;line-height:1.25;margin-bottom:22px;font-family:var(--serif)}
+.mzv-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.mzv-panel li{display:flex;gap:10px;align-items:center;font-size:15px}
+.mzv-panel li:before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:#12D8C6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23011A35' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/11px no-repeat}
+.mzv-body{min-width:0}
+.mzv-body>.wc-why-in,.mzv-body>.ls-prob-in,.mzv-body>.ai-hands-in,.mzv-body>.lsa-split{grid-template-columns:1fr!important}
+.mzv-body .ls-prob-in,.mzv-body .ai-hands-in,.mzv-body .lsa-split,.mzv-body .wc-why-in,.mzv-body .ssy-cols{grid-template-columns:1fr!important}
+.mzv-body .lsa-sticky{position:static}
+@media(max-width:900px){.mzv-wrap{grid-template-columns:1fr;gap:28px}.mzv-panel{position:static}}
 </style></head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -554,13 +570,13 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 </section>
 
 <section class="ai-hands" aria-labelledby="ai-hands-h">
-  <div class="wrap ai-hands-in">
+  <div style="display:block" class="wrap ai-hands-in"><div class="mzv-wrap"><aside class="mzv-panel rv"><span class="mzv-ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></svg></span><small>Time back</small><b>Another set of hands</b><ul><li>Admin handled</li><li>Marketing on track</li><li>No new hire</li></ul></aside><div class="mzv-body">
     <div>
       <h2 id="ai-hands-h" class="title rv">You don’t need another app. You need another set of hands.</h2>
       <p class="ai-hands-p rv"><strong>Most business owners aren’t short on ideas. They’re short on hours.</strong> The admin piles up, the follow-ups slip, the marketing sits on the ‘one day’ list. Not because you don’t care, but because there’s only one of you.</p>
     </div>
     <ul class="ai-pains"><li class="rv" style="--d:0.00s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>The day disappears into admin</h3><p>Invoices, reminders, inbox, quotes, scheduling. Necessary work, but none of it is the work that grows your business.</p></li><li class="rv" style="--d:0.05s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>Marketing keeps slipping</h3><p>You know you should be showing up on Google and posting on social. It just never makes it to the top of the list.</p></li><li class="rv" style="--d:0.10s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>It all lives in your head</h3><p>Your processes, your tone, how you like things done. It’s all in your head or scattered across a dozen tools. Nothing runs without you.</p></li><li class="rv" style="--d:0.15s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Hiring is a big commitment</h3><p>Another salary, super, training, and management. A lot to take on when you just need the repetitive work handled.</p></li></ul>
-  </div>
+  </div></div>
 </section>
 
 <section class="ai-not" aria-labelledby="ai-not-h">
