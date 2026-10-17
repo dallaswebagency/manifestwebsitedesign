@@ -66,7 +66,7 @@ header.nav{position:fixed;top:16px;left:clamp(12px,3vw,48px);right:clamp(12px,3v
 .mega li a{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;font-weight:600;font-size:16px}
 .mega li a:hover{background:#EEF5F6;opacity:1}
 .mega li a i{flex:none;width:34px;height:34px;border-radius:10px;background:#E3F6F5;display:grid;place-items:center;color:var(--accent)}
-.mega-card{border-radius:22px;padding:28px;background:var(--dark);color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.mega-card{align-self:start;grid-column:-2;border-radius:22px;padding:28px;background:var(--dark);color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
 .mega-card b{font-family:var(--serif);font-size:22px;line-height:1.2}
 .mega-card p{color:#C6DAE3;font-size:15px;line-height:1.55}
 .mega-card .btn{min-height:48px;font-size:15px;background:var(--accent-l);color:var(--dark);align-self:flex-start;box-shadow:none}
@@ -195,6 +195,7 @@ header.nav::before{content:"";display:block;height:0}
 .nav .btn.nav-cta{display:inline-flex;align-items:center;gap:10px;margin-left:22px;min-height:50px;padding:0 24px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700}
 .nav .btn.nav-cta svg{transition:transform .3s}
 .nav .btn.nav-cta:hover svg{transform:rotate(-12deg) scale(1.1)}
+@media (max-width:1100px){.nav .btn.nav-cta{display:none}}
 .nav-links a.active::after{transform:scaleX(1)}
 .nav-links a.active{color:var(--accent)}
 .vhero-in{padding-top:calc(126px + clamp(40px,6vw,84px))}
