@@ -410,6 +410,7 @@ img{max-width:100%}
 .wc-art::before,.wc-art::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
 .wc-art::before{width:76%;aspect-ratio:1}
 .wc-art::after{width:104%;aspect-ratio:1;border-style:dashed;border-color:rgba(18,216,198,.28)}
+.wc-art-img{display:block;background:#0a2a52}.wc-art-img::before,.wc-art-img::after{display:none}.wc-art-img img{display:block;width:100%;height:100%;object-fit:cover}
 .wc-art-ic{position:relative;z-index:1;display:grid;place-items:center;width:clamp(110px,14vw,170px);aspect-ratio:1;border-radius:50%;background:rgba(18,216,198,.12);border:1.5px solid rgba(18,216,198,.55);font-size:clamp(52px,6.5vw,80px)}
 .wc-pills{position:absolute;z-index:2;left:clamp(16px,2.4vw,28px);right:clamp(16px,2.4vw,28px);bottom:clamp(16px,2.4vw,28px);display:flex;flex-wrap:wrap;gap:10px}
 .wc-pill{display:inline-flex;align-items:baseline;gap:8px;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#DCE9F0;font-size:14.5px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
@@ -461,6 +462,7 @@ img{max-width:100%}
   .wc-art{aspect-ratio:auto;min-height:0;padding:clamp(28px,6vw,44px) 16px 20px;display:flex;flex-direction:column;align-items:center;gap:22px}
   .wc-art::before{width:90%;top:-10%}
   .wc-art::after{display:none}
+  .wc-art-img{padding:0;display:block;aspect-ratio:16/10}
   .wc-art-ic{width:112px;font-size:52px}
   .wc-pills{position:static;left:auto;right:auto;bottom:auto;justify-content:center}
 }
@@ -616,7 +618,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
   <div class="wrap">
     <div class="wc-head"><p class="eyebrow rv">What is included</p><h2 id="wc-svc-h" class="wc-h2 rv" style="--d:.05s">A closer look at your care plan</h2></div>
     <div class="wc-svc rv">
-      <div class="wc-art" aria-hidden="true"><span class="wc-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/server.svg)" aria-hidden="true"></i></span><div class="wc-pills"><span class="wc-pill"><b>24/7</b>uptime alerts</span><span class="wc-pill"><b>Daily</b>cloud backups</span></div></div>
+      <div class="wc-art wc-art-img"><img src="website-care-hosting.jpg" width="1200" height="930" alt="Illustration of secure cloud hosting: a server stack with a security shield, cloud backup, file sync and a laptop showing 99.9% uptime" loading="lazy" decoding="async"></div>
       <div class="wc-svc-t"><h3>Hosting, uptime and backups</h3><p>The foundation: a fast, secure home for your site, with a safety net underneath it.</p><ul class="wc-bl"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>High-speed secure hosting</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>SSL certificate (where supported)</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>24/7 uptime monitoring and alerts</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Daily cloud backups (with retention)</span></li></ul></div>
     </div><div class="wc-svc flip rv">
       <div class="wc-art" aria-hidden="true"><span class="wc-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span><div class="wc-pills"><span class="wc-pill"><b>Weekly</b>security scans</span><span class="wc-pill"><b>Monthly</b>safe updates</span></div></div>
