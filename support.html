@@ -337,6 +337,42 @@ footer{padding-block:56px 28px}
 </style>
 <style id="mz-contact">.f-contact{display:grid;gap:2px;margin-top:20px}.f-contact a{display:inline-flex;align-items:center;gap:10px;min-height:32px;color:#fff;font-weight:600;font-size:16px;overflow-wrap:anywhere}.f-contact svg{flex:none;color:var(--accent-l)}.f-contact a:hover{color:var(--accent-l)}@media (max-width:900px){.f-contact a{min-height:44px}}</style>
 <style id="mz-brandrow">@media (min-width:901px){.f-brand{display:flex;flex-wrap:wrap;align-items:center;gap:0 16px}.f-brand>a.plate,.f-brand>p,.f-brand>.f-contact{flex:0 0 100%}.f-brand>.f-btns{margin-top:20px}.f-brand>.f-social{margin-top:20px}}</style>
+<style id="mz-sx">
+.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.sx-hero{background:var(--dark);color:#fff;padding:calc(126px + clamp(32px,4vw,56px)) 0 clamp(52px,6vw,96px);position:relative;isolation:isolate;overflow:hidden}
+.sx-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 70% at 88% 40%,rgba(0,120,126,.5),transparent 70%)}
+.sx-hin{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.sx-hero .eyebrow{display:block;padding:0;margin:0 0 14px;background:none;border-radius:0;color:var(--accent-l);font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase}
+.sx-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(36px,5vw,74px);line-height:1;letter-spacing:-.04em;text-wrap:balance}
+.sx-hero h1 em{font-style:normal;color:var(--accent-l)}
+.sx-sub{margin:22px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px)}
+.sx-lead{margin:14px 0 0;color:#C6DAE3;font-size:clamp(17px,1.4vw,20px);line-height:1.65;max-width:54ch}
+.sx-cta{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px}
+.sx-btn{background:var(--accent-l);color:var(--dark);border:0;min-height:54px;padding:0 30px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform .25s,background .25s}
+.sx-btn:hover{background:#fff;transform:translateY(-3px)}
+.sx-cta>span{color:#C6DAE3;font-size:15.5px}
+.sx-steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.sx-steps li{display:flex;gap:18px;align-items:center;padding:20px 22px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2)}
+.sx-steps b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(17px,1.4vw,20px)}
+.sx-steps li span:not(.sx-ci){display:block;margin-top:4px;color:#C6DAE3;font-size:15.5px}
+.sx-ci{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;font-size:26px}
+.sx-sec{background:var(--bg);padding:clamp(52px,6.5vw,96px) 0}
+.sx-alt{background:var(--bg2)}
+.sx-h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,50px);line-height:1.08;letter-spacing:-.025em;color:var(--ink)}
+.sx-cards{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,1.6vw,22px)}
+.sx-cards li,.sx-links a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid transparent;color:var(--ink);text-decoration:none;transition:transform .35s,border-color .35s,box-shadow .35s}
+.sx-cards li::before,.sx-links a::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.sx-cards li:hover,.sx-links a:hover{transform:translateY(-6px);border-color:var(--cc);box-shadow:0 22px 34px -26px var(--cc)}
+.sx-cards li:hover::before,.sx-links a:hover::before{width:100%}
+.sx-k{margin:6px 0 0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sx-v{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.35vw,20px);line-height:1.35;overflow-wrap:anywhere}
+.sx-v a{color:var(--ink);text-decoration:none}.sx-v a:hover{color:var(--cc)}.sx-v address{font-style:normal}
+.sx-links{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.sx-links b{font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.7vw,24px);line-height:1.2;margin-top:6px}
+.sx-d{color:var(--muted);font-size:16.5px;line-height:1.55}
+.sx-links em{margin-top:auto;padding-top:6px;color:var(--cc);display:inline-flex}
+@media (max-width:900px){.sx-hin{grid-template-columns:1fr}.sx-cards,.sx-links{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -380,47 +416,9 @@ footer{padding-block:56px 28px}
 </header>
 
 <main id="main">
-<section class="sp-hero" aria-labelledby="sp-h1">
-  <div class="wrap sp-hin">
-    <div>
-      <span class="eyebrow dk rv">CLIENT SUPPORT</span>
-      <h1 id="sp-h1" class="rv" style="--d:.05s">Manifest Client <em>Support Portal</em></h1>
-      <p class="sp-sub rv" style="--d:.1s">We are here to help.</p>
-      <p class="sp-lead rv" style="--d:.14s">As an existing Manifest client, you have access to premium support through our dedicated ticketing system. Submit your website updates or technical issues below, you can attach relevant images and files, and our team will take care of the rest.</p>
-      <div class="sp-cta rv" style="--d:.2s">
-        <a class="btn" href="https://forms.clickup.com/6935033/f/6kmft-4242/UCJMRKQ8OBCSXU1VIP" target="_blank" rel="noopener">Open a Support Ticket <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <span class="sp-note">Opens our ticket form in a new tab</span>
-      </div>
-    </div>
-    <ol class="sp-steps rv" style="--d:.16s" aria-label="How a support ticket works">
-      <li><i aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></i><b>Submit your request</b><span>Website updates or technical issues</span></li>
-      <li><i aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></i><b>Attach what helps</b><span>Relevant images and files</span></li>
-      <li><i aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></i><b>We take care of the rest</b><span>Our team picks it up from there</span></li>
-    </ol>
-  </div>
-</section>
-
-<section class="sp-contact" aria-labelledby="sp-c-h">
-  <div class="wrap sp-cin">
-    <h2 id="sp-c-h" class="rv">Prefer to reach us <em>directly?</em></h2>
-    <dl class="sp-cl rv" style="--d:.08s;margin:0">
-      <div class="sp-row"><dt>Email</dt><dd class="em"><a href="mailto:jill@manifestwebsitedesign.com.au">jill@manifestwebsitedesign.com.au</a></dd></div>
-      <div class="sp-row"><dt>Phone</dt><dd><a href="tel:+61482074040">+61 482 074 040</a></dd></div>
-      <div class="sp-row"><dt>Address</dt><dd><address>471 Argyle Street, Moss Vale, NSW 2577</address></dd></div>
-    </dl>
-  </div>
-</section>
-
-<section class="sp-more" aria-labelledby="sp-m-h">
-  <div class="wrap sp-min">
-    <h2 id="sp-m-h" class="rv">Looking for something else?</h2>
-    <nav class="sp-ml rv" style="--d:.08s" aria-label="Related pages">
-      <a href="website-care.html"><div>Website Care<span>Ongoing care to keep your site secure, backed up and running smoothly</span></div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="faq.html"><div>Frequently asked questions<span>Answers on SEO, AI search, websites and automation</span></div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="book.html"><div>Book a Call<span>Not a client yet? Start with a conversation</span></div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </nav>
-  </div>
-</section>
+<section class="sx-hero" aria-labelledby="sp-h1"><div class="wrap sx-hin"><div><p class="eyebrow">CLIENT SUPPORT</p><h1 id="sp-h1">Manifest Client <em>Support Portal</em></h1><p class="sx-sub">We are here to help.</p><p class="sx-lead">As an existing Manifest client, you have access to premium support through our dedicated ticketing system. Submit your website updates or technical issues below, you can attach relevant images and files, and our team will take care of the rest.</p><div class="sx-cta"><a class="btn sx-btn" href="https://forms.clickup.com/6935033/f/6kmft-4242/UCJMRKQ8OBCSXU1VIP" rel="noopener" target="_blank">Open a Support Ticket <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span>Opens our ticket form in a new tab</span></div></div><ol class="sx-steps" aria-label="How a support ticket works"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/clipboard-list.svg)" aria-hidden="true"></i></span><div><b>Submit your request</b><span>Website updates or technical issues</span></div></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/file-pen-line.svg)" aria-hidden="true"></i></span><div><b>Attach what helps</b><span>Relevant images and files</span></div></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/life-buoy.svg)" aria-hidden="true"></i></span><div><b>We take care of the rest</b><span>Our team picks it up from there</span></div></li></ol></div></section>
+<section class="sx-sec" aria-labelledby="sp-c-h"><div class="wrap"><h2 class="sx-h2" id="sp-c-h">Prefer to reach us directly?</h2><ul class="sx-cards"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/mail.svg)" aria-hidden="true"></i></span><p class="sx-k">Email</p><div class="sx-v"><a href="mailto:jill@manifestwebsitedesign.com.au">jill@manifestwebsitedesign.com.au</a></div></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/phone-call.svg)" aria-hidden="true"></i></span><p class="sx-k">Phone</p><div class="sx-v"><a href="tel:+61482074040">+61 482 074 040</a></div></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><p class="sx-k">Address</p><div class="sx-v"><address>471 Argyle Street, Moss Vale, NSW 2577</address></div></li></ul></div></section>
+<section class="sx-sec sx-alt" aria-labelledby="sp-m-h"><div class="wrap"><h2 class="sx-h2" id="sp-m-h">Looking for something else?</h2><nav class="sx-links" aria-label="Related pages"><a href="website-care.html" style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span><b>Website Care</b><span class="sx-d">Ongoing care to keep your site secure, backed up and running smoothly</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a><a href="faq.html" style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/messages-square.svg)" aria-hidden="true"></i></span><b>Frequently asked questions</b><span class="sx-d">Answers on SEO, AI search, websites and automation</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a><a href="book.html" style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sx-ci"><i class="ic" style="--m:url(orbit-assets/icons/calendar-check.svg)" aria-hidden="true"></i></span><b>Book a Call</b><span class="sx-d">Not a client yet? Start with a conversation</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a></nav></div></section>
 </main>
 
 <footer>
