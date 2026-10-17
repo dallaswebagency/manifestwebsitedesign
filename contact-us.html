@@ -362,6 +362,65 @@ footer{padding-block:56px 28px}
 </style>
 <style id="mz-contact">.f-contact{display:grid;gap:2px;margin-top:20px}.f-contact a{display:inline-flex;align-items:center;gap:10px;min-height:32px;color:#fff;font-weight:600;font-size:16px;overflow-wrap:anywhere}.f-contact svg{flex:none;color:var(--accent-l)}.f-contact a:hover{color:var(--accent-l)}@media (max-width:900px){.f-contact a{min-height:44px}}</style>
 <style id="mz-brandrow">@media (min-width:901px){.f-brand{display:flex;flex-wrap:wrap;align-items:center;gap:0 16px}.f-brand>a.plate,.f-brand>p,.f-brand>.f-contact{flex:0 0 100%}.f-brand>.f-btns{margin-top:20px}.f-brand>.f-social{margin-top:20px}}</style>
+<style id="mz-cx">
+.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.cx-hero{background:var(--dark);color:#fff;padding:calc(126px + clamp(32px,4vw,56px)) 0 clamp(52px,6vw,92px);position:relative;isolation:isolate;overflow:hidden}
+.cx-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 70% at 88% 40%,rgba(0,120,126,.5),transparent 70%)}
+.cx-hin{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:center}
+.cx-hero .eyebrow{display:block;padding:0;margin:0 0 14px;background:none;border-radius:0;color:var(--accent-l);font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase}
+.cx-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(38px,5.6vw,88px);line-height:1;letter-spacing:-.04em;text-wrap:balance}
+.cx-hero h1 em{font-style:normal;color:var(--accent-l)}
+.cx-lead{margin:24px 0 0;color:#C6DAE3;font-size:clamp(17px,1.5vw,21px);line-height:1.6;max-width:52ch}
+.cx-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.cx-btn,.cx-btn2,.cx-btn3{min-height:54px;padding:0 30px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform .25s,background .25s,color .25s}
+.cx-btn{background:var(--accent-l);color:var(--dark);border:0}.cx-btn:hover{background:#fff;transform:translateY(-3px)}
+.cx-btn2{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}.cx-btn2:hover{background:#fff;color:var(--dark);transform:translateY(-3px)}
+.cx-btn3{background:var(--dark);color:#fff;border:0}.cx-btn3:hover{background:var(--accent);transform:translateY(-3px)}
+.cx-quick{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.cx-quick li{display:flex;gap:18px;align-items:center;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)}
+.cx-quick small{display:block;color:#C6DAE3;font-size:14px;font-weight:600}
+.cx-quick a,.cx-quick address{color:#fff;font-style:normal;font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.35vw,19px);text-decoration:none;overflow-wrap:anywhere}
+.cx-quick a:hover{color:var(--accent-l)}
+.cx-ci{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;font-size:26px;flex:none}
+.cx-sec{background:var(--bg);padding:clamp(52px,6.5vw,96px) 0}.cx-sec.alt{background:var(--bg2)}
+.cx-h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,52px);line-height:1.08;letter-spacing:-.025em;color:var(--ink)}
+.cx-cards,.cx-ways{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.cx-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.cx-ways{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cx-ways li{display:flex}
+.cx-cards li,.cx-ways a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid transparent;color:var(--ink);text-decoration:none;transition:transform .35s,border-color .35s,box-shadow .35s;width:100%}
+.cx-ways a{background:#fff;border-color:var(--line)}
+.cx-cards li::before,.cx-ways a::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.cx-cards li:hover,.cx-ways a:hover{transform:translateY(-6px);border-color:var(--cc);box-shadow:0 22px 34px -26px var(--cc)}
+.cx-cards li:hover::before,.cx-ways a:hover::before{width:100%}
+.cx-cards h3{margin:6px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);line-height:1.2}
+.cx-cards p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.6}
+.cx-l{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--cc);text-decoration:none}.cx-l:hover{text-decoration:underline;text-underline-offset:4px}
+.cx-form{background:var(--dark);color:#fff;padding:clamp(56px,7vw,104px) 0;position:relative;isolation:isolate;overflow:hidden}
+.cx-form::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(45% 60% at 10% 30%,rgba(0,120,126,.45),transparent 70%)}
+.cx-fin{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:start}
+.cx-fc{position:sticky;top:110px}
+.cx-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l)}
+.cx-form .cx-h2{color:#fff}
+.cx-fc>p{margin:18px 0 0;color:#C6DAE3;font-size:18px;line-height:1.65}
+.cx-human{margin-top:24px;display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);font-weight:600;line-height:1.55}
+.cx-human .ic{font-size:26px;color:var(--accent-l);margin-top:2px}
+.cx-panel{background:#fff;border-radius:24px;padding:clamp(12px,2vw,28px);box-shadow:0 40px 70px -40px rgba(0,0,0,.7)}
+.cx-panel .lc-frame iframe{min-height:760px!important}
+.cx-bt{display:flex;flex-wrap:wrap;gap:20px 48px;align-items:flex-end;justify-content:space-between}
+.cx-bt .cx-h2{max-width:20ch;text-wrap:balance}
+.cx-bt p{margin:0 0 16px;max-width:46ch;color:var(--muted);font-size:17.5px;line-height:1.6}
+.cx-ways b{font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.6vw,22px);line-height:1.2;margin-top:6px}
+.cx-d{color:var(--muted);font-size:16px}.cx-ways em{margin-top:auto;padding-top:6px;color:var(--cc);display:inline-flex}
+.cx-tl{list-style:none;margin:clamp(32px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,64px);position:relative;text-align:center}
+.cx-tl::before{content:"";position:absolute;left:calc(16.67% + 36px);right:calc(16.67% + 36px);top:36px;height:3px;background:repeating-linear-gradient(90deg,var(--accent) 0 12px,transparent 12px 22px)}
+.cx-tn{position:relative;display:grid;place-items:center;width:72px;height:72px;margin:0 auto;border-radius:50%;background:var(--cc);color:#fff;font-size:32px;box-shadow:0 0 0 8px var(--bg)}
+.cx-tn i:first-child{position:absolute;top:-6px;right:-6px;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--dark);color:#fff;font:800 14px var(--serif);font-style:normal}
+.cx-tl h3{margin:22px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(21px,2vw,28px);line-height:1.2}
+.cx-tl p{margin:10px auto 0;color:var(--muted);font-size:17.5px;line-height:1.65;max-width:34ch}
+@media (max-width:1000px){.cx-hin,.cx-fin{grid-template-columns:1fr}.cx-fc{position:static}.cx-cards{grid-template-columns:1fr}.cx-ways{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.cx-tl{grid-template-columns:1fr;text-align:left;gap:36px}.cx-tl::before{display:none}.cx-tn{margin:0}.cx-tl p{margin-left:0}}
+@media (max-width:560px){.cx-ways{grid-template-columns:1fr}.cx-panel .lc-frame iframe{min-height:900px!important}}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -406,60 +465,11 @@ footer{padding-block:56px 28px}
 
 
 <main id="main">
-  <section class="ct-hero" aria-labelledby="ct-h1">
-    <div class="wrap ct-hero-in">
-      <div>
-        <p class="eyebrow">Contact us</p>
-        <h1 id="ct-h1">Let's start a <em>conversation</em></h1>
-      </div>
-      <div class="ct-side">
-        <p class="ct-lead">No pressure, no jargon. Just tell us what you're trying to do and we'll tell you honestly whether we can help.</p>
-        <div class="ct-cta">
-          <a class="btn btn-primary" href="#form">Tell us about your project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-outline" href="book.html">Book a Call</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ct-svc" aria-labelledby="ct-svc-h">
-    <div class="wrap">
-      <div class="ct-svc-head"><h2 class="title" id="ct-svc-h">What we can help you with</h2></div>
-      <ul class="ct-svc-list"><li class="ct-row rv"><span class="n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Website Design</h3><p>Whether you need a brand-new site or a tidy-up of the one you&#x27;ve got, we build websites that look great, load fast, and actually turn visitors into enquiries.</p><a class="cl-link" href="website-design.html">About websites<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li class="ct-row rv"><span class="n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>SEO and AI Visibility</h3><p>Getting found is half the battle. We help you climb the Google rankings the proper way, and we make sure your business shows up when people ask AI tools like ChatGPT and Gemini for a recommendation.</p><a class="cl-link" href="local-seo.html">About SEO<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li class="ct-row rv"><span class="n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>AI Agents for Your Business</h3><p>We help you weave AI agents into the way you work, so the repetitive stuff runs quietly in the background and you get your time back for the things that matter.</p><a class="cl-link" href="ai-agent-installs.html">About AI agents<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul>
-    </div>
-  </section>
-
-  <section class="ct-form" id="form" aria-labelledby="ct-form-h">
-    <div class="wrap ct-form-in">
-      <div class="ct-form-copy rv">
-        <p class="eyebrow dk">The form</p>
-        <h2 class="title" id="ct-form-h">Tell us about your project</h2>
-        <p>Fill in the form and tell us a little about your business and what you're hoping to achieve.</p>
-        <div class="ct-human">We read every message that comes through, and a real human (not a bot, promise) will get back to you.</div>
-      </div>
-      <div class="ct-panel rv"><div class="lc-frame"><iframe src="https://api.leadconnectorhq.com/widget/form/tlao0wT34nctUPfKLfeU" style="width:100%;height:100%;border:none;border-radius:3px" id="inline-tlao0wT34nctUPfKLfeU" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Contact Form" data-height="727" data-layout-iframe-id="inline-tlao0wT34nctUPfKLfeU" data-form-id="tlao0wT34nctUPfKLfeU" data-cookie-consent="true" data-cookie-consent-provider="auto" title="Contact Form" loading="lazy"></iframe></div></div>
-    </div>
-  </section>
-
-  <section class="ct-book" aria-labelledby="ct-book-h">
-    <div class="wrap">
-      <div class="ct-book-top">
-        <h2 id="ct-book-h" class="rv">Skip the back and forth. Grab a spot in the calendar.</h2>
-        <div class="rv">
-          <p>If you'd rather skip the back and forth, grab a spot in the calendar for a friendly, no-obligation chat.</p>
-          <a class="btn btn-primary" href="book.html">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </div>
-      <ul class="ct-ways rv"><li><a href="book.html"><b>Quick call</b><span>15 minutes, online or phone</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="book-ai-discovery.html"><b>AI discovery call</b><span>20 minutes, online or phone</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="book-a-zoom-meeting.html"><b>Zoom call</b><span>30 minutes via Zoom</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="book-office-meeting.html"><b>Office meeting</b><span>In person at our office</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul>
-    </div>
-  </section>
-
-  <section class="ct-next" aria-labelledby="ct-next-h">
-    <div class="wrap">
-      <h2 class="title" id="ct-next-h">What happens next</h2>
-      <ol class="ct-steps"><li class="rv" style="--d:0.00s"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>A proper chat</h3><p>We&#x27;ll have a proper conversation to understand your business, your goals and what success looks like to you.</p></li><li class="rv" style="--d:0.08s"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>A clear recommendation</h3><p>We&#x27;ll come back with an honest recommendation and a straightforward quote.</p></li><li class="rv" style="--d:0.16s"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>We get started</h3><p>If it&#x27;s a good fit, we get to work. If it isn&#x27;t, we&#x27;ll still point you toward where you could go next.</p></li></ol>
-    </div>
-  </section>
+<section class="cx-hero" aria-labelledby="ct-h1"><div class="wrap cx-hin"><div><p class="eyebrow">Contact us</p><h1 id="ct-h1">Let’s start a <em>conversation</em></h1><p class="cx-lead">No pressure, no jargon. Just tell us what you're trying to do and we'll tell you honestly whether we can help.</p><div class="cx-cta"><a class="btn cx-btn" href="#form">Tell us about your project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn cx-btn2" href="book.html">Book a Call</a></div></div><ul class="cx-quick"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/mail.svg)" aria-hidden="true"></i></span><span><small>Email</small><a href="mailto:jill@manifestwebsitedesign.com.au">jill@manifestwebsitedesign.com.au</a></span></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/phone-call.svg)" aria-hidden="true"></i></span><span><small>Phone</small><a href="tel:+61482074040">+61 482 074 040</a></span></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><span><small>Visit</small><address>471 Argyle Street, Moss Vale, NSW 2577</address></span></li></ul></div></section>
+<section class="cx-sec" aria-labelledby="ct-svc-h"><div class="wrap"><h2 class="cx-h2" id="ct-svc-h">What we can help you with</h2><ul class="cx-cards"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/pen-line.svg)" aria-hidden="true"></i></span><h3>Website Design</h3><p>Whether you need a brand-new site or a tidy-up of the one you've got, we build websites that look great, load fast, and actually turn visitors into enquiries.</p><a class="cx-l" href="website-design.html">About websites <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-no-axes-combined.svg)" aria-hidden="true"></i></span><h3>SEO and AI Visibility</h3><p>Getting found is half the battle. We help you climb the Google rankings the proper way, and we make sure your business shows up when people ask AI tools like ChatGPT and Gemini for a recommendation.</p><a class="cx-l" href="local-seo.html">About SEO <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/workflow.svg)" aria-hidden="true"></i></span><h3>AI Agents for Your Business</h3><p>We help you weave AI agents into the way you work, so the repetitive stuff runs quietly in the background and you get your time back for the things that matter.</p><a class="cx-l" href="ai-agent-installs.html">About AI agents <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul></div></section>
+<section class="cx-form" id="form" aria-labelledby="ct-form-h"><div class="wrap cx-fin"><div class="cx-fc"><p class="cx-eb">The form</p><h2 class="cx-h2" id="ct-form-h">Tell us about your project</h2><p>Fill in the form and tell us a little about your business and what you're hoping to achieve.</p><div class="cx-human"><i class="ic" style="--m:url(orbit-assets/icons/hand-helping.svg)" aria-hidden="true"></i><span>We read every message that comes through, and a real human (not a bot, promise) will get back to you.</span></div></div><div class="cx-panel"><div class="lc-frame"><iframe data-activation-type="alwaysActivated" data-activation-value="" data-cookie-consent="true" data-cookie-consent-provider="auto" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-id="tlao0wT34nctUPfKLfeU" data-form-name="Contact Form" data-height="727" data-layout="{'id':'INLINE'}" data-layout-iframe-id="inline-tlao0wT34nctUPfKLfeU" data-trigger-type="alwaysShow" data-trigger-value="" id="inline-tlao0wT34nctUPfKLfeU" loading="lazy" src="https://api.leadconnectorhq.com/widget/form/tlao0wT34nctUPfKLfeU" style="width:100%;height:100%;border:none;border-radius:3px" title="Contact Form"></iframe></div></div></div></section>
+<section class="cx-sec alt" aria-labelledby="ct-book-h"><div class="wrap"><div class="cx-bt"><h2 class="cx-h2" id="ct-book-h">Skip the back and forth. Grab a spot in the calendar.</h2><div><p>If you'd rather skip the back and forth, grab a spot in the calendar for a friendly, no-obligation chat.</p><a class="btn cx-btn3" href="book.html">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><ul class="cx-ways"><li><a href="book.html" style="--cc:#2F6FED;--cs:#E6EEFF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/phone-call.svg)" aria-hidden="true"></i></span><b>Quick call</b><span class="cx-d">15 minutes, online or phone</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a></li><li><a href="book-ai-discovery.html" style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><b>AI discovery call</b><span class="cx-d">20 minutes, online or phone</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a></li><li><a href="book-a-zoom-meeting.html" style="--cc:#D6456B;--cs:#FDE8EE"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/video.svg)" aria-hidden="true"></i></span><b>Zoom call</b><span class="cx-d">30 minutes via Zoom</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a></li><li><a href="book-office-meeting.html" style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="cx-ci"><i class="ic" style="--m:url(orbit-assets/icons/building-2.svg)" aria-hidden="true"></i></span><b>Office meeting</b><span class="cx-d">In person at our office</span><em><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></em></a></li></ul></div></section>
+<section class="cx-sec" aria-labelledby="ct-next-h"><div class="wrap"><h2 class="cx-h2" id="ct-next-h">What happens next</h2><ol class="cx-tl"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="cx-tn"><i>1</i><i class="ic" style="--m:url(orbit-assets/icons/messages-square.svg)" aria-hidden="true"></i></span><h3>A proper chat</h3><p>We'll have a proper conversation to understand your business, your goals and what success looks like to you.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="cx-tn"><i>2</i><i class="ic" style="--m:url(orbit-assets/icons/clipboard-list.svg)" aria-hidden="true"></i></span><h3>A clear recommendation</h3><p>We'll come back with an honest recommendation and a straightforward quote.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="cx-tn"><i>3</i><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><h3>We get started</h3><p>If it's a good fit, we get to work. If it isn't, we'll still point you toward where you could go next.</p></li></ol></div></section>
 </main>
 
 
