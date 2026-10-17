@@ -718,6 +718,13 @@ html body .wh-fs .av-h2{color:var(--ink)}
 .fz-help .btn{border-radius:6px}
 </style>
 <style id="mz-ok">.wh-ok-top{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:center}.wh-ok-top .av-h2{margin-top:14px}.wh-ok-top .wh-ok-st{margin:0;max-width:none;font-size:clamp(24px,2.6vw,38px);line-height:1.2}@media (max-width:900px){.wh-ok-top{grid-template-columns:1fr}.wh-ok-top .wh-ok-st{margin-top:20px}}</style>
+<style id="mz-fsbg">
+.wh-fs{position:relative;isolation:isolate;overflow:hidden;background:var(--dark) url(website-health-form-bg.png) center/cover no-repeat}
+.wh-fs::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,26,53,.9) 0%,rgba(1,26,53,.62) 55%,rgba(1,26,53,.3) 100%)}
+html body .wh-fs .eyebrow{color:var(--accent-l)}
+html body .wh-fs .av-h2{color:#fff}
+html body .wh-fs .wh-chk-p{color:#D6E4EC}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
