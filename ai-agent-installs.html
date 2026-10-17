@@ -509,6 +509,144 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
 </style><style id="mz-eyebrow">html body .eyebrow{font-size:clamp(16px,1.45vw,20px);font-weight:800;letter-spacing:.1em;line-height:1.25}</style>
+<style id="av-css">.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+/* hero rail */
+.av-rail{list-style:none;margin:clamp(40px,5vw,72px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.22);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.05)}
+.av-rail li{padding:clamp(20px,2.2vw,30px)}
+.av-rail li+li{border-left:1px solid rgba(255,255,255,.18)}
+.av-rail b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.05;letter-spacing:-.025em;color:#fff}
+.av-rail span{display:block;margin-top:10px;color:#C6DAE3;font-size:16px;line-height:1.5}
+/* sections */
+.av-sec{padding:clamp(72px,9vw,140px) 0;background:var(--bg)}
+.av-sec.w{background:#fff}
+.av-sec.b2{background:var(--bg2)}
+.av-sec.dk{background:var(--dark);color:#fff}
+.av-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,112px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.av-h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.9vw,54px);line-height:1.06;letter-spacing:-.025em;text-wrap:balance}
+.av-lede{color:var(--muted);font-size:18px;line-height:1.65;max-width:52ch}
+.av-lede p+p{margin-top:12px}
+.dk .av-lede{color:#C6DAE3}
+.dk .eyebrow{color:var(--accent-l)}
+.av-note{margin-top:28px;color:var(--muted);font-size:18px}
+.av-note a{color:var(--accent);font-weight:700;text-decoration:underline}
+.av-grid{list-style:none;margin:0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.av-grid.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.av-grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.av-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,2.4vw,34px)}
+.b2 .av-card,.w .av-card{background:#fff}
+.av-ico{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:#DDF4F2;color:var(--accent);font-size:26px}
+.av-card h3{margin-top:18px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.6vw,23px);line-height:1.2;letter-spacing:-.01em}
+.av-card p{margin-top:10px;color:var(--muted);font-size:17px;line-height:1.6}
+/* alternating blocks */
+.av-svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:center;margin-top:clamp(40px,5vw,80px)}
+.av-svc.flip .av-art{order:2}
+.av-art{position:relative;aspect-ratio:6/5;border-radius:26px;overflow:hidden;display:grid;place-items:center;color:var(--accent-l);background:radial-gradient(circle at 30% 20%,rgba(18,216,198,.28),transparent 55%),linear-gradient(160deg,var(--dark2),var(--dark))}
+.av-art::before,.av-art::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
+.av-art::before{width:76%;aspect-ratio:1}
+.av-art::after{width:104%;aspect-ratio:1;border-style:dashed;border-color:rgba(18,216,198,.28)}
+.av-art-ic{position:relative;z-index:1;display:grid;place-items:center;width:clamp(110px,14vw,170px);aspect-ratio:1;border-radius:50%;background:rgba(18,216,198,.12);border:1.5px solid rgba(18,216,198,.55);font-size:clamp(52px,6.5vw,80px)}
+.av-pills{position:absolute;z-index:2;left:6%;right:6%;bottom:7%;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.av-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:600;font-size:14.5px;backdrop-filter:blur(4px)}
+.av-chip .ic{font-size:18px}
+.av-svc-t h3{font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.1;letter-spacing:-.02em}
+.av-svc-t>p{margin-top:14px;color:var(--muted);font-size:18px;line-height:1.65;max-width:48ch}
+.av-bl{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.av-bl li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:17px;line-height:1.45}
+.av-bl .ic{margin-top:3px;color:var(--accent);font-size:19px}
+/* use cases */
+.av-card.uc{display:flex;flex-direction:column;gap:18px}
+.av-uct{display:flex;align-items:center;gap:14px}
+.av-uct h3{margin:0}
+.av-card.uc blockquote{margin:0;flex:1;padding:18px 20px;border-radius:14px;background:var(--bg);border-left:3px solid var(--accent);color:var(--ink);font-size:16.5px;line-height:1.6}
+/* proof */
+.av-quote{margin:0 0 clamp(28px,3.4vw,48px);max-width:1000px}
+.av-quote blockquote{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.6vw,36px);line-height:1.3;letter-spacing:-.015em;text-wrap:balance}
+.av-quote figcaption{margin-top:18px;color:var(--accent-l);font-weight:700;font-size:16px}
+.av-cases{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-case{padding:clamp(24px,2.6vw,38px);border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(255,255,255,.06)}
+.av-case h3{font-family:var(--serif);font-weight:700;font-size:clamp(20px,1.8vw,26px);line-height:1.2}
+.av-case p{margin-top:12px;color:#C6DAE3;font-size:17px;line-height:1.6}
+.av-case a{display:inline-flex;align-items:center;gap:8px;margin-top:20px;color:var(--accent-l);font-weight:700}
+/* integrations rows */
+.av-rows{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.av-row{display:grid;grid-template-columns:minmax(170px,240px) minmax(0,1fr);align-items:center;gap:clamp(14px,2vw,28px);padding:clamp(18px,2vw,26px) clamp(20px,2.6vw,36px)}
+.av-row:nth-child(even){background:var(--bg)}
+.av-row+.av-row{border-top:1px solid var(--line)}
+.av-row h3{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,21px);line-height:1.25}
+.av-row ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.av-row li{display:flex;align-items:center;gap:9px;padding:9px 14px 9px 10px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:600;font-size:15px;line-height:1.2}
+.av-row li .ic{font-size:24px}
+.av-row li.txt{padding-left:14px}
+.av-row li.txt span{font-family:var(--serif);font-weight:800;font-size:16px;letter-spacing:-.02em}
+.av-row li.more{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-row li.more span{font-family:var(--serif);font-weight:800;font-size:17px}
+/* steps */
+.av-card.step{display:flex;flex-direction:column;align-items:flex-start}
+.av-time{margin-bottom:20px;display:inline-flex;flex-direction:column;padding:10px 14px;border-radius:12px;background:var(--dark);color:#C6DAE3;font-size:13.5px;line-height:1.3}
+.av-time b{font-family:var(--serif);font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
+/* control */
+.av-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,2.6vw,38px)}
+.av-flow li{position:relative;padding:clamp(20px,2.2vw,28px);border:1px solid rgba(255,255,255,.2);border-radius:18px;background:rgba(255,255,255,.06);display:flex;flex-direction:column;gap:6px}
+.av-flow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 6px);width:calc(clamp(22px,2.6vw,38px) - 12px);height:2px;background:var(--accent-l);transform:translateY(-50%)}
+.av-flow li:not(:last-child)::before{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 4px);width:9px;height:9px;border-top:2px solid var(--accent-l);border-right:2px solid var(--accent-l);transform:translateY(-50%) rotate(45deg);z-index:1}
+.av-flow .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l);margin-bottom:12px}
+.av-flow li.you{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-flow li.you .av-ico{background:rgba(1,26,53,.12);color:var(--dark)}
+.av-flow b{font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.7vw,24px)}
+.av-flow li>span:last-child{font-size:16px;line-height:1.5;color:#C6DAE3}
+.av-flow li.you>span:last-child{color:#0B2B4B}
+.av-sub{margin:clamp(40px,5vw,72px) 0 24px;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.6vw,36px);letter-spacing:-.02em}
+.av-grid.lock .av-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.av-grid.lock .av-card p{margin-top:16px;color:#E3EEEF}
+.av-grid.lock .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l)}
+.av-card.ask{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:20px;background:var(--accent-l)!important;border-color:var(--accent-l)!important}
+.av-card.ask p{margin:0!important;color:var(--dark)!important;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,22px);line-height:1.35}
+.av-card.ask .btn{background:var(--dark);color:#fff}
+/* fit */
+.av-fit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-fc{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.av-fc h3{display:flex;align-items:center;gap:14px;margin:0;padding:clamp(20px,2.2vw,28px) clamp(22px,2.6vw,36px);font-family:var(--serif);font-weight:800;font-size:clamp(22px,2vw,28px);line-height:1.1}
+.av-fc h3 .ic{font-size:30px}
+.av-fc h3 small{margin-left:auto;font-family:var(--sans);font-weight:600;font-size:14px;opacity:.8;text-align:right}
+.av-fc.y h3{background:var(--accent);color:#fff}
+.av-fc.n h3{background:var(--dark);color:#fff}
+.av-fc ul{list-style:none;margin:0;padding:clamp(8px,1vw,14px) clamp(22px,2.6vw,36px) clamp(18px,2vw,26px)}
+.av-fc li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;font-size:17px;line-height:1.5;font-weight:500}
+.av-fc li+li{border-top:1px solid var(--line)}
+.av-fc li .ic{margin-top:3px;font-size:20px}
+.av-fc.y li .ic{color:var(--accent)}
+.av-fc.n li .ic{color:#B5483A}
+@media (max-width:1100px){.av-grid.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.av-grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow li::before,.av-flow li::after{display:none!important}}
+@media (max-width:900px){
+ .av-head,.av-svc,.av-cases,.av-fit{grid-template-columns:1fr}
+ .av-svc.flip .av-art{order:0}
+ .av-art{aspect-ratio:16/10}
+ .av-rail{grid-template-columns:1fr 1fr}
+ .av-rail li:nth-child(3){border-left:0}
+ .av-rail li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+ .av-row{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:620px){
+ .av-grid.g4,.av-grid.g3,.av-flow{grid-template-columns:1fr}
+ .av-rail{grid-template-columns:1fr}
+ .av-rail li+li{border-left:0;border-top:1px solid rgba(255,255,255,.18)}
+ .av-art{aspect-ratio:auto;padding:36px 16px 20px;display:flex;flex-direction:column;align-items:center;gap:22px}
+ .av-art::before{width:90%;top:-10%}.av-art::after{display:none}
+ .av-art-ic{width:104px;font-size:48px}
+ .av-pills{position:static;justify-content:center}
+ .av-fc h3 small{display:none}
+}
+.av-head.solo{grid-template-columns:1fr}
+.av-head.solo .av-h2{max-width:22ch}
+/* do-it-yourself: two cards */
+.ai-diy{background:var(--bg2)!important}
+.ai-diy .ai-diy-copy{background:var(--dark);color:#fff;border-radius:22px;padding:clamp(28px,3.2vw,52px)}
+.ai-diy .ai-diy-copy h2{color:#fff}
+.ai-diy .ai-diy-copy p{color:#C6DAE3}
+.ai-diy .ai-diy-copy strong{color:#fff}
+.ai-diy .ai-diy-box{background:#fff;border:1px solid var(--line)!important;border-radius:22px;padding:clamp(28px,3.2vw,48px)}
+.ai-diy .ai-diy-in{align-items:stretch}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -565,7 +703,6 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
           <a class="btn btn-primary" href="book.html">Book a Free Discovery Session <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn-outline" href="#how-it-works">See how it works →</a>
         </div>
-        <ul class="ai-trust rv" style="--d:.2s"><li>Works while you sleep</li><li>Connects to the tools you already use</li><li>Live in days, not months</li><li>Nothing goes out without your approval</li></ul>
       </div>
       <div class="ai-chat rv" style="--d:.14s" role="img" aria-label="Example Slack conversation: Sarah asks Viktor to find invoices more than 7 days overdue in Xero. Viktor finds 6 totalling $8,420, drafts reminders and offers to show the drafts before sending.">
         <div class="ai-chat-h"><div>#viktor <span>Northside Plumbing</span></div><span>Example conversation</span></div>
@@ -577,83 +714,30 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
         </div>
       </div>
     </div>
+    <ul class="av-rail rv" style="--d:.2s"><li><b>3 to 4 days</b><span>Setup, depending on the business</span></li><li><b>1 to 2 hours</b><span>Onboarding session to load your business in</span></li><li><b>Same day</b><span>You start using it</span></li><li><b>Every time</b><span>You approve in Slack before anything goes out</span></li></ul>
   </div>
 </section>
 
-<section class="ai-hands" aria-labelledby="ai-hands-h">
-  <div style="display:block" class="wrap ai-hands-in"><div class="mzv-wrap"><aside class="mzv-panel rv"><span class="mzv-ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></svg></span><small>Time back</small><b>Another set of hands</b><ul><li>Admin handled</li><li>Marketing on track</li><li>No new hire</li></ul></aside><div class="mzv-body">
-    <div>
-      <h2 id="ai-hands-h" class="title rv">You don’t need another app. You need another set of hands.</h2>
-      <p class="ai-hands-p rv"><strong>Most business owners aren’t short on ideas. They’re short on hours.</strong> The admin piles up, the follow-ups slip, the marketing sits on the ‘one day’ list. Not because you don’t care, but because there’s only one of you.</p>
-    </div>
-    <ul class="ai-pains"><li class="rv" style="--d:0.00s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>The day disappears into admin</h3><p>Invoices, reminders, inbox, quotes, scheduling. Necessary work, but none of it is the work that grows your business.</p></li><li class="rv" style="--d:0.05s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>Marketing keeps slipping</h3><p>You know you should be showing up on Google and posting on social. It just never makes it to the top of the list.</p></li><li class="rv" style="--d:0.10s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>It all lives in your head</h3><p>Your processes, your tone, how you like things done. It’s all in your head or scattered across a dozen tools. Nothing runs without you.</p></li><li class="rv" style="--d:0.15s"><span class="ai-pn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Hiring is a big commitment</h3><p>Another salary, super, training, and management. A lot to take on when you just need the repetitive work handled.</p></li></ul>
-  </div></div>
-</section>
+<section class="av-sec" aria-labelledby="av-pain-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">Meet your next set of hands</p><h2 class="av-h2 rv" id="av-pain-h" style="--d:.05s">You don’t need another app. You need another set of hands.</h2></div><p class="av-lede rv" style="--d:.08s">Most business owners aren’t short on ideas. They’re short on hours. The admin piles up, the follow-ups slip, the marketing sits on the ‘one day’ list. Not because you don’t care, but because there’s only one of you.</p></div><ul class="av-grid g4"><li class="av-card rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/timer.svg)" aria-hidden="true"></i></span><h3>The day disappears into admin</h3><p>Invoices, reminders, inbox, quotes, scheduling. Necessary work, but none of it is the work that grows your business.</p></li><li class="av-card rv" style="--d:0.05s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/megaphone.svg)" aria-hidden="true"></i></span><h3>Marketing keeps slipping</h3><p>You know you should be showing up on Google and posting on social. It just never makes it to the top of the list.</p></li><li class="av-card rv" style="--d:0.10s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/database.svg)" aria-hidden="true"></i></span><h3>It all lives in your head</h3><p>Your processes, your tone, how you like things done. It’s all in your head or scattered across a dozen tools. Nothing runs without you.</p></li><li class="av-card rv" style="--d:0.15s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/hand-helping.svg)" aria-hidden="true"></i></span><h3>Hiring is a big commitment</h3><p>Another salary, super, training, and management. A lot to take on when you just need the repetitive work handled.</p></li></ul></div></section>
 
-<section class="ai-not" aria-labelledby="ai-not-h">
-  <div class="wrap">
-    <p class="eyebrow rv">What makes it different</p>
-    <h2 id="ai-not-h" class="rv">Viktor is not ChatGPT with a Slack skin.</h2>
-    <p class="ai-not-lead rv">Plenty of AI tools can talk. Viktor can do. Three things set it apart from every chatbot you’ve tried.</p>
-    <div class="ai-3list"><article class="ai-3 rv"><b class="ai-3w" aria-hidden="true">Memory.</b><div><h3>It has memory</h3><p>Tell Viktor about your business once. It remembers your clients, your processes, your brand voice, and how you like things done, and uses that on every task.</p></div></article><article class="ai-3 rv"><b class="ai-3w" aria-hidden="true">Hands.</b><div><h3>It has hands</h3><p>Viktor connects to Gmail, Xero, Google Drive, your CRM, your social accounts and more, then actually completes the task. It doesn’t hand you instructions. It does the job and reports back.</p></div></article><article class="ai-3 rv"><b class="ai-3w" aria-hidden="true">Schedule.</b><div><h3>It has a schedule</h3><p>Set a routine once and Viktor runs it. Daily lead summaries, weekly reports, overdue invoice reminders, all done on time, every time, without you lifting a finger.</p></div></article></div>
-  </div>
-</section>
+<section class="av-sec w" aria-labelledby="av-diff-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">What makes it different</p><h2 class="av-h2 rv" id="av-diff-h" style="--d:.05s">Viktor is not ChatGPT with a Slack skin.</h2></div><p class="av-lede rv" style="--d:.08s">Plenty of AI tools can talk. Viktor can do. Three things set it apart from every chatbot you’ve tried.</p></div><div class="av-svc rv"><div class="av-art" aria-hidden="true"><span class="av-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/database.svg)" aria-hidden="true"></i></span><div class="av-pills"><span class="av-chip">Clients</span><span class="av-chip">Processes</span><span class="av-chip">Brand voice</span></div></div><div class="av-svc-t"><h3>It has memory</h3><p>Tell Viktor about your business once. It remembers your clients, your processes, your brand voice, and how you like things done, and uses that on every task.</p><ul class="av-bl"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Your clients and how you work with them</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Your processes and the way you like things done</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Your brand voice, on every piece of writing</span></li></ul></div></div><div class="av-svc flip rv"><div class="av-art" aria-hidden="true"><span class="av-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/hand-helping.svg)" aria-hidden="true"></i></span><div class="av-pills"><span class="av-chip"><i class="ic" style="--m:url(orbit-assets/logos/gmail.svg)" aria-hidden="true"></i>Gmail</span><span class="av-chip"><i class="ic" style="--m:url(orbit-assets/logos/xero.svg)" aria-hidden="true"></i>Xero</span><span class="av-chip"><i class="ic" style="--m:url(orbit-assets/logos/googledrive.svg)" aria-hidden="true"></i>Drive</span><span class="av-chip"><i class="ic" style="--m:url(orbit-assets/logos/hubspot.svg)" aria-hidden="true"></i>HubSpot</span></div></div><div class="av-svc-t"><h3>It has hands</h3><p>Viktor connects to Gmail, Xero, Google Drive, your CRM, your social accounts and more, then actually completes the task. It doesn’t hand you instructions. It does the job and reports back.</p><ul class="av-bl"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Reads data and drafts work inside your own accounts</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Posts and sends only where you tell it to</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Reports back when the job is done</span></li></ul></div></div><div class="av-svc rv"><div class="av-art" aria-hidden="true"><span class="av-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/calendar-clock.svg)" aria-hidden="true"></i></span><div class="av-pills"><span class="av-chip">Every morning</span><span class="av-chip">Every week</span><span class="av-chip">On time</span></div></div><div class="av-svc-t"><h3>It has a schedule</h3><p>Set a routine once and Viktor runs it. Daily lead summaries, weekly reports, overdue invoice reminders, all done on time, every time, without you lifting a finger.</p><ul class="av-bl"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Daily lead summaries</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Weekly reports</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Overdue invoice reminders</span></li></ul></div></div></div></section>
 
-<section class="ai-tasks" aria-labelledby="ai-tasks-h">
-  <div class="wrap">
-    <div class="ai-head">
-      <div><p class="eyebrow rv">Use cases</p><h2 id="ai-tasks-h" class="title rv">Real tasks. Across your whole business.</h2></div>
-      <p class="rv" style="--d:.06s">Viktor isn’t limited to one job. Here’s what owners in different industries actually hand off.</p>
-    </div>
-    <div class="ai-tk-grid"><figure class="ai-tk rv" style="--d:0.00s"><figcaption>Trades &amp; Construction</figcaption><blockquote>Find every invoice overdue by more than 7 days, draft a polite reminder for each client, and send them.</blockquote></figure><figure class="ai-tk rv" style="--d:0.05s"><figcaption>Real Estate</figcaption><blockquote>Every morning at 7am, check my inbox for leads that came in overnight and send me a summary: name, contact details, and what they’re after.</blockquote></figure><figure class="ai-tk rv" style="--d:0.10s"><figcaption>Accounting &amp; Professional Services</figcaption><blockquote>Pull all invoices overdue by more than 14 days and draft a professional reminder for each client to send on my behalf.</blockquote></figure><figure class="ai-tk rv" style="--d:0.15s"><figcaption>Marketing</figcaption><blockquote>Write a month of social content for Instagram and LinkedIn, 60% educational, 40% promotional, based on our latest blog posts.</blockquote></figure><figure class="ai-tk rv" style="--d:0.20s"><figcaption>Admin</figcaption><blockquote>Triage my inbox: flag anything urgent, draft replies to routine enquiries, and summarise the rest into a morning briefing.</blockquote></figure><figure class="ai-tk rv" style="--d:0.25s"><figcaption>Social Media</figcaption><blockquote>Use this photo and write a post about how well the team worked today, then schedule it to Facebook and Instagram.</blockquote></figure></div>
-    <p class="ai-tasks-note rv">Want the marketing side to compound? See our <a href="local-seo.html">local SEO and content package</a>.</p>
-  </div>
-</section>
+<section class="av-sec b2" aria-labelledby="av-uc-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">Use cases</p><h2 class="av-h2 rv" id="av-uc-h" style="--d:.05s">Real tasks. Across your whole business.</h2></div><p class="av-lede rv" style="--d:.08s">Viktor isn’t limited to one job. Here’s what owners in different industries actually hand off.</p></div><ul class="av-grid g3"><li class="av-card uc rv" style="--d:0.00s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/receipt.svg)" aria-hidden="true"></i></span><h3>Trades &amp; Construction</h3></div><blockquote>“Find every invoice overdue by more than 7 days, draft a polite reminder for each client, and send them.”</blockquote></li><li class="av-card uc rv" style="--d:0.04s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/store.svg)" aria-hidden="true"></i></span><h3>Real Estate</h3></div><blockquote>“Every morning at 7am, check my inbox for leads that came in overnight and send me a summary: name, contact details, and what they’re after.”</blockquote></li><li class="av-card uc rv" style="--d:0.08s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/landmark.svg)" aria-hidden="true"></i></span><h3>Accounting &amp; Professional Services</h3></div><blockquote>“Pull all invoices overdue by more than 14 days and draft a professional reminder for each client to send on my behalf.”</blockquote></li><li class="av-card uc rv" style="--d:0.12s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/megaphone.svg)" aria-hidden="true"></i></span><h3>Marketing</h3></div><blockquote>“Write a month of social content for Instagram and LinkedIn, 60% educational, 40% promotional, based on our latest blog posts.”</blockquote></li><li class="av-card uc rv" style="--d:0.16s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/mail-check.svg)" aria-hidden="true"></i></span><h3>Admin</h3></div><blockquote>“Triage my inbox: flag anything urgent, draft replies to routine enquiries, and summarise the rest into a morning briefing.”</blockquote></li><li class="av-card uc rv" style="--d:0.20s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/share-2.svg)" aria-hidden="true"></i></span><h3>Social Media</h3></div><blockquote>“Use this photo and write a post about how well the team worked today, then schedule it to Facebook and Instagram.”</blockquote></li></ul><p class="av-note rv">Want the marketing side to compound? See our <a href="local-seo.html">local SEO and content package</a>.</p></div></section>
 
-<section class="ai-proof" aria-labelledby="ai-proof-h">
-  <div class="wrap">
-    <p class="eyebrow dk rv">In use now</p>
-    <h2 id="ai-proof-h" class="ai-proof-lead rv">This isn’t theory. It’s running in two organisations right now.</h2>
-    <blockquote class="ai-quote rv">“What used to take me hours and cause a lot of anxiety now takes a couple of minutes. No stress. And each time, it learns, so it gets easier and easier.”</blockquote>
-    <div class="ai-cases">
-      <article class="ai-case rv">
+<section class="av-sec dk" aria-labelledby="av-proof-h"><div class="wrap"><div class="av-head solo"><div><p class="eyebrow dk rv">In use now</p><h2 class="av-h2 rv" id="av-proof-h" style="--d:.05s">This isn’t theory. It’s running in two organisations right now.</h2></div></div><figure class="av-quote rv"><blockquote>“What used to take me hours and cause a lot of anxiety now takes a couple of minutes. No stress. And each time, it learns, so it gets easier and easier.”</blockquote><figcaption>Southern Highlands Chamber of Commerce</figcaption></figure><div class="av-cases"><article class="av-case rv" style="--d:0.00s">
         <h3>Southern Highlands Chamber of Commerce</h3>
         <p>Events, member communications, grant searches and the monthly Business NSW report. A half-day spreadsheet job every month is now review and send.</p>
         <p>Unpaid registrations get chased automatically, revenue that was quietly walking out the door.</p>
         <a href="https://manifestwebsitedesign.com.au/case-study/southern-highlands-chamber/">Read the Chamber case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </article>
-      <article class="ai-case rv" style="--d:.08s">
+      </article><article class="av-case rv" style="--d:0.08s">
         <h3>Manifest Website Design</h3>
         <p>Client SEO reports, care plan support, content, and a daily inbox briefing that turns about 100 emails into the handful that need me.</p>
         <a href="https://manifestwebsitedesign.com.au/case-study/manifest-website-design/">Read how we use it <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </article>
-    </div>
-  </div>
-</section>
+      </article></div></div></section>
 
-<section class="ai-tools" aria-labelledby="ai-tools-h">
-  <div class="wrap ai-tools-in">
-    <div>
-      <p class="eyebrow rv">Integrations</p>
-      <h2 id="ai-tools-h" class="title rv">Viktor works inside the tools you already use.</h2>
-      <p class="ai-tools-p rv">No new system to learn. Viktor plugs into your existing accounts and works from there, reading data, drafting work, and posting where you tell it to.</p>
-    </div>
-    <div class="rv" style="--d:.08s">
-      <ul class="ai-wall"><li>Gmail</li><li>Outlook</li><li>Google Calendar</li><li>Google Drive</li><li>OneDrive</li><li>Xero</li><li>QuickBooks</li><li>Stripe</li><li>PayPal</li><li>ServiceM8</li><li>HubSpot</li><li>Salesforce</li><li>monday.com</li><li>ClickUp</li><li>Asana</li><li>Notion</li><li>Canva</li><li>Facebook</li><li>Instagram</li><li>LinkedIn</li><li>Google Business Profile</li><li>Google Ads</li><li>Meta Ads</li><li>Shopify</li><li>WooCommerce</li><li>Mailchimp</li><li>Slack</li><li>Dropbox</li></ul>
-      <p class="ai-more"><span>+ thousands more.</span> If you already use it, chances are Viktor can too.</p>
-    </div>
-  </div>
-</section>
+<section class="av-sec" aria-labelledby="av-tools-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">Integrations</p><h2 class="av-h2 rv" id="av-tools-h" style="--d:.05s">Viktor works inside the tools you already use.</h2></div><p class="av-lede rv" style="--d:.08s">No new system to learn. Viktor plugs into your existing accounts and works from there, reading data, drafting work, and posting where you tell it to.</p></div><div class="av-rows rv"><div class="av-row"><h3>Email, calendar &amp; files</h3><ul><li><i class="ic" style="--m:url(orbit-assets/logos/gmail.svg)" aria-hidden="true"></i><span>Gmail</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/microsoftoutlook.svg)" aria-hidden="true"></i><span>Outlook</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/googlecalendar.svg)" aria-hidden="true"></i><span>Google Calendar</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/googledrive.svg)" aria-hidden="true"></i><span>Google Drive</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/microsoftonedrive.svg)" aria-hidden="true"></i><span>OneDrive</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/dropbox.svg)" aria-hidden="true"></i><span>Dropbox</span></li></ul></div><div class="av-row"><h3>Accounting &amp; payments</h3><ul><li><i class="ic" style="--m:url(orbit-assets/logos/xero.svg)" aria-hidden="true"></i><span>Xero</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/quickbooks.svg)" aria-hidden="true"></i><span>QuickBooks</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/stripe.svg)" aria-hidden="true"></i><span>Stripe</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/paypal.svg)" aria-hidden="true"></i><span>PayPal</span></li><li class="txt"><span>ServiceM8</span></li></ul></div><div class="av-row"><h3>CRM &amp; projects</h3><ul><li><i class="ic" style="--m:url(orbit-assets/logos/hubspot.svg)" aria-hidden="true"></i><span>HubSpot</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/salesforce.svg)" aria-hidden="true"></i><span>Salesforce</span></li><li class="txt"><span>monday.com</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/clickup.svg)" aria-hidden="true"></i><span>ClickUp</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/asana.svg)" aria-hidden="true"></i><span>Asana</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/notion.svg)" aria-hidden="true"></i><span>Notion</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/canva.svg)" aria-hidden="true"></i><span>Canva</span></li></ul></div><div class="av-row"><h3>Social &amp; advertising</h3><ul><li><i class="ic" style="--m:url(orbit-assets/logos/facebook.svg)" aria-hidden="true"></i><span>Facebook</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/instagram.svg)" aria-hidden="true"></i><span>Instagram</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/linkedin.svg)" aria-hidden="true"></i><span>LinkedIn</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/googlemybusiness.svg)" aria-hidden="true"></i><span>Google Business Profile</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/googleads.svg)" aria-hidden="true"></i><span>Google Ads</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/meta.svg)" aria-hidden="true"></i><span>Meta Ads</span></li></ul></div><div class="av-row"><h3>Web, email marketing &amp; chat</h3><ul><li><i class="ic" style="--m:url(orbit-assets/logos/shopify.svg)" aria-hidden="true"></i><span>Shopify</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/woocommerce.svg)" aria-hidden="true"></i><span>WooCommerce</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/mailchimp.svg)" aria-hidden="true"></i><span>Mailchimp</span></li><li><i class="ic" style="--m:url(orbit-assets/logos/slack.svg)" aria-hidden="true"></i><span>Slack</span></li></ul></div><div class="av-row"><h3>And more</h3><ul><li class="more"><span>+ thousands more</span></li></ul></div></div><p class="av-note rv">If you already use it, chances are Viktor can too.</p></div></section>
 
-<section class="ai-how" id="how-it-works" aria-labelledby="ai-how-h">
-  <div class="wrap">
-    <div class="ai-head">
-      <div><p class="eyebrow rv">How it works</p><h2 id="ai-how-h" class="title rv">We do the setup. You get the co-worker.</h2></div>
-      <p class="rv" style="--d:.06s">The reason most business owners never get value from AI is the setup. So we handle it.</p>
-    </div>
-    <ol class="ai-steps"><li class="ai-st rv" style="--d:0.00s"><div class="ai-stt"><b>3 to 4 days</b><span>depending on the business</span></div><h3>We set everything up</h3><p>We build your private Slack workspace and connect Viktor to your accounts: email, calendar, accounting, drive, social, and whatever else your business runs on.</p></li><li class="ai-st rv" style="--d:0.06s"><div class="ai-stt"><b>1 to 2 hours</b><span>onboarding session</span></div><h3>We load your business into it</h3><p>In an onboarding session we load Viktor with your brand voice, your services, your clients, your processes, and how you like things done, so its work actually sounds and behaves like your business.</p></li><li class="ai-st rv" style="--d:0.12s"><div class="ai-stt"><b>Same day</b><span>start using it</span></div><h3>You put it to work</h3><p>Open Slack and message Viktor like a staff member. Ask it to draft, send, schedule, research, report, whatever’s on your plate.</p></li><li class="ai-st rv" style="--d:0.18s"><div class="ai-stt"><b>Ongoing</b><span>we stay involved</span></div><h3>We keep it running</h3><p>Manifest oversees the system, refines Viktor’s context as your business changes, and checks in so it keeps getting more useful over time. You’re never left to figure it out alone.</p></li></ol>
-  </div>
-</section>
+<section class="av-sec w" id="how-it-works" aria-labelledby="av-how-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">How it works</p><h2 class="av-h2 rv" id="av-how-h" style="--d:.05s">We do the setup. You get the co-worker.</h2></div><p class="av-lede rv" style="--d:.08s">The reason most business owners never get value from AI is the setup. So we handle it.</p></div><ol class="av-grid g4 steps"><li class="av-card step rv" style="--d:0.00s"><span class="av-time"><b>3 to 4 days</b>depending on the business</span><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/plug.svg)" aria-hidden="true"></i></span><h3>We set everything up</h3><p>We build your private Slack workspace and connect Viktor to your accounts: email, calendar, accounting, drive, social, and whatever else your business runs on.</p></li><li class="av-card step rv" style="--d:0.06s"><span class="av-time"><b>1 to 2 hours</b>onboarding session</span><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/database.svg)" aria-hidden="true"></i></span><h3>We load your business into it</h3><p>In an onboarding session we load Viktor with your brand voice, your services, your clients, your processes, and how you like things done, so its work actually sounds and behaves like your business.</p></li><li class="av-card step rv" style="--d:0.12s"><span class="av-time"><b>Same day</b>start using it</span><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><h3>You put it to work</h3><p>Open Slack and message Viktor like a staff member. Ask it to draft, send, schedule, research, report, whatever’s on your plate.</p></li><li class="av-card step rv" style="--d:0.18s"><span class="av-time"><b>Ongoing</b>we stay involved</span><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/refresh-cw.svg)" aria-hidden="true"></i></span><h3>We keep it running</h3><p>Manifest oversees the system, refines Viktor’s context as your business changes, and checks in so it keeps getting more useful over time. You’re never left to figure it out alone.</p></li></ol></div></section>
 
 <section class="ai-diy" aria-labelledby="ai-diy-h">
   <div class="wrap ai-diy-in">
@@ -673,38 +757,9 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
   </div>
 </section>
 
-<section class="ai-safe" aria-labelledby="ai-safe-h">
-  <div class="wrap">
-    <div class="ai-safe-top">
-      <div><p class="eyebrow dk rv">Control</p><h2 id="ai-safe-h" class="rv">Nothing goes out without your say-so.</h2></div>
-      <div class="rv" style="--d:.06s">
-        <p>Viktor drafts, prepares, and queues, then waits for you. You get all the speed of an extra team member with none of the “what did it just do?”</p>
-        <p>Emails, posts, reminders, content: nothing is sent or published until you approve it in Slack. You’re always the one who signs off. Viktor does the work. You make the call.</p>
-      </div>
-    </div>
-    <ol class="ai-flow rv">
-      <li><b>Viktor drafts</b><span>Prepares the email, post or reminder</span></li>
-      <li><b>Viktor queues</b><span>Holds it and waits for you</span></li>
-      <li class="you"><b>You approve</b><span>In Slack, every time</span></li>
-      <li><b>Then it goes out</b><span>Sent or published under your name</span></li>
-    </ol>
-    <div class="ai-lock">
-      <h3 class="rv">And your accounts stay locked down.</h3>
-      <div class="rv" style="--d:.06s"><ul><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Viktor only connects to the accounts you approve, and nothing else.</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Your passwords sit in an encrypted vault, so the AI never actually reads them.</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Your business data is never used to train any AI.</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>And you can disconnect any tool in one click.</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Viktor is built on a platform that’s SOC 2 certified and vetted by Slack before it was listed in their app directory. Data is hosted in the United States.</span></li></ul><p class="ai-lock-end">Happy to go through any of this properly on the discovery call.</p></div>
-    </div>
-  </div>
-</section>
+<section class="av-sec dk" aria-labelledby="av-safe-h"><div class="wrap"><div class="av-head solo"><div><p class="eyebrow dk rv">Control</p><h2 class="av-h2 rv" id="av-safe-h" style="--d:.05s">Nothing goes out without your say-so.</h2></div><div class="av-lede rv"><p>Viktor drafts, prepares, and queues, then waits for you. You get all the speed of an extra team member with none of the “what did it just do?”</p><p>Emails, posts, reminders, content: nothing is sent or published until you approve it in Slack. You’re always the one who signs off. Viktor does the work. You make the call.</p></div></div><ol class="av-flow rv"><li class=""><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/file-pen-line.svg)" aria-hidden="true"></i></span><b>Viktor drafts</b><span>Prepares the email, post or reminder</span></li><li class=""><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/clock-3.svg)" aria-hidden="true"></i></span><b>Viktor queues</b><span>Holds it and waits for you</span></li><li class="you"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/stamp.svg)" aria-hidden="true"></i></span><b>You approve</b><span>In Slack, every time</span></li><li class=""><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><b>Then it goes out</b><span>Sent or published under your name</span></li></ol><h3 class="av-sub rv">And your accounts stay locked down.</h3><ul class="av-grid g3 lock"><li class="av-card rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/plug.svg)" aria-hidden="true"></i></span><p>Viktor only connects to the accounts you approve, and nothing else.</p></li><li class="av-card rv" style="--d:0.04s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/key-round.svg)" aria-hidden="true"></i></span><p>Your passwords sit in an encrypted vault, so the AI never actually reads them.</p></li><li class="av-card rv" style="--d:0.08s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span><p>Your business data is never used to train any AI.</p></li><li class="av-card rv" style="--d:0.12s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/lock-open.svg)" aria-hidden="true"></i></span><p>And you can disconnect any tool in one click.</p></li><li class="av-card rv" style="--d:0.16s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><p>Viktor is built on a platform that’s SOC 2 certified and vetted by Slack before it was listed in their app directory. Data is hosted in the United States.</p></li><li class="av-card ask rv"><p>Happy to go through any of this properly on the discovery call.</p><a class="btn btn-primary" href="book.html">Book a Free Discovery Session <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul></div></section>
 
-<section class="ai-fit" aria-labelledby="ai-fit-h">
-  <div class="wrap">
-    <h2 id="ai-fit-h" class="title rv">Viktor is brilliant for some businesses, and wrong for others.</h2>
-    <p class="ai-fit-lead rv">We’d rather tell you upfront than sign you up for something that won’t fit.</p>
-    <div class="ai-cols">
-      <div class="ai-col rv"><h3>Good fit</h3><span class="lab">Yes, this is me</span><ul><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You’re an established business with more work than hours to do it</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Repetitive admin, follow-ups, or marketing keep slipping through the cracks</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You already use tools like email, an accounting package, and a couple of apps</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You’re comfortable sending a message on your phone</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You want to stay in control of what goes out under your name</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You’ve been burned by “hands-off” services and want something transparent</span></li></ul></div>
-      <div class="ai-col no rv" style="--d:.08s"><h3>Not the right fit</h3><span class="lab">Probably not</span><ul><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>You want to hand everything over and never look at it again</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>You’re a brand-new or pre-revenue startup still finding your feet</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>You’re not willing to spend a little time each week reviewing and approving work</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>You want a magic button rather than a co-worker you direct</span></li></ul></div>
-    </div>
-  </div>
-</section>
+<section class="av-sec b2" aria-labelledby="av-fit-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">Is Viktor right for you?</p><h2 class="av-h2 rv" id="av-fit-h" style="--d:.05s">Viktor is brilliant for some businesses, and wrong for others.</h2></div><p class="av-lede rv" style="--d:.08s">We’d rather tell you upfront than sign you up for something that won’t fit.</p></div><div class="av-fit"><div class="av-fc y rv"><h3><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i>Good fit<small>Yes, this is me</small></h3><ul><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>You’re an established business with more work than hours to do it</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Repetitive admin, follow-ups, or marketing keep slipping through the cracks</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>You already use tools like email, an accounting package, and a couple of apps</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>You’re comfortable sending a message on your phone</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>You want to stay in control of what goes out under your name</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>You’ve been burned by “hands-off” services and want something transparent</span></li></ul></div><div class="av-fc n rv" style="--d:.08s"><h3><i class="ic" style="--m:url(orbit-assets/icons/triangle-alert.svg)" aria-hidden="true"></i>Not the right fit<small>Probably not</small></h3><ul><li><i class="ic" style="--m:url(orbit-assets/icons/x.svg)" aria-hidden="true"></i><span>You want to hand everything over and never look at it again</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/x.svg)" aria-hidden="true"></i><span>You’re a brand-new or pre-revenue startup still finding your feet</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/x.svg)" aria-hidden="true"></i><span>You’re not willing to spend a little time each week reviewing and approving work</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/x.svg)" aria-hidden="true"></i><span>You want a magic button rather than a co-worker you direct</span></li></ul></div></div></div></section>
 
 <section class="ai-faq" aria-labelledby="ai-faq-h">
   <div class="wrap">
