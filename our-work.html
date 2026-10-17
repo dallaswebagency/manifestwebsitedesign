@@ -457,6 +457,11 @@ footer{padding-block:56px 28px}
 @media (max-width:1000px){.ow-pts2{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.ow-pts2{grid-template-columns:1fr}.ow-pts2 li{flex-direction:row;align-items:center;padding:18px}.ow-pts2 li.ow-cnt{flex-direction:row;align-items:baseline;gap:14px}}
 </style>
+<style id="mz-owbg">
+.ow-hero{position:relative;isolation:isolate;background:var(--bg)}
+.ow-hero::before{content:"";position:absolute;inset:-20px;z-index:-2;background:url(our-work-hero.png) center/cover no-repeat;filter:blur(3px)}
+.ow-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(243,248,248,.97) 0%,rgba(243,248,248,.9) 45%,rgba(243,248,248,.55) 100%)}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
