@@ -524,7 +524,322 @@ footer{padding-block:56px 28px}
 .nav-right>.btn{white-space:nowrap}
 .mega-services .mega-card .btn{margin-inline:0;width:auto;align-self:flex-start;padding-inline:26px}
 @media (max-width:1180px){.mega-services{grid-template-columns:1fr}.mega-services .mega-card{height:auto}.mega-services li a{min-height:220px}}
-</style></head>
+</style><style id="mz-sy">
+.sy-hero{background:var(--dark);color:#fff;padding:calc(126px + clamp(32px,4vw,56px)) 0 clamp(40px,5vw,72px);position:relative;isolation:isolate;overflow:hidden}
+.sy-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 70% at 90% 30%,rgba(0,120,126,.5),transparent 70%)}
+.sy-hin{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,5vw,80px);align-items:center}
+.sy-hero .eyebrow{display:block;padding:0;margin:0 0 14px;background:none;color:var(--accent-l);font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase}
+.sy-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(34px,4.8vw,74px);line-height:1.04;letter-spacing:-.035em;text-wrap:balance}
+.sy-hero h1 em{font-style:normal;color:var(--accent-l)}
+.sy-lead{margin:24px 0 0;color:#C6DAE3;font-size:clamp(17px,1.5vw,21px);line-height:1.6;max-width:54ch}
+.sy-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.sy-b1,.sy-b2{min-height:54px;padding:0 30px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform .25s,background .25s,color .25s}
+.sy-b1{background:var(--accent-l);color:var(--dark);border:0}.sy-b1:hover{background:#fff;transform:translateY(-3px)}
+.sy-b2{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}.sy-b2:hover{background:#fff;color:var(--dark);transform:translateY(-3px)}
+.sy-mot{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.sy-mot li{display:flex;gap:18px;align-items:center;padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)}
+.sy-mot b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px)}
+.sy-ci{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;font-size:26px;flex:none}
+.sy-rail{list-style:none;margin:clamp(36px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.sy-rail li{padding:20px 22px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-top:4px solid var(--cc);display:grid;gap:6px}
+.sy-rail b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px)}.sy-rail span{color:#C6DAE3;font-size:15.5px;line-height:1.45}
+.sy-sec{background:var(--bg);padding:clamp(52px,6.5vw,96px) 0}.sy-sec.alt{background:var(--bg2)}
+.sy-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sy-h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,52px);line-height:1.08;letter-spacing:-.025em;color:var(--ink);text-wrap:balance;max-width:24ch}
+.sy-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:end}
+.sy-lede{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.sy-sub{margin:clamp(28px,3vw,44px) 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(20px,2vw,28px);color:var(--ink)}
+.sy-c3,.sy-c4,.sy-feat{list-style:none;margin:clamp(20px,2.4vw,32px) 0 0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.sy-c3{grid-template-columns:repeat(3,minmax(0,1fr))}.sy-c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sy-c3 li,.sy-c4 li,.sy-feat li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);transition:transform .35s,box-shadow .35s}
+.sy-c3 li::before,.sy-c4 li::before,.sy-feat li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.sy-c3 li:hover,.sy-c4 li:hover,.sy-feat li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}
+.sy-c3 li:hover::before,.sy-c4 li:hover::before,.sy-feat li:hover::before{width:100%}
+.sy-c3 h3,.sy-c4 h3{margin:4px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);line-height:1.2;color:var(--ink)}
+.sy-call{margin-top:clamp(20px,2.4vw,32px);padding:clamp(26px,3vw,40px);border-radius:22px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-call p:first-child{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.4vw,34px)}
+.sy-call p:last-child{margin:12px 0 0;color:#C6DAE3;font-size:clamp(17px,1.5vw,21px);line-height:1.6;max-width:62ch}
+.sy-inc{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+.sy-inc-t h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.4vw,34px);color:var(--ink)}
+.sy-inc-t p{margin:14px 0 0;color:var(--muted);font-size:17.5px;line-height:1.7}
+.sy-feat{grid-template-columns:repeat(2,minmax(0,1fr));margin:0}
+.sy-feat li{flex-direction:row;align-items:center;padding:18px 20px;background:#fff;border:1.5px solid var(--line)}
+.sy-feat .sy-ci{width:44px;height:44px;font-size:22px;border-radius:12px}.sy-feat b{font-size:17px;color:var(--ink);line-height:1.3}
+.sy-ai{margin-top:clamp(20px,2.4vw,32px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(18px,3vw,36px);align-items:center;padding:clamp(24px,3vw,36px);border-radius:22px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 0 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-ai-ic{display:grid;place-items:center;width:68px;height:68px;border-radius:20px;background:var(--accent-l);color:var(--dark);font-size:34px}
+.sy-ai h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,32px)}
+.sy-ai p{margin:8px 0 0;color:#C6DAE3;font-size:17.5px;line-height:1.6}
+.sy-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;max-width:360px}
+.sy-chips span{padding:10px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.4);font-weight:700;font-size:15.5px}
+.sy-who{margin:0;color:var(--muted);font-size:16.5px;line-height:1.6}
+.sy-need{margin-top:auto;padding:14px 16px;border-radius:14px;background:#fff;font-weight:600;font-size:15.5px;line-height:1.5;color:var(--ink)}
+.sy-need small{display:block;margin-bottom:4px;color:var(--cc);font-weight:700;font-size:14px}
+@media (max-width:1100px){.sy-c4{grid-template-columns:repeat(2,minmax(0,1fr))}.sy-rail{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-hin,.sy-head,.sy-inc{grid-template-columns:1fr}.sy-c3{grid-template-columns:1fr}.sy-ai{grid-template-columns:1fr}.sy-chips{justify-content:flex-start;max-width:none}}
+@media (max-width:560px){.sy-c4,.sy-feat,.sy-rail{grid-template-columns:1fr}}
+</style><style id="mz-sy2">
+.sy-steps{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.sy-steps li{position:relative;overflow:hidden;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);display:flex;flex-direction:column;gap:10px}
+.sy-steps li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc)}
+.sy-sn{position:relative;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--cc);color:#fff;font-size:26px}
+.sy-sn i:first-child{position:absolute;top:-6px;right:-8px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--dark);color:#fff;font:800 13px var(--serif);font-style:normal}
+.sy-steps h3{margin:8px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);color:var(--ink)}
+.sy-steps p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.6}
+.sy-ln{display:inline-flex;align-items:center;gap:8px;margin-left:6px;font-weight:700;color:var(--accent)}
+.sy-rel{list-style:none;margin:clamp(20px,2.4vw,32px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.sy-rel a{display:flex;align-items:center;gap:16px;padding:20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);color:var(--ink);transition:transform .3s,border-color .3s}
+.sy-rel a:hover{transform:translateY(-4px);border-color:var(--cc)}
+.sy-rel a>span:nth-child(2){display:grid;gap:3px;flex:1;min-width:0}.sy-rel b{font-family:var(--serif);font-weight:800;font-size:18px}.sy-rel small{color:var(--muted);font-size:14.5px;line-height:1.4}
+.sy-rel a>svg{flex:none;color:var(--cc)}
+@media (max-width:1100px){.sy-rel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sy-steps,.sy-rel{grid-template-columns:1fr}}
+</style><style id="mz-sy3">
+.sy-allin h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:var(--ink)}
+.sy-allin p{margin:12px 0 0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.sy-f8{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.sy-f8 li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:42px;padding:24px;min-height:170px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 80%);transition:transform .35s,box-shadow .35s}
+.sy-f8 li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.sy-f8 li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.sy-f8 li:hover::before{width:100%}
+.sy-f8 b{margin-top:auto;font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.6vw,22px);line-height:1.2;color:var(--ink)}
+.sy-bot{margin-top:clamp(14px,1.6vw,22px);display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(14px,1.6vw,22px)}
+.sy-aic{position:relative;overflow:hidden;isolation:isolate;border-radius:22px;color:#fff;padding:clamp(24px,3vw,40px);display:grid;gap:24px;background:url(ai-agent-hero.jpg) center/cover no-repeat,var(--dark)}
+.sy-aic::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,26,53,.95) 0%,rgba(1,26,53,.82) 55%,rgba(1,26,53,.55) 100%)}
+.sy-aic .sy-ai-ic{margin-bottom:18px}
+.sy-aic h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.4vw,34px)}
+.sy-aic p{margin:10px 0 0;color:#D8E6EC;font-size:17.5px;line-height:1.6;max-width:46ch}
+.sy-plat{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.sy-plat li{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.35);font-weight:700;font-size:15.5px}
+.sy-plat .ic{color:var(--accent-l);font-size:20px}
+.sy-fast{border-radius:22px;background:var(--dark);color:#fff;padding:clamp(24px,3vw,36px);display:grid;gap:18px;align-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-fast div{display:grid;gap:4px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.sy-fast b{font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.1}
+.sy-fast span{color:#C6DAE3;font-size:16px}
+.sy-fast .btn{justify-content:center;margin-top:4px}
+@media (max-width:1100px){.sy-f8{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-bot{grid-template-columns:1fr}}
+@media (max-width:560px){.sy-f8{grid-template-columns:1fr}.sy-f8 li{min-height:0;flex-direction:row;align-items:center;gap:16px}.sy-f8 b{margin:0}}
+</style><style id="mz-sw">
+.sw{background:var(--dark);color:#fff;padding:clamp(56px,7vw,112px) 0;position:relative;isolation:isolate;overflow:hidden}
+.sw::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 0% 0%,rgba(0,120,126,.45),transparent 70%),radial-gradient(35% 45% at 100% 100%,rgba(122,77,224,.25),transparent 70%)}
+.sw-in{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);align-items:start}
+.sw-l{position:sticky;top:110px}
+.sw-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l)}
+.sw h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.8vw,56px);line-height:1.06;letter-spacing:-.03em;text-wrap:balance}
+.sw-l h3{margin:clamp(24px,3vw,36px) 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,26px);color:var(--accent-l)}
+.sw-l>p{margin:10px 0 0;color:#C6DAE3;font-size:clamp(17px,1.4vw,19px);line-height:1.7;max-width:52ch}
+.sw-chips{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.sw-chips span{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);font-weight:700;font-size:15.5px}
+.sw-chips .ic{color:var(--accent-l);font-size:20px}
+.sw-btn{margin-top:26px;min-height:54px;padding:0 30px;border-radius:999px;background:var(--accent-l);color:var(--dark);font-weight:700;display:inline-flex;align-items:center;gap:10px;border:0;transition:transform .25s,background .25s}
+.sw-btn:hover{background:#fff;transform:translateY(-3px)}
+.sw-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.sw-list li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-left:5px solid var(--cc);transition:transform .3s,background .3s}
+.sw-list li:hover{transform:translateX(6px);background:rgba(255,255,255,.12)}
+.sw-ci{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--cc);color:#fff;font-size:24px;flex:none}
+.sw-list b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.4vw,19px);line-height:1.25}
+.sw-ai{margin-top:14px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:#fff;color:var(--ink);display:grid;gap:20px}
+.sw-ai-t{display:flex;gap:18px;align-items:flex-start}
+.sw-aic{display:grid;place-items:center;width:58px;height:58px;border-radius:17px;background:var(--accent-l);color:var(--dark);font-size:30px;flex:none}
+.sw-ai h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(21px,2vw,28px);color:var(--ink)}
+.sw-ai p{margin:8px 0 0;color:var(--muted);font-size:17px;line-height:1.6}
+.sw-plat{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.sw-plat li{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:var(--bg2);font-weight:700;font-size:15.5px}
+.sw-plat .ic{color:var(--accent);font-size:20px}
+@media (max-width:1000px){.sw-in{grid-template-columns:1fr}.sw-l{position:static}}
+@media (max-width:560px){.sw-list{grid-template-columns:1fr}.sw-ai-t{flex-direction:column}}
+</style><style id="mz-syend">
+.sy-end .av-end-in{align-items:center}
+.sy-end h2{margin:0}.sy-end p{margin:0 0 24px}
+.sy-end .av-cta{display:flex;flex-wrap:wrap;gap:12px}
+.sy-end .av-cta .btn{min-height:54px;padding:0 28px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px}
+</style><style id="mz-wy">
+.wy{background:var(--bg);padding:clamp(48px,5.5vw,84px) 0}
+.wy-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.wy h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.4vw,50px);line-height:1.08;letter-spacing:-.025em;color:var(--ink);text-wrap:balance}
+.wy-lede{margin:22px 0 0;padding-left:20px;border-left:5px solid var(--accent);color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7;max-width:56ch}
+.wy-sub{margin:0 0 16px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.8vw,25px);line-height:1.3;color:var(--ink)}
+.wy-rows{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.wy-rows li{display:flex;align-items:center;gap:18px;padding:20px 22px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc);transition:transform .3s,box-shadow .3s}
+.wy-rows li:hover{transform:translateX(6px);box-shadow:0 18px 30px -24px var(--cc)}
+.wy-ci{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--cc);color:#fff;font-size:27px;flex:none}
+.wy-rows b{font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.7vw,23px);line-height:1.25;color:var(--ink)}
+.wy-call{margin-top:clamp(24px,3vw,40px);display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;padding:clamp(24px,3vw,40px);border-radius:24px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}
+.wy-c1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.6vw,36px);line-height:1.15}
+.wy-c2{margin:10px 0 0;color:#C6DAE3;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:62ch}
+.wy-btn{min-height:54px;padding:0 28px;border-radius:999px;background:var(--accent-l);color:var(--dark);font-weight:700;display:inline-flex;align-items:center;gap:10px;border:0;transition:transform .25s,background .25s}
+.wy-btn:hover{background:#fff;transform:translateY(-3px)}
+@media (max-width:900px){.wy-grid{grid-template-columns:1fr}}
+</style><style id="mz-in">
+.in{background:var(--dark);color:#fff;padding:clamp(56px,7vw,108px) 0;position:relative;isolation:isolate;overflow:hidden}
+.in::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 100% 0%,rgba(0,120,126,.45),transparent 70%),radial-gradient(35% 45% at 0% 100%,rgba(122,77,224,.22),transparent 70%)}
+.in-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l)}
+.in h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,52px);line-height:1.08;letter-spacing:-.025em;text-wrap:balance;max-width:20ch}
+.in-grid{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.in-grid li{--cc:var(--accent);display:grid;grid-template-columns:clamp(84px,9vw,128px) minmax(0,1fr);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);transition:transform .35s,background .35s,border-color .35s}
+.in-grid li:hover{transform:translateY(-6px);background:rgba(255,255,255,.11);border-color:var(--cc)}
+.in-ico{display:grid;place-items:center;background:var(--cc);color:#fff;font-size:clamp(38px,4vw,56px);position:relative}
+.in-ico::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.2),transparent 60%)}
+.in-b{padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;gap:12px}
+.in-b h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(21px,2.2vw,30px);line-height:1.15}
+.in-who{margin:0;color:#C6DAE3;font-size:clamp(16px,1.3vw,18px);line-height:1.6}
+.in-need{margin-top:auto;display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:rgba(1,26,53,.6);border:1px solid rgba(255,255,255,.18)}
+.in-need>.ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--cc);color:#fff;padding:5px;box-sizing:border-box;font-size:0;-webkit-mask:none;mask:none;display:grid;place-items:center;position:relative}
+.in-need>.ic::before{content:"";width:100%;height:100%;background:#fff;-webkit-mask:url(orbit-assets/icons/check.svg) center/contain no-repeat;mask:url(orbit-assets/icons/check.svg) center/contain no-repeat}
+.in-need small{display:block;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.in-need p{margin:4px 0 0;font-weight:600;font-size:clamp(15.5px,1.3vw,17.5px);line-height:1.45}
+@media (max-width:1000px){.in-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.in-grid li{grid-template-columns:1fr}.in-ico{min-height:76px}}
+</style><style id="mz-loc">
+.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.lx-side{display:grid;gap:14px}
+.lx-x{padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);display:grid;gap:10px}
+.lx-x small{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.lx-x p{margin:0;color:#C6DAE3;font-size:16px;line-height:1.5}
+.lx-x .lx-hl{color:#fff;font-weight:700;font-size:clamp(17px,1.5vw,20px)}
+.lx-row{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.18)}
+.lx-row b{font-family:var(--serif);font-weight:800;font-size:clamp(17px,1.5vw,20px);color:#fff}.lx-row span{color:#C6DAE3;font-size:15px}
+.lx-x address{font-style:normal;display:grid;gap:2px}.lx-x address b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px);color:#fff}.lx-x address span{color:#C6DAE3}
+.lx-x a{color:var(--accent-l);font-weight:700}
+.lx-near{margin:18px 0 0!important;font-size:16px!important}.lx-near a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;margin-right:12px}
+.wy-pull{margin:22px 0 0;padding-left:20px;border-left:5px solid var(--accent);font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px);line-height:1.3;color:var(--ink)}
+.wy-r{display:grid;gap:16px}
+.wy-p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.wy-hl{margin:0;padding:18px 22px;border-radius:16px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--accent);font-weight:700;font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink)}
+.wy-lab{margin:0 0 12px;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.7vw,23px);line-height:1.3;color:var(--ink)}
+.wy-lab s{text-decoration:line-through;opacity:.55}.wy-lab span{color:var(--accent)}
+.wy-vs{display:grid;grid-template-columns:1fr 1fr;gap:14px}.wy-vs div{padding:18px 20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);display:grid;gap:6px}.wy-vs b{font-family:var(--serif);font-weight:800;color:var(--accent)}.wy-vs span{color:var(--muted);line-height:1.55}
+.wy-acc{color:var(--accent-l)}
+.wy-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}.wy-chips li{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);font-weight:700;font-size:15.5px}
+.wy-call .wy-c2{max-width:70ch}
+.sw-l>p+p{margin-top:12px}
+.sw-ai{margin-top:14px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:#fff;color:var(--ink);display:grid;gap:20px}
+.sw-plat a{color:var(--ink);font-weight:700}
+.in-lab{display:inline-block;margin-bottom:-4px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.in-grid li{--cc:var(--accent)}
+@media (max-width:640px){.wy-vs{grid-template-columns:1fr}}
+.av-end{background:var(--accent);color:#fff;padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden;isolation:isolate}
+.av-end::before,.av-end::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.35);z-index:-1}
+.av-end::before{width:520px;height:520px;right:-120px;top:-200px}
+.av-end::after{width:340px;height:340px;right:60px;top:-60px}
+.av-end-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,96px);align-items:center}
+.av-end h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4.2vw,60px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
+.av-end h2 em{font-style:normal;color:#CFF7F3}
+.av-end p{color:#E6F5F5;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:50ch}
+.av-end .av-cta .btn-primary{background:#fff;color:var(--dark)}
+.av-end .av-cta .btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.av-end .av-cta .btn-outline:hover{background:#fff;color:var(--dark)}
+</style><style id="mz-lsx">
+.lsx-mot{grid-template-columns:1fr}
+.lsx-mot li b{font-size:clamp(16px,1.5vw,19px);line-height:1.3}
+.lsx-mot .sy-ci{width:46px;height:46px;font-size:23px}
+.lx-near a{color:var(--accent);text-decoration:underline}
+.lsx-grid{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.lsx-grid li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;padding:26px;border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line);transition:transform .35s,box-shadow .35s}
+.lsx-grid li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.lsx-grid li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.lsx-grid li:hover::before{width:100%}
+.lsx-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}
+.lsx-top .sw-ci{width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;display:grid;place-items:center;font-size:26px}
+.lsx-freq{padding:6px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--cc);color:var(--ink);font-weight:700;font-size:14px;text-align:right}
+.lsx-grid h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);line-height:1.2;color:var(--ink)}
+.lsx-sub{margin:0;color:var(--cc);font-weight:700;font-size:15.5px}
+.lsx-grid li>p:last-child{margin:0;color:var(--muted);font-size:16.5px;line-height:1.65}
+.lsx-res-h{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end}
+.lsx-big{margin:0;display:grid;gap:6px;padding:22px 28px;border-radius:22px;background:var(--dark);color:#fff;max-width:340px;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%)}
+.lsx-big b{font-family:var(--serif);font-weight:800;font-size:clamp(40px,5vw,68px);line-height:1;color:var(--accent-l)}.lsx-big span{color:#C6DAE3;font-size:15.5px;line-height:1.45}
+.lsx-ba{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.15fr);gap:18px;align-items:stretch}
+.lsx-b,.lsx-a{display:grid;gap:14px;align-content:start;padding:clamp(22px,2.6vw,34px);border-radius:24px}
+.lsx-b{background:#fff;border:1.5px solid var(--line)}.lsx-a{background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.lsx-t{margin:0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.lsx-a .lsx-t{color:var(--accent-l)}
+.lsx-b>div,.lsx-a>div{display:grid;gap:2px}
+.lsx-b b,.lsx-a b{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1.05;color:var(--ink)}.lsx-a b{color:#fff}
+.lsx-b span,.lsx-a span{font-size:16px;color:var(--muted)}.lsx-a span{color:#C6DAE3}
+.lsx-arrow{display:grid;place-items:center;width:52px;color:var(--accent)}.lsx-arrow svg{width:34px;height:34px}
+.lsx-x{margin:0;display:flex;gap:10px;align-items:center;padding:12px 16px;border-radius:14px;background:rgba(18,216,198,.14);color:#fff;font-weight:700}.lsx-x .ic{color:var(--accent-l);font-size:22px}
+.lsx-note{margin:clamp(20px,2.4vw,32px) 0 0;max-width:72ch;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.lsx-pk{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.lsx-pk li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.lsx-pk .sw-ci{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--cc);color:#fff;font-size:22px;flex:none}
+.lsx-pk b{font-family:var(--serif);font-weight:700;font-size:clamp(16px,1.4vw,19px);line-height:1.35;color:var(--ink)}
+@media(max-width:1000px){.lsx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lsx-res-h{grid-template-columns:1fr}}
+@media(max-width:760px){.lsx-grid,.lsx-pk{grid-template-columns:1fr}.lsx-ba{grid-template-columns:1fr}.lsx-arrow{width:auto;transform:rotate(90deg);height:36px}}
+@media(max-width:600px){.lsx-hero .sy-rail{grid-template-columns:repeat(2,minmax(0,1fr))}.lsx-hero .sy-rail li{padding:16px}.lsx-mot li{padding:14px 16px}}
+</style><style id="mz-ms">
+.ms-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:end}
+.ms h2{max-width:20ch}
+.ms-lede{margin:0;padding-left:20px;border-left:5px solid var(--accent);color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.ms-vs{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,24px)}
+.ms-vs article{position:relative;overflow:hidden;display:grid;gap:12px;align-content:start;padding:clamp(24px,2.8vw,36px);border-radius:24px;border:1.5px solid var(--line)}
+.ms-vs article::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--cc)}
+.ms-yes{--cc:#1F9D6B;background:linear-gradient(160deg,#E2F6EC 0%,#fff 75%)}
+.ms-no{--cc:#D6456B;background:linear-gradient(160deg,#FDE8EE 0%,#fff 75%)}
+.ms-ci{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:var(--cc);color:#fff;font-size:28px}
+.ms-vs h3{margin:6px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:var(--ink)}
+.ms-vs p{margin:0;color:var(--muted);font-size:clamp(16.5px,1.4vw,19px);line-height:1.6}
+.ms-local{margin-top:clamp(16px,2vw,24px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(26px,3.2vw,44px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}
+.ms-c1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.6vw,36px);line-height:1.2}.ms-c1 span{color:var(--accent-l)}
+.ms-c2{margin:16px 0 0;color:#C6DAE3;font-size:clamp(16.5px,1.4vw,19px);line-height:1.65}
+.ms-know{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ms-know li{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22)}
+.ms-ki{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--accent-l);color:var(--dark);font-size:22px;flex:none}
+.ms-know b{font-family:var(--serif);font-weight:700;font-size:clamp(16px,1.4vw,18.5px);line-height:1.3}
+@media(max-width:900px){.ms-head,.ms-local{grid-template-columns:1fr}.ms h2{max-width:none}}
+@media(max-width:640px){.ms-vs{grid-template-columns:1fr}}
+</style><style id="mz-ssx">
+.ssx-price{margin:22px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;color:#C6DAE3;font-size:16.5px}
+.ssx-price b{font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:#fff}
+.ssx-price em{font-style:normal;padding:6px 14px;border-radius:999px;background:rgba(18,216,198,.16);border:1px solid rgba(18,216,198,.45);color:var(--accent-l);font-weight:700;font-size:14.5px}
+.ssx-lad{padding:clamp(20px,2.4vw,30px);border-radius:24px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)}
+.ssx-lt{margin:0 0 16px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-l)}
+.ssx-stack{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ssx-stack li{display:grid;gap:2px;padding:14px 18px;border-radius:14px;background:var(--accent-l);color:var(--dark)}
+.ssx-stack li:nth-child(1){width:100%}.ssx-stack li:nth-child(2){width:94%}.ssx-stack li:nth-child(3){width:88%}.ssx-stack li:nth-child(4){width:82%}.ssx-stack li:nth-child(5){width:70%}
+.ssx-stack li:nth-child(n+2){background:rgba(18,216,198,.55)}
+.ssx-stack li:nth-child(n+3){background:rgba(18,216,198,.32);color:#fff}
+.ssx-stack li:nth-child(n+4){background:rgba(255,255,255,.12);color:#fff}
+.ssx-stack li.off{background:transparent;border:1.5px dashed rgba(255,255,255,.4);color:#C6DAE3}
+.ssx-stack b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.5vw,19px)}.ssx-stack span{font-size:14.5px;opacity:.85}
+.ssx-trust{list-style:none;margin:clamp(30px,3.6vw,52px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ssx-trust li{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-top:4px solid var(--cc)}
+.ssx-trust .sy-ci{width:44px;height:44px;font-size:22px;border-radius:13px}
+.ssx-trust b{font-weight:700;font-size:15.5px;line-height:1.4}
+.ssx-mk{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ssx-mkt{display:grid;gap:16px}.ssx-mkt p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.ssx-chips{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ssx-chips li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.ssx-chips b{font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.7vw,23px);color:var(--ink)}
+.ssx-chips .sy-ci{width:50px;height:50px;font-size:25px}
+.ssx-call{grid-template-columns:1fr}
+.ssx-sv{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.ssx-sv li{grid-column:span 2;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line);transition:transform .35s,box-shadow .35s}
+.ssx-sv li:nth-child(n+4){grid-column:span 3}
+.ssx-sv li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.ssx-sv li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.ssx-sv li:hover::before{width:100%}
+.ssx-sv .sw-ci{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--cc);color:#fff;font-size:27px}
+.ssx-sv h3{margin:4px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.9vw,26px);line-height:1.2;color:var(--ink)}
+.ssx-sv p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.65}
+.ssx-case .sy-h2{max-width:22ch}
+.ssx-cg{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,1.8vw,24px);align-items:stretch}
+.ssx-big{padding:clamp(26px,3vw,44px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%);display:grid;gap:10px;align-content:center}
+.ssx-tag{margin:0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-l)}
+.ssx-num{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(56px,8vw,112px);line-height:1;letter-spacing:-.03em;color:#fff}
+.ssx-ct{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.9vw,26px);line-height:1.25}
+.ssx-ci{margin:6px 0 0;color:#C6DAE3;font-size:16px;line-height:1.6}
+.ssx-st{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ssx-st li{display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.ssx-st b{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1;color:var(--cc);min-width:3.2ch}
+.ssx-st span{color:var(--ink);font-weight:600;font-size:clamp(16px,1.4vw,18px);line-height:1.4}
+.ssx-copy{margin-top:clamp(20px,2.4vw,32px);display:grid;gap:12px;max-width:80ch}.ssx-copy p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}.ssx-copy .ssx-fine{font-size:15.5px}
+.ssx-pg{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ssx-pc{display:grid;gap:12px;padding:clamp(26px,3vw,40px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%);position:sticky;top:130px}
+.ssx-pp{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(44px,5vw,72px);line-height:1}.ssx-pp small{display:block;font-size:clamp(16px,1.5vw,20px);font-weight:700;color:var(--accent-l);margin-top:6px}
+.ssx-pn{margin:0 0 8px;color:#C6DAE3;font-size:17px}
+.ssx-pack .lsx-pk{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1000px){.ssx-trust{grid-template-columns:repeat(2,minmax(0,1fr))}.ssx-mk,.ssx-cg,.ssx-pg{grid-template-columns:1fr}.ssx-pc{position:static}.ssx-sv{grid-template-columns:repeat(2,minmax(0,1fr))}.ssx-sv li,.ssx-sv li:nth-child(n+4){grid-column:auto}.ssx-sv li:last-child:nth-child(odd){grid-column:1/-1}}
+@media(max-width:640px){.ssx-sv,.ssx-pack .lsx-pk{grid-template-columns:1fr}.ssx-trust{grid-template-columns:1fr}.ssx-stack li{width:100%!important}}
+.sy-end .lx-near a{color:#fff!important;background:none!important;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+</style>
+</head>
 <body>
 <script>document.documentElement.className+=" js"</script>
 <a class="skip" href="#main">Skip to main content</a>
@@ -561,124 +876,14 @@ footer{padding-block:56px 28px}
 
 
 <main id="main">
-  <section class="ssy-hero">
-    <div class="wrap ssy-hero-in">
-      <div class="ssy-hero-l">
-        <p class="eyebrow dk">SEO Agency - Sydney NSW</p>
-        <h1>SEO for Sydney businesses that need to compete in <em>one of Australia's toughest markets</em></h1>
-        <p class="ssy-lead">Manifest helps established Sydney service businesses rank in Google, show up in AI search answers, and build a content presence that keeps generating leads - month after month.</p>
-        <p class="ssy-price"><b>$2,500/month AUD</b> SEO + Social Media Package <span>No lock-in contracts</span></p>
-        <div class="ssy-cta">
-          <a class="btn btn-primary" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn ssy-btn-ghost" href="local-seo.html">See what's included</a>
-        </div>
-      </div>
-      <div class="ssy-hero-r rv">
-        <p class="ssy-dia-t">Where Sydney searches are won</p>
-        <ol class="ssy-stack" aria-label="The places a Sydney prospect can find a business, from AI answers down to page two of Google"><li class="ssy-lyr on" style="--w:100%"><b>AI-generated answers</b><span>ChatGPT, Perplexity, Google AI Overview</span></li><li class="ssy-lyr on" style="--w:92%"><b>Google Local Pack</b><span>Local businesses shown in Google</span></li><li class="ssy-lyr on" style="--w:84%"><b>Maps results</b><span>Search results on Google Maps</span></li><li class="ssy-lyr on" style="--w:76%"><b>Blue links</b><span>Standard organic listings</span></li><li class="ssy-lyr off" style="--w:60%"><b>Page two of Google</b><span>Effectively invisible</span></li></ol>
-      </div>
-    </div>
-    <div class="ssy-trust"><div class="wrap">
-      <ul>
-        <li>Working with Sydney businesses across professional services, healthcare, trades, and B2B</li>
-        <li>AI search optimisation included - not an extra</li>
-        <li>322%+ average traffic growth for clients in under 12 months</li>
-        <li>Plain-English reporting. No data dumps.</li>
-      </ul>
-    </div></div>
-  </section>
-
-  <section class="ssy-market">
-    <div style="display:block" class="wrap"><div class="mzv-wrap"><aside class="mzv-panel rv"><span class="mzv-ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span><small>Sydney SEO</small><b>Page one, plus the AI answer box</b><ul><li>Local Pack & Maps</li><li>AI-generated answers</li><li>Built around your market</li></ul></aside><div class="mzv-body">
-      <p class="ssy-lbl">Sydney SEO</p>
-      <h2 class="title ssy-h2">Sydney SEO is competitive - and getting harder</h2>
-      <p class="ssy-huge rv">In Sydney, showing up on page two of Google is effectively invisible.</p>
-      <div class="ssy-cols">
-        <div>
-          <p>Sydney is one of the most competitive search markets in Australia. In almost every service category - professional services, healthcare, trades, B2B - you're up against businesses that have been investing in SEO for years, and increasingly against AI-optimised content that's designed to push your listings further down the page.</p>
-          <p class="ssy-strong">We build for page one - and for the AI answer boxes above it.</p>
-        </div>
-        <div>
-          <p>The businesses winning organic search in Sydney right now aren't just ranking in the blue links. They're showing up in Google's Local Pack, in Maps results, in AI-generated answers, and in the research conversations that happen before a prospect ever makes a call. That's a multi-channel presence - and it doesn't happen by accident.</p>
-          <p>Manifest works with established Sydney service businesses to build exactly that kind of presence. We're not a volume agency running the same template campaign for 200 clients. We work with a focused set of businesses and build campaigns around their specific market, their competitors, and the search terms their ideal clients actually use.</p>
-        </div>
-      </div>
-    </div></div>
-  </section>
-
-  <section class="ssy-svcs">
-    <div class="wrap ssy-svcs-in">
-      <header class="ssy-side">
-        <p class="ssy-lbl">Our services</p>
-        <h2 class="title">Our SEO services for Sydney</h2>
-        <p class="ssy-side-p">Everything below is part of one monthly package. See the full local SEO offer on our <a href="local-seo.html">Local SEO page</a>, or the website side on <a href="website-design-sydney.html">website design in Sydney</a>.</p>
-      </header>
-      <div class="ssy-svc-list"><article class="ssy-svc rv"><span class="ssy-svc-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><div><h3>Local SEO and Google Business Profile</h3><p>For Sydney service businesses, your Google Business Profile is often the first thing a prospect sees - before your website, before your reviews, before anything else.</p><p>We optimise your GBP completely: categories, service descriptions, weekly posts, photo strategy, Q&amp;A management, and review facilitation.</p><p>Combined with suburb-specific landing pages and local keyword targeting, this puts your business in front of people searching in your area right when they need you.</p></div></article><article class="ssy-svc rv"><span class="ssy-svc-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><div><h3>Content and on-page SEO</h3><p>Four SEO-optimised blog posts every month, targeting commercial-intent keywords specific to your industry and location across Sydney.</p><p>Each post is built around real search intent - what your ideal clients actually type into Google or ask an AI assistant.</p><p>Full on-page management keeps your core service pages current, correctly structured, and properly interlinked. Nothing falls through the cracks.</p></div></article><article class="ssy-svc rv"><span class="ssy-svc-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><div><h3>AI search optimisation</h3><p>Search in Sydney - like everywhere in Australia - is shifting. ChatGPT, Perplexity, and Google&#x27;s AI Overview are increasingly the first stop for business research.</p><p>When a Sydney business owner asks “who&#x27;s the best employment lawyer in the CBD?” or “top commercial electrician in the Inner West,” the AI tools pulling those answers are drawing from businesses that have built clear authority signals in their content.</p><p>We build those signals into every piece of content we produce. This isn&#x27;t a future-proofing exercise - it&#x27;s already happening now.</p></div></article><article class="ssy-svc rv"><span class="ssy-svc-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><div><h3>Social media management</h3><p>12 to 16 posts per month across your chosen platforms - LinkedIn and Facebook for professional services and B2B, Facebook and Instagram for consumer-facing trades and health businesses.</p><p>Content is planned, written, designed, and scheduled. You review before it goes live.</p><p>Your social presence stays active and consistent without you having to think about it.</p></div></article><article class="ssy-svc rv"><span class="ssy-svc-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><div><h3>Monthly reporting in plain English</h3><p>A clear, human-written commentary each month on what moved, what didn&#x27;t, and what we&#x27;re doing about it.</p><p>Not a spreadsheet. Not a data dump.</p><p>An actual explanation of your campaign&#x27;s progress - written for a business owner, not an analyst.</p></div></article></div>
-    </div>
-  </section>
-
-  <section class="ssy-inds">
-    <div class="wrap">
-      <p class="ssy-lbl">Who we work with</p>
-      <h2 class="title ssy-h2">Sydney industries we work with</h2>
-      <div class="ssy-ind-list"><article class="ssy-ind rv"><div class="ssy-ind-h"><h3>Professional Services</h3><p class="ssy-ind-w">Across the CBD, North Shore, Inner West, and Greater Sydney</p></div><div class="ssy-ind-b"><p>Accounting firms, law practices, financial advisers, management consultants, and engineering firms across the CBD, North Shore, Inner West, and Greater Sydney.</p><p>High-value clients require high-trust online presence - that&#x27;s where SEO and AI search authority make the biggest difference.</p></div></article><article class="ssy-ind rv"><div class="ssy-ind-h"><h3>Healthcare and Allied Health</h3><p class="ssy-ind-w">Clinics and practices across Sydney</p></div><div class="ssy-ind-b"><p>Specialist clinics, multi-location physio and dental practices, psychology and allied health groups across Sydney.</p><p>Patients search locally and trust signals matter. We build the kind of presence that converts a search into a booked appointment.</p></div></article><article class="ssy-ind rv"><div class="ssy-ind-h"><h3>Trade and Construction</h3><p class="ssy-ind-w">Servicing Greater Sydney</p></div><div class="ssy-ind-b"><p>Commercial builders, electrical contractors, plumbing companies, and civil firms servicing Greater Sydney.</p><p>Moving from referral-only to consistent inbound leads from Google takes 6 to 12 months of focused SEO - and we&#x27;ve done it for clients in this category.</p></div></article><article class="ssy-ind rv"><div class="ssy-ind-h"><h3>B2B Services</h3><p class="ssy-ind-w">Sydney&#x27;s corporate and commercial market</p></div><div class="ssy-ind-b"><p>Labour hire, commercial cleaning, logistics, security, and facilities management businesses servicing Sydney&#x27;s corporate and commercial market.</p><p>Procurement teams search before they call - your SEO determines whether you&#x27;re on that shortlist.</p></div></article></div>
-    </div>
-  </section>
-
-  <section class="ssy-case">
-    <div class="wrap">
-      <p class="ssy-lbl ssy-lbl-lt">Real results</p>
-      <h2 class="title ssy-h2">What a well-run SEO campaign produces</h2>
-      <div class="ssy-case-g">
-        <div class="ssy-case-big rv">
-          <p class="ssy-case-tag">Case study</p>
-          <p class="ssy-num">322.4%</p>
-          <p class="ssy-case-t">increase in website traffic in under 12 months</p>
-          <p class="ssy-case-ind">Industry: Bookkeeping and Accounting Services. Starting point: 817 monthly active users, ranking for 40 irrelevant keywords.</p>
-        </div>
-        <dl class="ssy-stats">
-          <div><dt>Monthly active users (up from 817)</dt><dd>3,451</dd></div>
-          <div><dt>Targeted keywords now ranking</dt><dd>1,500+</dd></div>
-          <div><dt>Consistent month-on-month growth in client bookings</dt><dd>12 mo</dd></div>
-        </dl>
-      </div>
-      <div class="ssy-case-copy">
-        <p>Thorough keyword research, 100+ SEO-optimised blog posts, targeted location pages, quality backlink acquisition, and monthly optimisation of the core service pages.</p>
-        <p>No shortcuts. No black-hat tactics. Just consistent execution over 12 months.</p>
-        <p class="ssy-fine">Results vary by industry and competitive landscape. Sydney is a tougher market than most - which is why the strategy matters more, not less.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="ssy-pack">
-    <div class="wrap ssy-pack-in">
-      <div class="ssy-pack-l">
-        <p class="ssy-lbl">The package</p>
-        <p class="ssy-pk-price">$2,500<small> / month AUD</small></p>
-        <p class="ssy-pk-note">No lock-in contracts.</p>
-        <a class="btn btn-primary" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="ssy-pack-r">
-        <h2 class="title">What's included - $2,500/month</h2>
-        <ul class="ssy-inc"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>4 SEO-optimised blog posts per month (targeting Sydney-specific and industry keywords)</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>12-16 social media posts across your chosen platforms</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Full on-page SEO management - title tags, meta, headings, internal linking, schema</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Google Business Profile - weekly posts, optimisation, and ongoing management</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>1 backlink acquisition activity per month</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI search optimisation built into every piece of content</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Monthly rank tracking report - plain English, no jargon</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Quarterly strategy call - 45 minutes, what&#x27;s working and what&#x27;s next</span></li></ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="fz" aria-labelledby="fz-h"><div class="wrap fz-in"><div class="fz-side"><p class="eyebrow">FAQ</p><h2 id="fz-h" style="margin-top:12px">Common questions from Sydney businesses</h2><div class="fz-help"><span class="fz-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2h8a2 2 0 012 2zM18 9h2a2 2 0 012 2v11l-4-4h-6a2 2 0 01-2-2v-1"/></svg></span><h3>Still have a question?</h3><p>Talk to us. We’ll answer your questions and tell you honestly if we’re the right fit.</p><a class="btn btn-primary" href="book.html">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="fz-list"><details class="fz-q" open><summary><span>Do you work with businesses based in Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes. While Manifest is based in the Southern Highlands of NSW, we work with established service businesses across Greater Sydney and all of New South Wales. All campaign work is delivered remotely - there's no impact on the quality or responsiveness of the service.</p></div></details><details class="fz-q"><summary><span>How competitive is SEO in Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Very. Sydney is one of Australia's most competitive search markets in almost every service category. That's not a reason to avoid SEO - it's a reason to make sure your campaign is built properly from the start. A poorly executed campaign in a competitive market wastes money. A well-structured one with consistent content and genuine authority signals will compound over time.</p></div></details><details class="fz-q"><summary><span>How long before we start seeing results in a Sydney market?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Meaningful movement in rankings typically starts within 3 to 6 months. Compounding results - consistent inbound leads from organic search - build from month 6 to 12. Sydney's competitiveness means the foundation work matters more, and the compounding effect is stronger once it kicks in.</p></div></details><details class="fz-q"><summary><span>Do you build suburb-specific landing pages for Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes, where it makes sense for your business. Suburb pages - Inner West, North Shore, Parramatta, Eastern Suburbs - can significantly improve local search visibility for businesses serving multiple parts of Sydney. We assess which suburb pages are worth building based on search volume and your service area.</p></div></details><details class="fz-q"><summary><span>What makes your SEO different from other Sydney agencies?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>A few things. We understand AI search - not just Google. We build content that positions your business to be recommended by AI tools like ChatGPT and Google's AI Overview, not just ranked in traditional blue links. We write reports you can actually read. And we don't lock you in - the only thing keeping you with us is the results we deliver.</p></div></details></div></div></section>
-
-  <section class="ssy-final">
-    <div class="wrap">
-      <h2 class="ssy-final-h">Let's talk about your Sydney SEO campaign</h2>
-      <div class="ssy-final-g">
-        <p>A discovery call takes 45 minutes. We'll look at your current search visibility, understand your Sydney market, and give you an honest picture of what a focused SEO campaign could do for your business over the next 12 months.</p>
-        <div>
-          <a class="btn btn-primary ssy-final-btn" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <p class="ssy-rel">Also see <a href="website-design-sydney.html">Website Design Sydney</a>, <a href="seo-southern-highlands.html">SEO Southern Highlands</a> and <a href="local-seo-agency.html">our Local SEO Agency page</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="sy-hero ssx-hero" aria-labelledby="av-h1"><div class="wrap sy-hin"><div><p class="eyebrow">SEO Agency - Sydney NSW</p><h1 id="av-h1">SEO for Sydney businesses that need to compete in <em>one of Australia's toughest markets</em></h1><p class="sy-lead">Manifest helps established Sydney service businesses rank in Google, show up in AI search answers, and build a content presence that keeps generating leads - month after month.</p><p class="ssx-price"><b>$2,500/month AUD</b><span>SEO + Social Media Package</span><em>No lock-in contracts</em></p><div class="sy-cta"><a class="btn sy-b1" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn sy-b2" href="local-seo.html">See what&#x27;s included</a></div></div><div class="ssx-lad"><p class="ssx-lt">Where Sydney searches are won</p><ol class="ssx-stack"><li class="on"><b>AI-generated answers</b><span>ChatGPT, Perplexity, Google AI Overview</span></li><li class="on"><b>Google Local Pack</b><span>Local businesses shown in Google</span></li><li class="on"><b>Maps results</b><span>Search results on Google Maps</span></li><li class="on"><b>Blue links</b><span>Standard organic listings</span></li><li class="off"><b>Page two of Google</b><span>Effectively invisible</span></li></ol></div></div><div class="wrap"><ul class="ssx-trust"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/briefcase.svg)" aria-hidden="true"></i></span><b>Working with Sydney businesses across professional services, healthcare, trades, and B2B</b></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><b>AI search optimisation included - not an extra</b></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><b>322%+ average traffic growth for clients in under 12 months</b></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/messages-square.svg)" aria-hidden="true"></i></span><b>Plain-English reporting. No data dumps.</b></li></ul></div></section>
+<section class="wy ms" id="why-it-matters" aria-labelledby="why-h"><div class="wrap"><div class="ms-head"><div><p class="sy-eb">Sydney SEO</p><h2 id="why-h">Sydney SEO is competitive - and getting harder</h2></div><p class="ms-lede">In Sydney, showing up on page two of Google is effectively invisible.</p></div><div class="ssx-mk"><div class="ssx-mkt"><p>Sydney is one of the most competitive search markets in Australia. In almost every service category - professional services, healthcare, trades, B2B - you're up against businesses that have been investing in SEO for years, and increasingly against AI-optimised content that's designed to push your listings further down the page.</p><p>The businesses winning organic search in Sydney right now aren't just ranking in the blue links. They're showing up in Google's Local Pack, in Maps results, in AI-generated answers, and in the research conversations that happen before a prospect ever makes a call. That's a multi-channel presence - and it doesn't happen by accident.</p><p>Manifest works with established Sydney service businesses to build exactly that kind of presence. We're not a volume agency running the same template campaign for 200 clients. We work with a focused set of businesses and build campaigns around their specific market, their competitors, and the search terms their ideal clients actually use.</p></div><ul class="ssx-chips"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><b>Local Pack &amp; Maps</b></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><b>AI-generated answers</b></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><b>Built around your market</b></li></ul></div><div class="ms-local ssx-call"><p class="ms-c1">We build for page one - and for the AI answer boxes above it.</p></div></div></section>
+<section class="sy-sec alt ssx-svc" id="our-services" aria-labelledby="sv-h"><div class="wrap"><div class="sy-head"><div><p class="sy-eb">Our services</p><h2 class="sy-h2" id="sv-h">Our SEO services for Sydney</h2></div><p class="sy-lede">Everything below is part of one monthly package. See the full local SEO offer on our <a href="local-seo.html">Local SEO page</a>, or the website side on <a href="website-design-sydney.html">website design in Sydney</a>.</p></div><ul class="ssx-sv"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><h3>Local SEO and Google Business Profile</h3><p>For Sydney service businesses, your Google Business Profile is often the first thing a prospect sees - before your website, before your reviews, before anything else.</p><p>We optimise your GBP completely: categories, service descriptions, weekly posts, photo strategy, Q&amp;A management, and review facilitation.</p><p>Combined with suburb-specific landing pages and local keyword targeting, this puts your business in front of people searching in your area right when they need you.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/file-pen-line.svg)" aria-hidden="true"></i></span><h3>Content and on-page SEO</h3><p>Four SEO-optimised blog posts every month, targeting commercial-intent keywords specific to your industry and location across Sydney.</p><p>Each post is built around real search intent - what your ideal clients actually type into Google or ask an AI assistant.</p><p>Full on-page management keeps your core service pages current, correctly structured, and properly interlinked. Nothing falls through the cracks.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><h3>AI search optimisation</h3><p>Search in Sydney - like everywhere in Australia - is shifting. ChatGPT, Perplexity, and Google's AI Overview are increasingly the first stop for business research.</p><p>When a Sydney business owner asks “who's the best employment lawyer in the CBD?” or “top commercial electrician in the Inner West,” the AI tools pulling those answers are drawing from businesses that have built clear authority signals in their content.</p><p>We build those signals into every piece of content we produce. This isn't a future-proofing exercise - it's already happening now.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/share-2.svg)" aria-hidden="true"></i></span><h3>Social media management</h3><p>12 to 16 posts per month across your chosen platforms - LinkedIn and Facebook for professional services and B2B, Facebook and Instagram for consumer-facing trades and health businesses.</p><p>Content is planned, written, designed, and scheduled. You review before it goes live.</p><p>Your social presence stays active and consistent without you having to think about it.</p></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><h3>Monthly reporting in plain English</h3><p>A clear, human-written commentary each month on what moved, what didn't, and what we're doing about it.</p><p>Not a spreadsheet. Not a data dump.</p><p>An actual explanation of your campaign's progress - written for a business owner, not an analyst.</p></li></ul></div></section>
+<section class="in" id="industries" aria-labelledby="in-h"><div class="wrap"><p class="in-eb">Who we work with</p><h2 id="in-h">Sydney industries we work with</h2><ul class="in-grid"><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/landmark.svg)" aria-hidden="true"></i></span><div class="in-b"><small class="in-lab">Across the CBD, North Shore, Inner West, and Greater Sydney</small><h3>Professional Services</h3><p class="in-who">Accounting firms, law practices, financial advisers, management consultants, and engineering firms across the CBD, North Shore, Inner West, and Greater Sydney.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>High-value clients require high-trust online presence - that's where SEO and AI search authority make the biggest difference.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/activity.svg)" aria-hidden="true"></i></span><div class="in-b"><small class="in-lab">Clinics and practices across Sydney</small><h3>Healthcare and Allied Health</h3><p class="in-who">Specialist clinics, multi-location physio and dental practices, psychology and allied health groups across Sydney.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>Patients search locally and trust signals matter. We build the kind of presence that converts a search into a booked appointment.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><div class="in-b"><small class="in-lab">Servicing Greater Sydney</small><h3>Trade and Construction</h3><p class="in-who">Commercial builders, electrical contractors, plumbing companies, and civil firms servicing Greater Sydney.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>Moving from referral-only to consistent inbound leads from Google takes 6 to 12 months of focused SEO - and we've done it for clients in this category.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/workflow.svg)" aria-hidden="true"></i></span><div class="in-b"><small class="in-lab">Sydney&#x27;s corporate and commercial market</small><h3>B2B Services</h3><p class="in-who">Labour hire, commercial cleaning, logistics, security, and facilities management businesses servicing Sydney's corporate and commercial market.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>Procurement teams search before they call - your SEO determines whether you're on that shortlist.</p></div></div></div></li></ul></div></section>
+<section class="sy-sec ssx-case" aria-labelledby="cs-h"><div class="wrap"><p class="sy-eb">Real results</p><h2 class="sy-h2" id="cs-h">What a well-run SEO campaign produces</h2><div class="ssx-cg"><div class="ssx-big"><p class="ssx-tag">Case study</p><p class="ssx-num">322.4%</p><p class="ssx-ct">increase in website traffic in under 12 months</p><p class="ssx-ci">Industry: Bookkeeping and Accounting Services. Starting point: 817 monthly active users, ranking for 40 irrelevant keywords.</p></div><ul class="ssx-st"><li style="--cc:#2F6FED;--cs:#E6EEFF"><b>3,451</b><span>Monthly active users (up from 817)</span></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><b>1,500+</b><span>Targeted keywords now ranking</span></li><li style="--cc:#D6456B;--cs:#FDE8EE"><b>12 mo</b><span>Consistent month-on-month growth in client bookings</span></li></ul></div><div class="ssx-copy"><p>Thorough keyword research, 100+ SEO-optimised blog posts, targeted location pages, quality backlink acquisition, and monthly optimisation of the core service pages.</p><p>No shortcuts. No black-hat tactics. Just consistent execution over 12 months.</p><p class="ssx-fine">Results vary by industry and competitive landscape. Sydney is a tougher market than most - which is why the strategy matters more, not less.</p></div></div></section>
+<section class="sy-sec alt lsx-pack ssx-pack" id="whats-included" aria-labelledby="pk-h"><div class="wrap"><div class="ssx-pg"><div class="ssx-pc"><p class="ssx-tag">The package</p><p class="ssx-pp">$2,500<small>/ month AUD</small></p><p class="ssx-pn">No lock-in contracts.</p><a class="btn sy-b1" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div><h2 class="sy-h2" id="pk-h">What's included - $2,500/month</h2><ul class="lsx-pk"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>4 SEO-optimised blog posts per month (targeting Sydney-specific and industry keywords)</b></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>12-16 social media posts across your chosen platforms</b></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>Full on-page SEO management - title tags, meta, headings, internal linking, schema</b></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>Google Business Profile - weekly posts, optimisation, and ongoing management</b></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>1 backlink acquisition activity per month</b></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>AI search optimisation built into every piece of content</b></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>Monthly rank tracking report - plain English, no jargon</b></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>Quarterly strategy call - 45 minutes, what's working and what's next</b></li></ul></div></div></div></section>
+<section aria-labelledby="fz-h" class="fz"><div class="wrap fz-in"><div class="fz-side"><p class="eyebrow">FAQ</p><h2 id="fz-h" style="margin-top:12px">Common questions from Sydney businesses</h2><div class="fz-help"><span class="fz-ic"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14 9a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2h8a2 2 0 012 2zM18 9h2a2 2 0 012 2v11l-4-4h-6a2 2 0 01-2-2v-1"></path></svg></span><h3>Still have a question?</h3><p>Talk to us. We’ll answer your questions and tell you honestly if we’re the right fit.</p><a class="btn btn-primary" href="book.html">Book a Call <svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div><div class="fz-list"><details class="fz-q" open=""><summary><span>Do you work with businesses based in Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes. While Manifest is based in the Southern Highlands of NSW, we work with established service businesses across Greater Sydney and all of New South Wales. All campaign work is delivered remotely - there's no impact on the quality or responsiveness of the service.</p></div></details><details class="fz-q"><summary><span>How competitive is SEO in Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Very. Sydney is one of Australia's most competitive search markets in almost every service category. That's not a reason to avoid SEO - it's a reason to make sure your campaign is built properly from the start. A poorly executed campaign in a competitive market wastes money. A well-structured one with consistent content and genuine authority signals will compound over time.</p></div></details><details class="fz-q"><summary><span>How long before we start seeing results in a Sydney market?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Meaningful movement in rankings typically starts within 3 to 6 months. Compounding results - consistent inbound leads from organic search - build from month 6 to 12. Sydney's competitiveness means the foundation work matters more, and the compounding effect is stronger once it kicks in.</p></div></details><details class="fz-q"><summary><span>Do you build suburb-specific landing pages for Sydney?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes, where it makes sense for your business. Suburb pages - Inner West, North Shore, Parramatta, Eastern Suburbs - can significantly improve local search visibility for businesses serving multiple parts of Sydney. We assess which suburb pages are worth building based on search volume and your service area.</p></div></details><details class="fz-q"><summary><span>What makes your SEO different from other Sydney agencies?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>A few things. We understand AI search - not just Google. We build content that positions your business to be recommended by AI tools like ChatGPT and Google's AI Overview, not just ranked in traditional blue links. We write reports you can actually read. And we don't lock you in - the only thing keeping you with us is the results we deliver.</p></div></details></div></div></section>
+<section aria-labelledby="av-end-h" class="av-end sy-end" id="enquire"><div class="wrap av-end-in"><h2 id="av-end-h">Let's talk about your Sydney SEO campaign</h2><div><p>A discovery call takes 45 minutes. We'll look at your current search visibility, understand your Sydney market, and give you an honest picture of what a focused SEO campaign could do for your business over the next 12 months.</p><div class="av-cta"><a class="btn btn-primary" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><p class="lx-near">Also see <a href="website-design-sydney.html">Website Design Sydney</a>, <a href="seo-southern-highlands.html">SEO Southern Highlands</a> and <a href="local-seo-agency.html">our Local SEO Agency page</a>.</p></div></div></section>
 </main>
 
 
