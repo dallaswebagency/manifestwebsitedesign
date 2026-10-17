@@ -682,6 +682,22 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 .ai-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,26,53,.92) 0%,rgba(1,26,53,.8) 45%,rgba(1,26,53,.6) 100%)!important}
 .ai-hero::after{content:"";position:absolute;inset:-10px;z-index:-2;background:url(ai-agent-hero.jpg) center/cover no-repeat;filter:blur(3.5px) saturate(1.05);transform:scale(1.04)}
 @media (max-width:900px){.ai-hero::before{background:linear-gradient(180deg,rgba(1,26,53,.92),rgba(1,26,53,.82))!important}}
+.av-rail{border:0!important;background:none!important;border-radius:0!important;overflow:visible!important;gap:clamp(22px,2.6vw,38px)}
+.av-rail li{position:relative;border:1px solid rgba(255,255,255,.24)!important;border-radius:18px;background:rgba(1,26,53,.55);backdrop-filter:blur(6px);display:flex;flex-direction:column;gap:4px}
+.av-rail li+li{border-left:1px solid rgba(255,255,255,.24)!important}
+.av-rail li:not(:last-child)::after{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 6px);width:calc(clamp(22px,2.6vw,38px) - 12px);height:2px;background:var(--accent-l);transform:translateY(-50%)}
+.av-rail li:not(:last-child)::before{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 4px);width:9px;height:9px;border-top:2px solid var(--accent-l);border-right:2px solid var(--accent-l);transform:translateY(-50%) rotate(45deg);z-index:1}
+.av-rico{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:14px;margin-bottom:12px;background:rgba(18,216,198,.16);color:var(--accent-l);font-size:24px}
+.av-rail b{font-size:clamp(24px,2.4vw,34px)}
+.av-rail .av-rd{margin-top:6px;color:#C6DAE3;font-size:16px;line-height:1.5}
+.av-rail li.you{background:var(--accent-l);border-color:var(--accent-l)!important}
+.av-rail li.you .av-rico{background:rgba(1,26,53,.14);color:var(--dark)}
+.av-rail li.you b{color:var(--dark)}
+.av-rail li.you .av-rd{color:#0B2B4B}
+@media (max-width:1100px){.av-rail{grid-template-columns:repeat(2,1fr)!important}.av-rail li::before,.av-rail li::after{display:none!important}}
+@media (max-width:620px){.av-rail{grid-template-columns:1fr!important}.av-rail li{border-top:1px solid rgba(255,255,255,.24)!important}.av-rail li.you{border-top-color:var(--accent-l)!important}}
+.av-rail .av-rico{display:inline-grid;margin:0 0 12px;font-size:24px;color:var(--accent-l)}
+.av-rail li.you .av-rico{color:var(--dark)}
 </style>
 </head>
 <body>
@@ -750,7 +766,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
         </div>
       </div>
     </div>
-    <ul class="av-rail rv" style="--d:.2s"><li><b>3 to 4 days</b><span>Setup, depending on the business</span></li><li><b>1 to 2 hours</b><span>Onboarding session to load your business in</span></li><li><b>Same day</b><span>You start using it</span></li><li><b>Every time</b><span>You approve in Slack before anything goes out</span></li></ul>
+    <ul class="av-rail rv" style="--d:.2s"><li class=""><span class="av-rico"><i class="ic" style="--m:url(orbit-assets/icons/plug.svg)" aria-hidden="true"></i></span><b>3 to 4 days</b><span class="av-rd">Setup, depending on the business</span></li><li class=""><span class="av-rico"><i class="ic" style="--m:url(orbit-assets/icons/database.svg)" aria-hidden="true"></i></span><b>1 to 2 hours</b><span class="av-rd">Onboarding session to load your business in</span></li><li class=""><span class="av-rico"><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><b>Same day</b><span class="av-rd">You start using it</span></li><li class="you"><span class="av-rico"><i class="ic" style="--m:url(orbit-assets/icons/stamp.svg)" aria-hidden="true"></i></span><b>Every time</b><span class="av-rd">You approve in Slack before anything goes out</span></li></ul>
   </div>
 </section>
 
