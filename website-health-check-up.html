@@ -656,6 +656,18 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 html body .wh-ok .eyebrow{color:var(--accent)}
 html body .wh-ok .av-h2,html body .wh-ok .wh-pil b{color:var(--ink)}
 html body .wh-ok .av-h2{font-size:clamp(30px,3.9vw,54px)}
+.wh-fs-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(28px,6vw,96px);align-items:center}
+html body .wh-fs .eyebrow{color:var(--accent)}
+html body .wh-fs .av-h2{color:var(--ink)}
+.wh-fs-card{background:#fff;border:1.5px solid var(--line);border-radius:22px;padding:clamp(24px,2.8vw,40px);box-shadow:0 30px 60px -40px rgba(1,26,53,.45)}
+.wh-fs-card ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:12px}
+.wh-fs-card li{display:flex;gap:12px;align-items:center;font-weight:700;font-size:17px;color:var(--ink)}
+.wh-fs-card li .ic{flex:none;display:grid;width:28px;height:28px;border-radius:50%;background:#DDF4F2;color:var(--accent);font-size:16px;padding:6px;box-sizing:border-box}
+.wh-fs-card .btn{width:100%;min-height:58px}
+.wh-fs-card p{margin-top:14px;color:var(--muted);font-size:15.5px;text-align:center}
+@media (max-width:900px){.wh-fs-in{grid-template-columns:1fr}}
+.wh-fs-card li .ic{background:currentColor;width:16px;height:16px;padding:0;border-radius:0;font-size:inherit;display:inline-block}
+.wh-tk{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#DDF4F2;color:var(--accent);font-size:16px}
 </style>
 </head>
 <body>
@@ -711,22 +723,7 @@ html body .wh-ok .av-h2{font-size:clamp(30px,3.9vw,54px)}
 
 <section class="av-sec w wh-hw" aria-labelledby="av-how-h"><div class="wrap"><div class="av-head solo"><div><p class="eyebrow rv">How it works</p><h2 class="av-h2 rv" id="av-how-h" style="--d:.05s">From check-up to first fixes</h2></div></div><ol class="wh-tl"><li class="rv" style="--d:0.00s"><span class="wh-tn"><i>1</i><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><h3>We examine</h3><p>Your website’s performance, Google Business Profile visibility, and a full on-page SEO audit, from page speed and broken links to the technical signals Google uses to rank you.</p></li><li class="rv" style="--d:0.08s"><span class="wh-tn"><i>2</i><i class="ic" style="--m:url(orbit-assets/icons/message-square-text.svg)" aria-hidden="true"></i></span><h3>We report in plain English</h3><p>Our findings, presented plainly, so you know what’s working against your rankings and user experience.</p></li><li class="rv" style="--d:0.16s"><span class="wh-tn"><i>3</i><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><h3>We start fixing</h3><p>Two hours of maintenance put into the issues we find, at no cost and no obligation.</p></li></ol></div></section>
 
-<section class="wh-form" id="whc-form" aria-labelledby="wh-form-h">
-  <div class="wrap wh-form-in">
-    <div class="wh-form-l">
-      <p class="eyebrow rv">Free, no obligation</p>
-      <h2 id="wh-form-h" class="title rv">Get your free website health check</h2>
-      <p class="rv">Fill out the form and we’ll dig into your site’s speed, security, on-page SEO, and Google visibility — then send you a full report with two hours of fixes included.</p>
-      <ul class="wh-steps rv"><li>Site speed and performance</li><li>On-page SEO and broken links</li><li>Google Business Profile visibility</li><li>Security and out-of-date software</li></ul>
-      <a class="wh-open rv" href="https://api.leadconnectorhq.com/widget/form/K3lhzWKFRH90EvDCvDda" target="_blank" rel="noopener">Open the form in a new tab</a>
-    </div>
-    <div class="wh-formbox rv" style="--d:.08s">
-      <h3>Tell us about your website</h3>
-      <p>We’ll be in touch shortly after you submit with next steps.</p>
-      <div class="lc-frame"><iframe src="https://api.leadconnectorhq.com/widget/form/K3lhzWKFRH90EvDCvDda" style="width:100%;height:100%;border:none;border-radius:3px" id="inline-K3lhzWKFRH90EvDCvDda" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Website Health Check Form" data-height="700" data-layout-iframe-id="inline-K3lhzWKFRH90EvDCvDda" data-form-id="K3lhzWKFRH90EvDCvDda" data-cookie-consent="true" data-cookie-consent-provider="auto" title="Website Health Check Form" loading="lazy"></iframe></div>
-    </div>
-  </div>
-</section>
+<section class="av-sec b2 wh-fs" id="whc-form" aria-labelledby="wh-form-h"><div class="wrap wh-fs-in"><div><p class="eyebrow rv">Free, no obligation</p><h2 class="av-h2 rv" id="wh-form-h" style="--d:.05s">Get your free website health check</h2><p class="wh-chk-p rv" style="--d:.08s">Send us a few details and we’ll check your speed, security, on-page SEO and Google visibility, then send you a report with two hours of fixes included.</p></div><div class="wh-fs-card rv" style="--d:.08s"><ul><li><span class="wh-tk"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span>Site speed and performance</li><li><span class="wh-tk"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span>On-page SEO and broken links</li><li><span class="wh-tk"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span>Google Business Profile visibility</li><li><span class="wh-tk"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span>Security and out-of-date software</li></ul><a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/K3lhzWKFRH90EvDCvDda" target="_blank" rel="noopener">Start my free health check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><p>The form opens in a new tab and takes a couple of minutes.</p></div></div></section>
 
 <section class="av-sec" aria-labelledby="av-faq-h"><div class="wrap av-faq"><div class="av-faq-side"><p class="eyebrow rv">FAQ</p><h2 class="av-h2 rv" id="av-faq-h" style="--d:.05s">Frequently asked questions</h2></div><div class="av-fql rv"><details class="av-fq rv" open><summary><span>How often should I get a website health check-up?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>We recommend a full website and SEO health check every six months. If you&#x27;re concerned about site speed, security, or a recent drop in Google rankings, we can also run more frequent mini check-ups in between.</p></div></details><details class="av-fq rv"><summary><span>How do website health check-ups contribute to better SEO?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>A healthy, fast-loading website with no broken links and clean on-page SEO is exactly what Google favours when ranking search results. Fixing technical and SEO issues early removes the barriers that stop you from ranking higher.</p></div></details><details class="av-fq rv"><summary><span>What&#x27;s included in a free website health check?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>We check your site speed and performance, scan for broken links, review your on-page SEO, and check your Google Business Profile visibility. You&#x27;ll get a full report of what we find, plus two hours of maintenance included to fix priority issues.</p></div></details><details class="av-fq rv"><summary><span>Do I need a website health check if my site looks fine?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>Yes — most issues that hurt your Google ranking, like slow load times, broken links, or missing SEO tags, aren&#x27;t visible just by looking at your site. A health check finds the problems working against you behind the scenes.</p></div></details></div></div></section>
 
