@@ -381,6 +381,225 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
 </style><style id="mz-eyebrow">html body .eyebrow{font-size:clamp(16px,1.45vw,20px);font-weight:800;letter-spacing:.1em;line-height:1.25}</style>
+<style id="rb-css">.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+/* hero rail */
+.av-rail{list-style:none;margin:clamp(40px,5vw,72px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.22);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.05)}
+.av-rail li{padding:clamp(20px,2.2vw,30px)}
+.av-rail li+li{border-left:1px solid rgba(255,255,255,.18)}
+.av-rail b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.05;letter-spacing:-.025em;color:#fff}
+.av-rail span{display:block;margin-top:10px;color:#C6DAE3;font-size:16px;line-height:1.5}
+/* sections */
+.av-sec{padding:clamp(72px,9vw,140px) 0;background:var(--bg)}
+.av-sec.w{background:#fff}
+.av-sec.b2{background:var(--bg2)}
+.av-sec.dk{background:var(--dark);color:#fff}
+.av-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,112px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.av-h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.9vw,54px);line-height:1.06;letter-spacing:-.025em;text-wrap:balance}
+.av-lede{color:var(--muted);font-size:18px;line-height:1.65;max-width:52ch}
+.av-lede p+p{margin-top:12px}
+.dk .av-lede{color:#C6DAE3}
+.dk .eyebrow{color:var(--accent-l)}
+.av-note{margin-top:28px;color:var(--muted);font-size:18px}
+.av-note a{color:var(--accent);font-weight:700;text-decoration:underline}
+.av-grid{list-style:none;margin:0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.av-grid.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.av-grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.av-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,2.4vw,34px)}
+.b2 .av-card,.w .av-card{background:#fff}
+.av-ico{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:#DDF4F2;color:var(--accent);font-size:26px}
+.av-card h3{margin-top:18px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.6vw,23px);line-height:1.2;letter-spacing:-.01em}
+.av-card p{margin-top:10px;color:var(--muted);font-size:17px;line-height:1.6}
+/* alternating blocks */
+.av-svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:center;margin-top:clamp(40px,5vw,80px)}
+.av-svc.flip .av-art{order:2}
+.av-art{position:relative;aspect-ratio:6/5;border-radius:26px;overflow:hidden;display:grid;place-items:center;color:var(--accent-l);background:radial-gradient(circle at 30% 20%,rgba(18,216,198,.28),transparent 55%),linear-gradient(160deg,var(--dark2),var(--dark))}
+.av-art::before,.av-art::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
+.av-art::before{width:76%;aspect-ratio:1}
+.av-art::after{width:104%;aspect-ratio:1;border-style:dashed;border-color:rgba(18,216,198,.28)}
+.av-art-ic{position:relative;z-index:1;display:grid;place-items:center;width:clamp(110px,14vw,170px);aspect-ratio:1;border-radius:50%;background:rgba(18,216,198,.12);border:1.5px solid rgba(18,216,198,.55);font-size:clamp(52px,6.5vw,80px)}
+.av-pills{position:absolute;z-index:2;left:6%;right:6%;bottom:7%;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.av-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:600;font-size:14.5px;backdrop-filter:blur(4px)}
+.av-chip .ic{font-size:18px}
+.av-svc-t h3{font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.1;letter-spacing:-.02em}
+.av-svc-t>p{margin-top:14px;color:var(--muted);font-size:18px;line-height:1.65;max-width:48ch}
+.av-bl{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.av-bl li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:17px;line-height:1.45}
+.av-bl .ic{margin-top:3px;color:var(--accent);font-size:19px}
+/* use cases */
+.av-card.uc{display:flex;flex-direction:column;gap:18px}
+.av-uct{display:flex;align-items:center;gap:14px}
+.av-uct h3{margin:0}
+.av-card.uc blockquote{margin:0;flex:1;padding:18px 20px;border-radius:14px;background:var(--bg);border-left:3px solid var(--accent);color:var(--ink);font-size:16.5px;line-height:1.6}
+/* proof */
+.av-quote{margin:0 0 clamp(28px,3.4vw,48px);max-width:1000px}
+.av-quote blockquote{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.6vw,36px);line-height:1.3;letter-spacing:-.015em;text-wrap:balance}
+.av-quote figcaption{margin-top:18px;color:var(--accent-l);font-weight:700;font-size:16px}
+.av-cases{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-case{padding:clamp(24px,2.6vw,38px);border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(255,255,255,.06)}
+.av-case h3{font-family:var(--serif);font-weight:700;font-size:clamp(20px,1.8vw,26px);line-height:1.2}
+.av-case p{margin-top:12px;color:#C6DAE3;font-size:17px;line-height:1.6}
+.av-case a{display:inline-flex;align-items:center;gap:8px;margin-top:20px;color:var(--accent-l);font-weight:700}
+/* integrations rows */
+.av-rows{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.av-row{display:grid;grid-template-columns:minmax(170px,240px) minmax(0,1fr);align-items:center;gap:clamp(14px,2vw,28px);padding:clamp(18px,2vw,26px) clamp(20px,2.6vw,36px)}
+.av-row:nth-child(even){background:var(--bg)}
+.av-row+.av-row{border-top:1px solid var(--line)}
+.av-row h3{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,21px);line-height:1.25}
+.av-row ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.av-row li{display:flex;align-items:center;gap:9px;padding:9px 14px 9px 10px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:600;font-size:15px;line-height:1.2}
+.av-row li .ic{font-size:24px}
+.av-row li.txt{padding-left:14px}
+.av-row li.txt span{font-family:var(--serif);font-weight:800;font-size:16px;letter-spacing:-.02em}
+.av-row li.more{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-row li.more span{font-family:var(--serif);font-weight:800;font-size:17px}
+/* steps */
+.av-card.step{display:flex;flex-direction:column;align-items:flex-start}
+.av-time{margin-bottom:20px;display:inline-flex;flex-direction:column;padding:10px 14px;border-radius:12px;background:var(--dark);color:#C6DAE3;font-size:13.5px;line-height:1.3}
+.av-time b{font-family:var(--serif);font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
+/* control */
+.av-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,2.6vw,38px)}
+.av-flow li{position:relative;padding:clamp(20px,2.2vw,28px);border:1px solid rgba(255,255,255,.2);border-radius:18px;background:rgba(255,255,255,.06);display:flex;flex-direction:column;gap:6px}
+.av-flow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 6px);width:calc(clamp(22px,2.6vw,38px) - 12px);height:2px;background:var(--accent-l);transform:translateY(-50%)}
+.av-flow li:not(:last-child)::before{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 4px);width:9px;height:9px;border-top:2px solid var(--accent-l);border-right:2px solid var(--accent-l);transform:translateY(-50%) rotate(45deg);z-index:1}
+.av-flow .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l);margin-bottom:12px}
+.av-flow li.you{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-flow li.you .av-ico{background:rgba(1,26,53,.12);color:var(--dark)}
+.av-flow b{font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.7vw,24px)}
+.av-flow li>span:last-child{font-size:16px;line-height:1.5;color:#C6DAE3}
+.av-flow li.you>span:last-child{color:#0B2B4B}
+.av-sub{margin:clamp(40px,5vw,72px) 0 24px;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.6vw,36px);letter-spacing:-.02em}
+.av-grid.lock .av-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.av-grid.lock .av-card p{margin-top:16px;color:#E3EEEF}
+.av-grid.lock .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l)}
+.av-card.ask{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:20px;background:var(--accent-l)!important;border-color:var(--accent-l)!important}
+.av-card.ask p{margin:0!important;color:var(--dark)!important;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,22px);line-height:1.35}
+.av-card.ask .btn{background:var(--dark);color:#fff}
+/* fit */
+.av-fit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-fc{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.av-fc h3{display:flex;align-items:center;gap:14px;margin:0;padding:clamp(20px,2.2vw,28px) clamp(22px,2.6vw,36px);font-family:var(--serif);font-weight:800;font-size:clamp(22px,2vw,28px);line-height:1.1}
+.av-fc h3 .ic{font-size:30px}
+.av-fc h3 small{margin-left:auto;font-family:var(--sans);font-weight:600;font-size:14px;opacity:.8;text-align:right}
+.av-fc.y h3{background:var(--accent);color:#fff}
+.av-fc.n h3{background:var(--dark);color:#fff}
+.av-fc ul{list-style:none;margin:0;padding:clamp(8px,1vw,14px) clamp(22px,2.6vw,36px) clamp(18px,2vw,26px)}
+.av-fc li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;font-size:17px;line-height:1.5;font-weight:500}
+.av-fc li+li{border-top:1px solid var(--line)}
+.av-fc li .ic{margin-top:3px;font-size:20px}
+.av-fc.y li .ic{color:var(--accent)}
+.av-fc.n li .ic{color:#B5483A}
+@media (max-width:1100px){.av-grid.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.av-grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow li::before,.av-flow li::after{display:none!important}}
+@media (max-width:900px){
+ .av-head,.av-svc,.av-cases,.av-fit{grid-template-columns:1fr}
+ .av-svc.flip .av-art{order:0}
+ .av-art{aspect-ratio:16/10}
+ .av-rail{grid-template-columns:1fr 1fr}
+ .av-rail li:nth-child(3){border-left:0}
+ .av-rail li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+ .av-row{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:620px){
+ .av-grid.g4,.av-grid.g3,.av-flow{grid-template-columns:1fr}
+ .av-rail{grid-template-columns:1fr}
+ .av-rail li+li{border-left:0;border-top:1px solid rgba(255,255,255,.18)}
+ .av-art{aspect-ratio:auto;padding:36px 16px 20px;display:flex;flex-direction:column;align-items:center;gap:22px}
+ .av-art::before{width:90%;top:-10%}.av-art::after{display:none}
+ .av-art-ic{width:104px;font-size:48px}
+ .av-pills{position:static;justify-content:center}
+ .av-fc h3 small{display:none}
+}
+.av-head.solo{grid-template-columns:1fr}
+.av-head.solo .av-h2{max-width:22ch}
+/* hero (shared) */
+.av-hero{position:relative;background:var(--dark);color:#fff;padding:calc(126px + clamp(36px,5vw,72px)) 0 clamp(56px,6vw,96px);overflow:hidden;isolation:isolate}
+.av-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 60% at 85% 30%,rgba(0,120,126,.5),transparent 70%)}
+.av-hero .eyebrow{color:var(--accent-l)}
+.av-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(38px,5.6vw,88px);line-height:1;letter-spacing:-.04em;max-width:15ch;text-wrap:balance}
+.av-hero h1 em{font-style:normal;color:var(--accent-l)}
+.av-hero-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,6vw,96px);margin-top:clamp(28px,3.4vw,52px);align-items:center}
+.av-lead{margin-top:0;color:#C6DAE3;font-size:clamp(17px,1.4vw,20px);line-height:1.65;max-width:54ch}
+.av-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.av-cta .btn{min-height:58px;padding:0 30px}
+.av-hero .btn-outline{border-color:rgba(255,255,255,.5);color:#fff}
+.av-hero .btn-outline:hover{background:#fff;color:var(--ink)}
+.av-hcard{border:1px solid rgba(255,255,255,.22);border-radius:22px;background:rgba(255,255,255,.06);padding:clamp(24px,2.6vw,40px)}
+.av-hcard .big{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(56px,7vw,110px);line-height:.95;letter-spacing:-.05em;color:var(--accent-l)}
+.av-hcard p{margin-top:14px;color:#E3EEEF;font-size:clamp(17px,1.4vw,20px);line-height:1.5}
+.av-ecg{display:block;width:100%;height:64px;margin-top:22px;color:var(--accent-l)}
+.av-motto{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.av-motto li{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.6vw,56px);line-height:1.08;letter-spacing:-.03em;color:#fff}
+.av-motto li:nth-child(2){color:#C6DAE3}
+.av-motto li:nth-child(3){color:var(--accent-l)}
+/* statement */
+.av-state{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.4vw,48px);line-height:1.18;letter-spacing:-.025em;max-width:26ch;text-wrap:balance}
+.av-state em{font-style:normal;color:var(--accent)}
+.av-trio{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.av-trio span{display:inline-flex;align-items:center;gap:10px;padding:10px 18px 10px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:16px}
+.av-trio .ic{color:var(--accent);font-size:22px}
+.av-callout{margin-top:22px;padding:22px 26px;border-radius:16px;background:var(--dark);color:#fff;font-weight:600;font-size:18px;line-height:1.55}
+.av-callout.l{background:#fff;color:var(--ink);border:1px solid var(--line);border-left:4px solid var(--accent)}
+/* dark cards */
+.av-sec.dk .av-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.av-sec.dk .av-card h3{color:#fff}
+.av-sec.dk .av-card p{color:#C6DAE3}
+.av-sec.dk .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l)}
+.av-card.big p{font-size:18px;font-weight:600;color:var(--ink);margin-top:16px}
+/* bullets in two columns */
+.av-bl.two{grid-template-columns:1fr 1fr;gap:12px 28px}
+/* invest strip */
+.av-invest{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px;margin-top:clamp(40px,5vw,72px);padding:clamp(22px,2.6vw,36px) clamp(24px,3vw,44px);border-radius:20px;background:var(--dark);color:#fff}
+.av-invest p{font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.2vw,30px);line-height:1.25}
+.av-invest p b{color:var(--accent-l);font-weight:800}
+.av-invest a{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+/* industries */
+.av-grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.av-card.ind{display:flex;flex-direction:column;gap:14px}
+.av-card.ind h3{margin:0}
+.av-card.ind .who{margin:0}
+.av-card.ind .need{margin-top:auto;padding:16px 18px;border-radius:14px;background:var(--bg);border-left:3px solid var(--accent);color:var(--ink);font-weight:600;font-size:16.5px;line-height:1.55}
+/* faq */
+.av-faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,96px);align-items:start}
+.av-faq-side{position:sticky;top:110px}
+.av-faq-side p.t{margin-top:18px;color:var(--muted);font-size:18px;line-height:1.6}
+.av-faq-side p.t a{color:var(--accent);font-weight:700;text-decoration:underline}
+.av-fql{border-top:2px solid var(--ink)}
+.av-fq{border-bottom:1px solid #B7CDD0}
+.av-fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.6vw,22px);line-height:1.3}
+.av-fq summary::-webkit-details-marker{display:none}
+.av-fq summary i{flex:none;position:relative;width:22px;height:22px}
+.av-fq summary i::before,.av-fq summary i::after{content:"";position:absolute;left:0;top:10px;width:22px;height:2px;background:var(--accent);transition:transform .3s}
+.av-fq summary i::after{transform:rotate(90deg)}
+.av-fq[open] summary i::after{transform:rotate(0)}
+.av-fq-a{padding:0 0 26px;max-width:62ch}
+.av-fq-a p{color:var(--muted);font-size:17px;line-height:1.7}
+.av-fq-a p+p{margin-top:12px}
+/* closing band */
+.av-end{background:var(--accent);color:#fff;padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden;isolation:isolate}
+.av-end::before,.av-end::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.35);z-index:-1}
+.av-end::before{width:520px;height:520px;right:-120px;top:-200px}
+.av-end::after{width:340px;height:340px;right:60px;top:-60px}
+.av-end-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,96px);align-items:center}
+.av-end h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4.2vw,60px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
+.av-end h2 em{font-style:normal;color:#CFF7F3}
+.av-end p{color:#E6F5F5;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:50ch}
+.av-end .av-cta .btn-primary{background:#fff;color:var(--dark)}
+.av-end .av-cta .btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.av-end .av-cta .btn-outline:hover{background:#fff;color:var(--dark)}
+.av-areas{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:26px;font-size:15.5px;color:#E6F5F5}
+.av-areas span{width:100%}
+.av-areas a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:900px){
+ .av-hero{padding-top:calc(106px + 36px)}
+ .av-hero-in,.av-faq,.av-end-in{grid-template-columns:1fr}
+ .av-faq-side{position:static}
+ .av-grid.g2{grid-template-columns:1fr}
+ .av-bl.two{grid-template-columns:1fr}
+}
+.av-art-img{display:block;background:#0a2a52}.av-art-img::before,.av-art-img::after{display:none}.av-art-img img{display:block;width:100%;height:100%;object-fit:cover}
+@media (max-width:620px){.av-art.av-art-img{display:block;padding:0;aspect-ratio:16/10}}
+.av-svc-t>p.av-state{color:var(--ink);max-width:none}
+.wh-form{background:var(--bg2)!important}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -425,67 +644,17 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 
 <main id="main" class="wh-main">
 
-<section class="wh-hero" aria-labelledby="wh-h1">
-  <div class="wrap">
-    <div class="wh-hero-in">
-      <div>
-        <p class="eyebrow rv">Free Website &amp; SEO Audit</p>
-        <h1 id="wh-h1" class="rv" style="--d:.05s">Website &amp; SEO Health Check</h1>
-        <p class="wh-lead rv" style="--d:.1s">Let’s make sure your website, and its visibility in Google, is the best it can be. A free health check covering site speed, broken links, on-page SEO, and your Google Business Profile, with two hours of fixes included.</p>
-        <div class="wh-cta rv" style="--d:.15s">
-          <a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-outline" href="book.html">Book a Call</a>
-        </div>
-      </div>
-      <div class="wh-stamp rv" style="--d:.12s"><b>2 hrs</b><span>of fixes included, no cost and no obligation</span></div>
-    </div>
-    <div class="wh-pulse rv" style="--d:.2s"><svg class="wh-ecg" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 H210 L232 70 L248 36 L268 108 L292 6 L316 92 L332 70 H540 L556 70 L570 52 L586 86 L604 70 H1000" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
-  </div>
-  <div class="wh-tagwrap"><div class="wrap"><ul class="wh-tags">
-    <li>Free on-page SEO audit</li><li>Google Business Profile review</li><li>2 hours of fixes included</li>
-  </ul></div></div>
-</section>
+<section class="av-hero" aria-labelledby="av-h1"><div class="wrap"><p class="eyebrow rv">Free Website &amp; SEO Audit</p><h1 id="av-h1" class="rv" style="--d:.05s">Website &amp; SEO <em>Health Check</em></h1><div class="av-hero-in"><div><p class="av-lead rv" style="--d:.1s">Let’s make sure your website, and its visibility in Google, is the best it can be. A free health check covering site speed, broken links, on-page SEO, and your Google Business Profile, with two hours of fixes included.</p><div class="av-cta rv" style="--d:.14s"><a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="book.html">Book a Call</a></div></div><div class="av-hcard rv" style="--d:.12s"><span class="big">2 hrs</span><p>of fixes included, no cost and no obligation</p><svg class="av-ecg" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 H210 L232 70 L248 36 L268 108 L292 6 L316 92 L332 70 H540 L556 70 L570 52 L586 86 L604 70 H1000" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div></div><ul class="av-rail rv" style="--d:.2s"><li><b>Free</b><span>On-page SEO audit, no obligation</span></li><li><b>4 areas</b><span>Speed, SEO, Google profile and security</span></li><li><b>2 hours</b><span>Of fixes to start on the issues we find</span></li><li><b>Plain English</b><span>Findings presented without the jargon</span></li></ul></div></section>
 
-<section class="wh-chk" aria-labelledby="wh-chk-h">
-  <div class="wrap">
-    <div class="wh-chk-top">
-      <div>
-        <p class="eyebrow rv">For Security and SEO</p>
-        <h2 id="wh-chk-h" class="title rv">Check the health of your website</h2>
-      </div>
-      <div class="rv" style="--d:.06s">
-        <p>We’ll examine your website’s performance, your Google Business Profile visibility, and run a full on-page SEO audit — checking everything from page speed and broken links to the technical signals Google uses to rank you.</p>
-        <p><strong>Once we’re done, we’ll present our findings in plain English and put in two hours of maintenance to start fixing the issues we find — no cost, no obligation.</strong></p>
-      </div>
-    </div>
-    <p class="wh-label" style="margin-top:clamp(48px,6vw,88px);margin-bottom:0">What we check</p>
-    <h2 class="title rv" style="margin-top:10px">A complete website &amp; SEO audit</h2>
-    <ol class="wh-list" style="margin-top:34px"><li class="wh-ck rv" style="--d:0.00s"><span class="wh-ckn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Site Speed &amp; Performance</h3><p>We test how fast your pages load on desktop and mobile — a slow site loses visitors and loses rankings.</p></li><li class="wh-ck rv" style="--d:0.06s"><span class="wh-ckn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>On-Page SEO Audit</h3><p>Title tags, meta descriptions, headings, and keyword targeting — reviewed against what Google needs to rank you.</p></li><li class="wh-ck rv" style="--d:0.12s"><span class="wh-ckn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>Google Business Profile</h3><p>We check how visible your business is in Google Maps and local search results, and flag any gaps.</p></li><li class="wh-ck rv" style="--d:0.18s"><span class="wh-ckn"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Security &amp; Broken Links</h3><p>We scan for broken links and out-of-date software or plugins that put your site&#x27;s security at risk.</p></li></ol>
-  </div>
-</section>
+<section class="av-sec" aria-labelledby="av-intro-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">For Security and SEO</p><h2 class="av-h2 rv" id="av-intro-h" style="--d:.05s">Check the health of your website</h2></div><p class="av-lede rv" style="--d:.08s">We’ll examine your website’s performance, your Google Business Profile visibility, and run a full on-page SEO audit — checking everything from page speed and broken links to the technical signals Google uses to rank you.</p></div><div class="av-callout rv">Once we’re done, we’ll present our findings in plain English and put in two hours of maintenance to start fixing the issues we find — no cost, no obligation.</div></div></section>
 
-<section class="wh-ok" aria-labelledby="wh-ok-h">
-  <div class="wrap">
-    <p class="eyebrow rv">Why it matters</p>
-    <h2 id="wh-ok-h" class="rv">What is a healthy website?</h2>
-    <p class="wh-ok-big rv">A healthy website has <em>no broken links,</em> still loads quickly, and keeps up with the latest requirements to rank well in Google.</p>
-    <div class="wh-ok-foot rv">
-      <p>It’s fast, secure, and easy for both visitors and search engines to navigate.</p>
-      <p>Having a healthy website is essential for success. It’s the foundation everything else, from SEO to conversions, is built on.</p>
-    </div>
-  </div>
-</section>
+<section class="av-sec w" aria-labelledby="av-chk-h"><div class="wrap"><div class="av-head solo"><div><p class="eyebrow rv">What we check</p><h2 class="av-h2 rv" id="av-chk-h" style="--d:.05s">A complete website &amp; SEO audit</h2></div></div><ul class="av-grid g4"><li class="av-card rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/gauge.svg)" aria-hidden="true"></i></span><h3>Site Speed &amp; Performance</h3><p>We test how fast your pages load on desktop and mobile — a slow site loses visitors and loses rankings.</p></li><li class="av-card rv" style="--d:0.05s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><h3>On-Page SEO Audit</h3><p>Title tags, meta descriptions, headings, and keyword targeting — reviewed against what Google needs to rank you.</p></li><li class="av-card rv" style="--d:0.10s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/store.svg)" aria-hidden="true"></i></span><h3>Google Business Profile</h3><p>We check how visible your business is in Google Maps and local search results, and flag any gaps.</p></li><li class="av-card rv" style="--d:0.15s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span><h3>Security &amp; Broken Links</h3><p>We scan for broken links and out-of-date software or plugins that put your site&#x27;s security at risk.</p></li></ul></div></section>
 
-<section class="wh-prot" aria-labelledby="wh-prot-h">
-  <div class="wrap wh-prot-in">
-    <div>
-      <p class="eyebrow dk rv">Why do I need a check-up?</p>
-      <h2 id="wh-prot-h" class="title rv">What a health check protects you from</h2>
-      <p class="rv">Website issues rarely show up on the surface. A health check finds the problems working against your rankings and user experience before they cost you traffic.</p>
-    </div>
-    <ul><li class="rv" style="--d:0.00s"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Identify issues impacting user experience and site performance</li><li class="rv" style="--d:0.06s"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Optimise content for search engine visibility and Google ranking</li><li class="rv" style="--d:0.12s"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Ensure site security and keep software, plugins, and patches up to date</li><li class="rv" style="--d:0.18s"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Improve overall site speed and performance across every device</li></ul>
-  </div>
-</section>
+<section class="av-sec b2" aria-labelledby="av-ok-h"><div class="wrap"><div class="av-svc rv" style="margin-top:0"><div class="av-svc-t"><p class="eyebrow">Why it matters</p><h2 class="av-h2" id="av-ok-h">What is a healthy website?</h2><p class="av-state" style="margin-top:22px;font-size:clamp(22px,2.4vw,34px)">A healthy website has <em>no broken links,</em> still loads quickly, and keeps up with the latest requirements to rank well in Google.</p><div class="av-trio"><span><i class="ic" style="--m:url(orbit-assets/icons/gauge.svg)" aria-hidden="true"></i>Fast</span><span><i class="ic" style="--m:url(orbit-assets/icons/lock.svg)" aria-hidden="true"></i>Secure</span><span><i class="ic" style="--m:url(orbit-assets/icons/search.svg)" aria-hidden="true"></i>Easy to navigate</span></div></div><div class="av-svc-t"><p>It’s fast, secure, and easy for both visitors and search engines to navigate.</p><div class="av-callout l">Having a healthy website is essential for success. It’s the foundation everything else, from SEO to conversions, is built on.</div></div></div></div></section>
+
+<section class="av-sec dk" aria-labelledby="av-prot-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow dk rv">Why do I need a check-up?</p><h2 class="av-h2 rv" id="av-prot-h" style="--d:.05s">What a health check protects you from</h2></div><p class="av-lede rv" style="--d:.08s">Website issues rarely show up on the surface. A health check finds the problems working against your rankings and user experience before they cost you traffic.</p></div><ul class="av-grid g4"><li class="av-card rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/activity.svg)" aria-hidden="true"></i></span><p class="big" style="color:#fff;font-weight:600;font-size:18px">Identify issues impacting user experience and site performance</p></li><li class="av-card rv" style="--d:0.05s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/search.svg)" aria-hidden="true"></i></span><p class="big" style="color:#fff;font-weight:600;font-size:18px">Optimise content for search engine visibility and Google ranking</p></li><li class="av-card rv" style="--d:0.10s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span><p class="big" style="color:#fff;font-weight:600;font-size:18px">Ensure site security and keep software, plugins, and patches up to date</p></li><li class="av-card rv" style="--d:0.15s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/gauge.svg)" aria-hidden="true"></i></span><p class="big" style="color:#fff;font-weight:600;font-size:18px">Improve overall site speed and performance across every device</p></li></ul></div></section>
+
+<section class="av-sec w" aria-labelledby="av-how-h"><div class="wrap"><div class="av-head solo"><div><p class="eyebrow rv">How it works</p><h2 class="av-h2 rv" id="av-how-h" style="--d:.05s">From check-up to first fixes</h2></div></div><ol class="av-grid g3 steps"><li class="av-card step rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><h3>We examine</h3><p>Your website’s performance, Google Business Profile visibility, and a full on-page SEO audit, from page speed and broken links to the technical signals Google uses to rank you.</p></li><li class="av-card step rv" style="--d:0.06s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/message-square-text.svg)" aria-hidden="true"></i></span><h3>We report in plain English</h3><p>Our findings, presented plainly, so you know what’s working against your rankings and user experience.</p></li><li class="av-card step rv" style="--d:0.12s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><h3>We start fixing</h3><p>Two hours of maintenance put into the issues we find, at no cost and no obligation.</p></li></ol></div></section>
 
 <section class="wh-form" id="whc-form" aria-labelledby="wh-form-h">
   <div class="wrap wh-form-in">
@@ -504,29 +673,11 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
   </div>
 </section>
 
-<section class="wh-faq" aria-labelledby="wh-faq-h">
-  <div class="wrap">
-    <p class="eyebrow rv">FAQ</p>
-    <h2 id="wh-faq-h" class="title rv">Frequently asked questions</h2>
-    <div class="wh-faq-grid"><div class="wh-q rv" style="--d:0.00s"><span class="wh-qn">Q1</span><h3>How often should I get a website health check-up?</h3><p>We recommend a full website and SEO health check every six months. If you&#x27;re concerned about site speed, security, or a recent drop in Google rankings, we can also run more frequent mini check-ups in between.</p></div><div class="wh-q rv" style="--d:0.05s"><span class="wh-qn">Q2</span><h3>How do website health check-ups contribute to better SEO?</h3><p>A healthy, fast-loading website with no broken links and clean on-page SEO is exactly what Google favours when ranking search results. Fixing technical and SEO issues early removes the barriers that stop you from ranking higher.</p></div><div class="wh-q rv" style="--d:0.10s"><span class="wh-qn">Q3</span><h3>What&#x27;s included in a free website health check?</h3><p>We check your site speed and performance, scan for broken links, review your on-page SEO, and check your Google Business Profile visibility. You&#x27;ll get a full report of what we find, plus two hours of maintenance included to fix priority issues.</p></div><div class="wh-q rv" style="--d:0.15s"><span class="wh-qn">Q4</span><h3>Do I need a website health check if my site looks fine?</h3><p>Yes — most issues that hurt your Google ranking, like slow load times, broken links, or missing SEO tags, aren&#x27;t visible just by looking at your site. A health check finds the problems working against you behind the scenes.</p></div></div>
-  </div>
-</section>
+<section class="av-sec" aria-labelledby="av-faq-h"><div class="wrap av-faq"><div class="av-faq-side"><p class="eyebrow rv">FAQ</p><h2 class="av-h2 rv" id="av-faq-h" style="--d:.05s">Frequently asked questions</h2></div><div class="av-fql rv"><details class="av-fq rv" open><summary><span>How often should I get a website health check-up?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>We recommend a full website and SEO health check every six months. If you&#x27;re concerned about site speed, security, or a recent drop in Google rankings, we can also run more frequent mini check-ups in between.</p></div></details><details class="av-fq rv"><summary><span>How do website health check-ups contribute to better SEO?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>A healthy, fast-loading website with no broken links and clean on-page SEO is exactly what Google favours when ranking search results. Fixing technical and SEO issues early removes the barriers that stop you from ranking higher.</p></div></details><details class="av-fq rv"><summary><span>What&#x27;s included in a free website health check?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>We check your site speed and performance, scan for broken links, review your on-page SEO, and check your Google Business Profile visibility. You&#x27;ll get a full report of what we find, plus two hours of maintenance included to fix priority issues.</p></div></details><details class="av-fq rv"><summary><span>Do I need a website health check if my site looks fine?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>Yes — most issues that hurt your Google ranking, like slow load times, broken links, or missing SEO tags, aren&#x27;t visible just by looking at your site. A health check finds the problems working against you behind the scenes.</p></div></details></div></div></section>
 
-<section class="wh-end" aria-labelledby="wh-end-h">
-  <div class="wrap wh-end-in">
-    <h2 id="wh-end-h" class="rv">Ready to see how healthy your website really is?</h2>
-    <div class="rv" style="--d:.08s">
-      <p>Get your free website and SEO health check today, serving Sydney, Wollongong, and the Southern Highlands including Bowral, Mittagong, and Moss Vale.</p>
-      <div class="wh-cta">
-        <a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-outline" href="book.html">Book a Call</a>
-      </div>
-      <p class="wh-areas"><span>Website design near you, and what comes next:</span>
+<section class="av-end" aria-labelledby="av-end-h"><div class="wrap av-end-in"><h2 id="av-end-h" class="rv">Ready to see how healthy your website really is?</h2><div class="rv" style="--d:.08s"><p>Get your free website and SEO health check today, serving Sydney, Wollongong, and the Southern Highlands including Bowral, Mittagong, and Moss Vale.</p><div class="av-cta"><a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="book.html">Book a Call</a></div><p class="av-areas"><span>Website design near you, and what comes next:</span>
         <a href="website-design-sydney.html">Sydney</a><a href="website-design-wollongong.html">Wollongong</a><a href="website-design-bowral.html">Bowral</a><a href="website-design-mittagong.html">Mittagong</a><a href="website-design-moss-vale.html">Moss Vale</a>
-        <a href="website-care.html">Website care plans</a><a href="local-seo.html">Local SEO</a></p>
-    </div>
-  </div>
-</section>
+        <a href="website-care.html">Website care plans</a><a href="local-seo.html">Local SEO</a></p></div></div></section>
 
 </main>
 

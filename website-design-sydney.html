@@ -380,6 +380,226 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
 </style><style id="mz-eyebrow">html body .eyebrow{font-size:clamp(16px,1.45vw,20px);font-weight:800;letter-spacing:.1em;line-height:1.25}</style>
+<style id="rb-css">.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+/* hero rail */
+.av-rail{list-style:none;margin:clamp(40px,5vw,72px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.22);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.05)}
+.av-rail li{padding:clamp(20px,2.2vw,30px)}
+.av-rail li+li{border-left:1px solid rgba(255,255,255,.18)}
+.av-rail b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.05;letter-spacing:-.025em;color:#fff}
+.av-rail span{display:block;margin-top:10px;color:#C6DAE3;font-size:16px;line-height:1.5}
+/* sections */
+.av-sec{padding:clamp(72px,9vw,140px) 0;background:var(--bg)}
+.av-sec.w{background:#fff}
+.av-sec.b2{background:var(--bg2)}
+.av-sec.dk{background:var(--dark);color:#fff}
+.av-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,112px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.av-h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.9vw,54px);line-height:1.06;letter-spacing:-.025em;text-wrap:balance}
+.av-lede{color:var(--muted);font-size:18px;line-height:1.65;max-width:52ch}
+.av-lede p+p{margin-top:12px}
+.dk .av-lede{color:#C6DAE3}
+.dk .eyebrow{color:var(--accent-l)}
+.av-note{margin-top:28px;color:var(--muted);font-size:18px}
+.av-note a{color:var(--accent);font-weight:700;text-decoration:underline}
+.av-grid{list-style:none;margin:0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.av-grid.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.av-grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.av-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,2.4vw,34px)}
+.b2 .av-card,.w .av-card{background:#fff}
+.av-ico{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:#DDF4F2;color:var(--accent);font-size:26px}
+.av-card h3{margin-top:18px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.6vw,23px);line-height:1.2;letter-spacing:-.01em}
+.av-card p{margin-top:10px;color:var(--muted);font-size:17px;line-height:1.6}
+/* alternating blocks */
+.av-svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:center;margin-top:clamp(40px,5vw,80px)}
+.av-svc.flip .av-art{order:2}
+.av-art{position:relative;aspect-ratio:6/5;border-radius:26px;overflow:hidden;display:grid;place-items:center;color:var(--accent-l);background:radial-gradient(circle at 30% 20%,rgba(18,216,198,.28),transparent 55%),linear-gradient(160deg,var(--dark2),var(--dark))}
+.av-art::before,.av-art::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
+.av-art::before{width:76%;aspect-ratio:1}
+.av-art::after{width:104%;aspect-ratio:1;border-style:dashed;border-color:rgba(18,216,198,.28)}
+.av-art-ic{position:relative;z-index:1;display:grid;place-items:center;width:clamp(110px,14vw,170px);aspect-ratio:1;border-radius:50%;background:rgba(18,216,198,.12);border:1.5px solid rgba(18,216,198,.55);font-size:clamp(52px,6.5vw,80px)}
+.av-pills{position:absolute;z-index:2;left:6%;right:6%;bottom:7%;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.av-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:600;font-size:14.5px;backdrop-filter:blur(4px)}
+.av-chip .ic{font-size:18px}
+.av-svc-t h3{font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.1;letter-spacing:-.02em}
+.av-svc-t>p{margin-top:14px;color:var(--muted);font-size:18px;line-height:1.65;max-width:48ch}
+.av-bl{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.av-bl li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:17px;line-height:1.45}
+.av-bl .ic{margin-top:3px;color:var(--accent);font-size:19px}
+/* use cases */
+.av-card.uc{display:flex;flex-direction:column;gap:18px}
+.av-uct{display:flex;align-items:center;gap:14px}
+.av-uct h3{margin:0}
+.av-card.uc blockquote{margin:0;flex:1;padding:18px 20px;border-radius:14px;background:var(--bg);border-left:3px solid var(--accent);color:var(--ink);font-size:16.5px;line-height:1.6}
+/* proof */
+.av-quote{margin:0 0 clamp(28px,3.4vw,48px);max-width:1000px}
+.av-quote blockquote{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.6vw,36px);line-height:1.3;letter-spacing:-.015em;text-wrap:balance}
+.av-quote figcaption{margin-top:18px;color:var(--accent-l);font-weight:700;font-size:16px}
+.av-cases{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-case{padding:clamp(24px,2.6vw,38px);border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(255,255,255,.06)}
+.av-case h3{font-family:var(--serif);font-weight:700;font-size:clamp(20px,1.8vw,26px);line-height:1.2}
+.av-case p{margin-top:12px;color:#C6DAE3;font-size:17px;line-height:1.6}
+.av-case a{display:inline-flex;align-items:center;gap:8px;margin-top:20px;color:var(--accent-l);font-weight:700}
+/* integrations rows */
+.av-rows{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.av-row{display:grid;grid-template-columns:minmax(170px,240px) minmax(0,1fr);align-items:center;gap:clamp(14px,2vw,28px);padding:clamp(18px,2vw,26px) clamp(20px,2.6vw,36px)}
+.av-row:nth-child(even){background:var(--bg)}
+.av-row+.av-row{border-top:1px solid var(--line)}
+.av-row h3{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,21px);line-height:1.25}
+.av-row ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.av-row li{display:flex;align-items:center;gap:9px;padding:9px 14px 9px 10px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:600;font-size:15px;line-height:1.2}
+.av-row li .ic{font-size:24px}
+.av-row li.txt{padding-left:14px}
+.av-row li.txt span{font-family:var(--serif);font-weight:800;font-size:16px;letter-spacing:-.02em}
+.av-row li.more{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-row li.more span{font-family:var(--serif);font-weight:800;font-size:17px}
+/* steps */
+.av-card.step{display:flex;flex-direction:column;align-items:flex-start}
+.av-time{margin-bottom:20px;display:inline-flex;flex-direction:column;padding:10px 14px;border-radius:12px;background:var(--dark);color:#C6DAE3;font-size:13.5px;line-height:1.3}
+.av-time b{font-family:var(--serif);font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
+/* control */
+.av-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,2.6vw,38px)}
+.av-flow li{position:relative;padding:clamp(20px,2.2vw,28px);border:1px solid rgba(255,255,255,.2);border-radius:18px;background:rgba(255,255,255,.06);display:flex;flex-direction:column;gap:6px}
+.av-flow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 6px);width:calc(clamp(22px,2.6vw,38px) - 12px);height:2px;background:var(--accent-l);transform:translateY(-50%)}
+.av-flow li:not(:last-child)::before{content:"";position:absolute;top:50%;right:calc(-1 * clamp(22px,2.6vw,38px) + 4px);width:9px;height:9px;border-top:2px solid var(--accent-l);border-right:2px solid var(--accent-l);transform:translateY(-50%) rotate(45deg);z-index:1}
+.av-flow .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l);margin-bottom:12px}
+.av-flow li.you{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark)}
+.av-flow li.you .av-ico{background:rgba(1,26,53,.12);color:var(--dark)}
+.av-flow b{font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.7vw,24px)}
+.av-flow li>span:last-child{font-size:16px;line-height:1.5;color:#C6DAE3}
+.av-flow li.you>span:last-child{color:#0B2B4B}
+.av-sub{margin:clamp(40px,5vw,72px) 0 24px;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.6vw,36px);letter-spacing:-.02em}
+.av-grid.lock .av-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.av-grid.lock .av-card p{margin-top:16px;color:#E3EEEF}
+.av-grid.lock .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l)}
+.av-card.ask{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:20px;background:var(--accent-l)!important;border-color:var(--accent-l)!important}
+.av-card.ask p{margin:0!important;color:var(--dark)!important;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,22px);line-height:1.35}
+.av-card.ask .btn{background:var(--dark);color:#fff}
+/* fit */
+.av-fit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.av-fc{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.av-fc h3{display:flex;align-items:center;gap:14px;margin:0;padding:clamp(20px,2.2vw,28px) clamp(22px,2.6vw,36px);font-family:var(--serif);font-weight:800;font-size:clamp(22px,2vw,28px);line-height:1.1}
+.av-fc h3 .ic{font-size:30px}
+.av-fc h3 small{margin-left:auto;font-family:var(--sans);font-weight:600;font-size:14px;opacity:.8;text-align:right}
+.av-fc.y h3{background:var(--accent);color:#fff}
+.av-fc.n h3{background:var(--dark);color:#fff}
+.av-fc ul{list-style:none;margin:0;padding:clamp(8px,1vw,14px) clamp(22px,2.6vw,36px) clamp(18px,2vw,26px)}
+.av-fc li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;font-size:17px;line-height:1.5;font-weight:500}
+.av-fc li+li{border-top:1px solid var(--line)}
+.av-fc li .ic{margin-top:3px;font-size:20px}
+.av-fc.y li .ic{color:var(--accent)}
+.av-fc.n li .ic{color:#B5483A}
+@media (max-width:1100px){.av-grid.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.av-grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.av-flow li::before,.av-flow li::after{display:none!important}}
+@media (max-width:900px){
+ .av-head,.av-svc,.av-cases,.av-fit{grid-template-columns:1fr}
+ .av-svc.flip .av-art{order:0}
+ .av-art{aspect-ratio:16/10}
+ .av-rail{grid-template-columns:1fr 1fr}
+ .av-rail li:nth-child(3){border-left:0}
+ .av-rail li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+ .av-row{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:620px){
+ .av-grid.g4,.av-grid.g3,.av-flow{grid-template-columns:1fr}
+ .av-rail{grid-template-columns:1fr}
+ .av-rail li+li{border-left:0;border-top:1px solid rgba(255,255,255,.18)}
+ .av-art{aspect-ratio:auto;padding:36px 16px 20px;display:flex;flex-direction:column;align-items:center;gap:22px}
+ .av-art::before{width:90%;top:-10%}.av-art::after{display:none}
+ .av-art-ic{width:104px;font-size:48px}
+ .av-pills{position:static;justify-content:center}
+ .av-fc h3 small{display:none}
+}
+.av-head.solo{grid-template-columns:1fr}
+.av-head.solo .av-h2{max-width:22ch}
+/* hero (shared) */
+.av-hero{position:relative;background:var(--dark);color:#fff;padding:calc(126px + clamp(36px,5vw,72px)) 0 clamp(56px,6vw,96px);overflow:hidden;isolation:isolate}
+.av-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 60% at 85% 30%,rgba(0,120,126,.5),transparent 70%)}
+.av-hero .eyebrow{color:var(--accent-l)}
+.av-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(38px,5.6vw,88px);line-height:1;letter-spacing:-.04em;max-width:15ch;text-wrap:balance}
+.av-hero h1 em{font-style:normal;color:var(--accent-l)}
+.av-hero-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,6vw,96px);margin-top:clamp(28px,3.4vw,52px);align-items:center}
+.av-lead{margin-top:0;color:#C6DAE3;font-size:clamp(17px,1.4vw,20px);line-height:1.65;max-width:54ch}
+.av-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.av-cta .btn{min-height:58px;padding:0 30px}
+.av-hero .btn-outline{border-color:rgba(255,255,255,.5);color:#fff}
+.av-hero .btn-outline:hover{background:#fff;color:var(--ink)}
+.av-hcard{border:1px solid rgba(255,255,255,.22);border-radius:22px;background:rgba(255,255,255,.06);padding:clamp(24px,2.6vw,40px)}
+.av-hcard .big{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(56px,7vw,110px);line-height:.95;letter-spacing:-.05em;color:var(--accent-l)}
+.av-hcard p{margin-top:14px;color:#E3EEEF;font-size:clamp(17px,1.4vw,20px);line-height:1.5}
+.av-ecg{display:block;width:100%;height:64px;margin-top:22px;color:var(--accent-l)}
+.av-motto{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.av-motto li{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.6vw,56px);line-height:1.08;letter-spacing:-.03em;color:#fff}
+.av-motto li:nth-child(2){color:#C6DAE3}
+.av-motto li:nth-child(3){color:var(--accent-l)}
+/* statement */
+.av-state{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.4vw,48px);line-height:1.18;letter-spacing:-.025em;max-width:26ch;text-wrap:balance}
+.av-state em{font-style:normal;color:var(--accent)}
+.av-trio{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.av-trio span{display:inline-flex;align-items:center;gap:10px;padding:10px 18px 10px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:16px}
+.av-trio .ic{color:var(--accent);font-size:22px}
+.av-callout{margin-top:22px;padding:22px 26px;border-radius:16px;background:var(--dark);color:#fff;font-weight:600;font-size:18px;line-height:1.55}
+.av-callout.l{background:#fff;color:var(--ink);border:1px solid var(--line);border-left:4px solid var(--accent)}
+/* dark cards */
+.av-sec.dk .av-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.av-sec.dk .av-card h3{color:#fff}
+.av-sec.dk .av-card p{color:#C6DAE3}
+.av-sec.dk .av-ico{background:rgba(18,216,198,.14);color:var(--accent-l)}
+.av-card.big p{font-size:18px;font-weight:600;color:var(--ink);margin-top:16px}
+/* bullets in two columns */
+.av-bl.two{grid-template-columns:1fr 1fr;gap:12px 28px}
+/* invest strip */
+.av-invest{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px;margin-top:clamp(40px,5vw,72px);padding:clamp(22px,2.6vw,36px) clamp(24px,3vw,44px);border-radius:20px;background:var(--dark);color:#fff}
+.av-invest p{font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.2vw,30px);line-height:1.25}
+.av-invest p b{color:var(--accent-l);font-weight:800}
+.av-invest a{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+/* industries */
+.av-grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.av-card.ind{display:flex;flex-direction:column;gap:14px}
+.av-card.ind h3{margin:0}
+.av-card.ind .who{margin:0}
+.av-card.ind .need{margin-top:auto;padding:16px 18px;border-radius:14px;background:var(--bg);border-left:3px solid var(--accent);color:var(--ink);font-weight:600;font-size:16.5px;line-height:1.55}
+/* faq */
+.av-faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,96px);align-items:start}
+.av-faq-side{position:sticky;top:110px}
+.av-faq-side p.t{margin-top:18px;color:var(--muted);font-size:18px;line-height:1.6}
+.av-faq-side p.t a{color:var(--accent);font-weight:700;text-decoration:underline}
+.av-fql{border-top:2px solid var(--ink)}
+.av-fq{border-bottom:1px solid #B7CDD0}
+.av-fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;min-height:44px;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.6vw,22px);line-height:1.3}
+.av-fq summary::-webkit-details-marker{display:none}
+.av-fq summary i{flex:none;position:relative;width:22px;height:22px}
+.av-fq summary i::before,.av-fq summary i::after{content:"";position:absolute;left:0;top:10px;width:22px;height:2px;background:var(--accent);transition:transform .3s}
+.av-fq summary i::after{transform:rotate(90deg)}
+.av-fq[open] summary i::after{transform:rotate(0)}
+.av-fq-a{padding:0 0 26px;max-width:62ch}
+.av-fq-a p{color:var(--muted);font-size:17px;line-height:1.7}
+.av-fq-a p+p{margin-top:12px}
+/* closing band */
+.av-end{background:var(--accent);color:#fff;padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden;isolation:isolate}
+.av-end::before,.av-end::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.35);z-index:-1}
+.av-end::before{width:520px;height:520px;right:-120px;top:-200px}
+.av-end::after{width:340px;height:340px;right:60px;top:-60px}
+.av-end-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,96px);align-items:center}
+.av-end h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4.2vw,60px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
+.av-end h2 em{font-style:normal;color:#CFF7F3}
+.av-end p{color:#E6F5F5;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:50ch}
+.av-end .av-cta .btn-primary{background:#fff;color:var(--dark)}
+.av-end .av-cta .btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.av-end .av-cta .btn-outline:hover{background:#fff;color:var(--dark)}
+.av-areas{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:26px;font-size:15.5px;color:#E6F5F5}
+.av-areas span{width:100%}
+.av-areas a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:900px){
+ .av-hero{padding-top:calc(106px + 36px)}
+ .av-hero-in,.av-faq,.av-end-in{grid-template-columns:1fr}
+ .av-faq-side{position:static}
+ .av-grid.g2{grid-template-columns:1fr}
+ .av-bl.two{grid-template-columns:1fr}
+}
+.av-art-img{display:block;background:#0a2a52}.av-art-img::before,.av-art-img::after{display:none}.av-art-img img{display:block;width:100%;height:100%;object-fit:cover}
+@media (max-width:620px){.av-art.av-art-img{display:block;padding:0;aspect-ratio:16/10}}
+.av-svc-t>p.av-state{color:var(--ink);max-width:none}
+.wh-form{background:var(--bg2)!important}
+.av-art-img.wide{aspect-ratio:auto;align-self:center;border:1px solid var(--line);box-shadow:0 24px 50px -28px rgba(1,26,53,.45)}.av-art-img.wide img{height:auto}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -425,106 +645,17 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 
 <main id="main">
 
-<section class="sy-hero">
-  <div class="wrap sy-hero-in">
-    <div>
-      <span class="eyebrow rv">Website Design - Sydney NSW</span>
-      <h1 class="rv" style="--d:.05s">Website design for Sydney businesses that need <em>more than a good-looking site</em></h1>
-      <p class="sy-lead rv" style="--d:.1s">Manifest builds websites for established Sydney service businesses that rank in Google, show up in AI search answers, and convert visitors into real enquiries.</p>
-      <div class="sy-cta rv" style="--d:.15s">
-        <a class="btn btn-primary" href="book.html">Book a Discovery Call</a>
-        <a class="btn btn-outline" href="our-work.html">See recent work</a>
-      </div>
-    </div>
-    <div class="sy-three rv" style="--d:.12s" aria-hidden="true">
-      <b>3</b>
-      <span>things the Sydney websites winning enquiries do well</span>
-    </div>
-  </div>
-  <div class="sy-motto">
-    <div class="wrap sy-motto-in">
-      <p>Built once.</p><p>Built right.</p><p>Built to convert.</p>
-    </div>
-  </div>
-</section>
+<section class="av-hero" aria-labelledby="av-h1"><div class="wrap"><p class="eyebrow rv">Website Design - Sydney NSW</p><h1 id="av-h1" class="rv" style="--d:.05s">Website design for Sydney businesses that need <em>more than a good-looking site</em></h1><div class="av-hero-in"><div><p class="av-lead rv" style="--d:.1s">Manifest builds websites for established Sydney service businesses that rank in Google, show up in AI search answers, and convert visitors into real enquiries.</p><div class="av-cta rv" style="--d:.14s"><a class="btn btn-primary" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="our-work.html">See recent work</a></div></div><div class="av-hcard rv" style="--d:.12s"><ul class="av-motto"><li>Built once.</li><li>Built right.</li><li>Built to convert.</li></ul></div></div><ul class="av-rail rv" style="--d:.2s"><li><b>6 to 10 weeks</b><span>Most projects, kickoff to launch</span></li><li><b>30 days</b><span>Of post-launch support</span></li><li><b>SEO built in</b><span>Keyword research to schema markup, every site</span></li><li><b>AI search</b><span>Optimised for ChatGPT, AI Overview and Perplexity</span></li></ul></div></section>
 
-<section class="sy-why" id="why-it-matters">
-  <div class="wrap sy-why-grid">
-    <div class="sy-why-l">
-      <span class="eyebrow rv">Why it matters</span>
-      <h2 class="title rv" style="--d:.05s">In Sydney, your website is your first impression - and your competitors know it</h2>
-      <p class="rv" style="--d:.1s">Sydney is a competitive market in almost every service category. Procurement teams, practice managers, and business owners research online before they make contact - and a website that looks dated, loads slowly, or doesn't rank in search is quietly losing you work you'll never know about.</p>
-      <p class="rv" style="--d:.15s">The businesses winning enquiries in Sydney right now have websites that do three things:</p>
-    </div>
-    <div>
-      <ol class="sy-board">
-        <li class="sy-test rv"><h3>They rank in Google and AI search</h3></li>
-        <li class="sy-test rv" style="--d:.06s"><h3>They load fast and look credible on any device</h3></li>
-        <li class="sy-test rv" style="--d:.12s"><h3>They make it easy for the right kind of client to take the next step</h3></li>
-      </ol>
-      <div class="sy-verdict rv">
-        <p>Most business websites in Sydney fail at all three.</p>
-        <p>We build websites that don't have that problem - with SEO built in from the first line of code, not added on later.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="av-sec" aria-labelledby="av-why-h"><div class="wrap" id="why-it-matters"><div class="av-head"><div><p class="eyebrow rv">Why it matters</p><h2 class="av-h2 rv" id="av-why-h" style="--d:.05s">In Sydney, your website is your first impression - and your competitors know it</h2></div><p class="av-lede rv" style="--d:.08s">Sydney is a competitive market in almost every service category. Procurement teams, practice managers, and business owners research online before they make contact - and a website that looks dated, loads slowly, or doesn't rank in search is quietly losing you work you'll never know about.</p></div><p class="av-sub rv" style="margin:0 0 24px;font-size:clamp(20px,2vw,28px)">The businesses winning enquiries in Sydney right now have websites that do three things:</p><ul class="av-grid g3"><li class="av-card rv" style="--d:0.00s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/search.svg)" aria-hidden="true"></i></span><h3>They rank in Google and AI search</h3></li><li class="av-card rv" style="--d:0.06s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/gauge.svg)" aria-hidden="true"></i></span><h3>They load fast and look credible on any device</h3></li><li class="av-card rv" style="--d:0.12s"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/hand-helping.svg)" aria-hidden="true"></i></span><h3>They make it easy for the right kind of client to take the next step</h3></li></ul><div class="av-invest rv" style="display:block"><p style="color:#fff">Most business websites in Sydney fail at all three.</p><p style="margin-top:12px;font-size:clamp(17px,1.5vw,21px);font-weight:500;color:#C6DAE3">We build websites that don't have that problem - with SEO built in from the first line of code, not added on later.</p></div></div></section>
 
-<section class="sy-build" id="what-we-build">
-  <div class="wrap">
-    <div class="sy-build-top">
-      <div>
-        <span class="eyebrow dk rv">What we build</span>
-        <h2 class="title rv" style="--d:.05s">High-converting websites with SEO and AI search built in</h2>
-        <p class="sy-note rv" style="--d:.1s">Every Manifest website includes keyword research, on-page SEO, schema markup, Google Analytics setup, copywriting, mobile-first development, and 30 days of post-launch support.</p>
-      </div>
-      <div class="sy-engines rv" style="--d:.1s">
-        <p class="sy-cap">We also optimise for AI search</p>
-        <ul><li>ChatGPT</li><li>Google's AI Overview</li><li>Perplexity</li></ul>
-        <small>So your business can be recommended when Sydney prospects are researching in your category.</small>
-      </div>
-    </div>
-    <ul class="sy-incl rv"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Keyword research</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>On-page SEO</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Schema markup</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Google Analytics setup</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Copywriting</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Mobile-first development</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI search optimisation</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>30 days of post-launch support</span></li></ul>
-    <div class="sy-invest rv">
-      <p>Investment: <span>$8,000 - $18,000</span> depending on scope.</p>
-      <a class="sy-link" href="website-design.html">For a full breakdown of what's included, see the website design page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
+<section class="av-sec w" aria-labelledby="av-build-h"><div class="wrap" id="what-we-build"><div class="av-head solo"><div><p class="eyebrow rv">What we build</p><h2 class="av-h2 rv" id="av-build-h" style="--d:.05s">High-converting websites with SEO and AI search built in</h2></div></div><div class="av-svc rv" style="margin-top:0"><div class="av-art" aria-hidden="true"><span class="av-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/rocket.svg)" aria-hidden="true"></i></span><div class="av-pills"><span class="av-chip">6 to 10 weeks</span><span class="av-chip">30 days support</span></div></div><div class="av-svc-t"><h3>Everything is included</h3><p>Every Manifest website includes keyword research, on-page SEO, schema markup, Google Analytics setup, copywriting, mobile-first development, and 30 days of post-launch support.</p><ul class="av-bl two"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Keyword research</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>On-page SEO</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Schema markup</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Google Analytics setup</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Copywriting</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Mobile-first development</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>AI search optimisation</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>30 days of post-launch support</span></li></ul></div></div><div class="av-svc flip rv"><div class="av-art" aria-hidden="true"><span class="av-art-ic"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><div class="av-pills"><span class="av-chip">ChatGPT</span><span class="av-chip">Google's AI Overview</span><span class="av-chip">Perplexity</span></div></div><div class="av-svc-t"><h3>We also optimise for AI search</h3><p>So your business can be recommended when Sydney prospects are researching in your category.</p><ul class="av-bl"><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>ChatGPT</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Google's AI Overview</span></li><li><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><span>Perplexity</span></li></ul></div></div><div class="av-invest rv"><p>Investment: <b>$8,000 - $18,000</b> depending on scope.</p><a href="website-design.html">For a full breakdown of what's included, see the website design page <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
 
-<section class="sy-ind" id="industries">
-  <div class="wrap">
-    <div class="sy-ind-head">
-      <span class="eyebrow rv">Industries we serve</span>
-      <h2 class="title rv" style="--d:.05s">Who we build for across Greater Sydney</h2>
-    </div>
-    <div class="sy-tbl">
-      <div class="sy-th" aria-hidden="true"><span>Industry</span><span>Who we build for</span><span>What the site has to do</span></div>
-      <div class="sy-tr rv"><h3 data-l="Industry">Professional Services</h3><p data-l="Who we build for">Accounting firms, law practices, financial advisers, and management consultants across the CBD, North Shore, and Inner West.</p><p class="sy-why-c" data-l="What the site has to do">High-value clients require high-trust websites.</p></div><div class="sy-tr rv"><h3 data-l="Industry">Healthcare and Allied Health</h3><p data-l="Who we build for">Specialist clinics, multi-location physio and dental practices, and allied health groups.</p><p class="sy-why-c" data-l="What the site has to do">Trust signals and clear calls to action drive appointment bookings.</p></div><div class="sy-tr rv"><h3 data-l="Industry">Trades and Construction</h3><p data-l="Who we build for">Commercial builders, electrical contractors, and plumbing companies servicing Greater Sydney.</p><p class="sy-why-c" data-l="What the site has to do">Moving from referral-only to online lead generation starts with a website built for search.</p></div><div class="sy-tr rv"><h3 data-l="Industry">B2B Services</h3><p data-l="Who we build for">Labour hire, logistics, commercial cleaning, and facilities management businesses.</p><p class="sy-why-c" data-l="What the site has to do">The website is increasingly used as a filter by procurement teams.</p></div>
-    </div>
-  </div>
-</section>
+<section class="av-sec b2" aria-labelledby="av-ind-h"><div class="wrap" id="industries"><div class="av-head solo"><div><p class="eyebrow rv">Industries we serve</p><h2 class="av-h2 rv" id="av-ind-h" style="--d:.05s">Who we build for across Greater Sydney</h2></div></div><ul class="av-grid g2"><li class="av-card ind rv" style="--d:0.00s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/landmark.svg)" aria-hidden="true"></i></span><h3>Professional Services</h3></div><p class="who">Accounting firms, law practices, financial advisers, and management consultants across the CBD, North Shore, and Inner West.</p><div class="need"><small style="display:block;color:var(--accent);font-weight:700;margin-bottom:4px">What the site has to do</small>High-value clients require high-trust websites.</div></li><li class="av-card ind rv" style="--d:0.05s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/activity.svg)" aria-hidden="true"></i></span><h3>Healthcare and Allied Health</h3></div><p class="who">Specialist clinics, multi-location physio and dental practices, and allied health groups.</p><div class="need"><small style="display:block;color:var(--accent);font-weight:700;margin-bottom:4px">What the site has to do</small>Trust signals and clear calls to action drive appointment bookings.</div></li><li class="av-card ind rv" style="--d:0.10s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><h3>Trades and Construction</h3></div><p class="who">Commercial builders, electrical contractors, and plumbing companies servicing Greater Sydney.</p><div class="need"><small style="display:block;color:var(--accent);font-weight:700;margin-bottom:4px">What the site has to do</small>Moving from referral-only to online lead generation starts with a website built for search.</div></li><li class="av-card ind rv" style="--d:0.15s"><div class="av-uct"><span class="av-ico"><i class="ic" style="--m:url(orbit-assets/icons/workflow.svg)" aria-hidden="true"></i></span><h3>B2B Services</h3></div><p class="who">Labour hire, logistics, commercial cleaning, and facilities management businesses.</p><div class="need"><small style="display:block;color:var(--accent);font-weight:700;margin-bottom:4px">What the site has to do</small>The website is increasingly used as a filter by procurement teams.</div></li></ul></div></section>
 
-<section class="sy-faq" id="faq">
-  <div class="wrap sy-faq-grid">
-    <div class="sy-faq-l">
-      <span class="eyebrow rv">FAQ</span>
-      <h2 class="title rv" style="--d:.05s">Questions from Sydney businesses</h2>
-      <p class="rv" style="--d:.1s">Also thinking about search in Sydney? See our <a class="sy-in" href="seo-sydney.html">SEO Sydney</a> page.</p>
-    </div>
-    <div><details class="sy-fq rv" open><summary><span>Do you work with businesses based in Sydney?</span><i></i></summary><div class="sy-fq-a"><p>Yes. While Manifest is based in the Southern Highlands of NSW, we work with established service businesses across Greater Sydney.</p><p>All project work is managed remotely with no impact on quality or timelines.</p></div></details><details class="sy-fq rv"><summary><span>How long does a website project take?</span><i></i></summary><div class="sy-fq-a"><p>Most projects are completed in 6 to 10 weeks from kickoff to launch. We set clear milestones upfront and keep you updated throughout.</p></div></details><details class="sy-fq rv"><summary><span>Does SEO come included?</span><i></i></summary><div class="sy-fq-a"><p>Yes - always. Keyword research, on-page SEO, schema markup, and AI search optimisation are built into every website we deliver. Your site is optimised before it goes live.</p></div></details></div>
-  </div>
-</section>
+<section class="av-sec" aria-labelledby="av-faq-h"><div class="wrap av-faq" id="faq"><div class="av-faq-side"><p class="eyebrow rv">FAQ</p><h2 class="av-h2 rv" id="av-faq-h" style="--d:.05s">Questions from Sydney businesses</h2><p class="t rv">Also thinking about search in Sydney? See our <a href="seo-sydney.html">SEO Sydney</a> page.</p></div><div class="av-fql rv"><details class="av-fq rv" open><summary><span>Do you work with businesses based in Sydney?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>Yes. While Manifest is based in the Southern Highlands of NSW, we work with established service businesses across Greater Sydney.</p><p>All project work is managed remotely with no impact on quality or timelines.</p></div></details><details class="av-fq rv"><summary><span>How long does a website project take?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>Most projects are completed in 6 to 10 weeks from kickoff to launch. We set clear milestones upfront and keep you updated throughout.</p></div></details><details class="av-fq rv"><summary><span>Does SEO come included?</span><i aria-hidden="true"></i></summary><div class="av-fq-a"><p>Yes - always. Keyword research, on-page SEO, schema markup, and AI search optimisation are built into every website we deliver. Your site is optimised before it goes live.</p></div></details></div></div></section>
 
-<section class="sy-close">
-  <div class="wrap sy-close-in">
-    <h2 class="rv">Ready to build a Sydney website that <em>actually works?</em></h2>
-    <div class="rv" style="--d:.1s">
-      <p>Book a discovery call and we'll look at your current site, understand your market, and give you an honest scope and quote.</p>
-      <a class="btn" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
+<section class="av-end" aria-labelledby="av-end-h"><div class="wrap av-end-in"><h2 id="av-end-h" class="rv">Ready to build a Sydney website that <em>actually works?</em></h2><div class="rv" style="--d:.08s"><p>Book a discovery call and we'll look at your current site, understand your market, and give you an honest scope and quote.</p><div class="av-cta"><a class="btn btn-primary" href="book.html">Book a Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div></section>
 
 </main>
 
