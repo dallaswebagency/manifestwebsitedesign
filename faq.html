@@ -348,6 +348,18 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 }
 @media (prefers-reduced-motion:reduce){.fx-pre{opacity:1!important;transform:none!important}}
 </style><style id="mz-eyebrow">html body .eyebrow{font-size:clamp(16px,1.45vw,20px);font-weight:800;letter-spacing:.1em;line-height:1.25}</style>
+<style id="mz-footer">@media (min-width:901px){
+footer{padding-block:56px 28px}
+.f-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1.7fr) minmax(0,1.3fr);gap:28px clamp(24px,3vw,56px);align-items:start}
+.f-grid h4{margin-bottom:12px}
+.f-grid ul{gap:0}
+.f-grid ul a{padding:5px 0}
+.f-grid > div:nth-child(3) ul{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.f-brand p{max-width:34ch}
+.f-grid ul a{display:inline-block}
+}
+@media (min-width:901px) and (max-width:1180px){.f-grid{grid-template-columns:1fr 1.6fr 1fr}.f-brand{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:8px 28px;align-items:center}.f-brand p{max-width:none;margin:0}.f-btns{margin-top:0}.f-bottom{margin-top:36px;padding-top:22px;align-items:center}
+}</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
