@@ -599,23 +599,11 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 @media (max-width:620px){.av-art.av-art-img{display:block;padding:0;aspect-ratio:16/10}}
 .av-svc-t>p.av-state{color:var(--ink);max-width:none}
 .wh-form{background:var(--bg2)!important}
+.av-art-img.wide{aspect-ratio:auto;align-self:center;border:1px solid var(--line);box-shadow:0 24px 50px -28px rgba(1,26,53,.45)}.av-art-img.wide img{height:auto}
+.wh-hero::before{background:linear-gradient(90deg,rgba(1,26,53,.94) 0%,rgba(1,26,53,.84) 48%,rgba(1,26,53,.62) 100%)!important}
+.wh-hero::after{content:"";position:absolute;inset:-10px;z-index:-2;background:url(website-health-hero.jpg) center/cover no-repeat;filter:blur(3px) saturate(1.05);transform:scale(1.04)}
+@media (max-width:900px){.wh-hero::before{background:linear-gradient(180deg,rgba(1,26,53,.93),rgba(1,26,53,.84))!important}}
 </style>
-<style id="mz-footer">@media (min-width:901px){
-footer{padding-block:56px 28px}
-.f-grid{grid-template-columns:minmax(0,1.9fr) minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.3fr);gap:28px clamp(24px,3vw,56px);align-items:start}
-.f-grid h4{margin-bottom:12px}
-.f-grid ul{gap:0}
-.f-grid ul a{padding:5px 0}
-.f-grid > div:nth-child(3) ul{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
-.f-brand p{max-width:34ch}
-.f-grid ul a{display:inline-block}
-}
-@media (min-width:901px) and (max-width:1180px){.f-grid{grid-template-columns:1fr 1.6fr 1fr}.f-brand{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:8px 28px;align-items:center}.f-brand p{max-width:none;margin:0}.f-btns{margin-top:0}.f-bottom{margin-top:36px;padding-top:22px;align-items:center}
-}</style>
-<style id="mz-social">.f-social{display:flex;gap:10px;margin-top:20px}.f-social a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid #3A5F82;color:var(--bg);padding:0!important;min-height:44px;transition:background .25s,color .25s,transform .25s,border-color .25s}.f-social a:hover{background:var(--accent-l);border-color:var(--accent-l);color:var(--dark);transform:translateY(-3px)}
-</style>
-<style id="mz-contact">.f-contact{display:grid;gap:2px;margin-top:20px}.f-contact a{display:inline-flex;align-items:center;gap:10px;min-height:32px;color:#fff;font-weight:600;font-size:16px;overflow-wrap:anywhere}.f-contact svg{flex:none;color:var(--accent-l)}.f-contact a:hover{color:var(--accent-l)}@media (max-width:900px){.f-contact a{min-height:44px}}</style>
-<style id="mz-brandrow">@media (min-width:901px){.f-brand{display:flex;flex-wrap:wrap;align-items:center;gap:0 16px}.f-brand>a.plate,.f-brand>p,.f-brand>.f-contact{flex:0 0 100%}.f-brand>.f-btns{margin-top:20px}.f-brand>.f-social{margin-top:20px}}</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -660,7 +648,7 @@ footer{padding-block:56px 28px}
 
 <main id="main" class="wh-main">
 
-<section class="av-hero" aria-labelledby="av-h1"><div class="wrap"><p class="eyebrow rv">Free Website &amp; SEO Audit</p><h1 id="av-h1" class="rv" style="--d:.05s">Website &amp; SEO <em>Health Check</em></h1><div class="av-hero-in"><div><p class="av-lead rv" style="--d:.1s">Let’s make sure your website, and its visibility in Google, is the best it can be. A free health check covering site speed, broken links, on-page SEO, and your Google Business Profile, with two hours of fixes included.</p><div class="av-cta rv" style="--d:.14s"><a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="book.html">Book a Call</a></div></div><div class="av-hcard rv" style="--d:.12s"><span class="big">2 hrs</span><p>of fixes included, no cost and no obligation</p><svg class="av-ecg" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 H210 L232 70 L248 36 L268 108 L292 6 L316 92 L332 70 H540 L556 70 L570 52 L586 86 L604 70 H1000" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div></div><ul class="av-rail rv" style="--d:.2s"><li><b>Free</b><span>On-page SEO audit, no obligation</span></li><li><b>4 areas</b><span>Speed, SEO, Google profile and security</span></li><li><b>2 hours</b><span>Of fixes to start on the issues we find</span></li><li><b>Plain English</b><span>Findings presented without the jargon</span></li></ul></div></section>
+<section class="av-hero wh-hero" aria-labelledby="av-h1"><div class="wrap"><p class="eyebrow rv">Free Website &amp; SEO Audit</p><h1 id="av-h1" class="rv" style="--d:.05s">Website &amp; SEO <em>Health Check</em></h1><div class="av-hero-in"><div><p class="av-lead rv" style="--d:.1s">Let’s make sure your website, and its visibility in Google, is the best it can be. A free health check covering site speed, broken links, on-page SEO, and your Google Business Profile, with two hours of fixes included.</p><div class="av-cta rv" style="--d:.14s"><a class="btn btn-primary" href="#whc-form">Get My Free Health Check <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="book.html">Book a Call</a></div></div><div class="av-hcard rv" style="--d:.12s"><span class="big">2 hrs</span><p>of fixes included, no cost and no obligation</p><svg class="av-ecg" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 H210 L232 70 L248 36 L268 108 L292 6 L316 92 L332 70 H540 L556 70 L570 52 L586 86 L604 70 H1000" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div></div><ul class="av-rail rv" style="--d:.2s"><li><b>Free</b><span>On-page SEO audit, no obligation</span></li><li><b>4 areas</b><span>Speed, SEO, Google profile and security</span></li><li><b>2 hours</b><span>Of fixes to start on the issues we find</span></li><li><b>Plain English</b><span>Findings presented without the jargon</span></li></ul></div></section>
 
 <section class="av-sec" aria-labelledby="av-intro-h"><div class="wrap"><div class="av-head"><div><p class="eyebrow rv">For Security and SEO</p><h2 class="av-h2 rv" id="av-intro-h" style="--d:.05s">Check the health of your website</h2></div><p class="av-lede rv" style="--d:.08s">We’ll examine your website’s performance, your Google Business Profile visibility, and run a full on-page SEO audit — checking everything from page speed and broken links to the technical signals Google uses to rank you.</p></div><div class="av-callout rv">Once we’re done, we’ll present our findings in plain English and put in two hours of maintenance to start fixing the issues we find — no cost, no obligation.</div></div></section>
 
@@ -703,9 +691,7 @@ footer{padding-block:56px 28px}
       <div class="f-brand">
         <a class="plate" href="index.html"><img src="manifest-logo-light.png" alt="Manifest Website Design" width="176" height="48"></a>
         <p>Helping established Australian service businesses get found in Google and AI search, and turn enquiries into paying clients.</p>
-        <div class="f-contact"><a href="tel:+61482074040"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>0482 074 040</a><a href="mailto:jill@manifestwebsitedesign.com.au"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg>jill@manifestwebsitedesign.com.au</a></div>
         <div class="f-btns"><a class="btn p" href="book.html">Book a Call</a><a class="btn o" href="support.html">Support</a></div>
-        <div class="f-social" aria-label="Social media"><a href="https://www.linkedin.com/company/manifest-website-design/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.75 9.75h3.83v1.54h.06c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg></a><a href="https://www.facebook.com/ManifestWebsiteDesign/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.6c0-.9.3-1.6 1.6-1.6h1.5V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.5v3h2.4V21z"/></svg></a></div>
       </div>
       <div><h4>Services</h4><ul><li><a href="website-design.html">Websites</a></li><li><a href="local-seo.html">SEO</a></li><li><a href="the-orbit-system.html">The Orbit System</a></li><li><a href="website-care.html">Website Care</a></li><li><a href="ai-agent-installs.html">AI Agents</a></li><li><a href="website-health-check-up.html">Website Health Check-Up</a></li></ul></div>
       <div><h4>Company</h4><ul><li><a href="our-work.html">Our Work</a></li><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="projects.html">Projects</a></li><li><a href="industries.html">Industries</a></li><li><a href="our-process.html">Our Process</a></li><li><a href="support.html">Support</a></li><li><a href="contact-us.html">Contact Us</a></li><li><a href="links.html">Links</a></li><li><a href="book.html">Book a Call</a></li><li><a href="book-ai-discovery.html">AI Discovery Call</a></li><li><a href="book-a-zoom-meeting.html">Zoom Meeting</a></li><li><a href="book-office-meeting.html">Office Meeting</a></li></ul></div>
@@ -713,7 +699,7 @@ footer{padding-block:56px 28px}
     </div>
     <div class="f-bottom">
       <span>&copy; 2026 Manifest Website Design. All rights reserved.</span>
-      <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
+      <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="https://www.facebook.com/ManifestWebsiteDesign/" target="_blank" rel="noopener">Facebook</a></div>
     </div>
   </div>
 </footer>
