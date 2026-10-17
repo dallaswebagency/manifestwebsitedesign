@@ -387,6 +387,94 @@ footer{padding-block:56px 28px}
 .nav-right>.btn{white-space:nowrap}
 .mega-services .mega-card .btn{margin-inline:0;width:auto;align-self:flex-start;padding-inline:26px}
 @media (max-width:1180px){.mega-services{grid-template-columns:1fr}.mega-services .mega-card{height:auto}.mega-services li a{min-height:220px}}
+</style><style id="mz-bk">
+.bk-cal{background:#fff;color:var(--ink);border-radius:30px;padding:clamp(16px,1.8vw,26px);box-shadow:0 30px 70px rgba(1,26,53,.22);display:flex;flex-direction:column;gap:10px;min-width:0}
+.bk-cal .cal-top{display:flex;gap:14px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.bk-cal .cal-av{flex:none;width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:3px solid #DDF4F2}
+.bk-calh{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,22px);line-height:1.2;letter-spacing:-.02em;text-wrap:balance;margin:0}
+.bk-cal .cal-meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font-size:14px;font-weight:600;color:var(--muted)}
+.bk-cal .cal-meta span{display:inline-flex;align-items:center;gap:6px}.bk-cal .cal-meta svg{color:var(--accent)}
+.bk-cal .cal-frame{position:relative;width:100%;border-radius:12px}
+.bk-cal .cal-frame::before{content:"Loading the calendar\2026";position:absolute;left:0;right:0;top:0;height:200px;display:grid;place-items:start center;padding-top:80px;color:var(--muted);font-weight:600;z-index:0}
+.bk-cal .cal-frame iframe{position:relative!important;left:0!important;top:0!important;z-index:1;display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;min-height:640px!important;width:100%;background:transparent}
+.bk-cal .cal-fallback{margin:0;text-align:center;font-size:14px;color:var(--muted)}
+.bk-cal .cal-fallback a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.bk-ic{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--cs);color:var(--cc)}
+.bk-ic svg{width:22px;height:22px}
+.bk-alts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bk-alt{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:20px;background:#fff;border:1px solid var(--line);color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s}
+.bk-alt b{flex:1;font-family:var(--serif);font-size:17px;letter-spacing:-.01em}
+.bk-alt>svg{color:var(--accent);transition:transform .25s}
+.bk-alt:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(1,26,53,.12);border-color:var(--accent)}.bk-alt:hover>svg{transform:translateX(5px)}
+.bk-more{padding:clamp(48px,6vw,84px) 0;background:var(--bg)}
+.bk-more h2{font-size:clamp(24px,2.4vw,32px);margin:0 0 22px}
+.bk-dots{position:absolute;inset:0;z-index:-1;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:24px 24px}
+/* Zoom */
+.bk-z{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(150deg,#0B2B4B,#011A35 70%);color:#fff;padding:clamp(44px,6vw,88px) 0}
+.bk-z::before{content:"";position:absolute;left:-160px;bottom:-200px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(18,216,198,.26),transparent 68%);z-index:-1}
+.bk-z-in{display:grid;grid-template-columns:5fr 6fr;gap:clamp(28px,5vw,80px);align-items:start}
+.bk-z-l{position:sticky;top:120px;display:flex;flex-direction:column;gap:20px}
+.bk-z-l .eyebrow{color:var(--accent-l)}
+.bk-big{font-family:var(--serif);font-weight:800;font-size:clamp(110px,15vw,210px);line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.85);display:flex;align-items:flex-end;gap:10px}
+.bk-big small{font-size:clamp(24px,2.6vw,36px);font-weight:700;letter-spacing:0;-webkit-text-stroke:0;color:var(--accent-l)}
+.bk-z h1{color:#fff;font-size:clamp(34px,4vw,54px);line-height:1.04;margin:0}
+.bk-z-lead{font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:#C6DAE3;max-width:520px}
+.bk-z-facts{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:10px}
+.bk-z-facts li{display:flex;align-items:center;gap:12px;font-weight:600}
+.bk-z-facts li span{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(18,216,198,.18);color:var(--accent-l);display:grid;place-items:center}
+.bk-z-facts svg{width:16px;height:16px}
+/* Office */
+.bk-o{padding:clamp(40px,5vw,72px) 0 clamp(28px,3vw,44px);background:var(--bg)}
+.bk-o-in{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,80px);align-items:center}
+.bk-o h1{font-size:clamp(38px,5.2vw,68px);line-height:1.02;margin:12px 0 18px}
+.bk-o h1 span{color:var(--accent)}
+.bk-o-lead{font-size:clamp(19px,1.7vw,24px);line-height:1.45;color:var(--ink);max-width:560px;margin:0 0 14px;font-weight:600}
+.bk-o-sub{font-size:clamp(16px,1.3vw,18px);line-height:1.65;color:var(--muted);max-width:540px;margin:0}
+.bk-o-photo{position:relative;border-radius:34px;overflow:hidden;aspect-ratio:4/4.4;box-shadow:0 28px 60px rgba(1,26,53,.22);max-width:460px;justify-self:end;width:100%}
+.bk-o-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.bk-o-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(1,26,53,.7))}
+.bk-o-photo .chip{position:absolute;z-index:2;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.95);color:#011A35;font-weight:700;font-size:14px}
+.bk-o-photo .chip svg{color:var(--accent)}
+.bk-o-main{background:var(--bg2);padding:clamp(40px,5vw,72px) 0 clamp(48px,6vw,84px)}
+.bk-o-grid{display:grid;grid-template-columns:7fr 4fr;gap:clamp(20px,3vw,40px);align-items:start}
+.bk-o-side{position:sticky;top:120px;display:grid;gap:14px}
+.bk-tile{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:20px;background:#fff;border:1px solid var(--line)}
+.bk-tile b{font-family:var(--serif);font-size:17px;line-height:1.25;letter-spacing:-.01em}
+.bk-o-side h2{font-size:20px;margin:10px 0 0}
+.bk-o-side .bk-alt{padding:14px 16px}.bk-o-side .bk-alt b{font-size:16px}
+/* AI */
+.bk-a{position:relative;isolation:isolate;overflow:hidden;background:var(--dark);color:#fff;padding:clamp(44px,6vw,88px) 0}
+.bk-a-min{position:absolute;z-index:-1;left:-2vw;top:50%;transform:translateY(-50%);font-family:var(--serif);font-weight:800;font-size:clamp(280px,42vw,640px);line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.07)}
+.bk-a-in{display:grid;grid-template-columns:5fr 6fr;gap:clamp(28px,5vw,80px);align-items:center}
+.bk-a h1{color:#fff;font-size:clamp(36px,4.6vw,62px);line-height:1.03;margin:12px 0 18px}
+.bk-a h1 em{font-style:normal;color:var(--accent-l)}
+.bk-a-lead{font-size:clamp(17px,1.4vw,20px);line-height:1.6;color:#C6DAE3;max-width:520px;margin:0 0 22px}
+.bk-a-trust{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bk-a-trust li{display:flex;align-items:center;gap:12px;font-weight:600}
+.bk-a-trust span{flex:none;width:32px;height:32px;border-radius:50%;background:rgba(18,216,198,.16);color:var(--accent-l);display:grid;place-items:center}
+.bk-a-trust svg{width:17px;height:17px}
+.bk-cover{padding:clamp(52px,6.5vw,96px) 0;background:var(--bg)}
+.bk-cover-h{max-width:640px;margin:0 0 clamp(24px,3vw,40px)}
+.bk-cover-h h2{margin:10px 0 12px}
+.bk-cover-h p{color:var(--muted);margin:0}
+.bk-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bk-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.bk-card .bk-ic{width:52px;height:52px;border-radius:16px}.bk-card .bk-ic svg{width:26px;height:26px}
+.bk-card h3{font-family:var(--serif);font-size:20px;line-height:1.2;margin:6px 0 0;letter-spacing:-.01em}
+.bk-card p{margin:0;color:var(--muted);line-height:1.6}
+.bk-strip{background:var(--dark2);color:#fff;padding:clamp(32px,4vw,52px) 0}
+.bk-strip-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 32px}
+.bk-strip p{font-family:var(--serif);font-weight:700;font-size:clamp(20px,2vw,26px);margin:0}
+.bk-strip div{display:flex;flex-wrap:wrap;gap:12px}
+.bk-strip a{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;border:1.5px solid rgba(255,255,255,.6);color:#fff;font-weight:700;transition:background .2s,color .2s}
+.bk-strip a:hover{background:#fff;color:var(--ink)}
+@media (max-width:1000px){
+.bk-z-in,.bk-o-in,.bk-o-grid,.bk-a-in{grid-template-columns:1fr}
+.bk-z-l,.bk-o-side{position:static}
+.bk-o-photo{justify-self:start;max-width:420px;aspect-ratio:4/3}
+.bk-alts,.bk-cards{grid-template-columns:1fr}
+}
+@media (max-width:640px){.bk-cal{padding:14px 10px;border-radius:24px}.bk-cal .cal-top{padding-inline:6px}.bk-cal .cal-frame iframe{min-height:700px!important}.bk-strip a{flex:1 1 100%;justify-content:center}}
 </style></head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -423,60 +511,7 @@ footer{padding-block:56px 28px}
 </header>
 
 
-<main id="main">
-  <section class="ai-hero" aria-labelledby="ai-h1">
-    <span class="ai-min" aria-hidden="true">20</span>
-    <div class="wrap ai-hero-in">
-      <div>
-        <p class="eyebrow dk">Free 20-minute call</p>
-        <h1 id="ai-h1">Book an <em>AI Discovery</em> Call</h1>
-        <p class="ai-lead">A free 20 minute chat about where AI could actually save you time. No pressure, no tech talk.</p>
-        <div class="ai-cta"><a class="btn" href="#pick">Pick a time <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      </div>
-      <ul class="ai-trust">
-        <li>No pressure, no sales pitch</li>
-        <li>20 minutes, online or phone</li>
-        <li>Clear answer either way</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="ai-cover" aria-labelledby="ai-cover-h">
-    <div class="wrap ai-cover-in">
-      <div class="ai-cover-head rv">
-        <p class="eyebrow">What we'll cover</p>
-        <h2 class="title" id="ai-cover-h">You'll leave knowing exactly where you stand.</h2>
-        <p>Want the detail first? See what an <a class="cl-link" style="font-size:inherit;padding-bottom:2px" href="ai-agent-installs.html">AI agent install</a> involves.</p>
-      </div>
-      <ol class="ai-agenda"><li class="rv"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><div><h3>The tasks taking up your time</h3><p>We&#x27;ll map the repeating jobs and manual processes that are eating your week.</p></div></li><li class="rv"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><div><h3>What AI can realistically do</h3><p>Honest view of what an AI assistant could handle, and what it can&#x27;t yet.</p></div></li><li class="rv"><span class="n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><div><h3>What it would cost to set up</h3><p>Ballpark on investment and timeline. No surprises, no vague “it depends”.</p></div></li></ol>
-    </div>
-  </section>
-
-  <section class="ai-pick" id="pick" aria-labelledby="ai-pick-h">
-    <div class="wrap">
-      <div class="ai-pick-top">
-        <div>
-          <h2 class="title" id="ai-pick-h">Pick a time that suits you</h2>
-          <p>We'll send a confirmation with a short prep note. No homework required.</p>
-        </div>
-        <a class="cl-link" href="https://api.leadconnectorhq.com/widget/booking/9zdBMuT6rpB9u3EsP8dM" target="_blank" rel="noopener">Open the calendar in a new tab <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="ai-cal"><iframe src="https://api.leadconnectorhq.com/widget/booking/9zdBMuT6rpB9u3EsP8dM" style="width:100%;border:none;overflow:hidden" id="9zdBMuT6rpB9u3EsP8dM_book" title="Book an AI discovery call with Manifest" loading="lazy"></iframe></div>
-      <p class="ai-fallback">Calendar not showing? <a href="https://api.leadconnectorhq.com/widget/booking/9zdBMuT6rpB9u3EsP8dM" target="_blank" rel="noopener">Open it in a new tab</a> and book there.</p>
-    </div>
-  </section>
-
-  <section class="ai-next" aria-label="Other ways to get in touch">
-    <div class="wrap ai-next-in">
-      <p>Prefer a different kind of conversation?</p>
-      <div class="ai-next-links">
-        <a class="cl-link" href="book.html">Quick 15-minute call</a>
-        <a class="cl-link" href="book-a-zoom-meeting.html">30-minute Zoom call</a>
-        <a class="cl-link" href="contact-us.html">Send a message</a>
-      </div>
-    </div>
-  </section>
-</main>
+<main id="main"><section class="bk-a" id="pick" aria-labelledby="ai-h1"><span class="bk-a-min" aria-hidden="true">20</span><div class="wrap bk-a-in"><div><p class="eyebrow dk">Free 20-minute call</p><h1 id="ai-h1">Book an <em>AI Discovery</em> Call</h1><p class="bk-a-lead">A free 20 minute chat about where AI could actually save you time. No pressure, no tech talk.</p><ul class="bk-a-trust"><li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>No pressure, no sales pitch</li><li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>20 minutes, online or phone</li><li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>Clear answer either way</li></ul></div><div class="cal bk-cal"><div class="cal-top"><img src="jillian.jpg" alt="" class="cal-av"><div><h2 class="bk-calh">Pick a time that suits you</h2><p class="cal-meta"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>20 min</span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 10l7-4v12l-7-4z"/></svg>Online or phone</span></p></div></div><div class="cal-frame"><iframe src="https://api.leadconnectorhq.com/widget/booking/9zdBMuT6rpB9u3EsP8dM" style="width:100%;border:none;overflow:hidden" id="9zdBMuT6rpB9u3EsP8dM_book" title="Book an AI discovery call with Manifest" loading="lazy"></iframe></div><p class="cal-fallback">Calendar not showing? <a href="https://api.leadconnectorhq.com/widget/booking/9zdBMuT6rpB9u3EsP8dM" target="_blank" rel="noopener">Open it in a new tab</a> and book there.</p></div></div></section><section class="bk-cover" aria-labelledby="ai-cover-h"><div class="wrap"><div class="bk-cover-h"><p class="eyebrow">What we'll cover</p><h2 class="title" id="ai-cover-h">You'll leave knowing exactly where you stand.</h2><p>Want the detail first? See what an <a class="cl-link" style="font-size:inherit;padding-bottom:2px" href="ai-agent-installs.html">AI agent install</a> involves.</p></div><div class="bk-cards"><div class="bk-card"><span class="bk-ic" style="--cc:#2F6FED;--cs:#E6EEFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>The tasks taking up your time</h3><p>We&#x27;ll map the repeating jobs and manual processes that are eating your week.</p></div><div class="bk-card"><span class="bk-ic" style="--cc:#7A4DE0;--cs:#EFE8FF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>What AI can realistically do</h3><p>Honest view of what an AI assistant could handle, and what it can&#x27;t yet.</p></div><div class="bk-card"><span class="bk-ic" style="--cc:#D6456B;--cs:#FDE8EE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>What it would cost to set up</h3><p>Ballpark on investment and timeline. No surprises, no vague “it depends”.</p></div></div></div></section><section class="bk-strip" aria-label="Other ways to get in touch"><div class="wrap bk-strip-in"><p>Prefer a different kind of conversation?</p><div><a href="book.html">Quick 15-minute call</a><a href="book-a-zoom-meeting.html">30-minute Zoom call</a><a href="contact-us.html">Send a message</a></div></div></section></main>
 
 
 <footer>
