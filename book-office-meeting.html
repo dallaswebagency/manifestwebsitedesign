@@ -346,13 +346,23 @@ footer{padding-block:56px 28px}
 @media (max-width:1100px){.mega-loc ul.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 <style id="mz-megasv">
-.mega-services{grid-template-columns:minmax(0,1fr) 320px;gap:24px;padding:28px 32px;align-items:stretch}
-.mega-services ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.mega-services ul{height:100%}.mega-services>div:first-child{display:flex;flex-direction:column}.mega-services li{display:flex}.mega-services li a{flex:1;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px;padding:22px;font-size:19px;border:1.5px solid var(--line)}.mega-services li a i{width:44px;height:44px}
-.mega-services li a:hover{border-color:var(--accent)}
-.mega-services .mega-card{height:100%;justify-content:center}.mega-services>div:first-child ul{flex:1}
+.mega .ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.mega-services{grid-template-columns:minmax(0,1fr) 300px;gap:20px;padding:24px;align-items:stretch}
+.mega-services>div:first-child h4{display:none}
+.mega-services ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;height:100%}
+.mega-services li{display:flex}
+.mega-services li a{position:relative;overflow:hidden;isolation:isolate;flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:8px;min-height:260px;padding:22px;border-radius:20px;color:#fff;font-size:inherit;border:0;background:var(--bg) center/cover no-repeat,var(--dark);transition:transform .3s,box-shadow .3s}
+.mega-services li a::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(1,26,53,.35) 0%,rgba(1,26,53,.93) 78%);transition:background .3s}
+.mega-services li a:hover{background:var(--bg) center/cover no-repeat,var(--dark);transform:translateY(-4px);box-shadow:0 20px 34px -22px rgba(1,26,53,.8)}
+.mega-services li a:hover::before{background:linear-gradient(180deg,rgba(0,120,126,.4) 0%,rgba(1,26,53,.95) 78%)}
+.mega-services .mg-ic{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--accent-l);color:var(--dark);font-size:24px;margin-bottom:auto}
+.mega-services li a b{font-family:var(--serif);font-weight:800;font-size:22px;line-height:1.15}
+.mega-services .mg-d{font-weight:500;font-size:15px;line-height:1.5;color:#D8E6EC}
+.mega-services .mg-go{display:inline-flex;align-items:center;gap:8px;margin-top:4px;font-weight:700;font-size:14.5px;color:var(--accent-l)}
+.mega-services .mega-card{height:100%;justify-content:center}
 .nav-links{gap:0!important}
 .nav-links a,.nav-links .trig{white-space:nowrap}
+@media (max-width:1180px){.mega-services{grid-template-columns:1fr}.mega-services .mega-card{height:auto}}
 </style></head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -377,7 +387,7 @@ footer{padding-block:56px 28px}
   </div>
 
   <div class="mega mega-services" id="mega-services" role="region" aria-label="Services">
-    <div><h4>Services</h4><ul><li><a href="website-design.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>Websites</a></li><li><a href="local-seo.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>SEO</a></li><li><a href="ai-agent-installs.html"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>AI</a></li></ul></div>
+    <div><h4>Services</h4><ul><li><a href="website-design.html" style="--bg:url(our-work-hero.png)"><span class="mg-ic"><i class="ic" style="--m:url(orbit-assets/icons/pen-line.svg)" aria-hidden="true"></i></span><b>Websites</b><span class="mg-d">Websites that look great, load fast and turn visitors into enquiries.</span><span class="mg-go">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li><a href="local-seo.html" style="--bg:url(local-seo-hero.jpg)"><span class="mg-ic"><i class="ic" style="--m:url(orbit-assets/icons/chart-no-axes-combined.svg)" aria-hidden="true"></i></span><b>SEO</b><span class="mg-d">Climb Google the proper way and get recommended in AI tools like ChatGPT.</span><span class="mg-go">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li><a href="ai-agent-installs.html" style="--bg:url(ai-agent-hero.jpg)"><span class="mg-ic"><i class="ic" style="--m:url(orbit-assets/icons/workflow.svg)" aria-hidden="true"></i></span><b>AI</b><span class="mg-d">AI agents that run the repetitive work so you get your time back.</span><span class="mg-go">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ul></div>
     <div class="mega-card"><b>Not sure where to start?</b><p>A 45-minute AI Direction Session looks at your current website, search visibility, and lead flow.</p><a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session</a></div>
   </div>
   <div class="drawer" id="drawer">
