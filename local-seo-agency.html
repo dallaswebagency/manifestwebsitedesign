@@ -560,7 +560,457 @@ footer{padding-block:56px 28px}
 .nav-right>.btn{white-space:nowrap}
 .mega-services .mega-card .btn{margin-inline:0;width:auto;align-self:flex-start;padding-inline:26px}
 @media (max-width:1180px){.mega-services{grid-template-columns:1fr}.mega-services .mega-card{height:auto}.mega-services li a{min-height:220px}}
-</style></head>
+</style>
+
+
+
+
+
+
+<style id="mz-sy">
+.sy-hero{background:var(--dark);color:#fff;padding:calc(126px + clamp(32px,4vw,56px)) 0 clamp(40px,5vw,72px);position:relative;isolation:isolate;overflow:hidden}
+.sy-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 70% at 90% 30%,rgba(0,120,126,.5),transparent 70%)}
+.sy-hin{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,5vw,80px);align-items:center}
+.sy-hero .eyebrow{display:block;padding:0;margin:0 0 14px;background:none;color:var(--accent-l);font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase}
+.sy-hero h1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(34px,4.8vw,74px);line-height:1.04;letter-spacing:-.035em;text-wrap:balance}
+.sy-hero h1 em{font-style:normal;color:var(--accent-l)}
+.sy-lead{margin:24px 0 0;color:#C6DAE3;font-size:clamp(17px,1.5vw,21px);line-height:1.6;max-width:54ch}
+.sy-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.sy-b1,.sy-b2{min-height:54px;padding:0 30px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform .25s,background .25s,color .25s}
+.sy-b1{background:var(--accent-l);color:var(--dark);border:0}.sy-b1:hover{background:#fff;transform:translateY(-3px)}
+.sy-b2{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}.sy-b2:hover{background:#fff;color:var(--dark);transform:translateY(-3px)}
+.sy-mot{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.sy-mot li{display:flex;gap:18px;align-items:center;padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)}
+.sy-mot b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px)}
+.sy-ci{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;font-size:26px;flex:none}
+.sy-rail{list-style:none;margin:clamp(36px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.sy-rail li{padding:20px 22px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-top:4px solid var(--cc);display:grid;gap:6px}
+.sy-rail b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px)}.sy-rail span{color:#C6DAE3;font-size:15.5px;line-height:1.45}
+.sy-sec{background:var(--bg);padding:clamp(52px,6.5vw,96px) 0}.sy-sec.alt{background:var(--bg2)}
+.sy-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sy-h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,52px);line-height:1.08;letter-spacing:-.025em;color:var(--ink);text-wrap:balance;max-width:24ch}
+.sy-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:end}
+.sy-lede{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.sy-sub{margin:clamp(28px,3vw,44px) 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(20px,2vw,28px);color:var(--ink)}
+.sy-c3,.sy-c4,.sy-feat{list-style:none;margin:clamp(20px,2.4vw,32px) 0 0;padding:0;display:grid;gap:clamp(14px,1.6vw,22px)}
+.sy-c3{grid-template-columns:repeat(3,minmax(0,1fr))}.sy-c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sy-c3 li,.sy-c4 li,.sy-feat li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);transition:transform .35s,box-shadow .35s}
+.sy-c3 li::before,.sy-c4 li::before,.sy-feat li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.sy-c3 li:hover,.sy-c4 li:hover,.sy-feat li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}
+.sy-c3 li:hover::before,.sy-c4 li:hover::before,.sy-feat li:hover::before{width:100%}
+.sy-c3 h3,.sy-c4 h3{margin:4px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);line-height:1.2;color:var(--ink)}
+.sy-call{margin-top:clamp(20px,2.4vw,32px);padding:clamp(26px,3vw,40px);border-radius:22px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-call p:first-child{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.4vw,34px)}
+.sy-call p:last-child{margin:12px 0 0;color:#C6DAE3;font-size:clamp(17px,1.5vw,21px);line-height:1.6;max-width:62ch}
+.sy-inc{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+.sy-inc-t h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.4vw,34px);color:var(--ink)}
+.sy-inc-t p{margin:14px 0 0;color:var(--muted);font-size:17.5px;line-height:1.7}
+.sy-feat{grid-template-columns:repeat(2,minmax(0,1fr));margin:0}
+.sy-feat li{flex-direction:row;align-items:center;padding:18px 20px;background:#fff;border:1.5px solid var(--line)}
+.sy-feat .sy-ci{width:44px;height:44px;font-size:22px;border-radius:12px}.sy-feat b{font-size:17px;color:var(--ink);line-height:1.3}
+.sy-ai{margin-top:clamp(20px,2.4vw,32px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(18px,3vw,36px);align-items:center;padding:clamp(24px,3vw,36px);border-radius:22px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 0 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-ai-ic{display:grid;place-items:center;width:68px;height:68px;border-radius:20px;background:var(--accent-l);color:var(--dark);font-size:34px}
+.sy-ai h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,32px)}
+.sy-ai p{margin:8px 0 0;color:#C6DAE3;font-size:17.5px;line-height:1.6}
+.sy-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;max-width:360px}
+.sy-chips span{padding:10px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.4);font-weight:700;font-size:15.5px}
+.sy-who{margin:0;color:var(--muted);font-size:16.5px;line-height:1.6}
+.sy-need{margin-top:auto;padding:14px 16px;border-radius:14px;background:#fff;font-weight:600;font-size:15.5px;line-height:1.5;color:var(--ink)}
+.sy-need small{display:block;margin-bottom:4px;color:var(--cc);font-weight:700;font-size:14px}
+@media (max-width:1100px){.sy-c4{grid-template-columns:repeat(2,minmax(0,1fr))}.sy-rail{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-hin,.sy-head,.sy-inc{grid-template-columns:1fr}.sy-c3{grid-template-columns:1fr}.sy-ai{grid-template-columns:1fr}.sy-chips{justify-content:flex-start;max-width:none}}
+@media (max-width:560px){.sy-c4,.sy-feat,.sy-rail{grid-template-columns:1fr}}
+</style><style id="mz-sy2">
+.sy-steps{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.sy-steps li{position:relative;overflow:hidden;padding:26px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);display:flex;flex-direction:column;gap:10px}
+.sy-steps li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc)}
+.sy-sn{position:relative;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--cc);color:#fff;font-size:26px}
+.sy-sn i:first-child{position:absolute;top:-6px;right:-8px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--dark);color:#fff;font:800 13px var(--serif);font-style:normal}
+.sy-steps h3{margin:8px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);color:var(--ink)}
+.sy-steps p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.6}
+.sy-ln{display:inline-flex;align-items:center;gap:8px;margin-left:6px;font-weight:700;color:var(--accent)}
+.sy-rel{list-style:none;margin:clamp(20px,2.4vw,32px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.sy-rel a{display:flex;align-items:center;gap:16px;padding:20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);color:var(--ink);transition:transform .3s,border-color .3s}
+.sy-rel a:hover{transform:translateY(-4px);border-color:var(--cc)}
+.sy-rel a>span:nth-child(2){display:grid;gap:3px;flex:1;min-width:0}.sy-rel b{font-family:var(--serif);font-weight:800;font-size:18px}.sy-rel small{color:var(--muted);font-size:14.5px;line-height:1.4}
+.sy-rel a>svg{flex:none;color:var(--cc)}
+@media (max-width:1100px){.sy-rel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sy-steps,.sy-rel{grid-template-columns:1fr}}
+</style><style id="mz-sy3">
+.sy-allin h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:var(--ink)}
+.sy-allin p{margin:12px 0 0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.sy-f8{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.sy-f8 li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:42px;padding:24px;min-height:170px;border-radius:20px;background:linear-gradient(160deg,var(--cs) 0%,#fff 80%);transition:transform .35s,box-shadow .35s}
+.sy-f8 li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.sy-f8 li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.sy-f8 li:hover::before{width:100%}
+.sy-f8 b{margin-top:auto;font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.6vw,22px);line-height:1.2;color:var(--ink)}
+.sy-bot{margin-top:clamp(14px,1.6vw,22px);display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(14px,1.6vw,22px)}
+.sy-aic{position:relative;overflow:hidden;isolation:isolate;border-radius:22px;color:#fff;padding:clamp(24px,3vw,40px);display:grid;gap:24px;background:url(ai-agent-hero.jpg) center/cover no-repeat,var(--dark)}
+.sy-aic::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,26,53,.95) 0%,rgba(1,26,53,.82) 55%,rgba(1,26,53,.55) 100%)}
+.sy-aic .sy-ai-ic{margin-bottom:18px}
+.sy-aic h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(24px,2.4vw,34px)}
+.sy-aic p{margin:10px 0 0;color:#D8E6EC;font-size:17.5px;line-height:1.6;max-width:46ch}
+.sy-plat{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.sy-plat li{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.35);font-weight:700;font-size:15.5px}
+.sy-plat .ic{color:var(--accent-l);font-size:20px}
+.sy-fast{border-radius:22px;background:var(--dark);color:#fff;padding:clamp(24px,3vw,36px);display:grid;gap:18px;align-content:center;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.sy-fast div{display:grid;gap:4px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.sy-fast b{font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1.1}
+.sy-fast span{color:#C6DAE3;font-size:16px}
+.sy-fast .btn{justify-content:center;margin-top:4px}
+@media (max-width:1100px){.sy-f8{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.sy-bot{grid-template-columns:1fr}}
+@media (max-width:560px){.sy-f8{grid-template-columns:1fr}.sy-f8 li{min-height:0;flex-direction:row;align-items:center;gap:16px}.sy-f8 b{margin:0}}
+</style><style id="mz-sw">
+.sw{background:var(--dark);color:#fff;padding:clamp(56px,7vw,112px) 0;position:relative;isolation:isolate;overflow:hidden}
+.sw::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 0% 0%,rgba(0,120,126,.45),transparent 70%),radial-gradient(35% 45% at 100% 100%,rgba(122,77,224,.25),transparent 70%)}
+.sw-in{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);align-items:start}
+.sw-l{position:sticky;top:110px}
+.sw-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l)}
+.sw h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.8vw,56px);line-height:1.06;letter-spacing:-.03em;text-wrap:balance}
+.sw-l h3{margin:clamp(24px,3vw,36px) 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,26px);color:var(--accent-l)}
+.sw-l>p{margin:10px 0 0;color:#C6DAE3;font-size:clamp(17px,1.4vw,19px);line-height:1.7;max-width:52ch}
+.sw-chips{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.sw-chips span{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);font-weight:700;font-size:15.5px}
+.sw-chips .ic{color:var(--accent-l);font-size:20px}
+.sw-btn{margin-top:26px;min-height:54px;padding:0 30px;border-radius:999px;background:var(--accent-l);color:var(--dark);font-weight:700;display:inline-flex;align-items:center;gap:10px;border:0;transition:transform .25s,background .25s}
+.sw-btn:hover{background:#fff;transform:translateY(-3px)}
+.sw-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.sw-list li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-left:5px solid var(--cc);transition:transform .3s,background .3s}
+.sw-list li:hover{transform:translateX(6px);background:rgba(255,255,255,.12)}
+.sw-ci{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--cc);color:#fff;font-size:24px;flex:none}
+.sw-list b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.4vw,19px);line-height:1.25}
+.sw-ai{margin-top:14px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:#fff;color:var(--ink);display:grid;gap:20px}
+.sw-ai-t{display:flex;gap:18px;align-items:flex-start}
+.sw-aic{display:grid;place-items:center;width:58px;height:58px;border-radius:17px;background:var(--accent-l);color:var(--dark);font-size:30px;flex:none}
+.sw-ai h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(21px,2vw,28px);color:var(--ink)}
+.sw-ai p{margin:8px 0 0;color:var(--muted);font-size:17px;line-height:1.6}
+.sw-plat{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.sw-plat li{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:999px;background:var(--bg2);font-weight:700;font-size:15.5px}
+.sw-plat .ic{color:var(--accent);font-size:20px}
+@media (max-width:1000px){.sw-in{grid-template-columns:1fr}.sw-l{position:static}}
+@media (max-width:560px){.sw-list{grid-template-columns:1fr}.sw-ai-t{flex-direction:column}}
+</style><style id="mz-syend">
+.sy-end .av-end-in{align-items:center}
+.sy-end h2{margin:0}.sy-end p{margin:0 0 24px}
+.sy-end .av-cta{display:flex;flex-wrap:wrap;gap:12px}
+.sy-end .av-cta .btn{min-height:54px;padding:0 28px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:10px}
+</style><style id="mz-wy">
+.wy{background:var(--bg);padding:clamp(48px,5.5vw,84px) 0}
+.wy-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.wy h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.4vw,50px);line-height:1.08;letter-spacing:-.025em;color:var(--ink);text-wrap:balance}
+.wy-lede{margin:22px 0 0;padding-left:20px;border-left:5px solid var(--accent);color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7;max-width:56ch}
+.wy-sub{margin:0 0 16px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.8vw,25px);line-height:1.3;color:var(--ink)}
+.wy-rows{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.wy-rows li{display:flex;align-items:center;gap:18px;padding:20px 22px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc);transition:transform .3s,box-shadow .3s}
+.wy-rows li:hover{transform:translateX(6px);box-shadow:0 18px 30px -24px var(--cc)}
+.wy-ci{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--cc);color:#fff;font-size:27px;flex:none}
+.wy-rows b{font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.7vw,23px);line-height:1.25;color:var(--ink)}
+.wy-call{margin-top:clamp(24px,3vw,40px);display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;padding:clamp(24px,3vw,40px);border-radius:24px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}
+.wy-c1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.6vw,36px);line-height:1.15}
+.wy-c2{margin:10px 0 0;color:#C6DAE3;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:62ch}
+.wy-btn{min-height:54px;padding:0 28px;border-radius:999px;background:var(--accent-l);color:var(--dark);font-weight:700;display:inline-flex;align-items:center;gap:10px;border:0;transition:transform .25s,background .25s}
+.wy-btn:hover{background:#fff;transform:translateY(-3px)}
+@media (max-width:900px){.wy-grid{grid-template-columns:1fr}}
+</style><style id="mz-in">
+.in{background:var(--dark);color:#fff;padding:clamp(56px,7vw,108px) 0;position:relative;isolation:isolate;overflow:hidden}
+.in::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 100% 0%,rgba(0,120,126,.45),transparent 70%),radial-gradient(35% 45% at 0% 100%,rgba(122,77,224,.22),transparent 70%)}
+.in-eb{margin:0 0 12px;font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-l)}
+.in h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.6vw,52px);line-height:1.08;letter-spacing:-.025em;text-wrap:balance;max-width:20ch}
+.in-grid{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.in-grid li{--cc:var(--accent);display:grid;grid-template-columns:clamp(84px,9vw,128px) minmax(0,1fr);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);transition:transform .35s,background .35s,border-color .35s}
+.in-grid li:hover{transform:translateY(-6px);background:rgba(255,255,255,.11);border-color:var(--cc)}
+.in-ico{display:grid;place-items:center;background:var(--cc);color:#fff;font-size:clamp(38px,4vw,56px);position:relative}
+.in-ico::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.2),transparent 60%)}
+.in-b{padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;gap:12px}
+.in-b h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(21px,2.2vw,30px);line-height:1.15}
+.in-who{margin:0;color:#C6DAE3;font-size:clamp(16px,1.3vw,18px);line-height:1.6}
+.in-need{margin-top:auto;display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:rgba(1,26,53,.6);border:1px solid rgba(255,255,255,.18)}
+.in-need>.ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--cc);color:#fff;padding:5px;box-sizing:border-box;font-size:0;-webkit-mask:none;mask:none;display:grid;place-items:center;position:relative}
+.in-need>.ic::before{content:"";width:100%;height:100%;background:#fff;-webkit-mask:url(orbit-assets/icons/check.svg) center/contain no-repeat;mask:url(orbit-assets/icons/check.svg) center/contain no-repeat}
+.in-need small{display:block;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.in-need p{margin:4px 0 0;font-weight:600;font-size:clamp(15.5px,1.3vw,17.5px);line-height:1.45}
+@media (max-width:1000px){.in-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.in-grid li{grid-template-columns:1fr}.in-ico{min-height:76px}}
+</style><style id="mz-loc">
+.ic{display:inline-block;width:1em;height:1em;flex:none;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.lx-side{display:grid;gap:14px}
+.lx-x{padding:20px 24px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);display:grid;gap:10px}
+.lx-x small{font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.lx-x p{margin:0;color:#C6DAE3;font-size:16px;line-height:1.5}
+.lx-x .lx-hl{color:#fff;font-weight:700;font-size:clamp(17px,1.5vw,20px)}
+.lx-row{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.18)}
+.lx-row b{font-family:var(--serif);font-weight:800;font-size:clamp(17px,1.5vw,20px);color:#fff}.lx-row span{color:#C6DAE3;font-size:15px}
+.lx-x address{font-style:normal;display:grid;gap:2px}.lx-x address b{font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px);color:#fff}.lx-x address span{color:#C6DAE3}
+.lx-x a{color:var(--accent-l);font-weight:700}
+.lx-near{margin:18px 0 0!important;font-size:16px!important}.lx-near a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;margin-right:12px}
+.wy-pull{margin:22px 0 0;padding-left:20px;border-left:5px solid var(--accent);font-family:var(--serif);font-weight:800;font-size:clamp(20px,2vw,28px);line-height:1.3;color:var(--ink)}
+.wy-r{display:grid;gap:16px}
+.wy-p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.wy-hl{margin:0;padding:18px 22px;border-radius:16px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--accent);font-weight:700;font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink)}
+.wy-lab{margin:0 0 12px;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.7vw,23px);line-height:1.3;color:var(--ink)}
+.wy-lab s{text-decoration:line-through;opacity:.55}.wy-lab span{color:var(--accent)}
+.wy-vs{display:grid;grid-template-columns:1fr 1fr;gap:14px}.wy-vs div{padding:18px 20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);display:grid;gap:6px}.wy-vs b{font-family:var(--serif);font-weight:800;color:var(--accent)}.wy-vs span{color:var(--muted);line-height:1.55}
+.wy-acc{color:var(--accent-l)}
+.wy-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}.wy-chips li{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);font-weight:700;font-size:15.5px}
+.wy-call .wy-c2{max-width:70ch}
+.sw-l>p+p{margin-top:12px}
+.sw-ai{margin-top:14px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:#fff;color:var(--ink);display:grid;gap:20px}
+.sw-plat a{color:var(--ink);font-weight:700}
+.in-lab{display:inline-block;margin-bottom:-4px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l)}
+.in-grid li{--cc:var(--accent)}
+@media (max-width:640px){.wy-vs{grid-template-columns:1fr}}
+.av-end{background:var(--accent);color:#fff;padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden;isolation:isolate}
+.av-end::before,.av-end::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.35);z-index:-1}
+.av-end::before{width:520px;height:520px;right:-120px;top:-200px}
+.av-end::after{width:340px;height:340px;right:60px;top:-60px}
+.av-end-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,96px);align-items:center}
+.av-end h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4.2vw,60px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
+.av-end h2 em{font-style:normal;color:#CFF7F3}
+.av-end p{color:#E6F5F5;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:50ch}
+.av-end .av-cta .btn-primary{background:#fff;color:var(--dark)}
+.av-end .av-cta .btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.av-end .av-cta .btn-outline:hover{background:#fff;color:var(--dark)}
+</style><style id="mz-lsx">
+.lsx-mot{grid-template-columns:1fr}
+.lsx-mot li b{font-size:clamp(16px,1.5vw,19px);line-height:1.3}
+.lsx-mot .sy-ci{width:46px;height:46px;font-size:23px}
+.lx-near a{color:var(--accent);text-decoration:underline}
+.lsx-grid{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.lsx-grid li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;padding:26px;border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line);transition:transform .35s,box-shadow .35s}
+.lsx-grid li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.lsx-grid li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.lsx-grid li:hover::before{width:100%}
+.lsx-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}
+.lsx-top .sw-ci{width:52px;height:52px;border-radius:15px;background:var(--cc);color:#fff;display:grid;place-items:center;font-size:26px}
+.lsx-freq{padding:6px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--cc);color:var(--ink);font-weight:700;font-size:14px;text-align:right}
+.lsx-grid h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,25px);line-height:1.2;color:var(--ink)}
+.lsx-sub{margin:0;color:var(--cc);font-weight:700;font-size:15.5px}
+.lsx-grid li>p:last-child{margin:0;color:var(--muted);font-size:16.5px;line-height:1.65}
+.lsx-res-h{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end}
+.lsx-big{margin:0;display:grid;gap:6px;padding:22px 28px;border-radius:22px;background:var(--dark);color:#fff;max-width:340px;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%)}
+.lsx-big b{font-family:var(--serif);font-weight:800;font-size:clamp(40px,5vw,68px);line-height:1;color:var(--accent-l)}.lsx-big span{color:#C6DAE3;font-size:15.5px;line-height:1.45}
+.lsx-ba{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.15fr);gap:18px;align-items:stretch}
+.lsx-b,.lsx-a{display:grid;gap:14px;align-content:start;padding:clamp(22px,2.6vw,34px);border-radius:24px}
+.lsx-b{background:#fff;border:1.5px solid var(--line)}.lsx-a{background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.28),transparent 55%)}
+.lsx-t{margin:0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.lsx-a .lsx-t{color:var(--accent-l)}
+.lsx-b>div,.lsx-a>div{display:grid;gap:2px}
+.lsx-b b,.lsx-a b{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1.05;color:var(--ink)}.lsx-a b{color:#fff}
+.lsx-b span,.lsx-a span{font-size:16px;color:var(--muted)}.lsx-a span{color:#C6DAE3}
+.lsx-arrow{display:grid;place-items:center;width:52px;color:var(--accent)}.lsx-arrow svg{width:34px;height:34px}
+.lsx-x{margin:0;display:flex;gap:10px;align-items:center;padding:12px 16px;border-radius:14px;background:rgba(18,216,198,.14);color:#fff;font-weight:700}.lsx-x .ic{color:var(--accent-l);font-size:22px}
+.lsx-note{margin:clamp(20px,2.4vw,32px) 0 0;max-width:72ch;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.lsx-pk{list-style:none;margin:clamp(26px,3.2vw,44px) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.lsx-pk li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.lsx-pk .sw-ci{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--cc);color:#fff;font-size:22px;flex:none}
+.lsx-pk b{font-family:var(--serif);font-weight:700;font-size:clamp(16px,1.4vw,19px);line-height:1.35;color:var(--ink)}
+@media(max-width:1000px){.lsx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lsx-res-h{grid-template-columns:1fr}}
+@media(max-width:760px){.lsx-grid,.lsx-pk{grid-template-columns:1fr}.lsx-ba{grid-template-columns:1fr}.lsx-arrow{width:auto;transform:rotate(90deg);height:36px}}
+@media(max-width:600px){.lsx-hero .sy-rail{grid-template-columns:repeat(2,minmax(0,1fr))}.lsx-hero .sy-rail li{padding:16px}.lsx-mot li{padding:14px 16px}}
+</style><style id="mz-ms">
+.ms-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:end}
+.ms h2{max-width:20ch}
+.ms-lede{margin:0;padding-left:20px;border-left:5px solid var(--accent);color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.ms-vs{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,24px)}
+.ms-vs article{position:relative;overflow:hidden;display:grid;gap:12px;align-content:start;padding:clamp(24px,2.8vw,36px);border-radius:24px;border:1.5px solid var(--line)}
+.ms-vs article::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--cc)}
+.ms-yes{--cc:#1F9D6B;background:linear-gradient(160deg,#E2F6EC 0%,#fff 75%)}
+.ms-no{--cc:#D6456B;background:linear-gradient(160deg,#FDE8EE 0%,#fff 75%)}
+.ms-ci{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:var(--cc);color:#fff;font-size:28px}
+.ms-vs h3{margin:6px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:var(--ink)}
+.ms-vs p{margin:0;color:var(--muted);font-size:clamp(16.5px,1.4vw,19px);line-height:1.6}
+.ms-local{margin-top:clamp(16px,2vw,24px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(26px,3.2vw,44px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}
+.ms-c1{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.6vw,36px);line-height:1.2}.ms-c1 span{color:var(--accent-l)}
+.ms-c2{margin:16px 0 0;color:#C6DAE3;font-size:clamp(16.5px,1.4vw,19px);line-height:1.65}
+.ms-know{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ms-know li{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22)}
+.ms-ki{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--accent-l);color:var(--dark);font-size:22px;flex:none}
+.ms-know b{font-family:var(--serif);font-weight:700;font-size:clamp(16px,1.4vw,18.5px);line-height:1.3}
+@media(max-width:900px){.ms-head,.ms-local{grid-template-columns:1fr}.ms h2{max-width:none}}
+@media(max-width:640px){.ms-vs{grid-template-columns:1fr}}
+</style><style id="mz-ssx">
+.ssx-price{margin:22px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;color:#C6DAE3;font-size:16.5px}
+.ssx-price b{font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.2vw,30px);color:#fff}
+.ssx-price em{font-style:normal;padding:6px 14px;border-radius:999px;background:rgba(18,216,198,.16);border:1px solid rgba(18,216,198,.45);color:var(--accent-l);font-weight:700;font-size:14.5px}
+.ssx-lad{padding:clamp(20px,2.4vw,30px);border-radius:24px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22)}
+.ssx-lt{margin:0 0 16px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-l)}
+.ssx-stack{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ssx-stack li{display:grid;gap:2px;padding:14px 18px;border-radius:14px;background:var(--accent-l);color:var(--dark)}
+.ssx-stack li:nth-child(1){width:100%}.ssx-stack li:nth-child(2){width:94%}.ssx-stack li:nth-child(3){width:88%}.ssx-stack li:nth-child(4){width:82%}.ssx-stack li:nth-child(5){width:70%}
+.ssx-stack li:nth-child(n+2){background:rgba(18,216,198,.55)}
+.ssx-stack li:nth-child(n+3){background:rgba(18,216,198,.32);color:#fff}
+.ssx-stack li:nth-child(n+4){background:rgba(255,255,255,.12);color:#fff}
+.ssx-stack li.off{background:transparent;border:1.5px dashed rgba(255,255,255,.4);color:#C6DAE3}
+.ssx-stack b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.5vw,19px)}.ssx-stack span{font-size:14.5px;opacity:.85}
+.ssx-trust{list-style:none;margin:clamp(30px,3.6vw,52px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ssx-trust li{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-top:4px solid var(--cc)}
+.ssx-trust .sy-ci{width:44px;height:44px;font-size:22px;border-radius:13px}
+.ssx-trust b{font-weight:700;font-size:15.5px;line-height:1.4}
+.ssx-mk{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ssx-mkt{display:grid;gap:16px}.ssx-mkt p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}
+.ssx-chips{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ssx-chips li{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.ssx-chips b{font-family:var(--serif);font-weight:800;font-size:clamp(18px,1.7vw,23px);color:var(--ink)}
+.ssx-chips .sy-ci{width:50px;height:50px;font-size:25px}
+.ssx-call{grid-template-columns:1fr}
+.ssx-sv{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.ssx-sv li{grid-column:span 2;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line);transition:transform .35s,box-shadow .35s}
+.ssx-sv li:nth-child(n+4){grid-column:span 3}
+.ssx-sv li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.ssx-sv li:hover{transform:translateY(-6px);box-shadow:0 22px 34px -26px var(--cc)}.ssx-sv li:hover::before{width:100%}
+.ssx-sv .sw-ci{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--cc);color:#fff;font-size:27px}
+.ssx-sv h3{margin:4px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.9vw,26px);line-height:1.2;color:var(--ink)}
+.ssx-sv p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.65}
+.ssx-case .sy-h2{max-width:22ch}
+.ssx-cg{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,1.8vw,24px);align-items:stretch}
+.ssx-big{padding:clamp(26px,3vw,44px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%);display:grid;gap:10px;align-content:center}
+.ssx-tag{margin:0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-l)}
+.ssx-num{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(56px,8vw,112px);line-height:1;letter-spacing:-.03em;color:#fff}
+.ssx-ct{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(19px,1.9vw,26px);line-height:1.25}
+.ssx-ci{margin:6px 0 0;color:#C6DAE3;font-size:16px;line-height:1.6}
+.ssx-st{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ssx-st li{display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc)}
+.ssx-st b{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1;color:var(--cc);min-width:3.2ch}
+.ssx-st span{color:var(--ink);font-weight:600;font-size:clamp(16px,1.4vw,18px);line-height:1.4}
+.ssx-copy{margin-top:clamp(20px,2.4vw,32px);display:grid;gap:12px;max-width:80ch}.ssx-copy p{margin:0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.7}.ssx-copy .ssx-fine{font-size:15.5px}
+.ssx-pg{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ssx-pc{display:grid;gap:12px;padding:clamp(26px,3vw,40px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%);position:sticky;top:130px}
+.ssx-pp{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(44px,5vw,72px);line-height:1}.ssx-pp small{display:block;font-size:clamp(16px,1.5vw,20px);font-weight:700;color:var(--accent-l);margin-top:6px}
+.ssx-pn{margin:0 0 8px;color:#C6DAE3;font-size:17px}
+.ssx-pack .lsx-pk{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1000px){.ssx-trust{grid-template-columns:repeat(2,minmax(0,1fr))}.ssx-mk,.ssx-cg,.ssx-pg{grid-template-columns:1fr}.ssx-pc{position:static}.ssx-sv{grid-template-columns:repeat(2,minmax(0,1fr))}.ssx-sv li,.ssx-sv li:nth-child(n+4){grid-column:auto}.ssx-sv li:last-child:nth-child(odd){grid-column:1/-1}}
+@media(max-width:640px){.ssx-sv,.ssx-pack .lsx-pk{grid-template-columns:1fr}.ssx-trust{grid-template-columns:1fr}.ssx-stack li{width:100%!important}}
+.sy-end .lx-near a{color:#fff!important;background:none!important;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.sy-hero.ssx-hero{background:linear-gradient(90deg,rgba(1,26,53,.92) 0%,rgba(1,26,53,.78) 50%,rgba(1,26,53,.5) 100%),url(seo-sydney-hero-bg.jpg) 55% 40%/cover no-repeat,var(--dark)}
+.ssx-hero::before{background:radial-gradient(45% 60% at 90% 30%,rgba(0,120,126,.25),transparent 70%)}
+.ssx-hero h1,.ssx-hero .sy-lead{text-shadow:0 2px 18px rgba(1,26,53,.6)}
+.ssx-hero .ssx-lad,.ssx-hero .ssx-trust li{background:rgba(1,26,53,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ssm-top{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,5vw,72px);align-items:center}
+.ssm h2{max-width:18ch}
+.ssm-big{margin:0;padding:clamp(24px,3vw,40px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%);font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.6vw,36px);line-height:1.2}
+.ssm-cards{list-style:none;margin:clamp(20px,2.6vw,36px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.ssm-cards li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(22px,2.6vw,32px);border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line)}
+.ssm-cards li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc)}
+.ssm-cards p{margin:0;color:var(--ink);font-size:clamp(16.5px,1.35vw,18px);line-height:1.7}
+.ssm-call{margin-top:clamp(16px,2vw,24px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(26px,3.2vw,44px);border-radius:26px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}
+.ssm-chips{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ssm-chips li{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22)}
+.ssm-chips b{font-family:var(--serif);font-weight:700;font-size:clamp(16px,1.4vw,18.5px)}
+@media(max-width:900px){.ssm-top,.ssm-call{grid-template-columns:1fr}.ssm-cards{grid-template-columns:1fr}.ssm h2{max-width:none}}
+.ssv{margin-top:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:clamp(16px,2.4vw,32px);align-items:start}
+.ssv-tabs{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ssv-tabs button{width:100%;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--cc);cursor:pointer;text-align:left;font:inherit;color:var(--ink);transition:transform .25s,box-shadow .25s,background .25s}
+.ssv-tabs button:hover{transform:translateX(4px)}
+.ssv-tabs button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ssv-tabs button[aria-selected="true"]{background:var(--dark);color:#fff;border-color:var(--dark);border-left-color:var(--cc);box-shadow:0 20px 30px -22px rgba(1,26,53,.7)}
+.ssv-tabs .sw-ci{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--cc);color:#fff;font-size:23px;flex:none}
+.ssv-tabs b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.5vw,19px);line-height:1.25}
+.ssv-panel{padding:clamp(24px,3vw,40px);border-radius:26px;background:linear-gradient(160deg,var(--cs) 0%,#fff 70%);border:1.5px solid var(--line);border-top:6px solid var(--cc)}
+.ssv-panel[hidden]{display:none}
+.ssv-ph{display:flex;align-items:center;gap:16px}
+.ssv-ph .sw-ci{display:grid;place-items:center;width:58px;height:58px;border-radius:17px;background:var(--cc);color:#fff;font-size:29px;flex:none}
+.ssv-ph h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(22px,2.4vw,32px);line-height:1.15;color:var(--ink)}
+.ssv-lead{margin:20px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.7vw,23px);line-height:1.4;color:var(--ink)}
+.ssv-pts{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.ssv-pts li{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.ssv-ck{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--cc);color:#fff;font-size:16px;flex:none;margin-top:1px}
+.ssv-pts p{margin:0;color:var(--muted);font-size:clamp(16px,1.3vw,17.5px);line-height:1.65}
+@media(max-width:900px){.ssv{grid-template-columns:1fr}.ssv-tabs{display:flex;overflow-x:auto;gap:10px;padding-bottom:6px;scroll-snap-type:x proximity}.ssv-tabs li{flex:none;scroll-snap-align:start}.ssv-tabs button{width:auto;white-space:nowrap}.ssv-tabs b{font-size:15.5px}}
+.ssc-r{display:grid;gap:clamp(12px,1.6vw,20px)}
+.ssc-bars{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;padding:clamp(20px,2.4vw,30px);border-radius:24px;background:#fff;border:1.5px solid var(--line)}
+.ssc-bar{display:grid;gap:6px;justify-items:center;text-align:center}
+.ssc-col{width:100%;max-width:150px;height:170px;display:flex;align-items:flex-end;border-radius:14px;background:var(--bg2);overflow:hidden}
+.ssc-col i{display:block;width:100%;height:var(--h);background:#9DB4C3;border-radius:14px 14px 0 0;transition:height 1.6s cubic-bezier(.2,.8,.2,1)}
+.ssc-after .ssc-col i{background:linear-gradient(180deg,var(--accent) 0%,var(--accent-l) 100%)}
+.ssc-js:not(.ssc-go) .ssc-col i{height:4%}
+.ssc-bar b{font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.2vw,44px);line-height:1;color:var(--ink)}
+.ssc-bar span{color:var(--muted);font-weight:600;font-size:14.5px;line-height:1.35}
+.ssc-arrow{color:var(--accent);align-self:center;padding-bottom:60px}.ssc-arrow svg{width:32px;height:32px}
+.ssc-tiles{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px)}
+.ssc-tiles div{display:grid;gap:6px;padding:22px 24px;border-radius:22px;background:#fff;border:1.5px solid var(--line);border-top:5px solid var(--cc)}
+.ssc-tiles b{font-family:var(--serif);font-weight:800;font-size:clamp(32px,3.6vw,52px);line-height:1;color:var(--cc)}
+.ssc-tiles span{color:var(--ink);font-weight:600;font-size:15.5px;line-height:1.4}
+.ssx-case .ssx-cg{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+@media(max-width:1000px){.ssx-case .ssx-cg{grid-template-columns:1fr}}
+@media(max-width:520px){.ssc-tiles{grid-template-columns:1fr}.ssc-col{height:130px}}
+.ssp-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end}
+.ssp-price{display:grid;gap:8px;justify-items:start;padding:clamp(20px,2.4vw,28px);border-radius:24px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 60%)}
+.ssp-pp{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(38px,4.4vw,60px);line-height:1}.ssp-pp small{font-size:clamp(15px,1.4vw,18px);font-weight:700;color:var(--accent-l);margin-left:8px}
+.ssp-pn{margin:0 0 6px;color:#C6DAE3;font-size:16px}
+.ssp-wrap{margin-top:clamp(22px,2.8vw,36px);border-radius:24px;overflow:hidden;background:#fff;border:1.5px solid var(--line)}
+.ssp-t{width:100%;border-collapse:collapse}
+.ssp-t thead th{padding:16px 24px;background:var(--dark);color:#fff;text-align:left;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.ssp-t thead .ssp-ok{text-align:center;width:120px}
+.ssp-t tbody tr{border-top:1px solid var(--line);transition:background .2s}
+.ssp-t tbody tr:nth-child(even){background:var(--bg)}
+.ssp-t tbody tr:hover{background:var(--cs)}
+.ssp-t tbody th{padding:18px 24px;text-align:left;width:38%}
+
+.ssp-t .sw-ci{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--cc);color:#fff;font-size:22px;flex:none}
+.ssp-t tbody b{font-family:var(--serif);font-weight:800;font-size:clamp(16px,1.4vw,19px);line-height:1.3;color:var(--ink)}
+.ssp-d{padding:18px 24px;color:var(--muted);font-size:clamp(15.5px,1.3vw,17px);line-height:1.6}
+.ssp-na{color:#7C93A3}
+.ssp-t td.ssp-ok{text-align:center;padding:18px 24px}
+.ssp-tick{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--cc);color:#fff;font-size:18px}
+@media(max-width:820px){.ssp-head{grid-template-columns:1fr}.ssp-t thead{display:none}.ssp-t,.ssp-t tbody,.ssp-t tr{display:block}.ssp-t tbody tr{position:relative;padding:16px 56px 16px 18px}.ssp-t tbody th{padding:0;width:auto}.ssp-d{display:block;padding:8px 0 0 58px}.ssp-t td.ssp-ok{position:absolute;right:14px;top:18px;padding:0}.ssp-tick{width:28px;height:28px;font-size:16px}}
+.ssp-t tbody th{display:table-cell;width:40%}
+.ssp-th{display:flex;align-items:center;gap:14px}
+.ssc-bar b .cn,.ssc-tiles b .cn,.ssx-num .cn{font-size:inherit;font-weight:inherit;color:inherit;line-height:inherit;font-family:inherit}
+@media(max-width:820px){.ssp-d:has(.ssp-na){display:none}}
+.ssp-cta{margin-top:clamp(18px,2.2vw,28px);display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;padding:clamp(20px,2.4vw,30px) clamp(22px,2.8vw,36px);border-radius:24px;background:var(--dark);color:#fff;background-image:radial-gradient(circle at 100% 0,rgba(18,216,198,.3),transparent 55%)}.ssp-cta p{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,2.2vw,30px)}
+.ssx-also{margin:24px 0 10px!important;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.ssx-rel{display:flex;flex-wrap:wrap;gap:10px}
+.sy-end .ssx-rel .ssx-rb{min-height:46px;padding:0 22px;border-radius:999px;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7);font-weight:700;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s,transform .25s}
+.sy-end .ssx-rel .ssx-rb:hover{background:#fff;color:var(--dark);transform:translateY(-2px)}
+.sy-end .ssx-rel{margin-top:clamp(28px,3.4vw,48px);padding-top:clamp(22px,2.6vw,32px);border-top:1px solid rgba(255,255,255,.3);justify-content:flex-start}
+</style><style id="mz-ss3">
+.ssm-big.ss3-ld{font-family:var(--sans);font-weight:600;font-size:clamp(17px,1.45vw,20px);line-height:1.65}
+.ssm-cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ssm-cards.five{grid-template-columns:repeat(6,minmax(0,1fr))}
+.ssm-cards.five li{grid-column:span 2}.ssm-cards.five li:nth-child(n+4){grid-column:span 3}
+.ssm-cards h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.6vw,22px);line-height:1.2;color:var(--ink)}
+.ssm-cards li p{color:var(--muted)}
+.ss3-chiprow .ssm-chips{grid-template-columns:repeat(3,minmax(0,1fr))}.ss3-chiprow{grid-template-columns:1fr}
+.ssv-k{display:inline-block;align-self:flex-start;margin:0 0 4px;padding:5px 12px;border-radius:999px;background:var(--cs);color:var(--cc);font-weight:700;font-size:13.5px}
+.ss3-sticky .ssv-panels{position:sticky;top:120px;align-self:start}
+.ss3-addr{margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);color:#C6DAE3;font-size:15px}
+.ss3-lede{margin:14px 0 0;color:var(--muted);font-size:clamp(17px,1.4vw,19px);line-height:1.65;max-width:70ch}
+.ss3-note{margin:clamp(18px,2.4vw,28px) 0 0;padding:clamp(18px,2.2vw,26px) clamp(20px,2.6vw,32px);border-radius:20px;background:#fff;border:1.5px solid var(--line);border-left:5px solid var(--accent);display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.ss3-note p{margin:0;color:var(--ink);font-weight:600;font-size:clamp(16.5px,1.35vw,18px);line-height:1.55;max-width:60ch}
+.ss3-note .cl-link,.ss3-note a.btn{font-weight:700}
+.ss3-price{margin:16px 0 0;display:flex;align-items:baseline;gap:10px}.ss3-price b{font-family:var(--serif);font-weight:800;font-size:clamp(34px,4vw,52px);color:var(--ink);line-height:1}.ss3-price span{color:var(--muted);font-weight:600;font-size:17px}
+.ss3-grid{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.ss3-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ss3-grid li{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;padding:clamp(22px,2.4vw,30px);border-radius:22px;background:linear-gradient(160deg,var(--cs) 0%,#fff 75%);border:1.5px solid var(--line);transition:transform .3s,border-color .3s,box-shadow .3s}
+.ss3-grid li::before{content:"";position:absolute;left:0;top:0;height:5px;width:44px;background:var(--cc);transition:width .4s}
+.ss3-grid li:hover{transform:translateY(-5px);border-color:var(--cc)}.ss3-grid li:hover::before{width:100%}
+.ss3-top{display:flex;align-items:center;justify-content:space-between}
+.ss3-n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--cc);border:1.5px solid var(--cc);font:800 16px var(--serif)}
+.ss3-grid h3{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(19px,1.7vw,23px);line-height:1.2;color:var(--ink)}
+.ss3-grid p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.65}.ss3-grid p:first-of-type{color:var(--ink)}
+.ss3-lk{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--accent)}.ss3-lk svg{transition:transform .25s}.ss3-lk:hover svg{transform:translateX(5px)}
+.ss3-proc{background:var(--dark)!important;color:#fff}
+.ss3-proc .sy-h2{color:#fff}.ss3-proc .sy-lede{color:#C6DAE3}.ss3-proc .sy-eb{color:var(--accent-l)}
+.ss3-proc .ss3-grid li{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.2)}
+.ss3-proc .ss3-grid h3{color:#fff}.ss3-proc .ss3-grid p,.ss3-proc .ss3-grid p:first-of-type{color:#C6DAE3}
+.ss3-proc .ss3-n{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.ss3-how{margin-top:clamp(24px,3vw,40px)}.ss3-how h3{margin:0 0 14px;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.9vw,26px);color:var(--ink)}
+.ss3-how ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.ss3-how li{display:grid;gap:6px;align-content:start;padding:18px;border-radius:18px;background:#fff;border:1.5px solid var(--line);border-top:5px solid var(--cc)}
+.ss3-how b{font-family:var(--serif);font-weight:800;font-size:17px;color:var(--ink)}.ss3-how span{color:var(--muted);font-size:15px;line-height:1.55}
+.ss3-rank{padding:clamp(24px,3vw,36px);border-radius:24px;background:rgba(1,26,53,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);display:grid;gap:8px;text-align:left}
+.ss3-rank b{font-family:var(--serif);font-weight:800;font-size:clamp(96px,12vw,180px);line-height:.85;letter-spacing:-.05em;color:var(--accent-l)}
+.ss3-rank span{font-size:clamp(17px,1.5vw,21px);line-height:1.45;color:#fff;font-weight:600}
+.ssx-trust small{display:block;color:#C6DAE3;font-size:13px;font-weight:600;margin-bottom:2px}
+@media(max-width:1000px){.ss3-grid,.ss3-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.ssm-cards.five,.ssm-cards.two{grid-template-columns:1fr}.ssm-cards.five li,.ssm-cards.five li:nth-child(n+4){grid-column:auto}.ss3-chiprow .ssm-chips{grid-template-columns:1fr}.ss3-how ul{grid-template-columns:repeat(2,minmax(0,1fr))}.ss3-sticky .ssv-panels{position:static}}
+@media(max-width:640px){.ss3-grid,.ss3-grid.two,.ss3-how ul{grid-template-columns:1fr}}
+.in .ss3-lede{color:#C6DAE3}
+.ss3-grid.five{grid-template-columns:repeat(6,minmax(0,1fr))}.ss3-grid.five li{grid-column:span 2}.ss3-grid.five li:nth-child(n+4){grid-column:span 3}
+@media(max-width:1000px){.ss3-grid.five{grid-template-columns:repeat(2,minmax(0,1fr))}.ss3-grid.five li,.ss3-grid.five li:nth-child(n+4){grid-column:auto}}
+@media(max-width:640px){.ss3-grid.five{grid-template-columns:1fr}}
+.in-grid>li:last-child:nth-child(odd){grid-column:1/-1}
+</style>
+<style id="mz-ss3bg">.sy-hero.ssx-hero{background:linear-gradient(90deg,rgba(1,26,53,.92) 0%,rgba(1,26,53,.78) 50%,rgba(1,26,53,.5) 100%),url(seo-sydney-hero-bg.jpg) 55% 40%/cover no-repeat,var(--dark)}</style></head>
 <body>
 <script>document.documentElement.className+=" js"</script>
 <a class="skip" href="#main">Skip to main content</a>
@@ -595,139 +1045,16 @@ footer{padding-block:56px 28px}
   </div>
 </header>
 
-<main id="main" class="lsa-main">
-
-<section class="lsa-hero" aria-labelledby="lsa-h1">
-  <div class="wrap">
-    <div class="lsa-hero-in">
-      <div>
-        <p class="eyebrow dk rv">Local SEO Agency — Based in NSW, Working Nationally</p>
-        <h1 id="lsa-h1" class="rv" style="--d:.05s">Australia’s Local SEO Agency <span>Helping Australian Businesses Rank #1 in Their Area</span></h1>
-        <p class="lsa-lead rv" style="--d:.1s">At Manifest Website Design, we provide professional local SEO services designed to increase your online visibility, attract more qualified leads, and turn local searches into paying customers. From Google Business Profile optimisation to location-specific keyword targeting, our strategies deliver measurable results.</p>
-        <div class="lsa-cta rv" style="--d:.15s">
-          <a class="btn btn-primary" href="book.html">Book a Free Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-outline" href="#our-services">See what’s included</a>
-        </div>
-      </div>
-      <div class="lsa-rank rv" style="--d:.12s" aria-hidden="true">
-        <span class="lsa-rank-n">#1</span>
-        <span class="lsa-rank-c"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Google Maps, the Local Pack and suburb searches</span>
-      </div>
-    </div>
-    <ul class="lsa-facts rv" style="padding:0;margin:0">
-      <li><small>Packages</small>From $2,500/month AUD</li>
-      <li><small>Contracts</small>No lock-in contracts</li>
-      <li><small>AI search</small>Included as standard</li>
-      <li><small>Reporting</small>Plain English, no jargon</li>
-    </ul>
-  </div>
-</section>
-
-<section class="lsa-why" aria-labelledby="lsa-why-h">
-  <div style="display:block" class="wrap lsa-split"><div class="mzv-wrap"><aside class="mzv-panel rv"><span class="mzv-ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12zM12 11a2 2 0 100-4 2 2 0 000 4z"/></svg></span><small>Local wins</small><b>Show up where buyers search</b><ul><li>More calls & enquiries</li><li>Higher-quality traffic</li><li>Trust that converts</li></ul></aside><div class="mzv-body">
-    <div class="lsa-sticky">
-      <p class="eyebrow rv">Why it matters</p>
-      <h2 id="lsa-why-h" class="title rv">Why Local SEO Matters for Your Business</h2>
-    </div>
-    <div><article class="lsa-why-row rv"><span class="lsa-why-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><div><h3>Increase Local Visibility</h3><p>Local SEO helps your business appear at the top of search results when potential customers search for services in your area. Higher visibility means more website visits, phone calls, and enquiries from people looking for exactly what you offer.</p></div></article><article class="lsa-why-row rv"><span class="lsa-why-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><div><h3>Drive High-Quality Traffic</h3><p>Unlike traditional advertising, local SEO targets users who are already interested in your products or services. This results in highly relevant traffic that is more likely to convert into leads, bookings, and sales.</p></div></article><article class="lsa-why-row rv"><span class="lsa-why-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><div><h3>Build Trust and Credibility</h3><p>Customers are more likely to choose businesses with accurate information, strong local listings, and positive online reviews. Local SEO ensures your business information is consistent and easily accessible across all platforms.</p></div></article><article class="lsa-why-row rv"><span class="lsa-why-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><div><h3>Capture More Sales Opportunities</h3><p>Many local searches are made by people who are ready to take action — making a purchase, scheduling an appointment, or requesting a quote. Local SEO positions your business in front of these customers at the right time.</p></div></article><article class="lsa-why-row rv"><span class="lsa-why-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><div><h3>Stay Ahead of Local Competitors</h3><p>If your competitors are investing in local SEO and you are not, you could be losing valuable customers. A well-executed local SEO strategy helps your business outperform competitors and become the preferred choice in your local market.</p></div></article></div>
-  </div></div>
-</section>
-
-<section class="lsa-case" aria-labelledby="lsa-case-h">
-  <div class="wrap">
-    <div class="lsa-case-top">
-      <div>
-        <p class="eyebrow rv">Real results · Case study</p>
-        <h2 id="lsa-case-h" class="rv">Real Results for Real Australian Businesses</h2>
-        <p class="lsa-big rv" aria-label="322.4 percent increase in website traffic in under 12 months">322.4<small>%</small></p>
-        <p class="lsa-bigcap rv">increase in website traffic in under 12 months</p>
-      </div>
-      <div class="lsa-meta rv" style="--d:.1s">
-        <p><b>Industry</b>Bookkeeping &amp; Accounting Services</p>
-        <p><b>Challenge</b>Low Google visibility, minimal organic traffic, ranking for only 40 irrelevant keywords</p>
-      </div>
-    </div>
-    <div class="lsa-stats rv">
-      <div><b>3,451</b><span>Active monthly users (up from 817)</span></div>
-      <div><b>1,500+</b><span>Targeted keywords now ranking (up from 40)</span></div>
-      <div><b>Consistent</b><span>Month-on-month increase in client bookings</span></div>
-    </div>
-    <div class="lsa-how">
-      <h3>How we achieved it</h3>
-      <ul><li class="rv" style="--d:0.00s"><b>Keyword research</b><span>Thorough keyword research and competitor gap analysis to identify the highest-opportunity search terms</span></li><li class="rv" style="--d:0.05s"><b>Content production</b><span>100+ SEO-optimised blog posts and targeted location landing pages, built around real search intent</span></li><li class="rv" style="--d:0.10s"><b>Link building</b><span>High-quality backlinks from trusted local and industry sources, plus a strong internal linking architecture</span></li><li class="rv" style="--d:0.15s"><b>Ongoing optimisation</b><span>Continuous analysis of user behaviour data to improve engagement and reduce bounce rate</span></li><li class="rv" style="--d:0.20s"><b>Conversion focus</b><span>Optimised high-value service pages to convert traffic into booked appointments</span></li></ul>
-    </div>
-    <p class="lsa-note rv"><strong>These are real results from a real client.</strong> <span>SEO is a long game — but when it’s done consistently, the compounding effect is significant.</span></p>
-  </div>
-</section>
-
-<section class="lsa-svc" id="our-services" aria-labelledby="lsa-svc-h">
-  <div class="wrap">
-    <div class="lsa-head">
-      <div>
-        <p class="eyebrow rv">What we do</p>
-        <h2 id="lsa-svc-h" class="title rv">Our Local SEO Services</h2>
-      </div>
-      <p class="rv" style="--d:.06s">We offer comprehensive local SEO services designed to help your business rank higher in local search results, attract nearby customers, and generate more leads and sales.</p>
-    </div>
-    <ul><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Google Business Profile Optimisation</h3><p>We optimise every aspect of your profile — business information, categories, descriptions, images, and updates — to improve your presence in Google Search and Google Maps.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>Local Keyword Research</h3><p>We conduct in-depth research to identify the high-intent, location-based search terms your potential customers are using — and build your content strategy around them.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>On-Page SEO</h3><p>We enhance title tags, meta descriptions, headings, content, internal linking, and structured data while incorporating location-specific keywords.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Local Citations &amp; Directory Listings</h3><p>We create, optimise, and manage business listings across trusted local directories, ensuring your NAP information is accurate and consistent.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3>Online Reputation Management</h3><p>We help monitor and improve your online reputation by encouraging positive reviews, responding to customer feedback, and maintaining a professional digital presence.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span><h3>Local Link Building</h3><p>We acquire relevant, authoritative links from trusted local websites, organisations, and industry sources — steadily building your domain authority.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><h3>Mobile &amp; Voice Search Optimisation</h3><p>We ensure your website loads quickly, performs flawlessly on all devices, and is optimised for voice search queries increasingly used to find local businesses.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M9.5 10a3.5 3.5 0 100-7 3.5 3.5 0 000 7zM21 20v-2a4 4 0 00-3-3.9M16 3.1a3.5 3.5 0 010 6.8"/></svg></span><h3>AI SEO Services</h3><p>We combine AI-powered tools with proven optimisation strategies to build the content signals that get your business cited in ChatGPT, Google’s AI Overview, and Perplexity answers.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 01-11.5 7.2L4 20l1-4.5A8 8 0 1121 12z"/></svg></span><h3>Local Content Creation</h3><p>Our team creates location-focused blogs, service pages, and landing pages designed to improve search visibility, engage local audiences, and convert visitors into enquiries.</p></li><li class="lsa-svc-row rv"><span class="lsa-svc-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 12.5l9 5 9-5"/></svg></span><h3>Local SEO Analytics &amp; Reporting</h3><p>We provide clear, plain-English reports tracking keyword rankings, website traffic, leads, conversions, and Google Business Profile performance.</p></li></ul>
-  </div>
-</section>
-
-<section class="lsa-proc" aria-labelledby="lsa-proc-h">
-  <div class="wrap">
-    <div class="lsa-head">
-      <div>
-        <p class="eyebrow dk rv">How it works</p>
-        <h2 id="lsa-proc-h" class="title rv">The Process Behind Our Local SEO Services</h2>
-      </div>
-      <p class="rv" style="--d:.06s">We follow a proven local SEO process designed to improve your online visibility, attract more local customers, and generate sustainable business growth.</p>
-    </div>
-    <ol class="lsa-steps"><li class="lsa-step rv" style="--d:0.00s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Local SEO Audit &amp; Analysis</h3><p>We analyse your website, Google Business Profile, local citations, competitor performance, and current search rankings to identify strengths, weaknesses, and growth opportunities.</p></li><li class="lsa-step rv" style="--d:0.05s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>Strategy &amp; Planning</h3><p>Based on our findings, we develop a personalised local SEO roadmap — keyword research, competitor analysis, content planning, Google Business Profile optimisation, and technical improvements.</p></li><li class="lsa-step rv" style="--d:0.10s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>On-Page &amp; Technical Optimisation</h3><p>We implement location-specific keywords, optimise title tags and meta descriptions, improve site speed, enhance mobile usability, and add structured data.</p></li><li class="lsa-step rv" style="--d:0.15s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Local Citations &amp; Business Listings</h3><p>We create, update, and manage your business listings across trusted directories, map platforms, and industry-specific websites.</p></li><li class="lsa-step rv" style="--d:0.20s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3>Content Creation &amp; Local Link Building</h3><p>We create location-focused content — service pages, blogs, and landing pages — that engage local audiences and support your SEO goals.</p></li><li class="lsa-step rv" style="--d:0.25s"><span class="lsa-step-n"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span><h3>Performance Monitoring &amp; Growth Tracking</h3><p>We continuously monitor your website’s performance, keyword rankings, traffic, leads, and conversions through plain-English reporting and quarterly strategy reviews.</p></li></ol>
-  </div>
-</section>
-
-<section class="lsa-ind-sec" aria-labelledby="lsa-ind-h">
-  <div class="wrap">
-    <div class="lsa-head">
-      <div>
-        <p class="eyebrow rv">Who we work with</p>
-        <h2 id="lsa-ind-h" class="title rv">Industries We Help Grow with Local SEO</h2>
-      </div>
-      <p class="rv" style="--d:.06s">We provide industry-specific local SEO strategies designed to improve search visibility, attract qualified leads, and generate long-term business growth.</p>
-    </div>
-    <div class="lsa-ind-grid">
-      <article class="lsa-ind rv"><h3>Healthcare &amp; Allied Health</h3><p class="lsa-ind-eg">Clinics, hospitals, medical practices, therapists, dentists, and specialists.</p><p>We increase appointment bookings and connect healthcare providers with patients actively searching for their services.</p></article><article class="lsa-ind rv"><h3>Home Services</h3><p class="lsa-ind-eg">Plumbers, electricians, roofers, HVAC contractors, locksmiths, cleaning companies, and flooring specialists.</p><p>We generate more enquiries, phone calls, and service bookings from customers in your service area.</p></article><article class="lsa-ind rv"><h3>Legal Services</h3><p class="lsa-ind-eg">Law firms, immigration consultants, and legal service providers.</p><p>We help legal professionals improve search visibility, generate qualified leads, and establish authority within their practice areas.</p></article><article class="lsa-ind rv"><h3>Real Estate &amp; Property</h3><p class="lsa-ind-eg">Real estate agencies, property developers, and strata managers.</p><p>We focus on generating high-quality leads, increasing property enquiries, and helping real estate businesses achieve sustainable growth.</p></article><article class="lsa-ind rv"><h3>Trades &amp; Construction</h3><p class="lsa-ind-eg">Commercial builders, electrical contractors, and civil companies.</p><p>We help trade businesses move from referral-only to consistent inbound leads from Google and local search.</p></article><article class="lsa-ind rv"><h3>Automotive</h3><p class="lsa-ind-eg">Auto repair shops, car dealerships, detailing companies, and service providers.</p><p>We drive targeted traffic, increase enquiries, and strengthen your reputation within the local market.</p></article><article class="lsa-ind rv"><h3>Hospitality &amp; Tourism</h3><p class="lsa-ind-eg">Hotels, restaurants, resorts, cafes, and tourism businesses.</p><p>We help hospitality brands appear prominently in local search results, increase reservations, and build the online reputation that drives repeat business.</p></article>
-      <div class="lsa-ind-more rv">
-        <p>Not on the list? Tell us about your business and we’ll give you a straight answer.</p>
-        <a class="cl-link" href="book.html">Book a free call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="lsa-diff-sec" aria-labelledby="lsa-diff-h">
-  <div class="wrap">
-    <p class="eyebrow dk rv">Why Manifest</p>
-    <h2 id="lsa-diff-h" class="title rv">What Makes Manifest Website Design Different</h2>
-    <p class="lsa-intro rv">Manifest Website Design stands apart by delivering customised local SEO strategies focused on real business growth, increased visibility, and measurable results.</p>
-    <div class="lsa-diff-grid"><article class="lsa-diff rv"><span class="lsa-diff-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Results-driven, not retainer-driven</h3><p>No lock-in contracts. The only thing keeping you with us is the results we deliver.</p><p>We focus on what matters to your business — more calls, leads, and sales — backed by plain-English reporting that shows you exactly what’s working and what’s next.</p></article><article class="lsa-diff rv"><span class="lsa-diff-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8z"/></svg></span><h3>AI search is built into everything we do</h3><p>Most SEO agencies are still optimising for the Google algorithm of three years ago.</p><p>We understand how large language models evaluate and reference content, and we build those signals into every piece of content we produce — so you show up in Google AND in AI-generated answers from ChatGPT, Perplexity, and Google’s AI Overview.</p></article><article class="lsa-diff rv"><span class="lsa-diff-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.3-4.3"/></svg></span><h3>Expert consultation and strategic support</h3><p>Successful SEO requires ongoing collaboration. Our experienced specialists work closely with you to understand your business objectives and create a roadmap for long-term growth.</p></article><article class="lsa-diff rv"><span class="lsa-diff-n" aria-hidden="true"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Transparent analytics and plain-English reporting</h3><p>We believe every client should have complete visibility into their SEO performance. Our reports track key metrics — website traffic, keyword rankings, lead generation, and conversions — in language you can actually understand.</p></article></div>
-  </div>
-</section>
-
-<section class="fz" aria-labelledby="lsa-faq-h"><div class="wrap fz-in"><div class="fz-side"><p class="eyebrow">FAQ</p><h2 id="lsa-faq-h" style="margin-top:12px">Frequently Asked Questions About Local SEO in Australia</h2><p class="fz-x">Want the full package breakdown? See the <a class="cl-link" href="local-seo.html" style="font-size:inherit">SEO + Social package</a>.</p><div class="fz-help"><span class="fz-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2h8a2 2 0 012 2zM18 9h2a2 2 0 012 2v11l-4-4h-6a2 2 0 01-2-2v-1"/></svg></span><h3>Still have a question?</h3><p>Talk to us. We’ll answer your questions and tell you honestly if we’re the right fit.</p><a class="btn btn-primary" href="book.html">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="fz-list"><details class="fz-q" open><summary><span>What is a local SEO agency?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>A local SEO agency specialises in improving the online visibility of businesses within specific geographic areas.</p><p>Unlike general SEO, local SEO focuses on ranking in Google's local search results — including Google Maps and the Local Pack — for searches made by people in your target location.</p></div></details><details class="fz-q"><summary><span>How long does local SEO take to show results in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Most clients begin to see meaningful improvements in rankings and organic traffic within 3 to 6 months. Significant, compounding results typically build over 12 months.</p></div></details><details class="fz-q"><summary><span>How much do local SEO services cost in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Our local SEO packages start from $2,500/month AUD. Book a free discovery call to get a custom quote tailored to your business.</p></div></details><details class="fz-q"><summary><span>Do you work with businesses across all of Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes. While we're based in the Southern Highlands of NSW, we work with businesses across all Australian states and territories. All services are delivered remotely.</p></div></details><details class="fz-q"><summary><span>What is the difference between local SEO and regular SEO?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Regular SEO focuses on ranking for broad, national or global keywords. Local SEO specifically targets geographic searches — appearing in Google's Local Pack, Maps, and suburb or city-specific search results.</p></div></details><details class="fz-q"><summary><span>Can you help with Google Business Profile optimisation?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Absolutely. Google Business Profile optimisation is a core component of every campaign. We manage everything from initial setup and category selection to regular posts, photo updates, review responses, and Q&amp;A management.</p></div></details><details class="fz-q"><summary><span>What makes your local SEO service different from other agencies in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>We focus on what matters to your business — more calls, leads, and sales — backed by transparent plain-English reporting. We include AI search optimisation as standard, so you're positioned for how search is evolving today.</p></div></details><details class="fz-q"><summary><span>Are your local SEO services suitable for small businesses?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Local SEO is one of the most cost-effective marketing investments for Australian businesses. Book a discovery call and we'll give you a straight assessment of whether the timing and budget makes sense for your situation.</p></div></details></div></div></section>
-
-<section class="lsa-cta-sec" aria-labelledby="lsa-cta-h">
-  <div class="wrap lsa-cta-in">
-    <h2 id="lsa-cta-h" class="rv">Ready to grow your business locally?</h2>
-    <div class="rv" style="--d:.08s">
-      <p>Partner with Manifest Website Design and unlock the full potential of local SEO. Our proven strategies help your business attract more local customers, improve search rankings, and generate more leads and sales.</p>
-      <div class="lsa-cta"><a class="btn btn-primary" href="book.html">Book a Free Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      <p class="lsa-aside">Want to talk about AI search strategy specifically? <a href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session" target="_blank" rel="noopener">Book an AI Direction Session →</a>
-        <span class="lsa-near"><a href="seo-sydney.html">SEO Sydney</a><a href="seo-southern-highlands.html">SEO Southern Highlands</a><a href="local-seo-bowral.html">Local SEO Bowral</a><a href="website-design.html">Website design</a></span></p>
-    </div>
-  </div>
-</section>
-
+<main id="main">
+<section class="sy-hero ssx-hero" aria-labelledby="av-h1"><div class="wrap sy-hin"><div><p class="eyebrow">Local SEO Agency — Based in NSW, Working Nationally</p><h1 id="av-h1">Australia’s Local SEO Agency <em>Helping Australian Businesses Rank #1 in Their Area</em></h1><p class="sy-lead">At Manifest Website Design, we provide professional local SEO services designed to increase your online visibility, attract more qualified leads, and turn local searches into paying customers. From Google Business Profile optimisation to location-specific keyword targeting, our strategies deliver measurable results.</p><div class="sy-cta"><a class="btn sy-b1" href="book.html">Book a Free Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn sy-b2" href="#our-services">See what’s included</a></div></div><div class="ss3-rank"><b>#1</b><span>Google Maps, the Local Pack and suburb searches</span></div></div><div class="wrap"><ul class="ssx-trust"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><b><small>Packages</small>From $2,500/month AUD</b></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b><small>Contracts</small>No lock-in contracts</b></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><b><small>AI search</small>Included as standard</b></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><b><small>Reporting</small>Plain English, no jargon</b></li></ul></div></section>
+<section class="wy ms ssm" id="why-it-matters" aria-labelledby="why-h"><div class="wrap"><div class="ssm-top"><div><p class="sy-eb">Why it matters</p><h2 id="why-h">Why Local SEO Matters for Your Business</h2></div><p class="ssm-big">Show up where buyers search</p></div><ul class="ssm-cards five"><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><h3>Increase Local Visibility</h3><p>Local SEO helps your business appear at the top of search results when potential customers search for services in your area. Higher visibility means more website visits, phone calls, and enquiries from people looking for exactly what you offer.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><h3>Drive High-Quality Traffic</h3><p>Unlike traditional advertising, local SEO targets users who are already interested in your products or services. This results in highly relevant traffic that is more likely to convert into leads, bookings, and sales.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><h3>Build Trust and Credibility</h3><p>Customers are more likely to choose businesses with accurate information, strong local listings, and positive online reviews. Local SEO ensures your business information is consistent and easily accessible across all platforms.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/calendar-check.svg)" aria-hidden="true"></i></span><h3>Capture More Sales Opportunities</h3><p>Many local searches are made by people who are ready to take action — making a purchase, scheduling an appointment, or requesting a quote. Local SEO positions your business in front of these customers at the right time.</p></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><span class="sy-ci"><i class="ic" style="--m:url(orbit-assets/icons/briefcase.svg)" aria-hidden="true"></i></span><h3>Stay Ahead of Local Competitors</h3><p>If your competitors are investing in local SEO and you are not, you could be losing valuable customers. A well-executed local SEO strategy helps your business outperform competitors and become the preferred choice in your local market.</p></li></ul><div class="ssm-call ss3-chiprow"><ul class="ssm-chips"><li><span class="ms-ki"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i></span><b>More calls &amp; enquiries</b></li><li><span class="ms-ki"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><b>Higher-quality traffic</b></li><li><span class="ms-ki"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><b>Trust that converts</b></li></ul></div></div></section>
+<section class="sy-sec ssx-case" aria-labelledby="cs-h"><div class="wrap"><div class="sy-head"><div><p class="sy-eb">Real results · Case study</p><h2 class="sy-h2" id="cs-h">Real Results for Real Australian Businesses</h2></div></div><div class="ssx-cg"><div class="ssx-big"><p class="ssx-tag">Bookkeeping &amp; Accounting Services</p><p class="ssx-num"><span class="cn" data-to="322.4" data-dec="1" data-suf="%" data-comma="0">322.4%</span></p><p class="ssx-ct">increase in website traffic in under 12 months</p></div><div class="ssc-r"><div class="ssc-bars" role="img" aria-label="Monthly active users grew from 817 to 3,451"><div class="ssc-bar"><div class="ssc-col"><i style="--h:24%"></i></div><b>817</b><span>Before</span></div><div class="ssc-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div><div class="ssc-bar ssc-after"><div class="ssc-col"><i style="--h:100%"></i></div><b><span class="cn" data-to="3451" data-dec="0" data-suf="" data-comma="1">3,451</span></b><span>Active monthly users (up from 817)</span></div></div><div class="ssc-tiles"><div style="--cc:#7A4DE0;--cs:#EFE8FF"><b><span class="cn" data-to="1500" data-dec="0" data-suf="+" data-comma="1">1,500+</span></b><span>Targeted keywords now ranking (up from 40)</span></div><div style="--cc:#1F9D6B;--cs:#E2F6EC"><b>Consistent</b><span>Month-on-month increase in client bookings</span></div></div></div></div><div class="ssx-copy"><p><b>Challenge:</b> Low Google visibility, minimal organic traffic, ranking for only 40 irrelevant keywords</p><p class="ssx-fine"><b>These are real results from a real client.</b> SEO is a long game — but when it’s done consistently, the compounding effect is significant.</p></div><div class="ss3-how"><h3>How we achieved it</h3><ul><li style="--cc:#2F6FED;--cs:#E6EEFF"><b>Keyword research</b><span>Thorough keyword research and competitor gap analysis to identify the highest-opportunity search terms</span></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><b>Content production</b><span>100+ SEO-optimised blog posts and targeted location landing pages, built around real search intent</span></li><li style="--cc:#D6456B;--cs:#FDE8EE"><b>Link building</b><span>High-quality backlinks from trusted local and industry sources, plus a strong internal linking architecture</span></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><b>Ongoing optimisation</b><span>Continuous analysis of user behaviour data to improve engagement and reduce bounce rate</span></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><b>Conversion focus</b><span>Optimised high-value service pages to convert traffic into booked appointments</span></li></ul></div></div><script>(function(){var els=document.querySelectorAll('.cn');if(!els.length)return;var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;function fmt(v,d,c){var s=v.toFixed(d);return c?Number(s).toLocaleString('en-AU',{minimumFractionDigits:d,maximumFractionDigits:d}):s;}function run(el){var to=parseFloat(el.dataset.to),d=+el.dataset.dec,c=+el.dataset.comma,suf=el.dataset.suf,t0=null,dur=1800;function f(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e,d,c)+(p<1?'':suf);if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}if(rm||!('IntersectionObserver' in window))return;var sec=document.querySelector('.ssx-case');sec.classList.add('ssc-js');els.forEach(function(el){el.textContent=fmt(0,+el.dataset.dec,+el.dataset.comma)+el.dataset.suf;});var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){sec.classList.add('ssc-go');els.forEach(run);io.disconnect();}});},{threshold:.35});io.observe(sec);})();</script></section>
+<section class="sy-sec alt ss3-svc" id="our-services" aria-labelledby="ss3-svc-h"><div class="wrap"><div class="sy-head"><div><p class="sy-eb">What we do</p><h2 class="sy-h2" id="ss3-svc-h">Our Local SEO Services</h2></div><p class="sy-lede">We offer comprehensive local SEO services designed to help your business rank higher in local search results, attract nearby customers, and generate more leads and sales.</p></div><ul class="ss3-grid two"><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span></div><h3>Google Business Profile Optimisation</h3><p>We optimise every aspect of your profile — business information, categories, descriptions, images, and updates — to improve your presence in Google Search and Google Maps.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/search.svg)" aria-hidden="true"></i></span></div><h3>Local Keyword Research</h3><p>We conduct in-depth research to identify the high-intent, location-based search terms your potential customers are using — and build your content strategy around them.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/file-pen-line.svg)" aria-hidden="true"></i></span></div><h3>On-Page SEO</h3><p>We enhance title tags, meta descriptions, headings, content, internal linking, and structured data while incorporating location-specific keywords.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/list-checks.svg)" aria-hidden="true"></i></span></div><h3>Local Citations &amp; Directory Listings</h3><p>We create, optimise, and manage business listings across trusted local directories, ensuring your NAP information is accurate and consistent.</p></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/shield-check.svg)" aria-hidden="true"></i></span></div><h3>Online Reputation Management</h3><p>We help monitor and improve your online reputation by encouraging positive reviews, responding to customer feedback, and maintaining a professional digital presence.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/plug.svg)" aria-hidden="true"></i></span></div><h3>Local Link Building</h3><p>We acquire relevant, authoritative links from trusted local websites, organisations, and industry sources — steadily building your domain authority.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/phone-call.svg)" aria-hidden="true"></i></span></div><h3>Mobile &amp; Voice Search Optimisation</h3><p>We ensure your website loads quickly, performs flawlessly on all devices, and is optimised for voice search queries increasingly used to find local businesses.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span></div><h3>AI SEO Services</h3><p>We combine AI-powered tools with proven optimisation strategies to build the content signals that get your business cited in ChatGPT, Google’s AI Overview, and Perplexity answers.</p></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/pen-line.svg)" aria-hidden="true"></i></span></div><h3>Local Content Creation</h3><p>Our team creates location-focused blogs, service pages, and landing pages designed to improve search visibility, engage local audiences, and convert visitors into enquiries.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span></div><h3>Local SEO Analytics &amp; Reporting</h3><p>We provide clear, plain-English reports tracking keyword rankings, website traffic, leads, conversions, and Google Business Profile performance.</p></li></ul></div></section>
+<section class="sy-sec ss3-prc" aria-labelledby="ss3-prc-h"><div class="wrap"><div class="sy-head"><div><p class="sy-eb">How it works</p><h2 class="sy-h2" id="ss3-prc-h">The Process Behind Our Local SEO Services</h2></div><p class="sy-lede">We follow a proven local SEO process designed to improve your online visibility, attract more local customers, and generate sustainable business growth.</p></div><ul class="ss3-grid"><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span><span class="ss3-n">1</span></div><h3>Local SEO Audit &amp; Analysis</h3><p>We analyse your website, Google Business Profile, local citations, competitor performance, and current search rankings to identify strengths, weaknesses, and growth opportunities.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/file-pen-line.svg)" aria-hidden="true"></i></span><span class="ss3-n">2</span></div><h3>Strategy &amp; Planning</h3><p>Based on our findings, we develop a personalised local SEO roadmap — keyword research, competitor analysis, content planning, Google Business Profile optimisation, and technical improvements.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><span class="ss3-n">3</span></div><h3>On-Page &amp; Technical Optimisation</h3><p>We implement location-specific keywords, optimise title tags and meta descriptions, improve site speed, enhance mobile usability, and add structured data.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/map-pin.svg)" aria-hidden="true"></i></span><span class="ss3-n">4</span></div><h3>Local Citations &amp; Business Listings</h3><p>We create, update, and manage your business listings across trusted directories, map platforms, and industry-specific websites.</p></li><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/pen-line.svg)" aria-hidden="true"></i></span><span class="ss3-n">5</span></div><h3>Content Creation &amp; Local Link Building</h3><p>We create location-focused content — service pages, blogs, and landing pages — that engage local audiences and support your SEO goals.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span><span class="ss3-n">6</span></div><h3>Performance Monitoring &amp; Growth Tracking</h3><p>We continuously monitor your website’s performance, keyword rankings, traffic, leads, and conversions through plain-English reporting and quarterly strategy reviews.</p></li></ul></div></section>
+<section class="in" id="industries" aria-labelledby="in-h"><div class="wrap"><p class="in-eb">Who we work with</p><h2 id="in-h">Industries We Help Grow with Local SEO</h2><p class="ss3-lede">We provide industry-specific local SEO strategies designed to improve search visibility, attract qualified leads, and generate long-term business growth.</p><ul class="in-grid"><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/activity.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Healthcare &amp; Allied Health</h3><p class="in-who">Clinics, hospitals, medical practices, therapists, dentists, and specialists.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We increase appointment bookings and connect healthcare providers with patients actively searching for their services.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Home Services</h3><p class="in-who">Plumbers, electricians, roofers, HVAC contractors, locksmiths, cleaning companies, and flooring specialists.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We generate more enquiries, phone calls, and service bookings from customers in your service area.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/landmark.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Legal Services</h3><p class="in-who">Law firms, immigration consultants, and legal service providers.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We help legal professionals improve search visibility, generate qualified leads, and establish authority within their practice areas.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/briefcase.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Real Estate &amp; Property</h3><p class="in-who">Real estate agencies, property developers, and strata managers.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We focus on generating high-quality leads, increasing property enquiries, and helping real estate businesses achieve sustainable growth.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Trades &amp; Construction</h3><p class="in-who">Commercial builders, electrical contractors, and civil companies.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We help trade businesses move from referral-only to consistent inbound leads from Google and local search.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/settings-2.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Automotive</h3><p class="in-who">Auto repair shops, car dealerships, detailing companies, and service providers.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We drive targeted traffic, increase enquiries, and strengthen your reputation within the local market.</p></div></div></div></li><li><span class="in-ico"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span><div class="in-b"><h3>Hospitality &amp; Tourism</h3><p class="in-who">Hotels, restaurants, resorts, cafes, and tourism businesses.</p><div class="in-need"><i class="ic" style="--m:url(orbit-assets/icons/check.svg)" aria-hidden="true"></i><div><p>We help hospitality brands appear prominently in local search results, increase reservations, and build the online reputation that drives repeat business.</p></div></div></div></li></ul><div class="ss3-note"><p>Not on the list? Tell us about your business and we’ll give you a straight answer.</p><a class="btn sy-b1" href="book.html">Book a free call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
+<section class="sy-sec alt ss3-diff" aria-labelledby="ss3-diff-h"><div class="wrap"><div class="sy-head"><div><p class="sy-eb">Why Manifest</p><h2 class="sy-h2" id="ss3-diff-h">What Makes Manifest Website Design Different</h2></div><p class="sy-lede">Manifest Website Design stands apart by delivering customised local SEO strategies focused on real business growth, increased visibility, and measurable results.</p></div><ul class="ss3-grid two"><li style="--cc:#2F6FED;--cs:#E6EEFF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/badge-check.svg)" aria-hidden="true"></i></span></div><h3>Results-driven, not retainer-driven</h3><p>No lock-in contracts. The only thing keeping you with us is the results we deliver.</p><p>We focus on what matters to your business — more calls, leads, and sales — backed by plain-English reporting that shows you exactly what’s working and what’s next.</p></li><li style="--cc:#7A4DE0;--cs:#EFE8FF"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/scan-search.svg)" aria-hidden="true"></i></span></div><h3>AI search is built into everything we do</h3><p>Most SEO agencies are still optimising for the Google algorithm of three years ago.</p><p>We understand how large language models evaluate and reference content, and we build those signals into every piece of content we produce — so you show up in Google AND in AI-generated answers from ChatGPT, Perplexity, and Google’s AI Overview.</p></li><li style="--cc:#D6456B;--cs:#FDE8EE"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/message-square-text.svg)" aria-hidden="true"></i></span></div><h3>Expert consultation and strategic support</h3><p>Successful SEO requires ongoing collaboration. Our experienced specialists work closely with you to understand your business objectives and create a roadmap for long-term growth.</p></li><li style="--cc:#1F9D6B;--cs:#E2F6EC"><div class="ss3-top"><span class="sw-ci"><i class="ic" style="--m:url(orbit-assets/icons/chart-column.svg)" aria-hidden="true"></i></span></div><h3>Transparent analytics and plain-English reporting</h3><p>We believe every client should have complete visibility into their SEO performance. Our reports track key metrics — website traffic, keyword rankings, lead generation, and conversions — in language you can actually understand.</p></li></ul></div></section>
+<section aria-labelledby="lsa-faq-h" class="fz"><div class="wrap fz-in"><div class="fz-side"><p class="eyebrow">FAQ</p><h2 id="lsa-faq-h" style="margin-top:12px">Frequently Asked Questions About Local SEO in Australia</h2><p class="fz-x">Want the full package breakdown? See the <a class="cl-link" href="local-seo.html" style="font-size:inherit">SEO + Social package</a>.</p><div class="fz-help"><span class="fz-ic"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14 9a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2h8a2 2 0 012 2zM18 9h2a2 2 0 012 2v11l-4-4h-6a2 2 0 01-2-2v-1"></path></svg></span><h3>Still have a question?</h3><p>Talk to us. We’ll answer your questions and tell you honestly if we’re the right fit.</p><a class="btn btn-primary" href="book.html">Book a Call <svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div><div class="fz-list"><details class="fz-q" open=""><summary><span>What is a local SEO agency?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>A local SEO agency specialises in improving the online visibility of businesses within specific geographic areas.</p><p>Unlike general SEO, local SEO focuses on ranking in Google's local search results — including Google Maps and the Local Pack — for searches made by people in your target location.</p></div></details><details class="fz-q"><summary><span>How long does local SEO take to show results in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Most clients begin to see meaningful improvements in rankings and organic traffic within 3 to 6 months. Significant, compounding results typically build over 12 months.</p></div></details><details class="fz-q"><summary><span>How much do local SEO services cost in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Our local SEO packages start from $2,500/month AUD. Book a free discovery call to get a custom quote tailored to your business.</p></div></details><details class="fz-q"><summary><span>Do you work with businesses across all of Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Yes. While we're based in the Southern Highlands of NSW, we work with businesses across all Australian states and territories. All services are delivered remotely.</p></div></details><details class="fz-q"><summary><span>What is the difference between local SEO and regular SEO?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Regular SEO focuses on ranking for broad, national or global keywords. Local SEO specifically targets geographic searches — appearing in Google's Local Pack, Maps, and suburb or city-specific search results.</p></div></details><details class="fz-q"><summary><span>Can you help with Google Business Profile optimisation?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Absolutely. Google Business Profile optimisation is a core component of every campaign. We manage everything from initial setup and category selection to regular posts, photo updates, review responses, and Q&amp;A management.</p></div></details><details class="fz-q"><summary><span>What makes your local SEO service different from other agencies in Australia?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>We focus on what matters to your business — more calls, leads, and sales — backed by transparent plain-English reporting. We include AI search optimisation as standard, so you're positioned for how search is evolving today.</p></div></details><details class="fz-q"><summary><span>Are your local SEO services suitable for small businesses?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Local SEO is one of the most cost-effective marketing investments for Australian businesses. Book a discovery call and we'll give you a straight assessment of whether the timing and budget makes sense for your situation.</p></div></details></div></div></section>
+<section aria-labelledby="av-end-h" class="av-end sy-end" id="enquire"><div class="wrap av-end-in"><h2 id="av-end-h">Ready to grow your business locally?</h2><div><p>Partner with Manifest Website Design and unlock the full potential of local SEO. Our proven strategies help your business attract more local customers, improve search rankings, and generate more leads and sales.</p><div class="av-cta"><a class="btn btn-primary" href="book.html">Book a Free Discovery Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div><div class="wrap"><div class="ssx-rel"><a class="btn ssx-rb" href="https://api.leadconnectorhq.com/widget/bookings/ai-direction-session">Book an AI Direction Session</a><a class="btn ssx-rb" href="seo-sydney.html">SEO Sydney</a><a class="btn ssx-rb" href="seo-southern-highlands.html">SEO Southern Highlands</a><a class="btn ssx-rb" href="local-seo-bowral.html">Local SEO Bowral</a><a class="btn ssx-rb" href="website-design.html">Website design</a></div></div></section>
 </main>
 
 <footer>
