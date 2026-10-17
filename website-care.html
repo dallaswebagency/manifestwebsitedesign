@@ -252,7 +252,9 @@ img{max-width:100%}
 
 /* ---------- hero ---------- */
 .wc-hero{background:var(--dark);color:#fff;padding:calc(126px + clamp(36px,5vw,72px)) 0 0;overflow:hidden;isolation:isolate}
-.wc-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 55%,rgba(0,120,126,.35))}
+.wc-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,26,53,.93) 0%,rgba(1,26,53,.8) 38%,rgba(1,26,53,.34) 72%,rgba(1,26,53,.2) 100%)}
+.wc-hero::after{content:"";position:absolute;inset:-14px;z-index:-2;background:url(website-care-hero.jpg) center 35%/cover no-repeat;filter:blur(3px) saturate(1.05);transform:scale(1.06)}
+@media (max-width:900px){.wc-hero::before{background:linear-gradient(180deg,rgba(1,26,53,.92),rgba(1,26,53,.82))}}
 .wc-hero .eyebrow{color:var(--accent-l)}
 .wc-hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(40px,6.4vw,112px);line-height:.98;letter-spacing:-.04em;max-width:15ch}
 .wc-hero h1 span{display:block;margin-top:.22em;font-size:.55em;line-height:1.08;letter-spacing:-.025em;font-weight:700;color:#7FB4BE;max-width:20ch}
