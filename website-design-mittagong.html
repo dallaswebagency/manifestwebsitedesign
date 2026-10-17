@@ -428,6 +428,42 @@ footer{padding-block:56px 28px}
 </style>
 <style id="mz-contact">.f-contact{display:grid;gap:2px;margin-top:20px}.f-contact a{display:inline-flex;align-items:center;gap:10px;min-height:32px;color:#fff;font-weight:600;font-size:16px;overflow-wrap:anywhere}.f-contact svg{flex:none;color:var(--accent-l)}.f-contact a:hover{color:var(--accent-l)}@media (max-width:900px){.f-contact a{min-height:44px}}</style>
 <style id="mz-brandrow">@media (min-width:901px){.f-brand{display:flex;flex-wrap:wrap;align-items:center;gap:0 16px}.f-brand>a.plate,.f-brand>p,.f-brand>.f-contact{flex:0 0 100%}.f-brand>.f-btns{margin-top:20px}.f-brand>.f-social{margin-top:20px}}</style>
+<style id="mz-faq">
+.fz{background:var(--bg);padding:clamp(64px,8vw,120px) 0}
+.fz-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:start}
+.fz-side{position:sticky;top:110px}
+.fz-side h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.9vw,54px);line-height:1.06;letter-spacing:-.025em;text-wrap:balance;color:var(--ink);margin:0}
+.fz-side>p.fz-x{margin-top:18px;color:var(--muted);font-size:17px;line-height:1.6}
+.fz-side>p.fz-x a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.fz-help{margin-top:28px;padding:clamp(22px,2.4vw,32px);border-radius:22px;background:var(--dark);color:#fff}
+.fz-help .fz-ic{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:rgba(18,216,198,.16);color:var(--accent-l)}
+.fz-help .fz-ic svg{width:27px;height:27px}
+.fz-help h3{margin:16px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(20px,1.8vw,26px);line-height:1.2;color:#fff}
+.fz-help p{margin:10px 0 20px;color:#C6DAE3;font-size:16.5px;line-height:1.55}
+.fz-help .btn{background:var(--accent-l);color:var(--dark);width:100%}
+.fz-list{border-top:1.5px solid var(--line)}
+.fz-q{border-bottom:1.5px solid var(--line);transition:background .25s}
+.fz-q summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.5vw,21px);line-height:1.35;color:var(--ink);transition:color .25s,padding .25s}
+.fz-q summary::-webkit-details-marker{display:none}
+.fz-q summary:hover{color:var(--accent)}
+.fz-q summary i{flex:none;position:relative;width:36px;height:36px;border-radius:50%;background:var(--bg2);transition:background .25s,transform .35s}
+.fz-q summary i::before,.fz-q summary i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .35s,background .25s}
+.fz-q summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.fz-q[open]{background:linear-gradient(90deg,rgba(0,120,126,.07),transparent 70%)}
+.fz-q[open] summary{padding-left:14px}
+.fz-q[open] summary i{background:var(--accent);transform:rotate(180deg)}
+.fz-q[open] summary i::before,.fz-q[open] summary i::after{background:#fff}
+.fz-q[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.fz-a{padding:0 56px 24px 14px;color:var(--muted);font-size:17px;line-height:1.65;animation:fzin .35s ease}
+.fz-a p+p{margin-top:10px}
+.fz-a a{color:var(--accent);font-weight:600}
+@keyframes fzin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fz-a{animation:none}}
+@media (max-width:900px){.fz-in{grid-template-columns:1fr}.fz-side{position:static}.fz-a{padding-right:0}}
+.fz-q summary::after,.fz-q summary::before{content:none!important}
+.fz .eyebrow{display:block;padding:0;margin:0;background:none;border-radius:0;color:var(--accent);font-weight:700;font-size:clamp(15px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase}
+.fz-help .btn{border-radius:6px}
+</style>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -568,21 +604,7 @@ footer{padding-block:56px 28px}
   </div>
 </section>
 
-<section class="mt-faq" id="faq">
-  <div class="wrap mt-faq-grid">
-    <div>
-      <span class="eyebrow rv">FAQ</span>
-      <h2 class="title rv" style="--d:.05s">Questions from Mittagong businesses</h2>
-      <div class="mt-faq-list"><details class="mt-fq rv"><summary><span>Are you local to Mittagong?</span><i></i></summary><div class="mt-fq-a"><p>We&#x27;re based in Moss Vale - just minutes away.</p><p>We&#x27;ve been working with Southern Highlands businesses since 2015 and understand the local market well.</p></div></details><details class="mt-fq rv"><summary><span>What does a website project typically involve?</span><i></i></summary><div class="mt-fq-a"><p>Discovery call, keyword research, sitemap planning, copywriting, design, development, SEO setup, and launch.</p><p>We handle it all. You stay informed and approve at each stage. Most projects are completed in 6 to 10 weeks.</p></div></details><details class="mt-fq rv" open><summary><span>Will my website rank in Google for Mittagong searches?</span><i></i></summary><div class="mt-fq-a"><p>That&#x27;s the intention from day one.</p><p>We build every site around the specific search terms your local clients use - including location-based terms like &quot;electrician Mittagong&quot; or &quot;builder Southern Highlands.&quot;</p><p>The regional market is generally less competitive than Sydney, which means strong rankings are achievable faster.</p></div></details></div>
-    </div>
-    <aside class="mt-find rv" style="--d:.1s" aria-label="Example search terms">
-      <h3>The kind of searches we build around</h3>
-      <div class="mt-q"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>electrician Mittagong</span></div>
-      <div class="mt-q"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>builder Southern Highlands</span></div>
-      <p>Location-based terms like these, plus the specific search terms your local clients use. For wider regional work, see <a href="seo-southern-highlands.html" style="color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px">SEO Southern Highlands</a>.</p>
-    </aside>
-  </div>
-</section>
+<section class="fz" id="faq" aria-labelledby="fz-h"><div class="wrap fz-in"><div class="fz-side"><p class="eyebrow">FAQ</p><h2 id="fz-h" style="margin-top:12px">Questions from Mittagong businesses</h2><div class="fz-help"><span class="fz-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2h8a2 2 0 012 2zM18 9h2a2 2 0 012 2v11l-4-4h-6a2 2 0 01-2-2v-1"/></svg></span><h3>Still have a question?</h3><p>Talk to us. We’ll answer your questions and tell you honestly if we’re the right fit.</p><a class="btn btn-primary" href="book.html">Book a Call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="fz-list"><details class="fz-q" open><summary><span>Are you local to Mittagong?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>We're based in Moss Vale - just minutes away.</p><p>We've been working with Southern Highlands businesses since 2015 and understand the local market well.</p></div></details><details class="fz-q"><summary><span>What does a website project typically involve?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>Discovery call, keyword research, sitemap planning, copywriting, design, development, SEO setup, and launch.</p><p>We handle it all. You stay informed and approve at each stage. Most projects are completed in 6 to 10 weeks.</p></div></details><details class="fz-q"><summary><span>Will my website rank in Google for Mittagong searches?</span><i aria-hidden="true"></i></summary><div class="fz-a"><p>That's the intention from day one.</p><p>We build every site around the specific search terms your local clients use - including location-based terms like "electrician Mittagong" or "builder Southern Highlands."</p><p>The regional market is generally less competitive than Sydney, which means strong rankings are achievable faster.</p></div></details></div></div></section>
 
 <section class="mt-end">
   <div class="wrap mt-end-in">
