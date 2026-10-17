@@ -262,9 +262,9 @@ img{max-width:100%}
 .ls-price span{display:block;margin-top:8px;font-weight:600;color:var(--muted);font-size:16px}
 .ls-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
 .ls-cta .btn{min-height:58px;padding:0 30px}
-.ls-nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,5vw,72px);border-top:3px solid var(--ink)}
-.ls-nums li{list-style:none;padding:22px 20px 26px 0}
-.ls-nums li+li{padding-left:22px;border-left:1px solid var(--line)}
+.ls-nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,5vw,72px);border:1.5px solid var(--ink);overflow:hidden}
+.ls-nums li{list-style:none;padding:26px clamp(20px,2.4vw,36px) 30px}
+.ls-nums li+li{border-left:1px solid var(--line)}
 .ls-nums b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(44px,5.4vw,96px);line-height:.95;letter-spacing:-.05em;color:var(--ink);white-space:nowrap}
 .ls-nums span{display:block;margin-top:10px;font-weight:600;font-size:16.5px;line-height:1.4;color:var(--muted)}
 .ls-trust{background:var(--dark);color:#fff}
@@ -425,7 +425,7 @@ img{max-width:100%}
 @media (max-width:900px){.ls-hero{padding-top:calc(106px + 36px)}}
 @media (max-width:700px){
   .ls-nums{grid-template-columns:1fr 1fr}
-  .ls-nums li:nth-child(3){padding-left:0;border-left:0}
+  .ls-nums li:nth-child(3){border-left:0}
   .ls-nums li:nth-child(n+3){border-top:1px solid var(--line)}
   .ls-row{grid-template-columns:1fr;gap:6px}
   .ls-row .ls-d{grid-column:auto;margin-top:6px}
@@ -667,7 +667,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
 .ls-hero{position:relative;isolation:isolate;overflow:hidden}
 .ls-hero:before{content:"";position:absolute;inset:-12px;z-index:-2;background:url(local-seo-hero.jpg) center/cover no-repeat;filter:blur(3px) saturate(1.1);transform:scale(1.06)}
 .ls-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(243,248,248,.97) 0%,rgba(243,248,248,.94) 36%,rgba(243,248,248,.3) 62%,rgba(243,248,248,0) 100%)}
-.ls-hero .ls-nums{background:rgba(255,255,255,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:6px 20px}
+.ls-hero .ls-nums{background:rgba(255,255,255,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:0}
 .ls-hero h1,.ls-hero .ls-lead{text-shadow:0 1px 0 rgba(255,255,255,.6)}
 .ls-hero .btn-outline{background:rgba(255,255,255,.8)}.ls-hero .ls-price{background:rgba(255,255,255,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:16px;padding:16px 22px}.ls-hero .ls-price span{color:#34495c}
 @media(max-width:900px){.ls-hero:after{background:linear-gradient(180deg,rgba(243,248,248,.93),rgba(243,248,248,.82))}}</style></head>
@@ -728,7 +728,7 @@ main p a:hover,main li a:not([class]):hover{background-size:100% 1.5px}
       </div>
       <div class="ls-price rv" style="--d:.18s"><b>$2,500<small>/month AUD</small></b><span>Includes SEO + content + social + reporting</span></div>
     </div>
-    <ul class="ls-nums rv" style="margin-bottom:0;padding:0">
+    <ul class="ls-nums rv" style="margin-bottom:0">
       <li><b>4</b><span>SEO-optimised blog posts every month</span></li>
       <li><b>12–16</b><span>social posts, planned, written and scheduled</span></li>
       <li><b>1</b><span>backlink activity every month</span></li>
