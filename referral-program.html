@@ -257,6 +257,7 @@ img{max-width:100%}
 .rf-thanks{margin:0 0 34px;max-width:30em;font-size:17px;line-height:1.55;color:#9FB8C8}
 .rf-cta{display:flex;flex-wrap:wrap;gap:14px}
 .rf-btn-light{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.rf-cta .btn,.rf-acts .btn{text-align:center;line-height:1.25}
 .rf-btn-light:hover{background:#fff;color:var(--dark)}
 .rf-big{position:relative;display:grid;justify-items:start;padding-left:clamp(0px,2vw,30px);border-left:1px solid rgba(18,216,198,.35)}
 .rf-big .rf-sum{font-family:var(--serif);font-weight:800;font-size:clamp(110px,17vw,300px);line-height:.86;letter-spacing:-.04em;color:var(--accent-l);margin:0 0 0 -.03em}
@@ -266,20 +267,27 @@ img{max-width:100%}
 .rf-hero::before{content:"";position:absolute;right:-14vw;top:-18vw;width:52vw;height:52vw;max-width:820px;max-height:820px;border-radius:50%;border:1px solid rgba(18,216,198,.14)}
 
 /* how it works */
-.rf-how{padding:clamp(64px,8vw,130px) 0 clamp(48px,6vw,90px)}
-.rf-how-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,90px);align-items:end;margin-bottom:clamp(32px,4vw,64px)}
-.rf-how-head h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(34px,4.4vw,68px);line-height:1.04;letter-spacing:-.02em}
-.rf-steps{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
-.rf-step{display:grid;grid-template-columns:clamp(70px,10vw,170px) 1fr;gap:clamp(16px,3vw,48px);align-items:start;padding:clamp(22px,3vw,40px) 0;border-bottom:1px solid var(--line)}
-.rf-num{font-family:var(--serif);font-weight:800;font-size:clamp(64px,9vw,150px);line-height:.85;color:#BCD9DB;letter-spacing:-.03em}
-.rf-step p{margin:0;max-width:30em;font-family:var(--serif);font-weight:700;font-size:clamp(21px,2.3vw,34px);line-height:1.25;letter-spacing:-.01em}
-.rf-step p a{color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
-.rf-step p a:hover{color:var(--ink)}
-.rf-month4{margin:clamp(22px,3vw,40px) 0 0 clamp(86px,13vw,218px);max-width:36em;font-size:clamp(17px,1.3vw,20px);line-height:1.55;color:var(--muted)}
+.rf-how{padding:clamp(64px,8vw,130px) 0 clamp(64px,8vw,120px);overflow:hidden}
+.rf-how-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px 60px;margin-bottom:clamp(40px,5vw,84px)}
+.rf-how-head h2{margin:0;font-family:var(--serif);font-weight:800;font-size:clamp(36px,5vw,78px);line-height:1;letter-spacing:-.025em}
+.rf-how-head p{margin:0;max-width:24em;font-size:clamp(17px,1.3vw,20px);line-height:1.5;color:var(--muted)}
+.rf-flow{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,72px);margin:0;padding:0;list-style:none}
+.rf-flow::before{content:"";position:absolute;left:36px;right:calc(33.333% - 36px);top:36px;height:2px;background:repeating-linear-gradient(90deg,var(--accent) 0 10px,transparent 10px 20px);opacity:.55}
+.rf-fs{position:relative}
+.rf-node{position:relative;display:grid;place-items:center;width:72px;height:72px;margin-bottom:clamp(22px,2.4vw,34px);border-radius:50%;background:var(--dark);color:#fff;font-family:var(--serif);font-weight:800;font-size:30px;box-shadow:0 0 0 8px var(--bg),0 0 0 10px var(--line)}
+.rf-fs:last-child .rf-node{background:var(--accent);box-shadow:0 0 0 8px var(--bg),0 0 0 10px rgba(0,120,126,.35)}
+.rf-verb{display:block;margin:0 0 12px;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.rf-fs p{margin:0;max-width:19em;font-family:var(--serif);font-weight:700;font-size:clamp(21px,2vw,30px);line-height:1.25;letter-spacing:-.01em}
+.rf-fs p a{color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.rf-fs p a:hover{color:var(--ink)}
+.rf-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.rf-acts .btn{min-height:46px;padding:0 20px;font-size:15px;box-shadow:none}
+.rf-acts .rf-btn-dk{border:1.5px solid var(--ink);color:var(--ink)}
+.rf-acts .rf-btn-dk:hover{background:var(--ink);color:#fff}
 
-/* timeline */
-.rf-time{padding:0 0 clamp(64px,8vw,130px)}
-.rf-time h3{margin:0 0 30px;font-family:var(--serif);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+/* month 4 payoff strip */
+.rf-pay{margin-top:clamp(44px,6vw,96px);padding-top:clamp(28px,3vw,44px);border-top:2px solid var(--ink)}
+.rf-pay-lab{margin:0 0 26px;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .rf-rail{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin:0;padding:0;list-style:none}
 .rf-rail::before{content:"";position:absolute;left:0;right:25%;top:19px;height:2px;background:var(--line)}
 .rf-rail::after{content:"";position:absolute;left:0;top:19px;height:2px;width:75%;background:var(--accent);transform-origin:left;transform:scaleX(0);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
@@ -290,6 +298,7 @@ img{max-width:100%}
 .rf-rail li span{display:block;max-width:15em;font-size:16px;line-height:1.45;color:var(--muted)}
 .rf-rail li.end::before{background:var(--accent);box-shadow:0 0 0 7px rgba(0,120,126,.16)}
 .rf-rail li.end b{color:var(--accent)}
+.rf-pay-note{margin:clamp(24px,3vw,40px) 0 0;max-width:34em;padding-left:18px;border-left:3px solid var(--accent);font-size:clamp(18px,1.4vw,22px);line-height:1.5;font-weight:600}
 
 /* credit band */
 .rf-credit{background:var(--accent);color:#fff;padding:clamp(64px,8vw,130px) 0;overflow:hidden}
@@ -338,7 +347,8 @@ img{max-width:100%}
 .rf-end h2 em{font-style:normal;color:var(--accent-l)}
 
 @media (max-width:1100px){
-  .rf-hero-in,.rf-credit-in,.rf-terms-in,.rf-how-head{grid-template-columns:1fr}
+  .tb-r{display:none!important}
+  .rf-hero-in,.rf-credit-in,.rf-terms-in{grid-template-columns:1fr}
   .rf-terms-head{position:static}
   .rf-big{border-left:0;padding-left:0;border-top:1px solid rgba(18,216,198,.35);padding-top:28px}
   .rf-hero::before{display:none}
@@ -346,6 +356,36 @@ img{max-width:100%}
 @media (max-width:900px){
   .rf-hero{padding-top:calc(106px + 36px)}
   .rf-use{grid-template-columns:1fr}
+  .rf-flow{grid-template-columns:1fr;gap:0}
+  .rf-flow::before{left:35px;right:auto;top:36px;bottom:60px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--accent) 0 10px,transparent 10px 20px)}
+  .rf-fs{padding:0 0 38px 100px;min-height:72px}
+  .rf-fs:last-child{padding-bottom:0}
+  .rf-node{position:absolute;left:0;top:0;margin:0;width:72px;height:72px}
+  .rf-fs p{max-width:none}
+  .rf-acts .btn{flex:1 1 100%}
+}
+@media (max-width:380px){
+  header.nav .logo img{height:28px}
+  header.nav .nav-cta{padding:0 12px!important;font-size:14px!important;gap:0!important}
+  header.nav .nav-in{padding-left:14px;padding-right:6px}
+}
+@media (max-width:480px){
+  .rf-eye{letter-spacing:.12em}
+  .rf-big .rf-sum{font-size:clamp(96px,34vw,150px)}
+  .rf-fs{padding-left:88px}
+  .rf-node{width:64px;height:64px;font-size:26px}
+  .rf-flow::before{left:31px}
+  .rf-ledger li{gap:10px}
+  .rf-clauses li{padding:16px 0}
+  .rf-end::after{display:none}
+  .rf-btn-light,.rf-cta .btn,.rf-acts .btn{min-height:50px;height:auto;padding:12px 16px}
+  /* shared header: keep logo visible and Book a Call tidy on small phones */
+  header.nav .btn{white-space:nowrap;padding-left:14px;padding-right:14px;font-size:15px;min-height:44px}
+  header.nav .btn svg{display:none}
+  header.nav .logo{flex:0 0 auto}
+  header.nav .logo img{height:32px;width:auto;max-width:none}
+  header.nav .nav-in{gap:8px}
+  .topbar .tb-in>*:not(:first-child){display:none}
 }
 @media (max-width:720px){
   .rf-cmp{grid-template-columns:1fr}
@@ -358,8 +398,6 @@ img{max-width:100%}
   .rf-rail li{padding:0 0 28px 52px}
   .rf-rail li::before{top:0}
   .rf-rail li span{max-width:none}
-  .rf-month4{margin-left:0}
-  .rf-step{grid-template-columns:62px 1fr;gap:14px}
   .rf-clauses li{grid-template-columns:38px 1fr}
   .rf-cta .btn{width:100%}
 }
@@ -431,27 +469,26 @@ img{max-width:100%}
 <section class="rf-how" id="how-it-works">
   <div class="wrap">
     <div class="rf-how-head">
-      <p class="rf-eye lt rv" style="margin:0">Three steps</p>
-      <h2 class="rv" style="--d:.05s">How it works</h2>
+      <h2 class="rv">How it works</h2>
+      <p class="rv" style="--d:.05s">Three steps from a friendly recommendation to a $500 credit.</p>
     </div>
-    <ol class="rf-steps">
-      <li class="rf-step rv"><span class="rf-num" aria-hidden="true">1</span><p>Speak to the person first and recommend our SEO or AI SEO packages.</p></li>
-      <li class="rf-step rv"><span class="rf-num" aria-hidden="true">2</span><p>Ask them to call Jillian directly on <a href="tel:0482074040">0482 074 040</a>, or <a href="book.html">book a quick 15 minute call</a>.</p></li>
-      <li class="rf-step rv"><span class="rf-num" aria-hidden="true">3</span><p>If they sign up and stay for 4 months, you receive a $500 credit towards our services.</p></li>
+    <ol class="rf-flow">
+      <li class="rf-fs rv"><span class="rf-node" aria-hidden="true">1</span><span class="rf-verb">Recommend</span><p>Speak to the person first and recommend our SEO or AI SEO packages.</p></li>
+      <li class="rf-fs rv" style="--d:.08s"><span class="rf-node" aria-hidden="true">2</span><span class="rf-verb">Introduce</span><p>Ask them to call Jillian directly on <a href="tel:0482074040">0482 074 040</a>, or <a href="book.html">book a quick 15 minute call</a>.</p>
+        <div class="rf-acts"><a class="btn btn-primary" href="tel:0482074040">Call 0482 074 040</a><a class="btn rf-btn-dk" href="book.html">Book a 15 minute call</a></div></li>
+      <li class="rf-fs rv" style="--d:.16s"><span class="rf-node" aria-hidden="true">3</span><span class="rf-verb">Earn</span><p>If they sign up and stay for 4 months, you receive a $500 credit towards our services.</p></li>
     </ol>
-    <p class="rf-month4 rv">The credit is applied in month 4 and can be used on monthly SEO services or website tasks.</p>
-  </div>
-</section>
 
-<section class="rf-time" aria-labelledby="rf-time-h">
-  <div class="wrap">
-    <h3 id="rf-time-h" class="rv">Where the credit lands</h3>
-    <ol class="rf-rail rv" id="rfRail">
-      <li><b>Month 1</b><span>The referred client signs a minimum 4 month agreement</span></li>
-      <li><b>Month 2</b><span>The agreement continues</span></li>
-      <li><b>Month 3</b><span>The agreement continues</span></li>
-      <li class="end"><b>Month 4</b><span>$500 account credit applied to your account</span></li>
-    </ol>
+    <div class="rf-pay">
+      <p class="rf-pay-lab rv">Where the credit lands</p>
+      <ol class="rf-rail rv" id="rfRail">
+        <li><b>Month 1</b><span>The referred client signs a minimum 4 month agreement</span></li>
+        <li><b>Month 2</b><span>The agreement continues</span></li>
+        <li><b>Month 3</b><span>The agreement continues</span></li>
+        <li class="end"><b>Month 4</b><span>$500 account credit applied to your account</span></li>
+      </ol>
+      <p class="rf-pay-note rv">The credit is applied in month 4 and can be used on monthly SEO services or website tasks.</p>
+    </div>
   </div>
 </section>
 
